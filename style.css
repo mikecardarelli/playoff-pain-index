@@ -1,0 +1,255 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+   
+        html {
+	cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="32" width="32"><text y="28" font-size="32">😩¸</text></svg>'), auto;
+        }
+   
+        @font-face {
+            font-family: Jersey25;
+            src: url(Jersey25-Regular.ttf);
+        }
+   
+        body {
+            font-family: Jersey25;
+            background-color: #3b3b3b;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-family: Jersey25;
+            font-size: 80px;
+            text-align: center;
+            color: #FF5F1F;
+        }
+        
+        h2 {
+            color: #FF5F1F;
+            text-align: center;
+            font-size: 32px;
+        }
+        
+        h3 {
+            color: #FF5F1F;
+            font-size: 32px;
+            margin-bottom: -16px;
+        }
+        
+        h4 {
+            color: #FF5F1F;
+            font-size: 32px;
+            margin-bottom: 0px;
+            margin-top: 16px;
+        }
+        
+        p {
+            color: #FF5F1F;
+            text-align: center;
+            font-size: 24px;
+        }      
+        
+        a {
+            color: #FF5F1F;
+        }
+        
+        li {
+            color: black;
+            margin-bottom: 16px; /* More space between items */
+            font-size: 24px; /* Larger text */
+        }
+        
+        /* Change to a single column layout */
+        .team-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .team-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            outline-style: solid;
+            outline-color: #FF5F1F;
+            outline-width: 3px;
+            overflow: hidden;
+            width: 100%; /* Make cards take full width */
+        }
+        
+        .card-header {
+            font-family: "Jersey25";
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 25px; /* Increased padding */
+            background-color: white;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        /* Add a hover effect for the header */
+        .card-header:hover {
+            background-color: #fff7f4;
+        }
+        
+        /* Add indicator for expandable content */
+        .card-header::after {
+            content: '+';
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 40px; /* Larger icon */
+            color: black;
+        }
+        
+        /* Change indicator when expanded */
+        .card-header.active::after {
+            content: '-';
+        }
+        
+        .left-group {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Increased gap */
+        }
+        
+        .rank {
+            font-size: 48px; /* Larger rank number */
+            color: black;
+            min-width: 40px; /* Ensure consistent space */
+        }
+        
+        .logo-container {
+            width: 100px; /* Larger logo */
+            height: 100px;
+        }
+        
+        .logo {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        .team-name {
+            font-size: 48px; /* Larger team name */
+        }
+        
+        .team-name-container {
+          text-align: left;
+          }
+        
+        .ppi-container {
+            text-align: center;
+            margin-right: 30px; /* More space before the plus sign */
+        }
+        
+        .ppi-score {
+            font-size: 48px; /* Larger score */
+            color: #FF5F1F;
+        }
+        
+        .ppi-label {
+            font-size: 20px; /* Larger label */
+            color: gray;
+        }
+        
+        .card-body {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        /* Style for expanded card body */
+        .card-body.active {
+            padding: 0px 100px; /* Increased padding */
+            max-height: 300px; /* Increased max height */
+            border-top: 3px solid #FF5F1F;
+        }
+        
+        .details {
+            list-style-type: square;
+            padding: 16px;
+        }
+        
+        .details li {
+            justify-content: normal;
+            color: #FF5F1F;
+            margin-bottom: 10px; /* More space between items */
+            font-size: 24px; /* Larger text */
+        }
+        
+        .label {
+            color: black;
+        }
+        
+        .value {
+            font-weight: bold;
+        }
+        
+        .rules-container {
+            background: white;
+            color: black;
+            border-radius: 8px;
+            outline-style: solid;
+            outline-color: #FF5F1F;
+            outline-width: 3px;
+            padding: 1px 50px;
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+        
+        /* Responsive adjustments for mobile */
+        @media (max-width: 600px) {
+            h1 {
+            font-size: 40px;
+            }
+            
+            h2, h3, li {
+              font-size: 20px;
+            }
+          
+            .card-header {
+                padding: 15px;
+            }
+            
+            .card-body.active {
+            padding: 0px 0px; /* Increased padding */
+        }
+            
+            .rank {
+                font-size: 22px;
+                min-width: 30px;
+            }
+            
+            .logo-container {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .team-name {
+                font-size: 24px;
+            }
+            
+            .ppi-score {
+                font-size: 24px;
+            }
+            
+            .ppi-label {
+            font-size: 16px; /* Larger label */
+            color: gray;
+            }
+            
+            .card-body.active {
+                padding: 15px;
+            }
+            
+            .details li {
+                font-size: 20px;
+            }
+        }
