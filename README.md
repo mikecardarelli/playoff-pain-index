@@ -128,6 +128,23 @@ python3 ppi_cities.py --least 2  # Least Painful Cities, min 2 teams
 python3 ppi_cities.py --json     # regenerate ppi-cities.json
 ```
 
+## Querying the data
+
+`ppi_query.py` reads a league file, fuzzy-matches a team, and prints its card or
+a ranked leaderboard (it recomputes the score from the breakdown so the two stay
+in sync):
+
+```bash
+python3 ppi_query.py nba              # NBA leaderboard
+python3 ppi_query.py nba knicks       # one team's full card
+python3 ppi_query.py mlb all          # every MLB team, full breakdowns
+```
+
+There is also one editor skill per league under `.claude/skills/` (`ppi-mlb`,
+`ppi-nba`, `ppi-nhl`, `ppi-nfl`, `ppi-cfl`, `ppi-wnba`, `ppi-mls`) that wrap the
+same query, and a `CLAUDE.md` documenting the scoring methodology, reset rules,
+and per-league round mapping for anyone editing the data.
+
 ## Updating after a season
 
 When a season finishes:
@@ -146,5 +163,8 @@ style.css               site styles
 ppi-<league>.json       computed PPI data, one file per league
 ppi-cities.json         aggregated city pain (Most + Least Painful Cities)
 ppi_cities.py           city aggregator / generator
+ppi_query.py            per-team / leaderboard query tool
+.claude/skills/ppi-*    one query skill per league
+CLAUDE.md               scoring methodology and editing notes
 *.png                   team logos and site assets
 ```
