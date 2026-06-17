@@ -1,0 +1,747 @@
+{
+  "league": "MLB",
+  "updated": "2026-06-16",
+  "scoring": "16*Finals + 8*Semis + 4*Quarters + 2*FirstRound + 1*WinningRecordNoPlayoff",
+  "teams": [
+    {
+      "team": "Cleveland Guardians",
+      "score": 139,
+      "since": "Since last title in 1948",
+      "lastChampionship": "1948 World Series",
+      "breakdown": {
+        "finals": 4,
+        "semis": 3,
+        "quarters": 6,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 21
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Cleveland_Guardians_seasons",
+        "https://www.baseball-almanac.com/teams/clei.shtml",
+        "https://www.retroseasons.com/teams/cleveland-indians/history/records/era/"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "New York Yankees",
+      "score": 80,
+      "since": "Since last title in 2009",
+      "lastChampionship": "2009 World Series",
+      "breakdown": {
+        "finals": 1,
+        "semis": 5,
+        "quarters": 4,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 4
+      },
+      "confidence": "high",
+      "flags": [
+        "2026 season in progress (38-26 as of mid-June 2026) \u2014 not counted as a completed drought season"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/mlb/new-york-yankees",
+        "https://www.statmuse.com/mlb/ask/when-was-the-last-time-the-yankees-won-the-world-series"
+      ],
+      "notes": "Drought covers 2010-2025 (16 completed seasons). Finals loss: 2024 WS. Semis losses (ALCS): 2010, 2012, 2017, 2019, 2022. Quarters losses (ALDS): 2011, 2018, 2020, 2025. First-round losses (Wild Card game): 2015, 2021. Winning-record-no-playoff: 2013 (85-77), 2014 (84-78), 2016 (84-78), 2023 (82-80)."
+    },
+    {
+      "team": "New York Mets",
+      "score": 79,
+      "since": "Since last title in 1986",
+      "lastChampionship": "1986 World Series",
+      "breakdown": {
+        "finals": 2,
+        "semis": 4,
+        "quarters": 0,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 11
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_New_York_Mets_seasons",
+        "https://en.wikipedia.org/wiki/1986_World_Series",
+        "https://en.wikipedia.org/wiki/2025_New_York_Mets_season"
+      ],
+      "notes": "Drought covers 1987-2025 (39 seasons). Finals losses: 2000 WS (lost to Yankees), 2015 WS (lost to Royals). Semis losses: 1988 NLCS (lost to Dodgers), 1999 NLCS (lost to Braves), 2006 NLCS (lost to Cardinals), 2024 NLCS. First round losses: 2016 Wild Card game (lost to Giants), 2022 Wild Card Series. No Division Series losses \u2014 Mets either won or lost earlier/later rounds. Winning-record-no-playoff seasons: 1987 (92-70), 1989 (87-75), 1990 (91-71), 1997 (88-74), 1998 (88-74), 2001 (82-80), 2005 (83-79), 2007 (88-74), 2008 (89-73), 2019 (86-76), 2025 (83-79). The 2007 and 2008 seasons were both infamous late-season collapses. 1994 (55-58, strike-shortened) and 1995 (69-75) were below .500."
+    },
+    {
+      "team": "Detroit Tigers",
+      "score": 76,
+      "since": "Since last title in 1984",
+      "lastChampionship": "1984 World Series",
+      "breakdown": {
+        "finals": 2,
+        "semis": 3,
+        "quarters": 3,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 8
+      },
+      "confidence": "high",
+      "flags": [
+        "2009 season: Tigers went 86-77 after losing a one-game tiebreaker to the Twins; counted as winning-record-no-playoff since they missed the postseason",
+        "2010: Tigers went exactly 81-81 (.500), not counted as winning record per >.500 rule",
+        "1994 strike-shortened season (53-62) not counted"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Detroit_Tigers_seasons",
+        "https://champsorchumps.us/team/mlb/detroit-tigers",
+        "https://www.baseball-reference.com/postseason/2024_ALWC1.shtml",
+        "https://www.baseball-reference.com/postseason/2025_ALWC1.shtml",
+        "https://www.statmuse.com/mlb/ask/last-time-detroit-tigers-won-the-world-series"
+      ],
+      "notes": "Finals losses: 2006 (Cardinals) and 2012 (Giants). Semis losses: 1987 ALCS (Twins), 2011 ALCS (Rangers), 2013 ALCS (Red Sox). Quarters losses: 2014 ALDS (Orioles), 2024 ALDS (Guardians after winning Wild Card vs Astros), 2025 ALDS (Mariners after winning Wild Card vs Guardians). No Wild Card round losses -- Tigers won both Wild Card series they entered (2024, 2025) and advanced to the ALDS each time. Winning-record-no-playoff years: 1985, 1986, 1988, 1991, 1993, 2007, 2009, 2016."
+    },
+    {
+      "team": "Milwaukee Brewers",
+      "score": 73,
+      "since": "Since team was founded in 1970 (relocated from Seattle)",
+      "lastChampionship": "Never won (franchise founded 1969 as Seattle Pilots, relocated to Milwaukee 1970)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 3,
+        "quarters": 3,
+        "firstRound": 4,
+        "winningRecordNoPlayoff": 13
+      },
+      "confidence": "high",
+      "flags": [
+        "droughtStartYear is 1970 (Milwaukee relocation) not 1969 (Seattle Pilots founding year); since Brewers never won a title, the 'most recent of {last title, relocation, founding}' rule yields 1970 -- the 1969 Seattle Pilots season is excluded but had a losing record anyway so no count impact",
+        "1981 ALDS classified as quartersLosses (Division Series level) even though the 1969-1993 era is described as LCS+WS; 1981 was a strike-year exception with a special first-round Division Series",
+        "2020 season: Brewers went 29-31 (losing record) but made the expanded 16-team COVID playoffs; classified as firstRoundLoss (Wild Card Series), not winningRecordNoPlayoff",
+        "2025 NLCS loss to Dodgers (4-0 sweep) confirmed via Baseball-Reference and contemporaneous news sources"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Milwaukee_Brewers_seasons",
+        "https://www.baseball-reference.com/postseason/2025_NLCS.shtml",
+        "https://www.baseball-reference.com/postseason/2019_NLWC.shtml",
+        "https://www.baseball-reference.com/postseason/2020_NLWC1.shtml",
+        "https://www.baseball-reference.com/postseason/2023_NLWC1.shtml",
+        "https://www.baseball-reference.com/postseason/2024_NLWC1.shtml"
+      ],
+      "notes": "finalsLosses: 1982 World Series (vs Cardinals). semisLosses: 2011 NLCS (vs Cardinals), 2018 NLCS (vs Dodgers), 2025 NLCS (vs Dodgers, swept 4-0). quartersLosses: 1981 ALDS (vs Yankees), 2008 NLDS (vs Phillies), 2021 NLDS (vs Braves). firstRoundLosses: 2019 Wild Card Game (vs Nationals, 4-3), 2020 Wild Card Series (vs Dodgers, 2-0 sweep), 2023 Wild Card Series (vs Diamondbacks, 2-0 sweep), 2024 Wild Card Series (vs Mets, 2-1). winningRecordNoPlayoff years: 1978, 1979, 1980, 1983, 1987, 1988, 1991, 1992, 2007, 2012, 2014, 2017, 2022. Note: 1989 (81-81) and 2005 (81-81) are exactly .500 and do not qualify."
+    },
+    {
+      "team": "San Diego Padres",
+      "score": 72,
+      "since": "Since team was founded in 1969",
+      "lastChampionship": "Never won (founded 1969)",
+      "breakdown": {
+        "finals": 2,
+        "semis": 1,
+        "quarters": 5,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 10
+      },
+      "confidence": "high",
+      "flags": [
+        "1981 strike season: combined record 41-69, clearly losing, no playoff, not counted",
+        "1982 and 1983: both exactly 81-81 (.500), excluded from winningRecordNoPlayoff (must be strictly >.500)",
+        "1994 strike-cancelled season: 47-70 losing record, no postseason held, not counted",
+        "2020 expanded 16-team COVID playoff: Padres won Wild Card round vs Cardinals, then lost NLDS to Dodgers -- classified as quartersLosses (NLDS round)"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/mlb/san-diego-padres",
+        "https://en.wikipedia.org/wiki/List_of_San_Diego_Padres_seasons"
+      ],
+      "notes": "Finals losses: 1984 (vs Tigers), 1998 (vs Yankees). Semis loss: 2022 NLCS (vs Phillies). Quarters losses: 1996 NLDS (vs Cardinals), 2005 NLDS (vs Cardinals), 2006 NLDS (vs Cardinals), 2020 NLDS (vs Dodgers), 2024 NLDS (vs Dodgers). First round loss: 2025 Wild Card (vs Cubs). Winning-record no-playoff seasons: 1978, 1985, 1988, 1989, 1991, 1992, 2004, 2007, 2010, 2023."
+    },
+    {
+      "team": "Athletics",
+      "score": 71,
+      "since": "Since last title in 1989",
+      "lastChampionship": "1989 World Series",
+      "breakdown": {
+        "finals": 1,
+        "semis": 2,
+        "quarters": 7,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 5
+      },
+      "confidence": "high",
+      "flags": [
+        "2010 season was exactly 81-81 (.500), which is NOT above .500, so it does not count as winningRecordNoPlayoff",
+        "Team relocated from Oakland to Sacramento (temporarily) in 2025; since this relocation is after the 1989 title, drought still starts from 1990",
+        "2026 season is in progress and not counted",
+        "1994 season was strike-shortened (51-63, .447); did not qualify for playoffs"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Oakland_Athletics_seasons",
+        "https://en.wikipedia.org/wiki/2025_Athletics_season",
+        "https://en.wikipedia.org/wiki/1989_World_Series",
+        "https://en.wikipedia.org/wiki/2010_Oakland_Athletics_season"
+      ],
+      "notes": "Finals losses: 1990 WS (Reds). Semis losses: 1992 ALCS (Blue Jays), 2006 ALCS (Tigers). Quarters losses: 2000, 2001, 2002, 2003 ALDS (all lost), 2012, 2013 ALDS, 2020 ALDS. First round losses: 2014, 2018, 2019 Wild Card games. Winning-record-no-playoff seasons: 1991 (84-78), 1999 (87-75), 2004 (91-71), 2005 (88-74), 2021 (86-76)."
+    },
+    {
+      "team": "Philadelphia Phillies",
+      "score": 61,
+      "since": "Since last title in 2008",
+      "lastChampionship": "2008 World Series",
+      "breakdown": {
+        "finals": 2,
+        "semis": 2,
+        "quarters": 3,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "2012 (81-81) and 2019 (81-81) were exactly .500 -- not counted as winning records since the rule requires >.500",
+        "2020 was a COVID-shortened 60-game season (28-32, losing record)",
+        "2022 and 2023 Phillies won Wild Card round before advancing -- classified by the round where they were eliminated (Finals and Semis respectively)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Philadelphia_Phillies_seasons",
+        "https://champsorchumps.us/team/mlb/philadelphia-phillies",
+        "https://champsorchumps.us/team/mlb/philadelphia-phillies/championships"
+      ],
+      "notes": "Drought runs 2009-2025 (17 seasons). Finals losses: 2009 (Yankees), 2022 (Astros). Semis losses: 2010 (Giants), 2023 (Diamondbacks). Quarters losses: 2011 (Cardinals), 2024 (Mets), 2025 (Dodgers). The lone winning-record-no-playoff season is 2021 (82-80). The long rebuilding stretch from 2013-2020 produced mostly losing records with no playoff pain credit."
+    },
+    {
+      "team": "Tampa Bay Rays",
+      "score": 59,
+      "since": "Since team was founded in 1998",
+      "lastChampionship": "Never won (founded 1998)",
+      "breakdown": {
+        "finals": 2,
+        "semis": 0,
+        "quarters": 5,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Tampa_Bay_Rays_seasons",
+        "https://www.baseball-reference.com/postseason/2013_ALWC.shtml",
+        "https://champsorchumps.us/team/mlb/tampa-bay-rays",
+        "https://en.wikipedia.org/wiki/2024_Tampa_Bay_Rays_season",
+        "https://en.wikipedia.org/wiki/2025_Tampa_Bay_Rays_season"
+      ],
+      "notes": "Franchise founded 1998 as Tampa Bay Devil Rays; renamed Tampa Bay Rays in 2008. Never won a World Series. Two World Series appearances (2008 loss to Philadelphia Phillies; 2020 loss to LA Dodgers). In 2013 and 2019, Rays won Wild Card games before being eliminated in the ALDS -- elimination round (ALDS/Quarters) is what is counted. 2015 and 2017 seasons (80-82) are losing records and do not qualify as winning-record-no-playoff. 2024 (80-82) and 2025 (77-85) are also losing records."
+    },
+    {
+      "team": "St. Louis Cardinals",
+      "score": 54,
+      "since": "Since last title in 2011",
+      "lastChampionship": "2011 World Series",
+      "breakdown": {
+        "finals": 1,
+        "semis": 3,
+        "quarters": 1,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 4
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_St._Louis_Cardinals_seasons",
+        "https://champsorchumps.us/team/mlb/st-louis-cardinals",
+        "https://champsorchumps.us/team/mlb/st-louis-cardinals/championships"
+      ],
+      "notes": "Finals loss: 2013 WS (Red Sox). Semis losses: 2012 NLCS (Giants), 2014 NLCS (Giants), 2019 NLCS (Nationals). Quarters loss: 2015 NLDS (Cubs). First round losses: 2020 NL Wild Card Series (Padres, expanded 16-team COVID format), 2021 NL Wild Card game (Dodgers), 2022 NL Wild Card Series (Phillies, new 12-team format). Winning-record no-playoff: 2016 (86-76), 2017 (83-79), 2018 (88-74), 2024 (83-79). Losing-record missed playoffs: 2023 (71-91), 2025 (78-84) - no PPI contribution."
+    },
+    {
+      "team": "Seattle Mariners",
+      "score": 53,
+      "since": "Since team was founded in 1977",
+      "lastChampionship": "Never won (founded 1977)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 4,
+        "quarters": 2,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 13
+      },
+      "confidence": "high",
+      "flags": [
+        "2022: Mariners won Wild Card Series over Toronto then lost ALDS to Houston -- eliminated round recorded as quarters (ALDS), not first round",
+        "2025 ALCS loss confirmed via Baseball-Reference and multiple sports outlets (Toronto Blue Jays won 4-3)",
+        "1994 season incomplete due to strike (49-63, losing record) -- correctly excluded",
+        "2020 COVID-shortened season (27-33, losing record) -- correctly excluded"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Seattle_Mariners_seasons",
+        "https://www.baseball-reference.com/postseason/2025_ALCS.shtml",
+        "https://www.baseball-reference.com/postseason/2022_ALWC2.shtml",
+        "https://sports.yahoo.com/mlb/breaking-news/live/mlb-playoffs-2025-mariners-tee-off-on-blue-jays-take-2-0-alcs-lead-with-series-headed-back-to-seattle-203013231.html"
+      ],
+      "notes": "Semis losses: 1995 ALCS (lost to Cleveland), 2000 ALCS (lost to NY Yankees), 2001 ALCS (lost to NY Yankees), 2025 ALCS (lost to Toronto). Quarters losses: 1997 ALDS (lost to Baltimore), 2022 ALDS (lost to Houston). Winning-record no-playoff seasons: 1991, 1993, 1996, 2002, 2003, 2007, 2009, 2014, 2016, 2018, 2021, 2023, 2024."
+    },
+    {
+      "team": "Toronto Blue Jays",
+      "score": 48,
+      "since": "Since last title in 1993",
+      "lastChampionship": "1993 World Series",
+      "breakdown": {
+        "finals": 1,
+        "semis": 2,
+        "quarters": 0,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 10
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Toronto_Blue_Jays_seasons",
+        "https://champsorchumps.us/team/mlb/toronto-blue-jays",
+        "https://www.baseball-reference.com/postseason/1992_WS.shtml"
+      ],
+      "notes": "Finals loss is 2025 World Series (lost to Dodgers). Semis losses: 2015 ALCS (lost to KC Royals), 2016 ALCS (lost to Cleveland Indians; they won Wild Card game + ALDS first). First round losses: 2020 AL Wild Card Series (lost to Tampa Bay Rays, expanded 16-team COVID playoff), 2022 AL Wild Card Series (lost to Seattle Mariners), 2023 AL Wild Card Series (lost to Minnesota Twins). Winning-record-no-playoff seasons (10): 1998, 1999, 2000, 2003, 2006, 2007, 2008, 2010, 2014, 2021. No quarter-finals losses in the drought window."
+    },
+    {
+      "team": "Minnesota Twins",
+      "score": 46,
+      "since": "Since last title in 1991",
+      "lastChampionship": "1991 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 7,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 6
+      },
+      "confidence": "high",
+      "flags": [
+        "2008 season: Twins finished 88-74 in regulation, lost a one-game tiebreaker (game 163) to the White Sox; record listed as 88-75 with tiebreaker counted as a regular-season game \u2014 still clearly a winning record above .500",
+        "2020 Wild Card Series was an expanded COVID format (16 teams, best-of-3); treated as first-round loss consistent with Wild Card round mapping",
+        "1992 was pre-wild card; Twins finished 2nd in AL West with 90 wins but no playoff berth available",
+        "2026 season in progress (33-40 as of mid-June); not included in counts"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Minnesota_Twins_seasons",
+        "https://champsorchumps.us/team/mlb/minnesota-twins",
+        "https://www.baseball-reference.com/postseason/2019_ALDS2.shtml",
+        "https://en.wikipedia.org/wiki/2020_American_League_Wild_Card_Series"
+      ],
+      "notes": "Semis loss: 2002 ALCS (vs. Angels). Quarters losses: 2003, 2004, 2006, 2009, 2010 ALDS (all vs. Yankees or Athletics), 2019 ALDS (vs. Yankees, as AL Central champion, no Wild Card game), 2023 ALDS (vs. Astros, after winning Wild Card Series vs. Toronto). First round losses: 2017 AL Wild Card game (vs. Yankees), 2020 AL Wild Card Series (vs. Astros). Winning-record misses: 1992 (90-72, pre-wild card era), 2001 (85-77), 2005 (83-79), 2008 (88-75, lost tiebreaker/game 163 to White Sox), 2015 (83-79), 2024 (82-80). The 2026 season is in progress and not counted."
+    },
+    {
+      "team": "Baltimore Orioles",
+      "score": 44,
+      "since": "Since last title in 1983",
+      "lastChampionship": "1983 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 3,
+        "quarters": 2,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 8
+      },
+      "confidence": "high",
+      "flags": [
+        "1994 season counted as winning-record-no-playoff: Orioles were 63-49 (.563) when the season was canceled by the players' strike; no playoffs were held that year",
+        "2015 Orioles finished exactly 81-81 (.500), which is not strictly above .500 so not counted as winning-record-no-playoff"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Baltimore_Orioles_seasons",
+        "https://champsorchumps.us/team/mlb/baltimore-orioles",
+        "https://www.baseball-reference.com/postseason/2012_ALDS1.shtml",
+        "https://www.baseball-reference.com/postseason/2016_ALWC.shtml"
+      ],
+      "notes": "Semi-finals losses: 1996 (ALCS vs Yankees), 1997 (ALCS vs Indians), 2014 (ALCS vs Royals). Quarter-finals losses: 2012 (ALDS vs Yankees, after winning Wild Card game vs Rangers), 2023 (ALDS vs Rangers). First-round losses: 2016 (Wild Card Game vs Blue Jays), 2024 (Wild Card Series vs Royals). Winning-record no-playoff years: 1984 (85-77), 1985 (83-78), 1989 (87-75), 1992 (89-73), 1993 (85-77), 1994 (63-49, strike), 2013 (85-77), 2022 (83-79). Years 1999-2011 and 2017-2021 were all losing records. 2025 was 75-87, losing record."
+    },
+    {
+      "team": "Arizona Diamondbacks",
+      "score": 41,
+      "since": "Since last title in 2001",
+      "lastChampionship": "2001 World Series",
+      "breakdown": {
+        "finals": 1,
+        "semis": 1,
+        "quarters": 3,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 5
+      },
+      "confidence": "high",
+      "flags": [
+        "2012 and 2013 both finished exactly 81-81 (.500), which is NOT greater than .500, so neither counts as a winning-record-no-playoff season",
+        "2017: D-backs WON the Wild Card game vs Rockies before losing NLDS to Dodgers 0-3; the Wild Card win is not a loss so only the NLDS exit is counted (quarters)",
+        "2007: D-backs swept Cubs in NLDS before losing NLCS to Rockies 0-4; counted as semis loss",
+        "2024: 89-73 record missed playoffs on final day of season; counted as winning-record-no-playoff"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Arizona_Diamondbacks_seasons",
+        "https://champsorchumps.us/team/mlb/arizona-diamondbacks",
+        "https://www.baseball-reference.com/postseason/2007_NLCS.shtml",
+        "https://cronkitenews.azpbs.org/2024/09/30/diamondbacks-miss-2024-mlb-playoffs/"
+      ],
+      "notes": "Drought covers 2002-2025 (24 seasons). Finals loss: 2023 World Series (lost to Texas Rangers). Semis loss: 2007 NLCS (lost to Colorado Rockies). Quarters losses: 2002 NLDS (Cardinals), 2011 NLDS (Brewers), 2017 NLDS (Dodgers). Winning-record-no-playoff years: 2003, 2008, 2018, 2019, 2024. Implied PPI score: 16+8+12+0+5 = 41."
+    },
+    {
+      "team": "Pittsburgh Pirates",
+      "score": 37,
+      "since": "Since last title in 1979",
+      "lastChampionship": "1979 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 3,
+        "quarters": 1,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 5
+      },
+      "confidence": "high",
+      "flags": [
+        "1994 season was strike-shortened at 53-61; counted as losing record",
+        "2013: Pirates won Wild Card game vs Reds, then lost NLDS to Cardinals in 5 games -- counted as quarters loss (advanced past first round)",
+        "20 consecutive losing seasons from 1993-2012 (all losing records, none qualified for winningRecordNoPlayoff)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Pittsburgh_Pirates_seasons",
+        "https://en.wikipedia.org/wiki/Pittsburgh_Pirates",
+        "https://en.wikipedia.org/wiki/2013_National_League_Wild_Card_Game",
+        "https://en.wikipedia.org/wiki/2014_National_League_Wild_Card_Game",
+        "https://en.wikipedia.org/wiki/2015_National_League_Wild_Card_Game",
+        "https://www.baseball-reference.com/postseason/2014_NLWC.shtml"
+      ],
+      "notes": "Winning-record-no-playoff seasons: 1980 (83-79), 1982 (84-78), 1983 (84-78), 1988 (85-75), 2018 (82-79). Semis losses: 1990 NLCS vs Reds, 1991 NLCS vs Braves, 1992 NLCS vs Braves. Quarters loss: 2013 NLDS vs Cardinals (after winning Wild Card game). First-round losses: 2014 NL Wild Card vs Giants, 2015 NL Wild Card vs Cubs."
+    },
+    {
+      "team": "Los Angeles Angels",
+      "score": 36,
+      "since": "Since last title in 2002",
+      "lastChampionship": "2002 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 2,
+        "quarters": 4,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 4
+      },
+      "confidence": "high",
+      "flags": [
+        "2020 COVID-shortened season (60 games): Angels went 26-34, losing record, missed expanded 16-team playoffs \u2014 counted as losing record / no playoff"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Angels_seasons",
+        "https://en.wikipedia.org/wiki/2002_World_Series",
+        "https://en.wikipedia.org/wiki/2015_Los_Angeles_Angels_season",
+        "https://en.wikipedia.org/wiki/2014_Los_Angeles_Angels_season",
+        "https://en.wikipedia.org/wiki/2008_Los_Angeles_Angels_season",
+        "https://en.wikipedia.org/wiki/2007_Los_Angeles_Angels_season"
+      ],
+      "notes": "Semis losses: 2005 ALCS (lost to White Sox), 2009 ALCS (lost to Yankees). Quarters losses: 2004 ALDS (lost to Red Sox), 2007 ALDS (lost to Red Sox), 2008 ALDS (lost to Red Sox), 2014 ALDS (lost to Royals). Winning record / no playoff: 2006 (89-73), 2011 (86-76), 2012 (89-73), 2015 (85-77). Seasons 2016-2025 were all losing records with no playoffs \u2014 franchise-record 10 consecutive losing seasons through 2025."
+    },
+    {
+      "team": "Colorado Rockies",
+      "score": 34,
+      "since": "Since team was founded in 1993",
+      "lastChampionship": "Never won (founded 1993)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 3,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 4
+      },
+      "confidence": "high",
+      "flags": [
+        "2026 season in progress (20-32, losing record as of mid-June 2026; not included in totals)",
+        "1994 strike-shortened season (53-64, .453) treated as losing record, no playoffs held that year",
+        "2018: Rockies won the NL Wild Card game vs Cubs before losing NLDS to Brewers; classified at the furthest round lost (NLDS = quarters)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Colorado_Rockies_seasons",
+        "https://en.wikipedia.org/wiki/2025_Colorado_Rockies_season",
+        "https://en.wikipedia.org/wiki/2026_Colorado_Rockies_season"
+      ],
+      "notes": "Playoff appearances: 1995 (Wild Card, lost NLDS to Braves), 2007 (lost World Series to Red Sox 4-0), 2009 (Wild Card, lost NLDS to Phillies), 2017 (lost NL Wild Card game to Diamondbacks), 2018 (won Wild Card game vs Cubs, lost NLDS to Brewers). Winning-record no-playoff seasons: 1996 (83-79), 1997 (83-79), 2000 (82-80), 2010 (83-79)."
+    },
+    {
+      "team": "Cincinnati Reds",
+      "score": 28,
+      "since": "Since last title in 1990",
+      "lastChampionship": "1990 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 2,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 6
+      },
+      "confidence": "high",
+      "flags": [
+        "1994 season (66-48, .579) counted as winningRecordNoPlayoff: playoffs were cancelled by the MLB strike, not a competitive miss. Some frameworks exclude strike-cancelled seasons; removing it would reduce winningRecordNoPlayoff to 5."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Cincinnati_Reds_seasons",
+        "https://champsorchumps.us/team/mlb/cincinnati-reds",
+        "https://en.wikipedia.org/wiki/1994_Cincinnati_Reds_season",
+        "https://en.wikipedia.org/wiki/1995_Cincinnati_Reds_season",
+        "https://en.wikipedia.org/wiki/2000_Cincinnati_Reds_season",
+        "https://en.wikipedia.org/wiki/2021_Cincinnati_Reds_season"
+      ],
+      "notes": "Semis loss: 1995 NLCS vs Atlanta Braves (4 games). Quarters losses: 2010 NLDS vs Philadelphia Phillies, 2012 NLDS vs San Francisco Giants. First round losses: 2013 NL Wild Card game vs Pittsburgh Pirates, 2020 NL Wild Card Series vs Atlanta Braves, 2025 NL Wild Card Series vs Los Angeles Dodgers. Winning-record-no-playoff seasons: 1992 (90-72), 1994 (66-48, strike), 1999 (96-67), 2000 (85-77), 2021 (83-79), 2023 (82-80). Note: 1996 was exactly 81-81 (.500), which does not satisfy the >0.500 threshold."
+    },
+    {
+      "team": "Chicago Cubs",
+      "score": 19,
+      "since": "Since last title in 2016",
+      "lastChampionship": "2016 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 1,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "2026 season is in progress (37-35 as of mid-June 2026) and is not counted in any category yet",
+        "2020 used an expanded 16-team playoff with best-of-3 Wild Card series due to COVID; Cubs lost in Wild Card round, classified as first-round loss"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/mlb/chicago-cubs",
+        "https://en.wikipedia.org/wiki/2017_Chicago_Cubs_season",
+        "https://en.wikipedia.org/wiki/2018_National_League_Wild_Card_Game",
+        "https://en.wikipedia.org/wiki/2019_Chicago_Cubs_season",
+        "https://en.wikipedia.org/wiki/2020_National_League_Wild_Card_Series",
+        "https://en.wikipedia.org/wiki/2025_Chicago_Cubs_season"
+      ],
+      "notes": "Semis loss: 2017 NLCS (lost to Dodgers 1-4, after beating Nationals in NLDS). First round losses: 2018 NL Wild Card Game (lost to Rockies 1-2 in 13 innings) and 2020 NL Wild Card Series (swept by Marlins 0-2). Quarters loss: 2025 NLDS (lost to Brewers after beating Padres in Wild Card Series). Winning-record misses: 2019 (84-78), 2023 (83-79), 2024 (83-79). Losing-record misses with no credit: 2021 (71-91), 2022 (74-88)."
+    },
+    {
+      "team": "Chicago White Sox",
+      "score": 13,
+      "since": "Since last title in 2005",
+      "lastChampionship": "2005 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 2,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "2022 season was exactly 81-81 (.500), which does not meet the >.500 threshold for winningRecordNoPlayoff",
+        "2026 season in progress as of June 15 2026 and is not counted"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Chicago_White_Sox_seasons",
+        "https://champsorchumps.us/team/mlb/chicago-white-sox",
+        "https://en.wikipedia.org/wiki/2006_Chicago_White_Sox_season",
+        "https://en.wikipedia.org/wiki/2010_Chicago_White_Sox_season",
+        "https://en.wikipedia.org/wiki/2012_Chicago_White_Sox_season"
+      ],
+      "notes": "Playoff appearances in drought window: 2008 (Lost ALDS to Tampa Bay Rays), 2020 (Lost Wild Card Series to Oakland Athletics), 2021 (Lost ALDS to Houston Astros). Winning-record misses: 2006 (90-72), 2010 (88-74), 2012 (85-77). The 2022 season finished exactly .500 (81-81) and does not qualify as a winning record under the strict >.500 rule."
+    },
+    {
+      "team": "Boston Red Sox",
+      "score": 11,
+      "since": "Since last title in 2018",
+      "lastChampionship": "2018 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 0,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Boston_Red_Sox_seasons",
+        "https://www.baseball-reference.com/postseason/2021_ALCS.shtml",
+        "https://www.baseball-reference.com/postseason/2025_ALWC2.shtml",
+        "https://www.mlb.com/news/red-sox-win-2018-world-series-title-c299876586",
+        "https://abc7ny.com/post/mlb-playoffs-2025-new-york-yankees-boston-red-sox-send-rookies-mound-decisive-wild-card-game-3/17926458/"
+      ],
+      "notes": "Drought covers 2019-2025 (7 seasons). 2019: 84-78, missed playoffs (winning record). 2020: 24-36, missed playoffs (losing record, COVID shortened season). 2021: 92-70, lost ALCS to Houston Astros 4-2 (semi-final loss). 2022: 78-84, missed playoffs (losing record). 2023: 78-84, missed playoffs (losing record). 2024: 81-81, missed playoffs (exactly .500, does not qualify as winning record). 2025: 89-73, lost AL Wild Card Series to New York Yankees 2-1 (first round loss). 2026 season in progress, not counted."
+    },
+    {
+      "team": "Houston Astros",
+      "score": 11,
+      "since": "Since last title in 2022",
+      "lastChampionship": "2022 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 0,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2023_Houston_Astros_season",
+        "https://en.wikipedia.org/wiki/2024_Houston_Astros_season",
+        "https://en.wikipedia.org/wiki/2025_Houston_Astros_season",
+        "https://www.baseball-reference.com/postseason/2023_ALCS.shtml",
+        "https://www.baseball-reference.com/postseason/2024_ALWC1.shtml",
+        "https://champsorchumps.us/team/mlb/houston-astros"
+      ],
+      "notes": "2023: Lost ALCS to Texas Rangers (4-3, Game 7). 2024: Won AL West (88-73) but lost Wild Card Series to Detroit Tigers (swept 2-0). 2025: 87-75 winning record, missed playoffs (best record among non-playoff teams). 2026 season is currently in progress and not yet counted."
+    },
+    {
+      "team": "Atlanta Braves",
+      "score": 10,
+      "since": "Since last title in 2021",
+      "lastChampionship": "2021 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 2,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2026 season in progress as of June 15 2026 \u2014 not counted"
+      ],
+      "sources": [
+        "https://www.baseball-reference.com/postseason/2022_NLDS1.shtml",
+        "https://www.baseball-reference.com/postseason/2023_NLDS1.shtml",
+        "https://www.baseball-reference.com/postseason/2024_NLWC2.shtml",
+        "https://en.wikipedia.org/wiki/2025_Atlanta_Braves_season",
+        "https://champsorchumps.us/team/mlb/atlanta-braves"
+      ],
+      "notes": "2022: Lost NLDS to Philadelphia Phillies 3-1 (quarter-finals). 2023: Lost NLDS to Philadelphia Phillies 3-1 (quarter-finals). 2024: Lost NL Wild Card Series to San Diego Padres 0-2 (first round). 2025: Finished 76-86, losing record, missed playoffs \u2014 no PPI contribution."
+    },
+    {
+      "team": "Miami Marlins",
+      "score": 10,
+      "since": "Since last title in 2003",
+      "lastChampionship": "2003 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 4
+      },
+      "confidence": "high",
+      "flags": [
+        "2020 used a unique COVID-expanded 16-team format; Marlins won the Wild Card round (vs Cubs) before losing the NLDS vs Braves 0-3 \u2014 classified as quartersLoss per LDS mapping",
+        "2025 season classified as losing record (79-83, .488), no playoffs"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Miami_Marlins_seasons",
+        "https://www.baseball-reference.com/postseason/2020_NLDS2.shtml",
+        "https://www.baseball-reference.com/postseason/2023_NLWC2.shtml",
+        "https://en.wikipedia.org/wiki/2025_Miami_Marlins_season"
+      ],
+      "notes": "Drought covers 22 seasons (2004-2025). Marlins made the playoffs only twice: 2020 (lost NLDS to Braves in sweep) and 2023 (lost Wild Card Series to Phillies 0-2). Winning-record-no-playoff years: 2004, 2005, 2008, 2009. The franchise did not relocate during the drought (renamed from Florida to Miami in 2012, same market). PPI score = 4*1 + 2*1 + 1*4 = 10."
+    },
+    {
+      "team": "San Francisco Giants",
+      "score": 9,
+      "since": "Since last title in 2014",
+      "lastChampionship": "2014 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 2,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "2025 season final record confirmed as 81-81 via StatMuse; Wikipedia page showed season as ongoing because it was last updated mid-season",
+        "2020 COVID-shortened season: Giants went 29-31 (.483) in expanded 16-team playoff field, below .500, no playoff appearance",
+        "2022 and 2025 both finished exactly 81-81 (.500); rule requires strictly >500 for winningRecordNoPlayoff credit, so neither qualifies"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_San_Francisco_Giants_seasons",
+        "https://champsorchumps.us/team/mlb/san-francisco-giants",
+        "https://www.baseball-reference.com/postseason/2016_NLWC.shtml",
+        "https://www.statmuse.com/mlb/ask/san-francisco-giants-record-2025",
+        "https://en.wikipedia.org/wiki/2021_San_Francisco_Giants_season",
+        "https://en.wikipedia.org/wiki/2016_San_Francisco_Giants_season"
+      ],
+      "notes": "Drought covers 11 complete seasons (2015-2025). Two NLDS losses: 2016 (entered via Wild Card, beat Mets in WC game, lost to Cubs 3-1) and 2021 (NL West champs with 107 wins, lost to Dodgers 3-2). One winning-record miss: 2015 (84-78). The 2026 season is currently in progress and excluded."
+    },
+    {
+      "team": "Kansas City Royals",
+      "score": 5,
+      "since": "Since last title in 2015",
+      "lastChampionship": "2015 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://champsorchumps.us/team/mlb/kansas-city-royals",
+        "https://en.wikipedia.org/wiki/2024_Kansas_City_Royals_season",
+        "https://en.wikipedia.org/wiki/2025_Kansas_City_Royals_season",
+        "https://www.retroseasons.com/teams/kansas-city-royals/history/seasons/"
+      ],
+      "notes": "2016 record was exactly 81-81 (.500), which does not meet the > .500 threshold for winningRecordNoPlayoff. 2024: Won Wild Card Series over Baltimore Orioles, then lost ALDS to New York Yankees (counts as quarter-final loss). 2025: 82-80 winning record but missed playoffs. 2026 season is currently in progress and not counted."
+    },
+    {
+      "team": "Los Angeles Dodgers",
+      "score": 0,
+      "since": "Since last title in 2025",
+      "lastChampionship": "2025 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Drought window opened in 2026 (current season, in progress as of June 2026 with a 45-27 record); no completed drought seasons exist yet, so all counts are 0. PPI score is effectively 0 at this moment."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Dodgers_seasons",
+        "https://champsorchumps.us/team/mlb/los-angeles-dodgers",
+        "https://www.foxsports.com/stories/mlb/9-world-series-titles-look-through-dodgers-championship-history"
+      ],
+      "notes": "The Dodgers won the 2025 World Series over the Toronto Blue Jays in 7 games, making 2025 their most recent title. The 2026 season is underway but incomplete. Prior seasons (2021 NLCS loss, 2022 and 2023 NLDS losses) all fall within a prior drought window that ended with the 2024 championship, and that 2024-2025 back-to-back run closed any prior drought. The active drought clock started January 1, 2026."
+    },
+    {
+      "team": "Texas Rangers",
+      "score": 0,
+      "since": "Since last title in 2023",
+      "lastChampionship": "2023 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2025 season finished exactly 81-81 (.500), which does NOT qualify as a winning record under the >.500 rule, so it adds nothing to winningRecordNoPlayoff"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2024_Texas_Rangers_season",
+        "https://en.wikipedia.org/wiki/2025_Texas_Rangers_season",
+        "https://en.wikipedia.org/wiki/2023_Texas_Rangers_season"
+      ],
+      "notes": "Rangers won their first-ever World Series in 2023. Both subsequent seasons (2024: 78-84, 2025: 81-81) resulted in missed playoffs with no winning record, so PPI score is 0 entering the 2026 season."
+    },
+    {
+      "team": "Washington Nationals",
+      "score": 0,
+      "since": "Since last title in 2019",
+      "lastChampionship": "2019 World Series",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Washington_Nationals_seasons",
+        "https://en.wikipedia.org/wiki/2025_Washington_Nationals_season"
+      ],
+      "notes": "All six post-championship seasons (2020-2025) have been losing records with no playoff appearances. 2020 was a COVID-shortened 60-game season (26-34). The franchise relocated from Montreal in 2005 but the relevant anchor is the 2019 World Series win."
+    }
+  ]
+}
