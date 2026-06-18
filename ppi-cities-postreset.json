@@ -1,0 +1,4619 @@
+{
+  "_note": "Post-championship PPI for teams whose drought predates their city's last big-four title. Computed season-by-season after the reset; used by ppi_cities.py.",
+  "cities": {
+    "Atlanta": {
+      "Atlanta Hawks": {
+        "postResetPPI": 6,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 3,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2021-22 to 2025-26",
+        "confidence": "high",
+        "flags": [
+          "2025-26 season confirmed complete (2026 NBA Finals concluded, Knicks champions), so it counts.",
+          "2023-24 and 2024-25 play-in losses are missed playoffs with losing records, so they score 0 (play-in is not a playoff round)."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2021%E2%80%9322_Atlanta_Hawks_season",
+          "https://en.wikipedia.org/wiki/2022%E2%80%9323_Atlanta_Hawks_season",
+          "https://en.wikipedia.org/wiki/2023%E2%80%9324_Atlanta_Hawks_season",
+          "https://en.wikipedia.org/wiki/2024%E2%80%9325_Atlanta_Hawks_season",
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Atlanta_Hawks_season",
+          "https://www.basketball-reference.com/playoffs/2026-nba-eastern-conference-first-round-hawks-vs-knicks.html"
+        ],
+        "seasons": [
+          {
+            "season": "2021-22",
+            "result": "Made playoffs as No. 8 seed via play-in; lost First Round to Miami Heat 1-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2022-23",
+            "result": "Won play-in, made playoffs as No. 7 seed; lost First Round to Boston Celtics 2-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2023-24",
+            "result": "Missed playoffs; lost play-in game to Chicago (play-in not a playoff round), 36-46 losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024-25",
+            "result": "Missed playoffs; lost both play-in games (Orlando, Miami), 40-42 losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025-26",
+            "result": "Made playoffs as No. 6 seed (won Southeast Division); lost First Round to New York Knicks 2-4. 2026 NBA Finals confirmed complete (Knicks champions)",
+            "tier": "firstRound",
+            "pts": 2
+          }
+        ]
+      },
+      "Atlanta Falcons": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2022 to 2025",
+        "confidence": "high",
+        "flags": [
+          "All four post-reset seasons were losing records (7-10, 7-10, 8-9, 8-9), so none qualifies as winningRecordNoPlayoff. Falcons score 0 in this window."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Atlanta_Falcons_seasons",
+          "https://en.wikipedia.org/wiki/2025_Atlanta_Falcons_season",
+          "https://www.pro-football-reference.com/teams/atl/2025.htm"
+        ],
+        "seasons": [
+          {
+            "season": "2022",
+            "result": "Missed playoffs, 7-10 losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "Missed playoffs, 7-10 losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "Missed playoffs, 8-9 losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Missed playoffs, 8-9 losing record (confirmed complete)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "Atlanta Dream": {
+        "postResetPPI": 12,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 3,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2022 to 2025",
+        "confidence": "high",
+        "flags": [
+          "Per WNBA shallow-bracket mapping (CLAUDE.md / task spec), the first playoff round maps to quarters (4 pts). 2023, 2024, 2025 were all first-round (round of 8) eliminations.",
+          "2022 was a missed-playoffs season with a losing record (14-22), scores 0."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2022_Atlanta_Dream_season",
+          "https://en.wikipedia.org/wiki/2023_Atlanta_Dream_season",
+          "https://en.wikipedia.org/wiki/2024_Atlanta_Dream_season",
+          "https://en.wikipedia.org/wiki/2025_Atlanta_Dream_season"
+        ],
+        "seasons": [
+          {
+            "season": "2022",
+            "result": "Missed playoffs, 14-22 losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "Made playoffs as No. 5 seed; lost best-of-3 First Round 0-2 to Dallas Wings (first playoff round = quarters per WNBA mapping)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2024",
+            "result": "Made playoffs as No. 8 seed; lost best-of-3 First Round 0-2 to New York Liberty",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2025",
+            "result": "Made playoffs as No. 3 seed (30-14, franchise-best); lost best-of-3 First Round 1-2 to Indiana Fever (confirmed complete)",
+            "tier": "quarters",
+            "pts": 4
+          }
+        ]
+      },
+      "Atlanta United FC": {
+        "postResetPPI": 6,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 1,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2022 to 2025",
+        "confidence": "high",
+        "flags": [
+          "2024 Conference Semifinal loss mapped to quarters (4), not semis: per CLAUDE.md/task MLS mapping, Conference Final=semis and Conference Semifinal=quarters. This matches the existing pinned JSON note.",
+          "2022 and 2025 were missed-playoffs seasons with losing records, score 0."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2022_Atlanta_United_FC_season",
+          "https://en.wikipedia.org/wiki/2023_Atlanta_United_FC_season",
+          "https://www.atlutd.com/news/atlanta-united-2023-season-ends-game-3-columbus-crew-mls-playoffs",
+          "https://en.wikipedia.org/wiki/2024_Atlanta_United_FC_season",
+          "https://www.atlutd.com/news/atlanta-united-magical-playoff-run-comes-to-an-end-loss-orlando-city-eastern-conference-finals",
+          "https://en.wikipedia.org/wiki/2025_Atlanta_United_FC_season"
+        ],
+        "seasons": [
+          {
+            "season": "2022",
+            "result": "Missed playoffs, 10-14-10 (40 pts) losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "Made playoffs as No. 6 seed; lost best-of-3 Round One to Columbus Crew (Round One = firstRound)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2024",
+            "result": "Made playoffs as No. 9 seed; won Wild Card at Montreal, upset Inter Miami in Round One, then lost Eastern Conference Semifinal to Orlando City (Conference Semifinal = quarters per MLS mapping)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2025",
+            "result": "Missed playoffs, 5-16-13 (28 pts) losing record (worst season in club history, confirmed complete)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Baltimore": {
+      "Baltimore Orioles": {
+        "postResetPPI": 18,
+        "breakdown": {
+          "finals": 0,
+          "semis": 1,
+          "quarters": 1,
+          "firstRound": 2,
+          "winningRecordNoPlayoff": 2
+        },
+        "window": "2013-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/Baltimore_Orioles",
+          "https://en.wikipedia.org/wiki/2013_Baltimore_Orioles_season",
+          "https://en.wikipedia.org/wiki/2014_Baltimore_Orioles_season",
+          "https://en.wikipedia.org/wiki/2015_Baltimore_Orioles_season",
+          "https://en.wikipedia.org/wiki/2016_Baltimore_Orioles_season",
+          "https://en.wikipedia.org/wiki/2022_Baltimore_Orioles_season",
+          "https://en.wikipedia.org/wiki/2023_Baltimore_Orioles_season",
+          "https://en.wikipedia.org/wiki/2024_Baltimore_Orioles_season",
+          "https://en.wikipedia.org/wiki/2025_Baltimore_Orioles_season"
+        ],
+        "seasons": [
+          {
+            "season": "2013",
+            "result": "85-77, missed playoffs (winning record, 3rd AL East)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2014",
+            "result": "Won AL East; swept Tigers in ALDS; lost ALCS to Royals (swept)",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2015",
+            "result": "81-81, missed playoffs (.500, not a winning record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2016",
+            "result": "89-73, lost AL Wild Card Game to Blue Jays",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2017",
+            "result": "75-87, missed playoffs (losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2018",
+            "result": "47-115, missed playoffs (losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2019",
+            "result": "54-108, missed playoffs (losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020",
+            "result": "25-35, missed playoffs (losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021",
+            "result": "52-110, missed playoffs (losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022",
+            "result": "83-79, missed playoffs (winning record)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2023",
+            "result": "101-61, won AL East; lost ALDS to Rangers (swept)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2024",
+            "result": "91-71, lost AL Wild Card Series to Royals",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2025",
+            "result": "75-87, missed playoffs (losing record)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Bay Area": {
+      "San Francisco Giants": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2023-2025",
+        "confidence": "high",
+        "flags": [
+          "All three seasons missed the playoffs with non-winning records (79-83, 80-82, 81-81). The 2025 81-81 is exactly .500, which is NOT a winning record (requires more wins than losses), so winningRecordNoPlayoff does not apply."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2023_San_Francisco_Giants_season",
+          "https://en.wikipedia.org/wiki/2024_San_Francisco_Giants_season",
+          "https://en.wikipedia.org/wiki/2025_San_Francisco_Giants_season"
+        ],
+        "seasons": [
+          {
+            "season": "2023",
+            "result": "79-83, 4th NL West, missed playoffs (non-winning record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "80-82, 4th NL West, missed playoffs (non-winning record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "81-81, 3rd NL West, missed playoffs (non-winning record, exactly .500)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "San Jose Sharks": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2022-23 to 2025-26",
+        "confidence": "high",
+        "flags": [
+          "All four seasons missed the playoffs. NHL standings are by points, not win-loss, and the per-league mapping does not assign a winningRecordNoPlayoff tier for the NHL (that tier is mainly MLB/NFL). 2025-26 was 39-35-8 (more wins than regulation losses by points), but under the NHL mapping it scores 0 as a missed-playoff season."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2022%E2%80%9323_San_Jose_Sharks_season",
+          "https://en.wikipedia.org/wiki/2023%E2%80%9324_San_Jose_Sharks_season",
+          "https://en.wikipedia.org/wiki/2024%E2%80%9325_San_Jose_Sharks_season",
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_San_Jose_Sharks_season",
+          "https://www.nhl.com/sharks/news/why-san-jose-sharks-are-eliminated-from-2025-2026-postseason-race-x9701"
+        ],
+        "seasons": [
+          {
+            "season": "2022-23",
+            "result": "22-44-16 (60 pts), 7th Pacific, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023-24",
+            "result": "19-54-9 (47 pts), missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024-25",
+            "result": "20-50-12 (52 pts), last in Pacific, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025-26",
+            "result": "39-35-8 (86 pts), missed playoffs (eliminated Apr 13, 2026)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "San Francisco 49ers": {
+        "postResetPPI": 28,
+        "breakdown": {
+          "finals": 1,
+          "semis": 1,
+          "quarters": 1,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2022-2025",
+        "confidence": "high",
+        "flags": [
+          "The 2022 NFL season counts as the first post-reset season (2022-23), per spec. 2024 was 6-11, a losing record with no playoffs, so it scores 0."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2022_San_Francisco_49ers_season",
+          "https://en.wikipedia.org/wiki/2023_San_Francisco_49ers_season",
+          "https://en.wikipedia.org/wiki/2025_San_Francisco_49ers_season"
+        ],
+        "seasons": [
+          {
+            "season": "2022",
+            "result": "13-4, lost NFC Championship Game 7-31 to Philadelphia Eagles",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2023",
+            "result": "12-5, lost Super Bowl LVIII 22-25 (OT) to Kansas City Chiefs",
+            "tier": "finals",
+            "pts": 16
+          },
+          {
+            "season": "2024",
+            "result": "6-11, missed playoffs (non-winning record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "12-5, won Wild Card vs Eagles, lost Divisional Round 6-41 to Seattle Seahawks",
+            "tier": "quarters",
+            "pts": 4
+          }
+        ]
+      },
+      "San Jose Earthquakes": {
+        "postResetPPI": 2,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2023-2025",
+        "confidence": "high",
+        "flags": [
+          "The 2023 Wild Card round is the first/entry playoff round in the MLS bracket, mapped to firstRound (2 pts). 2024 and 2025 both missed the playoffs with non-winning records (0 pts)."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2023_San_Jose_Earthquakes_season",
+          "https://en.wikipedia.org/wiki/2024_San_Jose_Earthquakes_season",
+          "https://en.wikipedia.org/wiki/2025_San_Jose_Earthquakes_season"
+        ],
+        "seasons": [
+          {
+            "season": "2023",
+            "result": "Made playoffs as 9-seed; lost Wild Card round to Sporting KC 0-0 (2-4 on penalties)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2024",
+            "result": "6-25-3, 14th in West, did not qualify",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "11-15-8, 10th in West, did not qualify",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Boston": {
+      "Boston Red Sox": {
+        "postResetPPI": 2,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://www.baseball-reference.com/postseason/2025_ALWC2.shtml",
+          "https://www.mlb.com/news/red-sox-eliminated-in-al-wild-card-series"
+        ],
+        "seasons": [
+          {
+            "season": "2025",
+            "result": "Lost AL Wild Card Series 2-1 to New York Yankees (made playoffs as a Wild Card, eliminated in the first round)",
+            "tier": "firstRound",
+            "pts": 2
+          }
+        ]
+      },
+      "Boston Bruins": {
+        "postResetPPI": 2,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2024-25 through 2025-26",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2024%E2%80%9325_Boston_Bruins_season",
+          "https://www.nhl.com/news/boston-bruins-remain-proud-of-2025-26-season-after-being-eliminated-in-playoffs-first-round"
+        ],
+        "seasons": [
+          {
+            "season": "2024-25",
+            "result": "Missed playoffs (33-39-10, losing record) - scores 0; NHL has no winningRecordNoPlayoff tier and record was losing anyway",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025-26",
+            "result": "Lost First Round 4-2 to Buffalo Sabres (qualified as first Eastern wild card, eliminated in round one)",
+            "tier": "firstRound",
+            "pts": 2
+          }
+        ]
+      },
+      "New England Patriots": {
+        "postResetPPI": 16,
+        "breakdown": {
+          "finals": 1,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://www.pro-football-reference.com/boxscores/202602080nwe.htm",
+          "https://www.nfl.com/news/seahawks-patriots-in-super-bowl-lx-what-we-learned-from-seattle-s-29-13-win"
+        ],
+        "seasons": [
+          {
+            "season": "2025",
+            "result": "Lost Super Bowl LX 29-13 to Seattle Seahawks (won Wild Card over Chargers, Divisional over Texans, AFC Championship over Broncos, lost the championship round)",
+            "tier": "finals",
+            "pts": 16
+          }
+        ]
+      },
+      "New England Revolution": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2025",
+        "confidence": "high",
+        "flags": [
+          "Missed the 2025 MLS Cup Playoffs (9-17-8, 11th in the Eastern Conference, 23rd overall) with a losing record; scores 0. MLS has no winningRecordNoPlayoff tier in this scoring."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2025_New_England_Revolution_season"
+        ],
+        "seasons": []
+      }
+    },
+    "Chicago": {
+      "Chicago White Sox": {
+        "postResetPPI": 6,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 1,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2017-2025",
+        "confidence": "high",
+        "flags": [
+          "2022 was exactly 81-81 (.500), which is NOT a winning record, so it does not score as winningRecordNoPlayoff."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2020_Chicago_White_Sox_season",
+          "https://en.wikipedia.org/wiki/2021_Chicago_White_Sox_season",
+          "https://en.wikipedia.org/wiki/2022_Chicago_White_Sox_season",
+          "https://www.baseball-reference.com/postseason/2020_ALWC4.shtml"
+        ],
+        "seasons": [
+          {
+            "season": "2017",
+            "result": "Missed playoffs, 67-95",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2018",
+            "result": "Missed playoffs, 62-100",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2019",
+            "result": "Missed playoffs, 72-89",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020",
+            "result": "35-25, lost AL Wild Card Series 1-2 to Oakland",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2021",
+            "result": "93-69, lost ALDS 1-3 to Houston",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2022",
+            "result": "81-81 (.500), missed playoffs (not a winning record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "Missed playoffs, 61-101",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "Missed playoffs, 41-121",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Missed playoffs, 60-102",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "Chicago Bulls": {
+        "postResetPPI": 4,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 2,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2016-17 to 2025-26",
+        "confidence": "high",
+        "flags": [
+          "NBA play-in losses (2022-23, 2023-24, 2024-25) do not count as playoff rounds and are omitted.",
+          "2025-26 reported as concluded (31-51, no postseason) per Wikipedia season page; if PPI rule excludes in-progress 2026 seasons it is still a 0 either way."
+        ],
+        "sources": [
+          "https://www.landofbasketball.com/teams_by_year/2016_2017_bulls.htm",
+          "https://www.landofbasketball.com/teams_by_year/2021_2022_bulls.htm",
+          "https://en.wikipedia.org/wiki/2024%E2%80%9325_Chicago_Bulls_season",
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Chicago_Bulls_season"
+        ],
+        "seasons": [
+          {
+            "season": "2016-17",
+            "result": "41-41, made playoffs (8 seed), lost First Round 2-4 to Boston",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2017-18",
+            "result": "27-55, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2018-19",
+            "result": "22-60, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2019-20",
+            "result": "22-43, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020-21",
+            "result": "31-41, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021-22",
+            "result": "46-36, made playoffs (6 seed), lost First Round 1-4 to Milwaukee",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2022-23",
+            "result": "40-42, lost in play-in (not a playoff round)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023-24",
+            "result": "39-43, lost in play-in (not a playoff round)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024-25",
+            "result": "39-43, lost in play-in (not a playoff round)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025-26",
+            "result": "31-51, missed playoffs (12th in East, missed play-in)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "Chicago Blackhawks": {
+        "postResetPPI": 4,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 2,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2016-17 to 2025-26",
+        "confidence": "high",
+        "flags": [
+          "2019-20 bubble: won the best-of-5 qualifying round (play-in to the 16-team bracket), then lost the actual First Round to Vegas; classified firstRound by depth.",
+          "2025-26 reported concluded with no postseason; counts 0 either way."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Chicago_Blackhawks_seasons",
+          "https://en.wikipedia.org/wiki/2019%E2%80%9320_Chicago_Blackhawks_season",
+          "https://www.hockey-reference.com/teams/CHI/2020.html",
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Chicago_Blackhawks_season"
+        ],
+        "seasons": [
+          {
+            "season": "2016-17",
+            "result": "50-23-9, swept 0-4 by Nashville in First Round",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2017-18",
+            "result": "33-39-10, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2018-19",
+            "result": "36-34-12, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2019-20",
+            "result": "32-30-8, won qualifying round vs Edmonton, lost First Round 1-4 to Vegas",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2020-21",
+            "result": "24-25-7, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021-22",
+            "result": "28-42-12, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022-23",
+            "result": "26-49-7, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023-24",
+            "result": "23-53-6, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024-25",
+            "result": "25-46-11, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025-26",
+            "result": "29-39-14, missed playoffs (eliminated April 2026)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "Chicago Bears": {
+        "postResetPPI": 8,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 1,
+          "firstRound": 2,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2017-2025",
+        "confidence": "high",
+        "flags": [
+          "2019 and 2020 were both 8-8; 8-8 is NOT a winning record so 2019 (which missed) scores 0; 2020 made the playoffs as the 7-seed so it scores firstRound."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Chicago_Bears_seasons",
+          "https://en.wikipedia.org/wiki/2025_Chicago_Bears_season",
+          "https://www.pro-football-reference.com/boxscores/202601180chi.htm"
+        ],
+        "seasons": [
+          {
+            "season": "2017",
+            "result": "5-11, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2018",
+            "result": "12-4, lost Wild Card to Eagles 15-16",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2019",
+            "result": "8-8, missed playoffs (not a winning record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020",
+            "result": "8-8, made playoffs as 7-seed, lost Wild Card to Saints 9-21",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2021",
+            "result": "6-11, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022",
+            "result": "3-14, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "7-10, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "5-12, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "11-6, won Wild Card vs Packers 31-27, lost Divisional to Rams 17-20 (OT)",
+            "tier": "quarters",
+            "pts": 4
+          }
+        ]
+      },
+      "Chicago Fire FC": {
+        "postResetPPI": 4,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 2,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2017-2025",
+        "confidence": "high",
+        "flags": [
+          "Both 2017 (Knockout Round) and 2025 (Round One) are the shallowest playoff depth = firstRound, despite different round names due to format changes.",
+          "MLS has no winningRecordNoPlayoff tier."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2017_Chicago_Fire_season",
+          "https://en.wikipedia.org/wiki/2024_Chicago_Fire_FC_season",
+          "https://en.wikipedia.org/wiki/2025_Chicago_Fire_FC_season",
+          "https://en.wikipedia.org/wiki/2025_MLS_Cup_Playoffs"
+        ],
+        "seasons": [
+          {
+            "season": "2017",
+            "result": "Made playoffs (3rd East), lost Knockout Round 0-4 to NY Red Bulls",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2018",
+            "result": "Missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2019",
+            "result": "Missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020",
+            "result": "Missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021",
+            "result": "Missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022",
+            "result": "Missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "Missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "Missed playoffs (7th straight miss, club record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Made playoffs (8th East), won Wild Card vs Orlando, lost Round One to Philadelphia",
+            "tier": "firstRound",
+            "pts": 2
+          }
+        ]
+      }
+    },
+    "Cincinnati": {
+      "Cincinnati Bengals": {
+        "postResetPPI": 40,
+        "breakdown": {
+          "finals": 1,
+          "semis": 1,
+          "quarters": 0,
+          "firstRound": 7,
+          "winningRecordNoPlayoff": 2
+        },
+        "window": "1991-2025",
+        "confidence": "high",
+        "flags": [
+          "Reds 1990 WS reset means the counting window starts strictly after 1990 (first counting season 1991).",
+          "1990 Bengals Divisional exit is EXCLUDED because it falls in the reset year (1990), not strictly after it.",
+          "Pre-1991 scoring seasons from the full-history Bengals entry (SB XVI 1981, SB XXIII 1988 finals; 1970/1973/1975 Divisional quarters; 1982 tournament firstRound; 1972/1976/1977/1986 winning-record misses) are all excluded from this post-reset window.",
+          "Non-winning missed-playoff seasons (1991-2004, 2006-2008, 2010, 2016-2020, 2025) score 0 and are omitted; 2025 Bengals went 6-11 (losing record, no playoffs)."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Cincinnati_Bengals_seasons",
+          "https://en.wikipedia.org/wiki/Cincinnati_Bengals"
+        ],
+        "seasons": [
+          {
+            "season": "2005",
+            "result": "Lost AFC Wild Card to Pittsburgh Steelers 17-31",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2009",
+            "result": "Lost AFC Wild Card to New York Jets 14-24",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2011",
+            "result": "Lost AFC Wild Card to Houston Texans 10-31",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2012",
+            "result": "Lost AFC Wild Card to Houston Texans 13-19",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2013",
+            "result": "Lost AFC Wild Card to San Diego Chargers 10-27",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2014",
+            "result": "Lost AFC Wild Card to Indianapolis Colts 10-26",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2015",
+            "result": "Lost AFC Wild Card to Pittsburgh Steelers 16-18",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2021",
+            "result": "Lost Super Bowl LVI to Los Angeles Rams 20-23",
+            "tier": "finals",
+            "pts": 16
+          },
+          {
+            "season": "2022",
+            "result": "Lost AFC Championship to Kansas City Chiefs 20-23",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2023",
+            "result": "9-8 winning record, missed playoffs",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2024",
+            "result": "9-8 winning record, missed playoffs",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          }
+        ]
+      }
+    },
+    "Cleveland": {
+      "Cleveland Guardians": {
+        "postResetPPI": 25,
+        "breakdown": {
+          "finals": 0,
+          "semis": 1,
+          "quarters": 3,
+          "firstRound": 2,
+          "winningRecordNoPlayoff": 1
+        },
+        "window": "2017-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Cleveland_Guardians_seasons"
+        ],
+        "seasons": [
+          {
+            "season": "2017",
+            "result": "Lost ALDS to Yankees 3-2 (102-60)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2018",
+            "result": "Lost ALDS to Astros 3-0 (91-71)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2019",
+            "result": "Missed playoffs, winning record (93-69)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2020",
+            "result": "Lost AL Wild Card Series to Yankees 2-0 (35-25)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2021",
+            "result": "Missed playoffs, losing record (80-82)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022",
+            "result": "Won Wild Card Series, lost ALDS to Yankees 3-2 (92-70)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2023",
+            "result": "Missed playoffs, losing record (76-86)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "Won ALDS, lost ALCS to Yankees 4-1 (92-69)",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2025",
+            "result": "Lost AL Wild Card Series to Tigers 2-1 (88-74)",
+            "tier": "firstRound",
+            "pts": 2
+          }
+        ]
+      },
+      "Cleveland Browns": {
+        "postResetPPI": 6,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 1,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2017-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Cleveland_Browns_seasons"
+        ],
+        "seasons": [
+          {
+            "season": "2017",
+            "result": "Missed playoffs (0-16)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2018",
+            "result": "Missed playoffs (7-8-1)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2019",
+            "result": "Missed playoffs (6-10)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020",
+            "result": "Won Wild Card at Steelers, lost Divisional at Chiefs (11-5)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2021",
+            "result": "Missed playoffs, losing record (8-9)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022",
+            "result": "Missed playoffs (7-10)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "Lost Wild Card at Texans (11-6)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2024",
+            "result": "Missed playoffs (3-14)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Missed playoffs (5-12)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Dallas": {
+      "Dallas Mavericks": {
+        "postResetPPI": 16,
+        "breakdown": {
+          "finals": 1,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2023-24 through 2025-26",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://champsorchumps.us/team/nba/dallas-mavericks",
+          "https://en.wikipedia.org/wiki/2024_NBA_playoffs",
+          "https://en.wikipedia.org/wiki/2024%E2%80%9325_Dallas_Mavericks_season",
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Dallas_Mavericks_season"
+        ],
+        "seasons": [
+          {
+            "season": "2023-24",
+            "result": "Lost NBA Finals to Boston Celtics (4-1)",
+            "tier": "finals",
+            "pts": 16
+          },
+          {
+            "season": "2024-25",
+            "result": "Missed playoffs (39-43, lost in play-in tournament; play-in is not a playoff round)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025-26",
+            "result": "Missed playoffs (26-56)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "Dallas Stars": {
+        "postResetPPI": 18,
+        "breakdown": {
+          "finals": 0,
+          "semis": 2,
+          "quarters": 0,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2023-24 through 2025-26",
+        "confidence": "high",
+        "flags": [
+          "2025-26 NHL playoffs completed before the report date (2026-06-18), so this season counts; the Stars were eliminated in the first round by Minnesota."
+        ],
+        "sources": [
+          "https://champsorchumps.us/team/nhl/dallas-stars",
+          "https://www.espn.com/nhl/story/_/id/40154334/nhl-playoffs-2024-stanley-cup-dallas-stars-takeaways-conference-finals-bracket",
+          "https://www.nhl.com/news/dallas-stars-edmonton-oilers-western-conference-final-series-preview",
+          "https://www.nhl.com/schedule/playoff-series/2026/series-f/wild-vs-stars"
+        ],
+        "seasons": [
+          {
+            "season": "2023-24",
+            "result": "Lost Western Conference Final to Edmonton Oilers (4-2)",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2024-25",
+            "result": "Lost Western Conference Final to Edmonton Oilers",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2025-26",
+            "result": "Lost First Round to Minnesota Wild",
+            "tier": "firstRound",
+            "pts": 2
+          }
+        ]
+      },
+      "Dallas Cowboys": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2024 through 2025",
+        "confidence": "high",
+        "flags": [
+          "Neither 2024 (7-10) nor 2025 (7-9-1) was a winning record, so winningRecordNoPlayoff does not apply."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2024_Dallas_Cowboys_season",
+          "https://en.wikipedia.org/wiki/2025_Dallas_Cowboys_season",
+          "https://www.pro-football-reference.com/teams/dal/playoffs.htm"
+        ],
+        "seasons": [
+          {
+            "season": "2024",
+            "result": "Missed playoffs (7-10, losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Missed playoffs (7-9-1, sub-.500 record)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "Dallas Wings": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2024 through 2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2025_Dallas_Wings_season",
+          "https://www.basketball-reference.com/wnba/teams/DAL/2024.html",
+          "https://www.basketball-reference.com/wnba/teams/DAL/2025.html"
+        ],
+        "seasons": [
+          {
+            "season": "2024",
+            "result": "Missed playoffs (9-31)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Missed playoffs (10-34)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "FC Dallas": {
+        "postResetPPI": 2,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2024 through 2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2024_MLS_Cup_playoffs",
+          "https://en.wikipedia.org/wiki/2025_FC_Dallas_season",
+          "https://www.fcdallas.com/news/fc-dallas-falls-3-0-to-vancouver-in-game-1-of-the-audi-2025-mls-cup-playoffs-round-one-best-of-3-series"
+        ],
+        "seasons": [
+          {
+            "season": "2024",
+            "result": "Missed MLS Cup playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Lost Round One best-of-3 series to Vancouver Whitecaps (0-2)",
+            "tier": "firstRound",
+            "pts": 2
+          }
+        ]
+      }
+    },
+    "Denver": {
+      "Colorado Rockies": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2024-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2024_Colorado_Rockies_season",
+          "https://en.wikipedia.org/wiki/2025_Colorado_Rockies_season",
+          "https://www.baseball-reference.com/teams/COL/2025.shtml"
+        ],
+        "seasons": [
+          {
+            "season": "2024",
+            "result": "61-101, last in NL West, missed playoffs (losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "43-119, worst record in franchise history, missed playoffs (losing record)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "Colorado Avalanche": {
+        "postResetPPI": 14,
+        "breakdown": {
+          "finals": 0,
+          "semis": 1,
+          "quarters": 1,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2023-24 through 2025-26",
+        "confidence": "high",
+        "flags": [
+          "Avalanche's last Cup was 2022, before the 2023 Denver reset; no in-window championship reset"
+        ],
+        "sources": [
+          "https://www.nhl.com/news/why-2023-24-colorado-avalanche-are-eliminated-from-postseason",
+          "https://www.nhl.com/news/why-colorado-avalanche-are-eliminated-from-2024-25-postseason",
+          "https://www.nhl.com/news/why-colorado-avalanche-are-eliminated-from-2025-2026-postseason"
+        ],
+        "seasons": [
+          {
+            "season": "2023-24",
+            "result": "Beat Winnipeg in Round 1, lost Western Conference Second Round to Dallas Stars in 6 games",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2024-25",
+            "result": "Lost Western Conference First Round to Dallas Stars in Game 7",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2025-26",
+            "result": "Won Presidents' Trophy, lost Western Conference Final to Vegas Golden Knights (swept)",
+            "tier": "semis",
+            "pts": 8
+          }
+        ]
+      },
+      "Denver Broncos": {
+        "postResetPPI": 10,
+        "breakdown": {
+          "finals": 0,
+          "semis": 1,
+          "quarters": 0,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2024-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2024_Denver_Broncos_season",
+          "https://en.wikipedia.org/wiki/2025_Denver_Broncos_season",
+          "https://www.pro-football-reference.com/teams/den/2025.htm"
+        ],
+        "seasons": [
+          {
+            "season": "2024",
+            "result": "10-7, lost Wild Card Round to Buffalo Bills 31-7",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2025",
+            "result": "Clinched AFC No. 1 seed, beat Buffalo in Divisional Round (33-30 OT), lost AFC Championship to New England Patriots 10-7",
+            "tier": "semis",
+            "pts": 8
+          }
+        ]
+      },
+      "Colorado Rapids": {
+        "postResetPPI": 2,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2024-2025",
+        "confidence": "high",
+        "flags": [
+          "MLS has no winningRecordNoPlayoff tier; 2025 missed-playoff season scores 0"
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2024_Colorado_Rapids_season",
+          "https://www.coloradorapids.com/news/recap-rapids-conclude-2024-season-fall-to-la-galaxy",
+          "https://en.wikipedia.org/wiki/2025_Colorado_Rapids_season"
+        ],
+        "seasons": [
+          {
+            "season": "2024",
+            "result": "Lost Round One best-of-3 series to LA Galaxy 2-0 (9-1 aggregate)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2025",
+            "result": "11-8-15, 41 points, 11th in Western Conference, did not qualify for playoffs",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Detroit": {
+      "Detroit Tigers": {
+        "postResetPPI": 46,
+        "breakdown": {
+          "finals": 1,
+          "semis": 2,
+          "quarters": 3,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 2
+        },
+        "window": "2009-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Detroit_Tigers_seasons",
+          "https://sabr.org/gamesproj/game/october-6-2009-twins-defeat-tigers-in-game-163-to-win-al-central-tiebreaker/",
+          "https://www.baseball-reference.com/boxes/SEA/SEA202510100.shtml"
+        ],
+        "seasons": [
+          {
+            "season": "2009",
+            "result": "86-77, lost AL Central tiebreaker (Game 163) to Twins, missed playoffs with winning record",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2010",
+            "result": "81-81, missed playoffs (not a winning record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2011",
+            "result": "95-67, lost ALCS to Rangers",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2012",
+            "result": "88-74, lost World Series to Giants",
+            "tier": "finals",
+            "pts": 16
+          },
+          {
+            "season": "2013",
+            "result": "93-69, lost ALCS to Red Sox",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2014",
+            "result": "90-72, lost ALDS to Orioles",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2015",
+            "result": "74-87, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2016",
+            "result": "86-75, missed playoffs with winning record",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2017",
+            "result": "64-98, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2018",
+            "result": "64-98, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2019",
+            "result": "47-114, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020",
+            "result": "23-35, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021",
+            "result": "77-85, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022",
+            "result": "66-96, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "78-84, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "86-76, beat Astros in WC, lost ALDS to Guardians",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2025",
+            "result": "87-75, lost ALDS to Mariners in Game 5",
+            "tier": "quarters",
+            "pts": 4
+          }
+        ]
+      },
+      "Detroit Pistons": {
+        "postResetPPI": 12,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 1,
+          "firstRound": 4,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2009-2026",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Detroit_Pistons_seasons",
+          "https://en.wikipedia.org/wiki/2026_NBA_playoffs",
+          "https://www.basketball-reference.com/playoffs/2026-nba-eastern-conference-semifinals-cavaliers-vs-pistons.html"
+        ],
+        "seasons": [
+          {
+            "season": "2008-09",
+            "result": "39-43, lost First Round to Cavaliers",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2009-10",
+            "result": "27-55, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2010-11",
+            "result": "30-52, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2011-12",
+            "result": "25-41, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2012-13",
+            "result": "29-53, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2013-14",
+            "result": "29-53, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2014-15",
+            "result": "32-50, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2015-16",
+            "result": "44-38, lost First Round to Cavaliers",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2016-17",
+            "result": "37-45, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2017-18",
+            "result": "39-43, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2018-19",
+            "result": "41-41, lost First Round to Bucks",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2019-20",
+            "result": "20-46, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020-21",
+            "result": "20-52, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021-22",
+            "result": "23-59, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022-23",
+            "result": "17-65, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023-24",
+            "result": "14-68, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024-25",
+            "result": "44-38, lost First Round to Knicks",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2025-26",
+            "result": "60-22 (1 seed), beat Magic in First Round, lost Conference Semifinals to Cavaliers in Game 7",
+            "tier": "quarters",
+            "pts": 4
+          }
+        ]
+      },
+      "Detroit Lions": {
+        "postResetPPI": 21,
+        "breakdown": {
+          "finals": 0,
+          "semis": 1,
+          "quarters": 1,
+          "firstRound": 3,
+          "winningRecordNoPlayoff": 3
+        },
+        "window": "2009-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Detroit_Lions_seasons"
+        ],
+        "seasons": [
+          {
+            "season": "2009",
+            "result": "2-14, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2010",
+            "result": "6-10, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2011",
+            "result": "10-6, lost Wild Card at Saints",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2012",
+            "result": "4-12, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2013",
+            "result": "7-9, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2014",
+            "result": "11-5, lost Wild Card at Cowboys",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2015",
+            "result": "7-9, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2016",
+            "result": "9-7, lost Wild Card at Seahawks",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2017",
+            "result": "9-7, missed playoffs with winning record",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2018",
+            "result": "6-10, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2019",
+            "result": "3-12-1, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020",
+            "result": "5-11, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021",
+            "result": "3-13-1, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022",
+            "result": "9-8, missed playoffs with winning record",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2023",
+            "result": "12-5, lost NFC Championship at 49ers",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2024",
+            "result": "15-2, lost Divisional Round to Commanders",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2025",
+            "result": "9-8, missed playoffs with winning record",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          }
+        ]
+      }
+    },
+    "Houston": {
+      "Houston Rockets": {
+        "postResetPPI": 4,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 2,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2022-23 to 2025-26",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2024%E2%80%9325_Houston_Rockets_season",
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Houston_Rockets_season",
+          "https://champsorchumps.us/team/nba/houston-rockets"
+        ],
+        "seasons": [
+          {
+            "season": "2022-23",
+            "result": "22-60, missed playoffs (non-winning record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023-24",
+            "result": "41-41, missed playoffs (.500, not a winning record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024-25",
+            "result": "52-30, lost Western Conference First Round to Warriors (3-4)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2025-26",
+            "result": "52-30, lost Western Conference First Round to Lakers (in 6)",
+            "tier": "firstRound",
+            "pts": 2
+          }
+        ]
+      },
+      "Houston Texans": {
+        "postResetPPI": 12,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 3,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2022 to 2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2023_Houston_Texans_season",
+          "https://en.wikipedia.org/wiki/2024_Houston_Texans_season",
+          "https://en.wikipedia.org/wiki/2025_Houston_Texans_season",
+          "https://champsorchumps.us/team/nfl/houston-texans"
+        ],
+        "seasons": [
+          {
+            "season": "2022",
+            "result": "3-13-1, missed playoffs (non-winning record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "10-7, won Wild Card vs Browns 45-14, lost Divisional to Ravens 10-34",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2024",
+            "result": "10-7, won Wild Card vs Chargers 32-12, lost Divisional to Chiefs 14-23",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2025",
+            "result": "12-5, won Wild Card at Steelers 30-6, lost Divisional to Patriots 16-28",
+            "tier": "quarters",
+            "pts": 4
+          }
+        ]
+      },
+      "Houston Dynamo": {
+        "postResetPPI": 10,
+        "breakdown": {
+          "finals": 0,
+          "semis": 1,
+          "quarters": 0,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2023 to 2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2023_Houston_Dynamo_FC_season",
+          "https://en.wikipedia.org/wiki/2024_Houston_Dynamo_FC_season",
+          "https://en.wikipedia.org/wiki/2025_Houston_Dynamo_FC_season",
+          "https://champsorchumps.us/team/mls/houston-dynamo"
+        ],
+        "seasons": [
+          {
+            "season": "2023",
+            "result": "4th in West, beat Real Salt Lake (Round One) and Sporting KC (Conf Semifinal), lost Western Conference Final to LAFC 1-2",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2024",
+            "result": "5th in West, lost Round One to Seattle Sounders 0-2 (best-of-three, both on penalties)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2025",
+            "result": "12th in West, missed playoffs (non-winning, non-qualifying)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Indianapolis": {
+      "Indiana Pacers": {
+        "postResetPPI": 56,
+        "breakdown": {
+          "finals": 1,
+          "semis": 3,
+          "quarters": 1,
+          "firstRound": 6,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2006-07 to 2025-26",
+        "confidence": "high",
+        "flags": [
+          "2006-07 was 41-41 (.500), not a winning record, so it scores 0 (winningRecordNoPlayoff requires more wins than losses).",
+          "2025-26 scores 0 two ways: missed playoffs with a 19-63 losing record, and per CLAUDE.md the 2026 cycle is in-progress and does not count."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Indiana_Pacers_seasons",
+          "https://en.wikipedia.org/wiki/2024%E2%80%9325_Indiana_Pacers_season",
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Indiana_Pacers_season"
+        ],
+        "seasons": [
+          {
+            "season": "2006-07",
+            "result": "Missed playoffs, 41-41 (not a winning record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2007-08",
+            "result": "Missed playoffs, 36-46",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2008-09",
+            "result": "Missed playoffs, 36-46",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2009-10",
+            "result": "Missed playoffs, 32-50",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2010-11",
+            "result": "Lost in First Round (37-45)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2011-12",
+            "result": "Lost in Conference Semifinals",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2012-13",
+            "result": "Lost in Conference Finals",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2013-14",
+            "result": "Lost in Conference Finals",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2014-15",
+            "result": "Missed playoffs, 38-44",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2015-16",
+            "result": "Lost in First Round",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2016-17",
+            "result": "Lost in First Round",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2017-18",
+            "result": "Lost in First Round",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2018-19",
+            "result": "Lost in First Round",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2019-20",
+            "result": "Lost in First Round",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2020-21",
+            "result": "Missed playoffs, 34-38 (lost play-in)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021-22",
+            "result": "Missed playoffs, 25-57",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022-23",
+            "result": "Missed playoffs, 35-47",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023-24",
+            "result": "Lost in Conference Finals",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2024-25",
+            "result": "Lost NBA Finals to Oklahoma City Thunder 3-4",
+            "tier": "finals",
+            "pts": 16
+          },
+          {
+            "season": "2025-26",
+            "result": "Missed playoffs, 19-63 (non-winning; season per CLAUDE.md is the in-progress 2026 cycle and does not score regardless)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Kansas City": {
+      "Kansas City Royals": {
+        "postResetPPI": 5,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 1,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 1
+        },
+        "window": "2024-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2025_Kansas_City_Royals_season",
+          "https://www.baseball-reference.com/postseason/2024_ALWC2.shtml",
+          "https://www.mlb.com/news/royals-lose-2024-alds-to-yankees",
+          "https://www.espn.com/mlb/story/_/id/41576560/royals-sweep-orioles-wild-card-series-advance-face-yankees-alds"
+        ],
+        "seasons": [
+          {
+            "season": "2024",
+            "result": "Made playoffs as a Wild Card (86-76); swept Baltimore Orioles 2-0 in AL Wild Card Series, then lost ALDS to New York Yankees 3-1",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2025",
+            "result": "Missed the playoffs with an 82-80 record (winning record, more wins than losses)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          }
+        ]
+      },
+      "Sporting Kansas City": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2024-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2024_Sporting_Kansas_City_season",
+          "https://en.wikipedia.org/wiki/2025_Sporting_Kansas_City_season"
+        ],
+        "seasons": [
+          {
+            "season": "2024",
+            "result": "Missed the MLS Cup Playoffs; finished 8-19-7 (non-winning record). Omitted.",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Missed the MLS Cup Playoffs; finished 7-20-7 (non-winning record). Omitted.",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Las Vegas": {
+      "Las Vegas Raiders": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2024-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2024_Las_Vegas_Raiders_season",
+          "https://en.wikipedia.org/wiki/2025_Las_Vegas_Raiders_season"
+        ],
+        "seasons": [
+          {
+            "season": "2024",
+            "result": "4-13, missed playoffs (losing record, 3rd straight losing season)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "3-14, missed playoffs (worst record in NFL, 1st overall pick)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Los Angeles": {
+      "Los Angeles Angels": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "MLB seasons strictly after 2025 (none; 2026 MLB season not complete and not strictly-after-counting per spec)",
+        "confidence": "high",
+        "flags": [
+          "Empty window: only MLB seasons strictly after 2025 count, and there are none (2025 MLB season is not strictly after 2025; 2026 is in progress). postResetPPI=0 by construction."
+        ],
+        "sources": [],
+        "seasons": []
+      },
+      "LA Clippers": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "NBA 2025-26 season (season-year 2026, strictly after 2025)",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Los_Angeles_Clippers_season"
+        ],
+        "seasons": [
+          {
+            "season": "2025-26",
+            "result": "Eliminated in the play-in tournament (lost to Golden State 121-126 on Apr 15, 2026); did not reach a playoff round. Play-in is not a playoff round, so scores 0."
+          }
+        ]
+      },
+      "Los Angeles Lakers": {
+        "postResetPPI": 4,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 1,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "NBA 2025-26 season (season-year 2026, strictly after 2025)",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Los_Angeles_Lakers_season"
+        ],
+        "seasons": [
+          {
+            "season": "2025-26",
+            "result": "Beat Houston Rockets 4-2 in the First Round, then lost to Oklahoma City Thunder 0-4 in the Western Conference Semifinals. Conference Semifinals = quarters (depth 2 from championship)."
+          }
+        ]
+      },
+      "Anaheim Ducks": {
+        "postResetPPI": 4,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 1,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "NHL 2025-26 season (season-year 2026, strictly after 2025)",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2026_Stanley_Cup_playoffs",
+          "https://www.nhl.com/schedule/playoff-series/2026/series-l/ducks-vs-goldenknights"
+        ],
+        "seasons": [
+          {
+            "season": "2025-26",
+            "result": "Beat Edmonton Oilers 4-2 in the First Round, then lost to Vegas Golden Knights 2-4 in the Second Round. NHL Second Round = quarters (depth 2 from championship)."
+          }
+        ]
+      },
+      "Los Angeles Kings": {
+        "postResetPPI": 2,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "NHL 2025-26 season (season-year 2026, strictly after 2025)",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2026_Stanley_Cup_playoffs"
+        ],
+        "seasons": [
+          {
+            "season": "2025-26",
+            "result": "Lost to Colorado Avalanche 0-4 (swept) in the First Round. NHL First Round = firstRound."
+          }
+        ]
+      },
+      "Los Angeles Rams": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "NFL seasons strictly after 2025 (none; 2025 NFL season is not strictly after 2025 and 2026 is in progress)",
+        "confidence": "high",
+        "flags": [
+          "Empty window: only NFL seasons strictly after 2025 count, and there are none. postResetPPI=0 by construction."
+        ],
+        "sources": [],
+        "seasons": []
+      },
+      "Los Angeles Chargers": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "NFL seasons strictly after 2025 (none; 2025 NFL season is not strictly after 2025 and 2026 is in progress)",
+        "confidence": "high",
+        "flags": [
+          "Empty window: only NFL seasons strictly after 2025 count, and there are none. postResetPPI=0 by construction."
+        ],
+        "sources": [],
+        "seasons": []
+      },
+      "Los Angeles Sparks": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "WNBA seasons strictly after 2025 (none; 2025 WNBA season is not strictly after 2025 and 2026 is in progress)",
+        "confidence": "high",
+        "flags": [
+          "Empty window: only WNBA seasons strictly after 2025 count, and there are none. postResetPPI=0 by construction."
+        ],
+        "sources": [],
+        "seasons": []
+      },
+      "Los Angeles FC": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "MLS seasons strictly after 2025 (none; 2025 MLS season is not strictly after 2025 and 2026 is in progress)",
+        "confidence": "high",
+        "flags": [
+          "Empty window: only MLS seasons strictly after 2025 count, and there are none. postResetPPI=0 by construction."
+        ],
+        "sources": [],
+        "seasons": []
+      }
+    },
+    "Miami": {
+      "Miami Marlins": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "seasons strictly after 2025, through 2025 (empty)",
+        "confidence": "high",
+        "flags": [
+          "Empty window: the Panthers' June 2025 Stanley Cup reset counts only MLB seasons strictly after 2025. MLB 2025 (= 2025, not strictly after) does not count, and throughSeason is 2025, so no MLB season falls in the window. postResetPPI = 0 by construction."
+        ],
+        "sources": [
+          "/tmp/ppi_reset_spec.json"
+        ],
+        "seasons": []
+      },
+      "Miami Dolphins": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "seasons strictly after 2025, through 2025 (empty)",
+        "confidence": "high",
+        "flags": [
+          "Empty window: the Panthers' June 2025 Stanley Cup reset counts only NFL seasons strictly after 2025. NFL 2025 (= 2025, not strictly after) does not count, and throughSeason is 2025, so no NFL season falls in the window. postResetPPI = 0 by construction."
+        ],
+        "sources": [
+          "/tmp/ppi_reset_spec.json"
+        ],
+        "seasons": []
+      },
+      "Miami Heat": {
+        "postResetPPI": 1,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 1
+        },
+        "window": "NBA seasons strictly after 2025, through season-year 2026 (only 2025-26)",
+        "confidence": "high",
+        "flags": [
+          "43-39 is a winning record but the Heat missed the playoffs (lost the play-in to Charlotte). Per CLAUDE.md the play-in tournament is not a playoff round, so this scores as winningRecordNoPlayoff (1), not firstRound (2)."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Miami_Heat_season"
+        ],
+        "seasons": [
+          {
+            "season": "2025-26",
+            "seasonYear": 2026,
+            "result": "winningRecordNoPlayoff",
+            "detail": "Finished 43-39 (10th in the Eastern Conference), a winning record. Qualified for the play-in tournament but lost to the Charlotte Hornets 127-126 in overtime, missing the playoffs for the first time since 2019. The play-in is not a playoff round (per PPI methodology), so a winning team eliminated in the play-in counts as winningRecordNoPlayoff, not firstRound.",
+            "points": 1
+          }
+        ]
+      }
+    },
+    "Milwaukee": {
+      "Milwaukee Brewers": {
+        "postResetPPI": 13,
+        "breakdown": {
+          "finals": 0,
+          "semis": 1,
+          "quarters": 0,
+          "firstRound": 2,
+          "winningRecordNoPlayoff": 1
+        },
+        "window": "2022-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2022_Milwaukee_Brewers_season",
+          "https://en.wikipedia.org/wiki/2023_Milwaukee_Brewers_season",
+          "https://en.wikipedia.org/wiki/2024_Milwaukee_Brewers_season",
+          "https://en.wikipedia.org/wiki/2025_Milwaukee_Brewers_season"
+        ],
+        "seasons": [
+          {
+            "season": "2022",
+            "result": "86-76, winning record, missed playoffs (finished 1 game behind 3rd NL Wild Card)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2023",
+            "result": "Won NL Central (92-70); lost NL Wild Card Series 0-2 to Arizona Diamondbacks",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2024",
+            "result": "Won NL Central; lost NL Wild Card Series 1-2 to New York Mets",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2025",
+            "result": "97-65, NL best record; beat Cubs in NLDS 3-2; lost NLCS 0-4 (swept) to Los Angeles Dodgers",
+            "tier": "semis",
+            "pts": 8
+          }
+        ]
+      }
+    },
+    "Minneapolis": {
+      "Minnesota Timberwolves": {
+        "postResetPPI": 47,
+        "breakdown": {
+          "finals": 0,
+          "semis": 3,
+          "quarters": 1,
+          "firstRound": 9,
+          "winningRecordNoPlayoff": 1
+        },
+        "window": "1991-92 - 2025-26",
+        "confidence": "high",
+        "flags": [
+          "Basketball-Reference returned HTTP 403; verified against Wikipedia franchise season table and the 2025-26 season page, which agree."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Minnesota_Timberwolves_seasons",
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Minnesota_Timberwolves_season"
+        ],
+        "seasons": [
+          {
+            "season": "1991-92",
+            "result": "Missed (15-67)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "1992-93",
+            "result": "Missed (19-63)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "1993-94",
+            "result": "Missed (20-62)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "1994-95",
+            "result": "Missed (21-61)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "1995-96",
+            "result": "Missed (26-56)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "1996-97",
+            "result": "Lost First Round vs Rockets 0-3",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "1997-98",
+            "result": "Lost First Round vs SuperSonics 2-3",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "1998-99",
+            "result": "Lost First Round vs Spurs 1-3 (lockout, made playoffs at 25-25)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "1999-00",
+            "result": "Lost First Round vs Trail Blazers 1-3",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2000-01",
+            "result": "Lost First Round vs Spurs 1-3",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2001-02",
+            "result": "Lost First Round vs Mavericks 0-3",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2002-03",
+            "result": "Lost First Round vs Lakers 2-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2003-04",
+            "result": "Lost Conference Finals vs Lakers 2-4",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2004-05",
+            "result": "Missed playoffs with winning record (44-38)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2005-06",
+            "result": "Missed (33-49)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2006-07",
+            "result": "Missed (32-50)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2007-08",
+            "result": "Missed (22-60)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2008-09",
+            "result": "Missed (24-58)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2009-10",
+            "result": "Missed (15-67)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2010-11",
+            "result": "Missed (17-65)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2011-12",
+            "result": "Missed (26-40)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2012-13",
+            "result": "Missed (31-51)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2013-14",
+            "result": "Missed (40-42, losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2014-15",
+            "result": "Missed (16-66)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2015-16",
+            "result": "Missed (29-53)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2016-17",
+            "result": "Missed (31-51)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2017-18",
+            "result": "Lost First Round vs Rockets 1-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2018-19",
+            "result": "Missed (36-46)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2019-20",
+            "result": "Missed (19-45)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020-21",
+            "result": "Missed (23-49)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021-22",
+            "result": "Lost First Round vs Grizzlies 2-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2022-23",
+            "result": "Lost First Round vs Nuggets 1-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2023-24",
+            "result": "Lost Conference Finals vs Mavericks 1-4",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2024-25",
+            "result": "Lost Conference Finals vs Thunder 1-4",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2025-26",
+            "result": "Lost Conference Semifinals vs Spurs 2-4",
+            "tier": "quarters",
+            "pts": 4
+          }
+        ]
+      },
+      "Minnesota Wild": {
+        "postResetPPI": 50,
+        "breakdown": {
+          "finals": 0,
+          "semis": 1,
+          "quarters": 3,
+          "firstRound": 12,
+          "winningRecordNoPlayoff": 6
+        },
+        "window": "1991-92 - 2025-26",
+        "confidence": "high",
+        "flags": [
+          "2004-05 NHL season cancelled (lockout); excluded, scores nothing.",
+          "Combines Minnesota Wild with Minnesota North Stars' final two Minnesota seasons (1991-92, 1992-93) per CLAUDE.md expansion-replacement rule.",
+          "North Stars 1992-93 (36-38-10) is a losing record, so it scores 0, not winningRecordNoPlayoff.",
+          "2019-20 bubble qualifying-round loss classified as firstRound (final-16 depth)."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/1991%E2%80%9392_Minnesota_North_Stars_season",
+          "https://en.wikipedia.org/wiki/1992%E2%80%9393_Minnesota_North_Stars_season",
+          "https://en.wikipedia.org/wiki/Minnesota_Wild",
+          "https://en.wikipedia.org/wiki/2019%E2%80%9320_Minnesota_Wild_season",
+          "https://en.wikipedia.org/wiki/2024%E2%80%9325_Minnesota_Wild_season",
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Minnesota_Wild_season",
+          "https://www.nhl.com/news/minnesota-wild-colorado-avalanche-game-5-recap-may-13-2026"
+        ],
+        "seasons": [
+          {
+            "season": "1991-92",
+            "result": "North Stars: Lost First Round to Detroit 3-4 (7 games)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "1992-93",
+            "result": "North Stars: Missed (36-38-10, losing record); final Minnesota season",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2000-01",
+            "result": "Wild inaugural season, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2001-02",
+            "result": "Missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2002-03",
+            "result": "Lost Conference Finals, swept by Anaheim 0-4",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2003-04",
+            "result": "Missed playoffs with winning record (30-29-20-3)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2005-06",
+            "result": "Missed playoffs with winning record (38-36-8)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2006-07",
+            "result": "Lost Conference Quarterfinals (First Round) to Anaheim 1-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2007-08",
+            "result": "Lost Conference Quarterfinals (First Round) to Colorado 2-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2008-09",
+            "result": "Missed playoffs with winning record (40-33-9)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2009-10",
+            "result": "Missed playoffs with winning record (38-36-8)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2010-11",
+            "result": "Missed playoffs with winning record (39-35-8)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2011-12",
+            "result": "Missed (35-36-11, losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2012-13",
+            "result": "Lost First Round to Chicago 1-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2013-14",
+            "result": "Lost Second Round to Chicago 2-4",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2014-15",
+            "result": "Lost Second Round to Chicago 0-4",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2015-16",
+            "result": "Lost First Round to Dallas 2-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2016-17",
+            "result": "Lost First Round to St. Louis 1-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2017-18",
+            "result": "Lost First Round to Winnipeg 1-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2018-19",
+            "result": "Missed playoffs with winning record (37-36-9)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2019-20",
+            "result": "Lost best-of-5 qualifying round to Vancouver 1-3 (final-16 depth)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2020-21",
+            "result": "Lost First Round to Vegas 3-4 (7 games)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2021-22",
+            "result": "Lost First Round to St. Louis 2-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2022-23",
+            "result": "Lost First Round to Dallas 2-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2023-24",
+            "result": "Missed playoffs with winning record (39-34-9)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2024-25",
+            "result": "Lost First Round to Vegas 2-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2025-26",
+            "result": "Lost Second Round to Colorado 1-4 (5 games, OT Game 5)",
+            "tier": "quarters",
+            "pts": 4
+          }
+        ]
+      },
+      "Minnesota Vikings": {
+        "postResetPPI": 69,
+        "breakdown": {
+          "finals": 0,
+          "semis": 4,
+          "quarters": 4,
+          "firstRound": 9,
+          "winningRecordNoPlayoff": 3
+        },
+        "window": "1992 - 2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Minnesota_Vikings_seasons",
+          "https://en.wikipedia.org/wiki/2025_Minnesota_Vikings_season",
+          "https://www.pro-football-reference.com/teams/min/2025.htm"
+        ],
+        "seasons": [
+          {
+            "season": "1992",
+            "result": "11-5, Lost Wild Card to Washington",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "1993",
+            "result": "9-7, Lost Wild Card to Giants",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "1994",
+            "result": "10-6, Lost Wild Card to Bears",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "1995",
+            "result": "8-8, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "1996",
+            "result": "9-7, Lost Wild Card to Cowboys",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "1997",
+            "result": "9-7, Lost Divisional to 49ers",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "1998",
+            "result": "15-1, Lost NFC Championship to Falcons (OT)",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "1999",
+            "result": "10-6, Lost Divisional to Rams",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2000",
+            "result": "11-5, Lost NFC Championship to Giants (41-0)",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2001",
+            "result": "5-11, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2002",
+            "result": "6-10, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2003",
+            "result": "9-7, Missed playoffs with winning record",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2004",
+            "result": "8-8, Lost Divisional to Eagles",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2005",
+            "result": "9-7, Missed playoffs with winning record",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2006",
+            "result": "6-10, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2007",
+            "result": "8-8, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2008",
+            "result": "10-6, Lost Wild Card to Eagles",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2009",
+            "result": "12-4, Lost NFC Championship to Saints (OT)",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2010",
+            "result": "6-10, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2011",
+            "result": "3-13, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2012",
+            "result": "10-6, Lost Wild Card to Packers",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2013",
+            "result": "5-10-1, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2014",
+            "result": "7-9, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2015",
+            "result": "11-5, Lost Wild Card to Seahawks (10-9)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2016",
+            "result": "8-8, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2017",
+            "result": "13-3, Lost NFC Championship to Eagles",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2018",
+            "result": "8-7-1, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2019",
+            "result": "10-6, Lost Divisional to 49ers",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2020",
+            "result": "7-9, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021",
+            "result": "8-9, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022",
+            "result": "13-4, Lost Wild Card to Giants",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2023",
+            "result": "7-10, Missed",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "14-3, Lost Wild Card to Rams",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2025",
+            "result": "9-8, Missed playoffs with winning record",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          }
+        ]
+      }
+    },
+    "New Orleans": {
+      "New Orleans Pelicans": {
+        "postResetPPI": 13,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 1,
+          "firstRound": 4,
+          "winningRecordNoPlayoff": 1
+        },
+        "window": "2009-10 to 2025-26",
+        "confidence": "high",
+        "flags": [
+          "2021-22: reached the playoffs through the play-in tournament with a 36-46 (losing) record; scored as firstRound because they reached a real playoff round, not winningRecordNoPlayoff.",
+          "2022-23: 42-40 winning record but eliminated in the play-in tournament; play-in is not a playoff round per PPI rules, so scored as winningRecordNoPlayoff (1)."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_New_Orleans_Pelicans_seasons",
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_New_Orleans_Pelicans_season",
+          "https://en.wikipedia.org/wiki/2022%E2%80%9323_New_Orleans_Pelicans_season"
+        ],
+        "seasons": [
+          {
+            "season": "2009-10",
+            "result": "37-45, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2010-11",
+            "result": "46-36, lost first round (Lakers 4-2)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2011-12",
+            "result": "21-45, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2012-13",
+            "result": "27-55, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2013-14",
+            "result": "34-48, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2014-15",
+            "result": "45-37, lost first round (Warriors 4-0)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2015-16",
+            "result": "30-52, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2016-17",
+            "result": "34-48, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2017-18",
+            "result": "48-34, won first round (Trail Blazers 4-0), lost conference semifinals (Warriors)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2018-19",
+            "result": "33-49, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2019-20",
+            "result": "30-42, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020-21",
+            "result": "31-41, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021-22",
+            "result": "36-46, reached playoffs via play-in, lost first round (Suns 4-2)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2022-23",
+            "result": "42-40 (winning record), eliminated in play-in tournament, did not reach playoffs",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2023-24",
+            "result": "49-33, lost first round (Thunder 4-0)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2024-25",
+            "result": "21-61, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025-26",
+            "result": "26-56, missed playoffs",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Philadelphia": {
+      "Philadelphia Phillies": {
+        "postResetPPI": 4,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 1,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://www.mlb.com/news/phillies-lose-nlds-2025",
+          "https://whyy.org/articles/philadelphia-phillies-dodgers-nlds-game-4/"
+        ],
+        "seasons": [
+          {
+            "season": "2025",
+            "result": "Lost NLDS to Los Angeles Dodgers 3-1 (eliminated Game 4, Oct 9, 2025)",
+            "tier": "quarters",
+            "pts": 4
+          }
+        ]
+      },
+      "Philadelphia 76ers": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2024-25 through 2025-26 (2025-26 in progress, does not count)",
+        "confidence": "high",
+        "flags": [
+          "2025-26 season in progress (throughSeason 2026) and does not count under PPI rules."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2024%E2%80%9325_Philadelphia_76ers_season"
+        ],
+        "seasons": [
+          {
+            "season": "2024-25",
+            "result": "Missed playoffs, finished 24-58 (losing record), 13th in Eastern Conference; did not reach play-in",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "Philadelphia Flyers": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2024-25 through 2025-26 (2025-26 in progress, does not count)",
+        "confidence": "high",
+        "flags": [
+          "2025-26 season in progress (throughSeason 2026) and does not count under PPI rules."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2024%E2%80%9325_Philadelphia_Flyers_season",
+          "https://www.nhl.com/news/why-philadelphia-flyers-are-eliminated-from-2024-2025-postseason-race"
+        ],
+        "seasons": [
+          {
+            "season": "2024-25",
+            "result": "Missed playoffs, finished 33-39-10 (losing record), 8th in Metropolitan Division, 16th in Eastern Conference",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "Philadelphia Union": {
+        "postResetPPI": 4,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 1,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2025",
+        "confidence": "high",
+        "flags": [
+          "Per CLAUDE.md mapping, MLS Conference Semifinal = quarters. Union won Round One but were eliminated at the Conference Semifinal stage, so the season scores as a quarters loss (4), not firstRound."
+        ],
+        "sources": [
+          "https://www.philadelphiaunion.com/news/recap-union-prevail-in-shootout-to-open-mls-cup-playoffs",
+          "https://phillysoccerpage.net/2025/11/23/match-report-conference-semi-finals-philadelphia-union-0-1-new-york-city-fc/",
+          "https://www.nbcboston.com/news/sports/soccer/nycfc-philadelphia-union-mls-maxi-moralez/3850005/"
+        ],
+        "seasons": [
+          {
+            "season": "2025",
+            "result": "Won 2025 Supporters' Shield (#1 seed East); won Round One best-of-3 in shootout, then lost Eastern Conference Semifinal 0-1 to New York City FC (Nov 23, 2025). Deepest loss = Conference Semifinal.",
+            "tier": "quarters",
+            "pts": 4
+          }
+        ]
+      }
+    },
+    "Phoenix": {
+      "Phoenix Suns": {
+        "postResetPPI": 64,
+        "breakdown": {
+          "finals": 1,
+          "semis": 3,
+          "quarters": 3,
+          "firstRound": 5,
+          "winningRecordNoPlayoff": 2
+        },
+        "window": "2001-02 - 2025-26",
+        "confidence": "high",
+        "flags": [
+          "winningRecordNoPlayoff applied to 2008-09 (46-36) and 2013-14 (48-34): both winning records that missed the playoffs; NBA has no play-in implication for either since the play-in did not yet exist.",
+          "2011-12 (33-33) is .500, not a winning record, so it scores 0.",
+          "2025-26 season counted: the 2025-26 NBA season concluded before the 2026-06-18 reference date (Suns swept 0-4 by OKC in the first round)."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Phoenix_Suns_seasons",
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Phoenix_Suns_season",
+          "https://en.wikipedia.org/wiki/2008%E2%80%9309_Phoenix_Suns_season",
+          "https://en.wikipedia.org/wiki/2013%E2%80%9314_Phoenix_Suns_season"
+        ],
+        "seasons": [
+          {
+            "season": "2001-02",
+            "result": "Lost First Round (51-31)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2002-03",
+            "result": "Lost First Round (44-38)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2003-04",
+            "result": "Missed playoffs, losing record (29-53)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2004-05",
+            "result": "Lost Conference Finals (62-20)",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2005-06",
+            "result": "Lost Conference Finals (54-28)",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2006-07",
+            "result": "Lost Conference Semifinals (61-21)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2007-08",
+            "result": "Lost First Round (55-27)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2008-09",
+            "result": "Missed playoffs, winning record (46-36)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2009-10",
+            "result": "Lost Conference Finals (54-28)",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2010-11",
+            "result": "Missed playoffs, losing record (40-42)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2011-12",
+            "result": "Missed playoffs, .500 record not winning (33-33)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2012-13",
+            "result": "Missed playoffs, losing record (25-57)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2013-14",
+            "result": "Missed playoffs, winning record (48-34)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2014-15",
+            "result": "Missed playoffs, losing record (39-43)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2015-16",
+            "result": "Missed playoffs, losing record (23-59)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2016-17",
+            "result": "Missed playoffs, losing record (24-58)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2017-18",
+            "result": "Missed playoffs, losing record (21-61)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2018-19",
+            "result": "Missed playoffs, losing record (19-63)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2019-20",
+            "result": "Missed playoffs, losing record (34-39)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020-21",
+            "result": "Lost NBA Finals (51-21)",
+            "tier": "finals",
+            "pts": 16
+          },
+          {
+            "season": "2021-22",
+            "result": "Lost Conference Semifinals (64-18)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2022-23",
+            "result": "Lost Conference Semifinals (45-37)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2023-24",
+            "result": "Lost First Round (49-33)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2024-25",
+            "result": "Missed playoffs, losing record (36-46)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025-26",
+            "result": "Lost First Round, swept by OKC 0-4 (45-37)",
+            "tier": "firstRound",
+            "pts": 2
+          }
+        ]
+      },
+      "Arizona Cardinals": {
+        "postResetPPI": 33,
+        "breakdown": {
+          "finals": 1,
+          "semis": 1,
+          "quarters": 1,
+          "firstRound": 2,
+          "winningRecordNoPlayoff": 1
+        },
+        "window": "2002 - 2025",
+        "confidence": "high",
+        "flags": [
+          "winningRecordNoPlayoff applied only to 2013 (10-6), the lone winning record that missed the playoffs. 2007/2011/2017/2020 were 8-8 (.500, not winning); 2016 was 7-8-1 and 2019 was 5-10-1 (sub-.500).",
+          "2009 Divisional Round = quarters by depth (second NFL playoff round); 2015 NFC Championship = semis."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Arizona_Cardinals_seasons",
+          "https://en.wikipedia.org/wiki/2013_Arizona_Cardinals_season"
+        ],
+        "seasons": [
+          {
+            "season": "2002",
+            "result": "Missed playoffs, losing record (5-11)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2003",
+            "result": "Missed playoffs, losing record (4-12)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2004",
+            "result": "Missed playoffs, losing record (6-10)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2005",
+            "result": "Missed playoffs, losing record (5-11)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2006",
+            "result": "Missed playoffs, losing record (5-11)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2007",
+            "result": "Missed playoffs, .500 record not winning (8-8)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2008",
+            "result": "Lost Super Bowl XLIII (9-7)",
+            "tier": "finals",
+            "pts": 16
+          },
+          {
+            "season": "2009",
+            "result": "Lost Divisional Round (10-6)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2010",
+            "result": "Missed playoffs, losing record (5-11)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2011",
+            "result": "Missed playoffs, .500 record not winning (8-8)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2012",
+            "result": "Missed playoffs, losing record (5-11)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2013",
+            "result": "Missed playoffs, winning record (10-6)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2014",
+            "result": "Lost Wild Card Round (11-5)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2015",
+            "result": "Lost NFC Championship (13-3)",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2016",
+            "result": "Missed playoffs, losing record (7-8-1)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2017",
+            "result": "Missed playoffs, .500 record not winning (8-8)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2018",
+            "result": "Missed playoffs, losing record (3-13)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2019",
+            "result": "Missed playoffs, losing record (5-10-1)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020",
+            "result": "Missed playoffs, .500 record not winning (8-8)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021",
+            "result": "Lost Wild Card Round (11-6)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2022",
+            "result": "Missed playoffs, losing record (4-13)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "Missed playoffs, losing record (4-13)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "Missed playoffs, losing record (8-9)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Missed playoffs, losing record (3-14)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Pittsburgh": {
+      "Pittsburgh Pirates": {
+        "postResetPPI": 1,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 1
+        },
+        "window": "2018-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2018_Pittsburgh_Pirates_season",
+          "https://en.wikipedia.org/wiki/2019_Pittsburgh_Pirates_season",
+          "https://en.wikipedia.org/wiki/2020_Pittsburgh_Pirates_season",
+          "https://en.wikipedia.org/wiki/2021_Pittsburgh_Pirates_season",
+          "https://en.wikipedia.org/wiki/2022_Pittsburgh_Pirates_season",
+          "https://en.wikipedia.org/wiki/2023_Pittsburgh_Pirates_season",
+          "https://en.wikipedia.org/wiki/2024_Pittsburgh_Pirates_season",
+          "https://en.wikipedia.org/wiki/2025_Pittsburgh_Pirates_season"
+        ],
+        "seasons": [
+          {
+            "season": "2018",
+            "result": "Missed playoffs, 82-79 (winning record)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2019",
+            "result": "Missed playoffs, 69-93 (losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020",
+            "result": "Missed playoffs, 19-41 (losing record, COVID 60-game season)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021",
+            "result": "Missed playoffs, 61-101 (losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022",
+            "result": "Missed playoffs, 62-100 (losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "Missed playoffs, 76-86 (losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "Missed playoffs, 76-86 (losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Missed playoffs, 71-91 (losing record)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "Pittsburgh Steelers": {
+        "postResetPPI": 12,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 5,
+          "winningRecordNoPlayoff": 2
+        },
+        "window": "2018-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2018_Pittsburgh_Steelers_season",
+          "https://en.wikipedia.org/wiki/2019_Pittsburgh_Steelers_season",
+          "https://en.wikipedia.org/wiki/2020_Pittsburgh_Steelers_season",
+          "https://en.wikipedia.org/wiki/2021_Pittsburgh_Steelers_season",
+          "https://en.wikipedia.org/wiki/2022_Pittsburgh_Steelers_season",
+          "https://en.wikipedia.org/wiki/2023_Pittsburgh_Steelers_season",
+          "https://en.wikipedia.org/wiki/2024_Pittsburgh_Steelers_season",
+          "https://en.wikipedia.org/wiki/2025_Pittsburgh_Steelers_season"
+        ],
+        "seasons": [
+          {
+            "season": "2018",
+            "result": "Missed playoffs, 9-6-1 (winning record)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2019",
+            "result": "Missed playoffs, 8-8 (.500, not winning)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020",
+            "result": "Lost Wild Card round to Browns (first playoff round)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2021",
+            "result": "Lost Wild Card round to Chiefs (first playoff round)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2022",
+            "result": "Missed playoffs, 9-8 (winning record)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2023",
+            "result": "Lost Wild Card round to Bills (first playoff round)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2024",
+            "result": "Lost Wild Card round to Ravens (first playoff round)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2025",
+            "result": "Lost Wild Card round to Texans (first playoff round)",
+            "tier": "firstRound",
+            "pts": 2
+          }
+        ]
+      }
+    },
+    "Seattle": {
+      "Seattle Mariners": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "after 2025 through 2025 (empty)",
+        "confidence": "high",
+        "flags": [
+          "Empty window: countSeasonsAfter=2025 and throughSeason=2025, so no MLB season qualifies (2025 is not strictly after 2025). 2026 MLB season is in progress and does not count."
+        ],
+        "sources": [],
+        "seasons": []
+      },
+      "Seattle Storm": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "after 2025 through 2025 (empty)",
+        "confidence": "high",
+        "flags": [
+          "Empty window: countSeasonsAfter=2025 and throughSeason=2025, so no WNBA season qualifies (2025 is not strictly after 2025). 2026 WNBA season is in progress and does not count."
+        ],
+        "sources": [],
+        "seasons": []
+      },
+      "Seattle Sounders FC": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "after 2025 through 2025 (empty)",
+        "confidence": "high",
+        "flags": [
+          "Empty window: countSeasonsAfter=2025 and throughSeason=2025, so no MLS season qualifies (2025 is not strictly after 2025). 2026 MLS season is in progress and does not count."
+        ],
+        "sources": [],
+        "seasons": []
+      },
+      "Seattle Kraken": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "after 2025 through 2026 (NHL 2025-26 only)",
+        "confidence": "high",
+        "flags": [
+          "Kraken finished 34-35-11 (third straight missed playoffs). Not a winning record (34 wins vs 35 regulation losses; even counting OT/SO losses, more losses than wins), so winningRecordNoPlayoff=0. Net post-reset PPI contribution is 0."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Seattle_Kraken_season",
+          "https://www.nhl.com/news/why-seattle-kraken-are-eliminated-2025-2026-postseason-race"
+        ],
+        "seasons": [
+          {
+            "season": "2025-26",
+            "result": "Missed playoffs (no postseason berth)",
+            "record": "34-35-11",
+            "tier": "none",
+            "points": 0
+          }
+        ]
+      }
+    },
+    "St. Louis": {
+      "St. Louis Cardinals": {
+        "postResetPPI": 7,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 3,
+          "winningRecordNoPlayoff": 1
+        },
+        "window": "2020-2025",
+        "confidence": "high",
+        "flags": [
+          "2022: Cardinals were NL Central champions but as the 3-seed lost in the Wild Card round of the 12-team format; scored as firstRound (depth from championship), not a bye.",
+          "2020 was the expanded 16-team pandemic season; Wild Card round was best-of-3. Cardinals lost it 2-1, scored firstRound."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_St._Louis_Cardinals_seasons",
+          "https://en.wikipedia.org/wiki/2020_St._Louis_Cardinals_season",
+          "https://en.wikipedia.org/wiki/2021_St._Louis_Cardinals_season",
+          "https://en.wikipedia.org/wiki/2022_St._Louis_Cardinals_season",
+          "https://en.wikipedia.org/wiki/2023_St._Louis_Cardinals_season",
+          "https://en.wikipedia.org/wiki/2024_St._Louis_Cardinals_season",
+          "https://en.wikipedia.org/wiki/2025_St._Louis_Cardinals_season"
+        ],
+        "seasons": [
+          {
+            "season": "2020",
+            "result": "30-28; made expanded pandemic playoffs as Wild Card, lost NL Wild Card Series to San Diego Padres 2-1 (best-of-3)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2021",
+            "result": "90-72; Wild Card berth, lost NL Wild Card Game to Los Angeles Dodgers (walk-off)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2022",
+            "result": "93-69; NL Central champion, lost NL Wild Card Series to Philadelphia Phillies 2-0 (lost in the Wild Card round under the 2022 12-team format)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2023",
+            "result": "71-91; missed playoffs, losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "83-79; missed playoffs, winning record",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2025",
+            "result": "78-84; missed playoffs, losing record",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Tampa Bay": {
+      "Tampa Bay Rays": {
+        "postResetPPI": 4,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 2,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2022-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2022_Tampa_Bay_Rays_season",
+          "https://en.wikipedia.org/wiki/2023_Tampa_Bay_Rays_season",
+          "https://en.wikipedia.org/wiki/2024_Tampa_Bay_Rays_season",
+          "https://en.wikipedia.org/wiki/2025_Tampa_Bay_Rays_season"
+        ],
+        "seasons": [
+          {
+            "season": "2022",
+            "result": "Lost AL Wild Card Series to Cleveland Guardians (0-2)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2023",
+            "result": "Lost AL Wild Card Series to Texas Rangers (0-2)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2024",
+            "result": "Missed playoffs, 80-82 (losing record)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Missed playoffs, 77-85 (losing record)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "Tampa Bay Buccaneers": {
+        "postResetPPI": 8,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 1,
+          "firstRound": 2,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2022-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2022_Tampa_Bay_Buccaneers_season",
+          "https://en.wikipedia.org/wiki/2023_Tampa_Bay_Buccaneers_season",
+          "https://en.wikipedia.org/wiki/2024_Tampa_Bay_Buccaneers_season",
+          "https://en.wikipedia.org/wiki/2025_Tampa_Bay_Buccaneers_season"
+        ],
+        "seasons": [
+          {
+            "season": "2022",
+            "result": "Lost Wild Card round to Dallas Cowboys (14-31)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2023",
+            "result": "Beat Eagles in Wild Card, lost Divisional round to Detroit Lions (23-31)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2024",
+            "result": "Lost Wild Card round to Washington Commanders (20-23)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2025",
+            "result": "Missed playoffs, 8-9 (losing record)",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Toronto": {
+      "Toronto Blue Jays": {
+        "postResetPPI": 23,
+        "breakdown": {
+          "finals": 1,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 3,
+          "winningRecordNoPlayoff": 1
+        },
+        "window": "2020-2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Toronto_Blue_Jays_seasons",
+          "https://champsorchumps.us/team/mlb/toronto-blue-jays",
+          "https://en.wikipedia.org/wiki/2025_World_Series"
+        ],
+        "seasons": [
+          {
+            "season": "2020",
+            "result": "Lost AL Wild Card Series to Tampa Bay Rays (0-2, expanded 16-team COVID playoff)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2021",
+            "result": "Missed playoffs with winning record (91-71)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          },
+          {
+            "season": "2022",
+            "result": "Lost AL Wild Card Series to Seattle Mariners (0-2)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2023",
+            "result": "Lost AL Wild Card Series to Minnesota Twins (0-2)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2024",
+            "result": "Missed playoffs with losing record (74-88) - no credit",
+            "tier": "missed",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Won ALDS (Yankees) and ALCS (Mariners), lost 2025 World Series to LA Dodgers (3-4)",
+            "tier": "finals",
+            "pts": 16
+          }
+        ]
+      },
+      "Toronto Maple Leafs": {
+        "postResetPPI": 16,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 2,
+          "firstRound": 4,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2019-20-2025-26",
+        "confidence": "high",
+        "flags": [
+          "2019-20 Qualifying Round was a non-standard best-of-5 COVID-bubble play-in; mapped to firstRound by depth from the Cup."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Toronto_Maple_Leafs_seasons",
+          "https://en.wikipedia.org/wiki/2025%E2%80%9326_Toronto_Maple_Leafs_season",
+          "https://www.hockey-reference.com/teams/TOR/"
+        ],
+        "seasons": [
+          {
+            "season": "2019-20",
+            "result": "Lost COVID-bubble Qualifying Round to Columbus Blue Jackets (2-3); play-in below the 16-team bracket, mapped by depth to first playoff round",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2020-21",
+            "result": "Lost First Round to Montreal Canadiens (3-4), all-Canadian North Division",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2021-22",
+            "result": "Lost First Round to Tampa Bay Lightning (3-4)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2022-23",
+            "result": "Beat Tampa Bay in Round 1, lost Second Round to Florida Panthers (1-4)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2023-24",
+            "result": "Lost First Round to Boston Bruins (3-4, Game 7)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2024-25",
+            "result": "Beat Ottawa in Round 1, lost Second Round to Florida Panthers (3-4, Game 7)",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2025-26",
+            "result": "Missed playoffs with losing record (32-36-14, 78 pts); first miss since 2015-16 - no credit",
+            "tier": "missed",
+            "pts": 0
+          }
+        ]
+      },
+      "Toronto FC": {
+        "postResetPPI": 2,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2020-2025",
+        "confidence": "high",
+        "flags": [
+          "MLS has no winningRecordNoPlayoff tier in practice; all 2021-2025 missed-playoff seasons were non-winning records, so they contribute 0."
+        ],
+        "sources": [
+          "https://en.wikipedia.org/wiki/List_of_Toronto_FC_seasons",
+          "https://www.mlssoccer.com/news/toronto-fc-0-nashville-sc-1-aet-2020-mls-cup-playoffs-match-recap",
+          "https://en.wikipedia.org/wiki/2024_Toronto_FC_season",
+          "https://en.wikipedia.org/wiki/2025_Toronto_FC_season"
+        ],
+        "seasons": [
+          {
+            "season": "2020",
+            "result": "Made playoffs as No. 2 seed (13-5-5), lost Round One to Nashville SC 0-1 (AET)",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2021",
+            "result": "Missed playoffs (6-18-10), 13th in conference - non-winning record",
+            "tier": "missed",
+            "pts": 0
+          },
+          {
+            "season": "2022",
+            "result": "Missed playoffs (9-18-7), 13th in conference - non-winning record",
+            "tier": "missed",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "Missed playoffs (4-20-10), 15th in conference - non-winning record",
+            "tier": "missed",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "Missed playoffs (11-19-4), 11th in East - non-winning record",
+            "tier": "missed",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Missed playoffs (12th in East), did not qualify - non-winning record",
+            "tier": "missed",
+            "pts": 0
+          }
+        ]
+      }
+    },
+    "Washington": {
+      "Washington Wizards": {
+        "postResetPPI": 2,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2019-20 to 2025-26",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://champsorchumps.us/team/nba/washington-wizards/playoff-series",
+          "https://en.wikipedia.org/wiki/2019%E2%80%9320_Washington_Wizards_season",
+          "https://en.wikipedia.org/wiki/2020%E2%80%9321_Washington_Wizards_season"
+        ],
+        "seasons": [
+          {
+            "season": "2019-20",
+            "result": "Missed playoffs (25-47); went 1-7 in NBA bubble, did not qualify",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2020-21",
+            "result": "Lost First Round to Philadelphia 76ers 1-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2021-22",
+            "result": "Missed playoffs (35-47), losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022-23",
+            "result": "Missed playoffs, losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023-24",
+            "result": "Missed playoffs, losing record (15-67)",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024-25",
+            "result": "Missed playoffs, losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025-26",
+            "result": "Missed playoffs, NBA's worst record",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "Washington Capitals": {
+        "postResetPPI": 13,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 1,
+          "firstRound": 4,
+          "winningRecordNoPlayoff": 1
+        },
+        "window": "2019-20 to 2025-26",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://champsorchumps.us/team/nhl/washington-capitals/playoff-series",
+          "https://en.wikipedia.org/wiki/2022%E2%80%9323_Washington_Capitals_season",
+          "https://www.nhl.com/news/why-washington-capitals-are-eliminated-from-2025-2026-postseason-race"
+        ],
+        "seasons": [
+          {
+            "season": "2019-20",
+            "result": "Lost First Round to New York Islanders 1-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2020-21",
+            "result": "Lost First Round to Boston Bruins 1-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2021-22",
+            "result": "Lost First Round to Florida Panthers 2-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2022-23",
+            "result": "Missed playoffs (35-37-10), losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023-24",
+            "result": "Lost First Round to New York Rangers 0-4",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2024-25",
+            "result": "Beat Montreal in R1, lost Second Round (Conference Semifinals) to Carolina Hurricanes 1-4",
+            "tier": "quarters",
+            "pts": 4
+          },
+          {
+            "season": "2025-26",
+            "result": "Missed playoffs with a winning record (42-30-9, 42 wins vs 39 losses)",
+            "tier": "winningRecordNoPlayoff",
+            "pts": 1
+          }
+        ]
+      },
+      "Washington Commanders": {
+        "postResetPPI": 10,
+        "breakdown": {
+          "finals": 0,
+          "semis": 1,
+          "quarters": 0,
+          "firstRound": 1,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2020 to 2025",
+        "confidence": "high",
+        "flags": [],
+        "sources": [
+          "https://en.wikipedia.org/wiki/2024_Washington_Commanders_season",
+          "https://en.wikipedia.org/wiki/2022_Washington_Commanders_season",
+          "https://en.wikipedia.org/wiki/2025_Washington_Commanders_season"
+        ],
+        "seasons": [
+          {
+            "season": "2020",
+            "result": "Won NFC East (7-9), lost Wild Card to Tampa Bay Buccaneers 23-31",
+            "tier": "firstRound",
+            "pts": 2
+          },
+          {
+            "season": "2021",
+            "result": "Missed playoffs (7-10), losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022",
+            "result": "Missed playoffs (8-8-1), not a winning record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "Missed playoffs (4-13), losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "Won Wild Card and Divisional, lost NFC Championship to Philadelphia Eagles 23-55",
+            "tier": "semis",
+            "pts": 8
+          },
+          {
+            "season": "2025",
+            "result": "Missed playoffs (5-12), losing record",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      },
+      "D.C. United": {
+        "postResetPPI": 0,
+        "breakdown": {
+          "finals": 0,
+          "semis": 0,
+          "quarters": 0,
+          "firstRound": 0,
+          "winningRecordNoPlayoff": 0
+        },
+        "window": "2020 to 2025",
+        "confidence": "high",
+        "flags": [
+          "D.C. United missed the playoffs every season 2020-2025; all seasons were losing records, so no winningRecordNoPlayoff credit. Exact W-L-D totals vary slightly by source (ties/shootouts handled differently across years), but none represent a winning record."
+        ],
+        "sources": [
+          "https://champsorchumps.us/team/mls/dc-united",
+          "https://en.wikipedia.org/wiki/2024_D.C._United_season",
+          "https://en.wikipedia.org/wiki/2021_D.C._United_season"
+        ],
+        "seasons": [
+          {
+            "season": "2020",
+            "result": "Missed playoffs (5-12-6), losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2021",
+            "result": "Missed playoffs (14-15-5), losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2022",
+            "result": "Missed playoffs (7-21-6), losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2023",
+            "result": "Missed playoffs (10-14-10), losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2024",
+            "result": "Missed playoffs (10-14-10), losing record",
+            "tier": "none",
+            "pts": 0
+          },
+          {
+            "season": "2025",
+            "result": "Missed playoffs (5-18 region), losing record",
+            "tier": "none",
+            "pts": 0
+          }
+        ]
+      }
+    }
+  }
+}

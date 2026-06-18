@@ -2,31 +2,36 @@
 """Aggregate team PPI into city/metro pain via a RANK-DISCOUNTED SUM, with a
 CITY-LEVEL CHAMPIONSHIP RESET.
 
-Base measure (rank-discounted sum). Sort a city's teams by PPI (most painful
-first), then add them at a diminishing rate: the worst team counts in full, the
-second at 1/2, the third at 1/3, and so on (contribution = round(PPI / rank)).
+Base measure (rank-discounted sum). Sort a city's teams by their CITY pain (see
+the reset below), then add at a diminishing rate: the worst team counts in full,
+the second at 1/2, the third at 1/3, and so on (contribution = round(pain / rank)).
 This rewards a city for several genuinely cursed teams without letting a high
 team count win on volume.
 
-City reset (new). A city's pain resets when ANY of its BIG-FOUR teams (MLB, NBA,
-NHL, NFL) wins a championship, exactly the way a single team's drought resets
-when it wins. Concretely: find the most recent year a big-four team won a title
-*for this city* (titles won under a former city/identity do not count). Any team
-whose own drought began before that title was made whole by it, so it is
-"redeemed": it contributes 0 to the city total. Redeemed teams KEEP their full,
-real PPI in their row (nothing is zeroed or pro-rated); they simply stop counting
-toward the city until they suffer anew. The most recent champion and every team
-whose drought began at/after that title still count, at full PPI.
+City reset. A city's pain resets when ANY of its BIG-FOUR teams (MLB, NBA, NHL,
+NFL) wins a championship, exactly the way a single team's drought resets when it
+wins. The city clock starts at that title and re-accrues from the next season on.
+Concretely: find the most recent year a big-four team won a title *for this city*
+(titles won under a former city/identity do not count) and call it the reset
+year. Each team then contributes only the PPI it has piled up in seasons AFTER
+that title:
+  - a team whose drought began before the reset (e.g. Minneapolis' Vikings, reset
+    by the 1991 Twins) is scored season-by-season from the next season forward,
+    so the Vikings' 1970s Super Bowl losses drop out but every playoff loss since
+    1991 still counts. These post-reset scores are researched per season and
+    stored in ppi-cities-postreset.json (POSTRESET below);
+  - the reset champion and any team whose drought began at/after the reset already
+    have a drought that lives entirely after the title, so their full PPI is the
+    post-reset pain (no separate research needed);
+  - a redeemed team with no completed season since the reset contributes 0.
 
 Two deliberate scope choices, set with the project owner:
   - Only BIG-FOUR titles reset a city. A WNBA, MLS, or CFL title does not relieve
-    the city (those teams still accrue and contribute pain, and can still be
-    redeemed by a big-four title).
-  - Redeemed teams keep their full PPI on display. Because the dataset stores each
-    team's TOTAL drought pain and not a season-by-season ledger, the pain a
-    redeemed team has accrued SINCE the city's last title cannot be isolated, so
-    it is counted as 0 rather than fabricated. This UNDERSTATES those teams and is
-    flagged per row (redeemed=true). An honest gap beats an invented number.
+    the city (those teams still accrue and contribute pain, and are themselves
+    re-scored from the city's last big-four title forward).
+  - Post-reset scores are real, sourced, season-by-season ledgers, never estimates.
+    Where a season's result could not be confirmed it is flagged in
+    ppi-cities-postreset.json rather than guessed.
 
 Every team is mapped to a metro below; suburbs fold into their major city. The
 judgment calls behind those groupings are tagged in JUDGMENT.
@@ -197,6 +202,21 @@ def city_title_year(team, last_champ):
     return int(m.group(1)) if m else max(ys)
 
 
+def _load_postreset(path="ppi-cities-postreset.json"):
+    """{metro: {team: postResetPPI}} — sourced season-by-season pain a team has
+    accrued since its city's last big-four title. Built by the research fan-out
+    documented in CLAUDE.md; see ppi-cities-postreset.json for the full ledgers."""
+    try:
+        d = json.load(open(path))
+    except FileNotFoundError:
+        return {}
+    return {c: {tm: rec["postResetPPI"] for tm, rec in teams.items()}
+            for c, teams in d.get("cities", {}).items()}
+
+
+POSTRESET = _load_postreset()
+
+
 def collect():
     """Build {metro: [team dicts]} with reset bookkeeping, then rank by city pain."""
     cities, unmapped = {}, []
@@ -217,39 +237,38 @@ def collect():
 
 
 def _apply_reset(metro, teams):
-    """Mark each team redeemed/not and compute its city contribution in place.
-    A city resets at the most recent big-four title won for it; any team whose
-    drought predates that title is redeemed (contributes 0, full PPI retained)."""
+    """Score each team's CITY pain (post-reset) and rank-discount the city in place.
+    A city resets at the most recent big-four title won for it. Teams whose drought
+    predates that title ('redeemed') count only the pain they have piled up since,
+    taken from POSTRESET; every other team counts its full PPI (its drought already
+    lives entirely after the title)."""
     big4_titles = [t["titleYear"] for t in teams
                    if t["league"] in BIG_FOUR and t["titleYear"] is not None]
     reset_year = max(big4_titles) if big4_titles else None
-    # which big-four team(s) supplied the reset, for the human-readable note
     champ = None
     if reset_year is not None:
         champ = next(t["team"] for t in teams
                      if t["league"] in BIG_FOUR and t["titleYear"] == reset_year)
     for t in teams:
         t["resetYear"] = reset_year
-        t["redeemedBy"] = None
         redeemed = (reset_year is not None
                     and t["titleYear"] != reset_year
                     and t["droughtStart"] is not None
                     and t["droughtStart"] < reset_year)
         t["redeemed"] = bool(redeemed)
+        t["redeemedBy"] = f"{champ} ({reset_year})" if redeemed else None
         if redeemed:
-            t["redeemedBy"] = f"{champ} ({reset_year})"
-    # rank only the live (non-redeemed) teams; redeemed contribute 0
-    live = sorted([t for t in teams if not t["redeemed"]],
-                  key=lambda t: -t["score"])
-    for r, t in enumerate(live, 1):
+            pr = POSTRESET.get(metro, {}).get(t["team"])
+            t["cityScore"] = pr if pr is not None else 0   # 0 = no completed season since reset
+            t["postResetMissing"] = pr is None
+        else:
+            t["cityScore"] = t["score"]                    # full drought lives after the reset
+            t["postResetMissing"] = False
+    # rank ALL teams by their city (post-reset) pain, then discount by rank
+    for r, t in enumerate(sorted(teams, key=lambda t: -t["cityScore"]), 1):
         t["discountRank"] = r
         t["multiplier"] = "1" if r == 1 else f"1/{r}"
-        t["contribution"] = round(t["score"] / r)
-    for t in teams:
-        if t["redeemed"]:
-            t["discountRank"] = None
-            t["multiplier"] = "0"
-            t["contribution"] = 0
+        t["contribution"] = round(t["cityScore"] / r)
 
 
 def city_pain(teams):
@@ -257,26 +276,20 @@ def city_pain(teams):
 
 
 def _ordered(teams):
-    """Live teams by rank, then redeemed teams by PPI (for display)."""
-    live = [t for t in teams if not t["redeemed"]]
-    dead = [t for t in teams if t["redeemed"]]
-    live.sort(key=lambda t: t["discountRank"])
-    dead.sort(key=lambda t: -t["score"])
-    return live, dead
+    return sorted(teams, key=lambda t: t["discountRank"])
 
 
 def city_record(rank, city, teams):
-    live, dead = _ordered(teams)
     def row(t):
-        return {"team": t["team"], "score": t["score"], "league": t["league"],
+        return {"team": t["team"], "league": t["league"],
+                "fullPPI": t["score"], "cityScore": t["cityScore"],
                 "discountRank": t["discountRank"], "multiplier": t["multiplier"],
                 "contribution": t["contribution"], "redeemed": t["redeemed"],
-                "redeemedBy": t["redeemedBy"]}
+                "resetYear": t["resetYear"], "redeemedBy": t["redeemedBy"]}
     return {"rank": rank, "city": city, "pain": city_pain(teams),
-            "teamCount": len(teams), "liveCount": len(live),
-            "resetYear": teams[0]["resetYear"],
+            "teamCount": len(teams), "resetYear": teams[0]["resetYear"],
             "rawTotal": sum(t["score"] for t in teams),
-            "teams": [row(t) for t in live + dead]}
+            "teams": [row(t) for t in _ordered(teams)]}
 
 
 def least_painful(ranked, min_teams, n=10):
@@ -285,21 +298,22 @@ def least_painful(ranked, min_teams, n=10):
     return [city_record(i, c, ts) for i, (c, ts) in enumerate(elig[:n], 1)]
 
 
-METHOD = ("Each city's teams are sorted by PPI (most painful first) and summed at a "
-          "diminishing rate: the worst team counts in full, the second at 1/2, the third "
-          "at 1/3, and so on (contribution = round(PPI / rank)). A city then RESETS like a "
-          "team does: when any big-four team (MLB/NBA/NHL/NFL) wins a title for the city, "
-          "every team whose drought began before that title is 'redeemed' and contributes "
-          "0 until it suffers anew. Redeemed teams keep their full PPI on display; because "
-          "the dataset is not season-by-season, their post-title pain cannot be isolated and "
-          "is counted as 0 rather than estimated. WNBA/MLS/CFL titles do not reset a city.")
+METHOD = ("Each city's teams are sorted by their post-reset pain (most painful first) and "
+          "summed at a diminishing rate: the worst counts in full, the second at 1/2, the "
+          "third at 1/3, and so on (contribution = round(pain / rank)). A city RESETS like a "
+          "team does: when any big-four team (MLB/NBA/NHL/NFL) wins a title for the city, the "
+          "city clock restarts at that title. Each team then counts only the PPI it has piled "
+          "up in seasons AFTER it: a team whose drought predates the reset is re-scored "
+          "season-by-season from the next season forward (sourced ledgers in "
+          "ppi-cities-postreset.json), while the reset champion and any team whose drought "
+          "began later already count their full PPI. WNBA/MLS/CFL titles do not reset a city.")
 
 
 def write_json(path="ppi-cities.json"):
     ranked, unmapped = collect()
     out = {
         "title": "Most Painful Cities",
-        "measure": "Rank-discounted PPI with a big-four city championship reset",
+        "measure": "Rank-discounted post-reset PPI (big-four city championship reset)",
         "method": METHOD,
         "updated": "2026-06-18",
         "judgmentCalls": JUDGMENT,
@@ -314,28 +328,25 @@ def write_json(path="ppi-cities.json"):
           + (f" | UNMAPPED: {unmapped}" if unmapped else ""))
 
 
+def _team_calc(t, html=False):
+    """One team's contribution string. Redeemed teams note their full PPI + reset."""
+    times = "&times;" if html else "x"
+    full = t.get("fullPPI", t.get("score"))
+    s = f"{t['team']} {t['cityScore']}{times}{t['multiplier']}={t['contribution']}"
+    if t["redeemed"]:
+        note = f"since {t['resetYear']}; was {full}"
+        s += f" <em>({note})</em>" if html else f" ({note})"
+    return s
+
+
 def _calc_str(teams):
-    live, dead = _ordered(teams)
-    parts = [f"{t['team']} {t['score']}x{t['multiplier']}={t['contribution']}" for t in live]
-    if dead:
-        champ = dead[0]["redeemedBy"]
-        names = ", ".join(f"{t['team']} {t['score']}" for t in dead)
-        parts.append(f"reset by {champ}: {names} (->0)")
-    return ", ".join(parts)
+    return ", ".join(_team_calc(t) for t in _ordered(teams))
 
 
 def _html_rows(records):
     rows = []
     for rec in records:
-        live = [t for t in rec["teams"] if not t["redeemed"]]
-        spans = [f"{t['team']} {t['score']}&times;{t['multiplier'].replace('1/','1/')}={t['contribution']}"
-                 for t in live]
-        dead = [t for t in rec["teams"] if t["redeemed"]]
-        teamstr = ", ".join(spans)
-        if dead:
-            champ = dead[0]["redeemedBy"]
-            names = ", ".join(f"{t['team']} {t['score']}" for t in dead)
-            teamstr += f" &middot; <em>reset by {champ}: {names} &rarr; 0</em>"
+        teamstr = ", ".join(_team_calc(t, html=True) for t in rec["teams"])
         rows.append(
             '                <tr>\n'
             f'                    <td class="rank">#{rec["rank"]}</td>\n'
@@ -360,33 +371,23 @@ def main():
     if len(sys.argv) > 1 and sys.argv[1] == "--least":
         min_teams = int(sys.argv[2]) if len(sys.argv) > 2 else 2
         ranked, _ = collect()
-        print(f"\n  LEAST PAINFUL CITIES (rank-discounted PPI w/ reset, min {min_teams} teams)\n")
+        print(f"\n  LEAST PAINFUL CITIES (rank-discounted post-reset PPI, min {min_teams} teams)\n")
         for rec in least_painful(ranked, min_teams):
-            print(f"  {rec['rank']:>2}. {rec['city']:<14}{rec['pain']:>5}  [{_calc_str_rec(rec)}]")
+            calc = ", ".join(_team_calc(t) for t in rec["teams"])
+            print(f"  {rec['rank']:>2}. {rec['city']:<14}{rec['pain']:>5}  [{calc}]")
         return
     n = int(sys.argv[1]) if len(sys.argv) > 1 else 20
     ranked, unmapped = collect()
     if unmapped:
         print("!! UNMAPPED TEAMS:", unmapped)
-    print(f"\n  MOST PAINFUL CITIES  (rank-discounted PPI with big-four reset, top {n})\n")
-    print(f"  {'#':>2}  {'CITY':<16}{'PAIN':>6}{'LIVE':>6}{'TEAMS':>7}")
-    print("  " + "-"*48)
+    print(f"\n  MOST PAINFUL CITIES  (rank-discounted post-reset PPI, top {n})\n")
+    print(f"  {'#':>2}  {'CITY':<16}{'PAIN':>6}{'TEAMS':>7}")
+    print("  " + "-"*42)
     for i, (city, teams) in enumerate(ranked[:n], 1):
-        live = sum(1 for t in teams if not t["redeemed"])
-        print(f"  {i:>2}. {city:<16}{city_pain(teams):>6}{live:>6}{len(teams):>7}")
+        print(f"  {i:>2}. {city:<16}{city_pain(teams):>6}{len(teams):>7}")
     print("\n  Breakdown of the top 12:\n")
     for city, teams in ranked[:12]:
         print(f"  {city} ({city_pain(teams)}): {_calc_str(teams)}")
-
-
-def _calc_str_rec(rec):
-    live = [t for t in rec["teams"] if not t["redeemed"]]
-    parts = [f"{t['team']} {t['score']}x{t['multiplier']}={t['contribution']}" for t in live]
-    dead = [t for t in rec["teams"] if t["redeemed"]]
-    if dead:
-        parts.append(f"reset by {dead[0]['redeemedBy']}: " +
-                     ", ".join(f"{t['team']} {t['score']}" for t in dead) + " (->0)")
-    return ", ".join(parts)
 
 
 if __name__ == "__main__":
