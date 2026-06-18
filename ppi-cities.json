@@ -1,8 +1,8 @@
 {
   "title": "Most Painful Cities",
-  "measure": "Rank-discounted PPI",
-  "method": "Each city's teams are sorted by PPI (most painful first), then summed at a diminishing rate: the worst team counts in full, the second at 1/2, the third at 1/3, and so on (contribution = round(PPI / rank)). Real team PPIs are kept; this rewards having several cursed teams without letting a high team count win on volume.",
-  "updated": "2026-06-17",
+  "measure": "Rank-discounted PPI with a big-four city championship reset",
+  "method": "Each city's teams are sorted by PPI (most painful first) and summed at a diminishing rate: the worst team counts in full, the second at 1/2, the third at 1/3, and so on (contribution = round(PPI / rank)). A city then RESETS like a team does: when any big-four team (MLB/NBA/NHL/NFL) wins a title for the city, every team whose drought began before that title is 'redeemed' and contributes 0 until it suffers anew. Redeemed teams keep their full PPI on display; because the dataset is not season-by-season, their post-title pain cannot be isolated and is counted as 0 rather than estimated. WNBA/MLS/CFL titles do not reset a city.",
+  "updated": "2026-06-18",
   "judgmentCalls": [
     "New Jersey + Long Island count as New York (Devils, Red Bulls, Giants, Jets, Islanders).",
     "Anaheim counts as Los Angeles (Angels, Ducks).",
@@ -10,266 +10,17 @@
     "Athletics mapped to Sacramento (their 2025 interim home) alongside the Kings.",
     "Hamilton kept SEPARATE from Toronto (it is its own CFL market, ~70km away).",
     "Connecticut Sun kept as its own market (not New York or Boston).",
-    "BC Lions count as Vancouver; Carolina Panthers/Hornets/Charlotte FC as Charlotte; Carolina Hurricanes as Raleigh (separate)."
+    "BC Lions count as Vancouver; Carolina Panthers/Hornets/Charlotte FC as Charlotte; Carolina Hurricanes as Raleigh (separate).",
+    "City reset uses BIG-FOUR titles only (MLB/NBA/NHL/NFL); a WNBA/MLS/CFL title does not reset a city."
   ],
   "cities": [
     {
       "rank": 1,
-      "city": "Minneapolis",
-      "pain": 297,
-      "teamCount": 6,
-      "rawTotal": 486,
-      "teams": [
-        {
-          "team": "Minnesota Vikings",
-          "score": 187,
-          "league": "NFL",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 187
-        },
-        {
-          "team": "Minnesota Wild",
-          "score": 138,
-          "league": "NHL",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 69
-        },
-        {
-          "team": "Minnesota Timberwolves",
-          "score": 49,
-          "league": "NBA",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 16
-        },
-        {
-          "team": "Minnesota Twins",
-          "score": 46,
-          "league": "MLB",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 12
-        },
-        {
-          "team": "Minnesota Lynx",
-          "score": 44,
-          "league": "WNBA",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 9
-        },
-        {
-          "team": "Minnesota United FC",
-          "score": 22,
-          "league": "MLS",
-          "discountRank": 6,
-          "multiplier": "1/6",
-          "contribution": 4
-        }
-      ]
-    },
-    {
-      "rank": 2,
-      "city": "Philadelphia",
-      "pain": 292,
-      "teamCount": 5,
-      "rawTotal": 417,
-      "teams": [
-        {
-          "team": "Philadelphia Flyers",
-          "score": 212,
-          "league": "NHL",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 212
-        },
-        {
-          "team": "Philadelphia 76ers",
-          "score": 96,
-          "league": "NBA",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 48
-        },
-        {
-          "team": "Philadelphia Phillies",
-          "score": 61,
-          "league": "MLB",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 20
-        },
-        {
-          "team": "Philadelphia Union",
-          "score": 46,
-          "league": "MLS",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 12
-        },
-        {
-          "team": "Philadelphia Eagles",
-          "score": 2,
-          "league": "NFL",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 0
-        }
-      ]
-    },
-    {
-      "rank": 3,
-      "city": "New York",
-      "pain": 263,
-      "teamCount": 12,
-      "rawTotal": 624,
-      "teams": [
-        {
-          "team": "New York Red Bulls",
-          "score": 130,
-          "league": "MLS",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 130
-        },
-        {
-          "team": "New York Rangers",
-          "score": 95,
-          "league": "NHL",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 48
-        },
-        {
-          "team": "New York Islanders",
-          "score": 83,
-          "league": "NHL",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 28
-        },
-        {
-          "team": "New York Yankees",
-          "score": 80,
-          "league": "MLB",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 20
-        },
-        {
-          "team": "New York Mets",
-          "score": 79,
-          "league": "MLB",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 16
-        },
-        {
-          "team": "New York Jets",
-          "score": 63,
-          "league": "NFL",
-          "discountRank": 6,
-          "multiplier": "1/6",
-          "contribution": 10
-        },
-        {
-          "team": "New Jersey Devils",
-          "score": 43,
-          "league": "NHL",
-          "discountRank": 7,
-          "multiplier": "1/7",
-          "contribution": 6
-        },
-        {
-          "team": "New York City FC",
-          "score": 20,
-          "league": "MLS",
-          "discountRank": 8,
-          "multiplier": "1/8",
-          "contribution": 2
-        },
-        {
-          "team": "Brooklyn Nets",
-          "score": 20,
-          "league": "NBA",
-          "discountRank": 9,
-          "multiplier": "1/9",
-          "contribution": 2
-        },
-        {
-          "team": "New York Giants",
-          "score": 7,
-          "league": "NFL",
-          "discountRank": 10,
-          "multiplier": "1/10",
-          "contribution": 1
-        },
-        {
-          "team": "New York Liberty",
-          "score": 4,
-          "league": "WNBA",
-          "discountRank": 11,
-          "multiplier": "1/11",
-          "contribution": 0
-        },
-        {
-          "team": "New York Knicks",
-          "score": 0,
-          "league": "NBA",
-          "discountRank": 12,
-          "multiplier": "1/12",
-          "contribution": 0
-        }
-      ]
-    },
-    {
-      "rank": 4,
-      "city": "Phoenix",
-      "pain": 236,
-      "teamCount": 4,
-      "rawTotal": 330,
-      "teams": [
-        {
-          "team": "Phoenix Suns",
-          "score": 174,
-          "league": "NBA",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 174
-        },
-        {
-          "team": "Phoenix Mercury",
-          "score": 78,
-          "league": "WNBA",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 39
-        },
-        {
-          "team": "Arizona Diamondbacks",
-          "score": 41,
-          "league": "MLB",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 14
-        },
-        {
-          "team": "Arizona Cardinals",
-          "score": 37,
-          "league": "NFL",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 9
-        }
-      ]
-    },
-    {
-      "rank": 5,
       "city": "Buffalo",
       "pain": 213,
       "teamCount": 2,
+      "liveCount": 2,
+      "resetYear": 1965,
       "rawTotal": 280,
       "teams": [
         {
@@ -278,7 +29,9 @@
           "league": "NFL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 146
+          "contribution": 146,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Buffalo Sabres",
@@ -286,236 +39,19 @@
           "league": "NHL",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 67
+          "contribution": 67,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 6,
-      "city": "Atlanta",
-      "pain": 206,
-      "teamCount": 5,
-      "rawTotal": 323,
-      "teams": [
-        {
-          "team": "Atlanta Hawks",
-          "score": 130,
-          "league": "NBA",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 130
-        },
-        {
-          "team": "Atlanta Dream",
-          "score": 84,
-          "league": "WNBA",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 42
-        },
-        {
-          "team": "Atlanta Falcons",
-          "score": 83,
-          "league": "NFL",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 28
-        },
-        {
-          "team": "Atlanta United FC",
-          "score": 16,
-          "league": "MLS",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 4
-        },
-        {
-          "team": "Atlanta Braves",
-          "score": 10,
-          "league": "MLB",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 2
-        }
-      ]
-    },
-    {
-      "rank": 7,
-      "city": "Cleveland",
-      "pain": 202,
-      "teamCount": 3,
-      "rawTotal": 280,
-      "teams": [
-        {
-          "team": "Cleveland Guardians",
-          "score": 139,
-          "league": "MLB",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 139
-        },
-        {
-          "team": "Cleveland Browns",
-          "score": 98,
-          "league": "NFL",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 49
-        },
-        {
-          "team": "Cleveland Cavaliers",
-          "score": 43,
-          "league": "NBA",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 14
-        }
-      ]
-    },
-    {
-      "rank": 8,
-      "city": "Indianapolis",
-      "pain": 195,
-      "teamCount": 3,
-      "rawTotal": 250,
-      "teams": [
-        {
-          "team": "Indiana Pacers",
-          "score": 156,
-          "league": "NBA",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 156
-        },
-        {
-          "team": "Indiana Fever",
-          "score": 48,
-          "league": "WNBA",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 24
-        },
-        {
-          "team": "Indianapolis Colts",
-          "score": 46,
-          "league": "NFL",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 15
-        }
-      ]
-    },
-    {
-      "rank": 9,
-      "city": "Boston",
-      "pain": 179,
-      "teamCount": 5,
-      "rawTotal": 237,
-      "teams": [
-        {
-          "team": "New England Revolution",
-          "score": 136,
-          "league": "MLS",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 136
-        },
-        {
-          "team": "Boston Bruins",
-          "score": 64,
-          "league": "NHL",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 32
-        },
-        {
-          "team": "New England Patriots",
-          "score": 20,
-          "league": "NFL",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 7
-        },
-        {
-          "team": "Boston Red Sox",
-          "score": 11,
-          "league": "MLB",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 3
-        },
-        {
-          "team": "Boston Celtics",
-          "score": 6,
-          "league": "NBA",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 1
-        }
-      ]
-    },
-    {
-      "rank": 10,
-      "city": "Dallas",
-      "pain": 178,
-      "teamCount": 6,
-      "rawTotal": 302,
-      "teams": [
-        {
-          "team": "Dallas Stars",
-          "score": 100,
-          "league": "NHL",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 100
-        },
-        {
-          "team": "FC Dallas",
-          "score": 99,
-          "league": "MLS",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 50
-        },
-        {
-          "team": "Dallas Cowboys",
-          "score": 43,
-          "league": "NFL",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 14
-        },
-        {
-          "team": "Dallas Mavericks",
-          "score": 36,
-          "league": "NBA",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 9
-        },
-        {
-          "team": "Dallas Wings",
-          "score": 24,
-          "league": "WNBA",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 5
-        },
-        {
-          "team": "Texas Rangers",
-          "score": 0,
-          "league": "MLB",
-          "discountRank": 6,
-          "multiplier": "1/6",
-          "contribution": 0
-        }
-      ]
-    },
-    {
-      "rank": 11,
+      "rank": 2,
       "city": "Salt Lake City",
       "pain": 170,
       "teamCount": 3,
+      "liveCount": 3,
+      "resetYear": null,
       "rawTotal": 203,
       "teams": [
         {
@@ -524,7 +60,9 @@
           "league": "NBA",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 138
+          "contribution": 138,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Real Salt Lake",
@@ -532,7 +70,9 @@
           "league": "MLS",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 31
+          "contribution": 31,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Utah Mammoth",
@@ -540,170 +80,19 @@
           "league": "NHL",
           "discountRank": 3,
           "multiplier": "1/3",
-          "contribution": 1
+          "contribution": 1,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 12,
-      "city": "Bay Area",
-      "pain": 169,
-      "teamCount": 6,
-      "rawTotal": 247,
-      "teams": [
-        {
-          "team": "San Francisco 49ers",
-          "score": 110,
-          "league": "NFL",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 110
-        },
-        {
-          "team": "San Jose Sharks",
-          "score": 98,
-          "league": "NHL",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 49
-        },
-        {
-          "team": "San Jose Earthquakes",
-          "score": 19,
-          "league": "MLS",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 6
-        },
-        {
-          "team": "San Francisco Giants",
-          "score": 9,
-          "league": "MLB",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 2
-        },
-        {
-          "team": "Golden State Warriors",
-          "score": 7,
-          "league": "NBA",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 1
-        },
-        {
-          "team": "Golden State Valkyries",
-          "score": 4,
-          "league": "WNBA",
-          "discountRank": 6,
-          "multiplier": "1/6",
-          "contribution": 1
-        }
-      ]
-    },
-    {
-      "rank": 13,
-      "city": "Houston",
-      "pain": 166,
-      "teamCount": 4,
-      "rawTotal": 256,
-      "teams": [
-        {
-          "team": "Houston Texans",
-          "score": 104,
-          "league": "NFL",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 104
-        },
-        {
-          "team": "Houston Rockets",
-          "score": 71,
-          "league": "NBA",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 36
-        },
-        {
-          "team": "Houston Dynamo",
-          "score": 70,
-          "league": "MLS",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 23
-        },
-        {
-          "team": "Houston Astros",
-          "score": 11,
-          "league": "MLB",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 3
-        }
-      ]
-    },
-    {
-      "rank": 14,
-      "city": "Toronto",
-      "pain": 164,
-      "teamCount": 6,
-      "rawTotal": 206,
-      "teams": [
-        {
-          "team": "Toronto Maple Leafs",
-          "score": 132,
-          "league": "NHL",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 132
-        },
-        {
-          "team": "Toronto Blue Jays",
-          "score": 48,
-          "league": "MLB",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 24
-        },
-        {
-          "team": "Toronto FC",
-          "score": 18,
-          "league": "MLS",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 6
-        },
-        {
-          "team": "Toronto Raptors",
-          "score": 8,
-          "league": "NBA",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 2
-        },
-        {
-          "team": "Toronto Tempo",
-          "score": 0,
-          "league": "WNBA",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 0
-        },
-        {
-          "team": "Toronto Argonauts",
-          "score": 0,
-          "league": "CFL",
-          "discountRank": 6,
-          "multiplier": "1/6",
-          "contribution": 0
-        }
-      ]
-    },
-    {
-      "rank": 15,
+      "rank": 3,
       "city": "Vancouver",
       "pain": 164,
       "teamCount": 3,
+      "liveCount": 3,
+      "resetYear": null,
       "rawTotal": 217,
       "teams": [
         {
@@ -712,7 +101,9 @@
           "league": "NHL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 122
+          "contribution": 122,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "BC Lions",
@@ -720,7 +111,9 @@
           "league": "CFL",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 30
+          "contribution": 30,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Vancouver Whitecaps FC",
@@ -728,15 +121,19 @@
           "league": "MLS",
           "discountRank": 3,
           "multiplier": "1/3",
-          "contribution": 12
+          "contribution": 12,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 16,
+      "rank": 4,
       "city": "Portland",
       "pain": 159,
       "teamCount": 3,
+      "liveCount": 3,
+      "resetYear": 1977,
       "rawTotal": 182,
       "teams": [
         {
@@ -745,7 +142,9 @@
           "league": "NBA",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 137
+          "contribution": 137,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Portland Timbers",
@@ -753,7 +152,9 @@
           "league": "MLS",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 22
+          "contribution": 22,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Portland Fire",
@@ -761,80 +162,19 @@
           "league": "WNBA",
           "discountRank": 3,
           "multiplier": "1/3",
-          "contribution": 0
+          "contribution": 0,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 17,
-      "city": "Chicago",
-      "pain": 148,
-      "teamCount": 7,
-      "rawTotal": 248,
-      "teams": [
-        {
-          "team": "Chicago Fire FC",
-          "score": 91,
-          "league": "MLS",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 91
-        },
-        {
-          "team": "Chicago Bears",
-          "score": 69,
-          "league": "NFL",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 34
-        },
-        {
-          "team": "Chicago Bulls",
-          "score": 37,
-          "league": "NBA",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 12
-        },
-        {
-          "team": "Chicago Cubs",
-          "score": 19,
-          "league": "MLB",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 5
-        },
-        {
-          "team": "Chicago White Sox",
-          "score": 13,
-          "league": "MLB",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 3
-        },
-        {
-          "team": "Chicago Sky",
-          "score": 12,
-          "league": "WNBA",
-          "discountRank": 6,
-          "multiplier": "1/6",
-          "contribution": 2
-        },
-        {
-          "team": "Chicago Blackhawks",
-          "score": 7,
-          "league": "NHL",
-          "discountRank": 7,
-          "multiplier": "1/7",
-          "contribution": 1
-        }
-      ]
-    },
-    {
-      "rank": 18,
+      "rank": 5,
       "city": "Hamilton",
       "pain": 148,
       "teamCount": 1,
+      "liveCount": 1,
+      "resetYear": null,
       "rawTotal": 148,
       "teams": [
         {
@@ -843,64 +183,19 @@
           "league": "CFL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 148
+          "contribution": 148,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 19,
-      "city": "Miami",
-      "pain": 146,
-      "teamCount": 5,
-      "rawTotal": 189,
-      "teams": [
-        {
-          "team": "Miami Dolphins",
-          "score": 109,
-          "league": "NFL",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 109
-        },
-        {
-          "team": "Miami Heat",
-          "score": 69,
-          "league": "NBA",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 34
-        },
-        {
-          "team": "Miami Marlins",
-          "score": 10,
-          "league": "MLB",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 3
-        },
-        {
-          "team": "Florida Panthers",
-          "score": 1,
-          "league": "NHL",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 0
-        },
-        {
-          "team": "Inter Miami CF",
-          "score": 0,
-          "league": "MLS",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 0
-        }
-      ]
-    },
-    {
-      "rank": 20,
+      "rank": 6,
       "city": "Connecticut",
       "pain": 140,
       "teamCount": 1,
+      "liveCount": 1,
+      "resetYear": null,
       "rawTotal": 140,
       "teams": [
         {
@@ -909,56 +204,19 @@
           "league": "WNBA",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 140
+          "contribution": 140,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 21,
-      "city": "Detroit",
-      "pain": 132,
-      "teamCount": 4,
-      "rawTotal": 225,
-      "teams": [
-        {
-          "team": "Detroit Tigers",
-          "score": 76,
-          "league": "MLB",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 76
-        },
-        {
-          "team": "Detroit Lions",
-          "score": 58,
-          "league": "NFL",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 29
-        },
-        {
-          "team": "Detroit Pistons",
-          "score": 52,
-          "league": "NBA",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 17
-        },
-        {
-          "team": "Detroit Red Wings",
-          "score": 39,
-          "league": "NHL",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 10
-        }
-      ]
-    },
-    {
-      "rank": 22,
+      "rank": 7,
       "city": "Edmonton",
       "pain": 115,
       "teamCount": 2,
+      "liveCount": 2,
+      "resetYear": 1990,
       "rawTotal": 127,
       "teams": [
         {
@@ -967,7 +225,9 @@
           "league": "NHL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 103
+          "contribution": 103,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Edmonton Elks",
@@ -975,145 +235,19 @@
           "league": "CFL",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 12
+          "contribution": 12,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 23,
-      "city": "Cincinnati",
-      "pain": 114,
-      "teamCount": 3,
-      "rawTotal": 140,
-      "teams": [
-        {
-          "team": "Cincinnati Bengals",
-          "score": 94,
-          "league": "NFL",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 94
-        },
-        {
-          "team": "Cincinnati Reds",
-          "score": 28,
-          "league": "MLB",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 14
-        },
-        {
-          "team": "FC Cincinnati",
-          "score": 18,
-          "league": "MLS",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 6
-        }
-      ]
-    },
-    {
-      "rank": 24,
-      "city": "Los Angeles",
-      "pain": 103,
-      "teamCount": 11,
-      "rawTotal": 241,
-      "teams": [
-        {
-          "team": "LA Clippers",
-          "score": 51,
-          "league": "NBA",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 51
-        },
-        {
-          "team": "Anaheim Ducks",
-          "score": 38,
-          "league": "NHL",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 19
-        },
-        {
-          "team": "Los Angeles Angels",
-          "score": 36,
-          "league": "MLB",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 12
-        },
-        {
-          "team": "Los Angeles Sparks",
-          "score": 32,
-          "league": "WNBA",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 8
-        },
-        {
-          "team": "Los Angeles FC",
-          "score": 24,
-          "league": "MLS",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 5
-        },
-        {
-          "team": "Los Angeles Lakers",
-          "score": 18,
-          "league": "NBA",
-          "discountRank": 6,
-          "multiplier": "1/6",
-          "contribution": 3
-        },
-        {
-          "team": "Los Angeles Kings",
-          "score": 16,
-          "league": "NHL",
-          "discountRank": 7,
-          "multiplier": "1/7",
-          "contribution": 2
-        },
-        {
-          "team": "Los Angeles Rams",
-          "score": 14,
-          "league": "NFL",
-          "discountRank": 8,
-          "multiplier": "1/8",
-          "contribution": 2
-        },
-        {
-          "team": "Los Angeles Chargers",
-          "score": 12,
-          "league": "NFL",
-          "discountRank": 9,
-          "multiplier": "1/9",
-          "contribution": 1
-        },
-        {
-          "team": "Los Angeles Dodgers",
-          "score": 0,
-          "league": "MLB",
-          "discountRank": 10,
-          "multiplier": "1/10",
-          "contribution": 0
-        },
-        {
-          "team": "LA Galaxy",
-          "score": 0,
-          "league": "MLS",
-          "discountRank": 11,
-          "multiplier": "1/11",
-          "contribution": 0
-        }
-      ]
-    },
-    {
-      "rank": 25,
+      "rank": 8,
       "city": "Montreal",
       "pain": 102,
       "teamCount": 3,
+      "liveCount": 3,
+      "resetYear": 1993,
       "rawTotal": 129,
       "teams": [
         {
@@ -1122,7 +256,9 @@
           "league": "NHL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 83
+          "contribution": 83,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Montreal Alouettes",
@@ -1130,7 +266,9 @@
           "league": "CFL",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 12
+          "contribution": 12,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "CF Montreal",
@@ -1138,72 +276,70 @@
           "league": "MLS",
           "discountRank": 3,
           "multiplier": "1/3",
-          "contribution": 7
+          "contribution": 7,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 26,
-      "city": "Washington",
+      "rank": 9,
+      "city": "Phoenix",
       "pain": 98,
-      "teamCount": 6,
-      "rawTotal": 159,
+      "teamCount": 4,
+      "liveCount": 2,
+      "resetYear": 2001,
+      "rawTotal": 330,
       "teams": [
         {
-          "team": "Washington Wizards",
-          "score": 62,
-          "league": "NBA",
+          "team": "Phoenix Mercury",
+          "score": 78,
+          "league": "WNBA",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 62
+          "contribution": 78,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
-          "team": "D.C. United",
-          "score": 39,
-          "league": "MLS",
+          "team": "Arizona Diamondbacks",
+          "score": 41,
+          "league": "MLB",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 20
+          "contribution": 20,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
-          "team": "Washington Commanders",
-          "score": 31,
+          "team": "Phoenix Suns",
+          "score": 174,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Arizona Diamondbacks (2001)"
+        },
+        {
+          "team": "Arizona Cardinals",
+          "score": 37,
           "league": "NFL",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 10
-        },
-        {
-          "team": "Washington Capitals",
-          "score": 15,
-          "league": "NHL",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 4
-        },
-        {
-          "team": "Washington Mystics",
-          "score": 12,
-          "league": "WNBA",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 2
-        },
-        {
-          "team": "Washington Nationals",
-          "score": 0,
-          "league": "MLB",
-          "discountRank": 6,
-          "multiplier": "1/6",
-          "contribution": 0
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Arizona Diamondbacks (2001)"
         }
       ]
     },
     {
-      "rank": 27,
+      "rank": 10,
       "city": "Nashville",
       "pain": 92,
       "teamCount": 3,
+      "liveCount": 3,
+      "resetYear": null,
       "rawTotal": 129,
       "teams": [
         {
@@ -1212,7 +348,9 @@
           "league": "NFL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 59
+          "contribution": 59,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Nashville Predators",
@@ -1220,7 +358,9 @@
           "league": "NHL",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 29
+          "contribution": 29,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Nashville SC",
@@ -1228,15 +368,19 @@
           "league": "MLS",
           "discountRank": 3,
           "multiplier": "1/3",
-          "contribution": 4
+          "contribution": 4,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 28,
+      "rank": 11,
       "city": "Orlando",
       "pain": 91,
       "teamCount": 2,
+      "liveCount": 2,
+      "resetYear": null,
       "rawTotal": 102,
       "teams": [
         {
@@ -1245,7 +389,9 @@
           "league": "NBA",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 80
+          "contribution": 80,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Orlando City SC",
@@ -1253,15 +399,19 @@
           "league": "MLS",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 11
+          "contribution": 11,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 29,
+      "rank": 12,
       "city": "Sacramento",
       "pain": 89,
       "teamCount": 2,
+      "liveCount": 2,
+      "resetYear": null,
       "rawTotal": 106,
       "teams": [
         {
@@ -1270,7 +420,9 @@
           "league": "MLB",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 71
+          "contribution": 71,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Sacramento Kings",
@@ -1278,15 +430,19 @@
           "league": "NBA",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 18
+          "contribution": 18,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 30,
+      "rank": 13,
       "city": "Ottawa",
       "pain": 86,
       "teamCount": 2,
+      "liveCount": 2,
+      "resetYear": null,
       "rawTotal": 98,
       "teams": [
         {
@@ -1295,7 +451,9 @@
           "league": "NHL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 74
+          "contribution": 74,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Ottawa Redblacks",
@@ -1303,15 +461,19 @@
           "league": "CFL",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 12
+          "contribution": 12,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 31,
+      "rank": 14,
       "city": "Charlotte",
       "pain": 82,
       "teamCount": 3,
+      "liveCount": 3,
+      "resetYear": null,
       "rawTotal": 101,
       "teams": [
         {
@@ -1320,7 +482,9 @@
           "league": "NFL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 64
+          "contribution": 64,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Charlotte Hornets",
@@ -1328,7 +492,9 @@
           "league": "NBA",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 16
+          "contribution": 16,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Charlotte FC",
@@ -1336,89 +502,19 @@
           "league": "MLS",
           "discountRank": 3,
           "multiplier": "1/3",
-          "contribution": 2
+          "contribution": 2,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 32,
-      "city": "Milwaukee",
-      "pain": 78,
-      "teamCount": 2,
-      "rawTotal": 83,
-      "teams": [
-        {
-          "team": "Milwaukee Brewers",
-          "score": 73,
-          "league": "MLB",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 73
-        },
-        {
-          "team": "Milwaukee Bucks",
-          "score": 10,
-          "league": "NBA",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 5
-        }
-      ]
-    },
-    {
-      "rank": 33,
-      "city": "Seattle",
-      "pain": 77,
-      "teamCount": 5,
-      "rawTotal": 109,
-      "teams": [
-        {
-          "team": "Seattle Mariners",
-          "score": 53,
-          "league": "MLB",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 53
-        },
-        {
-          "team": "Seattle Sounders FC",
-          "score": 32,
-          "league": "MLS",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 16
-        },
-        {
-          "team": "Seattle Storm",
-          "score": 20,
-          "league": "WNBA",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 7
-        },
-        {
-          "team": "Seattle Kraken",
-          "score": 4,
-          "league": "NHL",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 1
-        },
-        {
-          "team": "Seattle Seahawks",
-          "score": 0,
-          "league": "NFL",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 0
-        }
-      ]
-    },
-    {
-      "rank": 34,
+      "rank": 15,
       "city": "San Diego",
       "pain": 76,
       "teamCount": 2,
+      "liveCount": 2,
+      "resetYear": null,
       "rawTotal": 80,
       "teams": [
         {
@@ -1427,7 +523,9 @@
           "league": "MLB",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 72
+          "contribution": 72,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "San Diego FC",
@@ -1435,81 +533,131 @@
           "league": "MLS",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 4
+          "contribution": 4,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 35,
-      "city": "Tampa Bay",
+      "rank": 16,
+      "city": "Minneapolis",
       "pain": 75,
-      "teamCount": 3,
-      "rawTotal": 95,
+      "teamCount": 6,
+      "liveCount": 3,
+      "resetYear": 1991,
+      "rawTotal": 486,
       "teams": [
         {
-          "team": "Tampa Bay Rays",
-          "score": 59,
+          "team": "Minnesota Twins",
+          "score": 46,
           "league": "MLB",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 59
+          "contribution": 46,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
-          "team": "Tampa Bay Lightning",
-          "score": 24,
-          "league": "NHL",
+          "team": "Minnesota Lynx",
+          "score": 44,
+          "league": "WNBA",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 12
+          "contribution": 22,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
-          "team": "Tampa Bay Buccaneers",
-          "score": 12,
-          "league": "NFL",
+          "team": "Minnesota United FC",
+          "score": 22,
+          "league": "MLS",
           "discountRank": 3,
           "multiplier": "1/3",
-          "contribution": 4
-        }
-      ]
-    },
-    {
-      "rank": 36,
-      "city": "Pittsburgh",
-      "pain": 72,
-      "teamCount": 3,
-      "rawTotal": 102,
-      "teams": [
+          "contribution": 7,
+          "redeemed": false,
+          "redeemedBy": null
+        },
         {
-          "team": "Pittsburgh Steelers",
+          "team": "Minnesota Vikings",
+          "score": 187,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Minnesota Twins (1991)"
+        },
+        {
+          "team": "Minnesota Wild",
+          "score": 138,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Minnesota Twins (1991)"
+        },
+        {
+          "team": "Minnesota Timberwolves",
           "score": 49,
-          "league": "NFL",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 49
-        },
-        {
-          "team": "Pittsburgh Pirates",
-          "score": 37,
-          "league": "MLB",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 18
-        },
-        {
-          "team": "Pittsburgh Penguins",
-          "score": 16,
-          "league": "NHL",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 5
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Minnesota Twins (1991)"
         }
       ]
     },
     {
-      "rank": 37,
+      "rank": 17,
+      "city": "Indianapolis",
+      "pain": 71,
+      "teamCount": 3,
+      "liveCount": 2,
+      "resetYear": 2006,
+      "rawTotal": 250,
+      "teams": [
+        {
+          "team": "Indiana Fever",
+          "score": 48,
+          "league": "WNBA",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 48,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Indianapolis Colts",
+          "score": 46,
+          "league": "NFL",
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 23,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Indiana Pacers",
+          "score": 156,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Indianapolis Colts (2006)"
+        }
+      ]
+    },
+    {
+      "rank": 18,
       "city": "Winnipeg",
       "pain": 68,
       "teamCount": 2,
+      "liveCount": 2,
+      "resetYear": null,
       "rawTotal": 83,
       "teams": [
         {
@@ -1518,7 +666,9 @@
           "league": "CFL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 52
+          "contribution": 52,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Winnipeg Jets",
@@ -1526,15 +676,19 @@
           "league": "NHL",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 16
+          "contribution": 16,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 38,
+      "rank": 19,
       "city": "Calgary",
       "pain": 66,
       "teamCount": 2,
+      "liveCount": 2,
+      "resetYear": 1989,
       "rawTotal": 76,
       "teams": [
         {
@@ -1543,7 +697,9 @@
           "league": "NHL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 56
+          "contribution": 56,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Calgary Stampeders",
@@ -1551,73 +707,19 @@
           "league": "CFL",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 10
+          "contribution": 10,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 39,
-      "city": "St. Louis",
-      "pain": 61,
-      "teamCount": 3,
-      "rawTotal": 68,
-      "teams": [
-        {
-          "team": "St. Louis Cardinals",
-          "score": 54,
-          "league": "MLB",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 54
-        },
-        {
-          "team": "St. Louis Blues",
-          "score": 12,
-          "league": "NHL",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 6
-        },
-        {
-          "team": "St. Louis City SC",
-          "score": 2,
-          "league": "MLS",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 1
-        }
-      ]
-    },
-    {
-      "rank": 40,
-      "city": "Baltimore",
-      "pain": 58,
-      "teamCount": 2,
-      "rawTotal": 73,
-      "teams": [
-        {
-          "team": "Baltimore Orioles",
-          "score": 44,
-          "league": "MLB",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 44
-        },
-        {
-          "team": "Baltimore Ravens",
-          "score": 29,
-          "league": "NFL",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 14
-        }
-      ]
-    },
-    {
-      "rank": 41,
+      "rank": 20,
       "city": "Green Bay",
       "pain": 58,
       "teamCount": 1,
+      "liveCount": 1,
+      "resetYear": 2010,
       "rawTotal": 58,
       "teams": [
         {
@@ -1626,64 +728,19 @@
           "league": "NFL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 58
+          "contribution": 58,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 42,
-      "city": "Denver",
-      "pain": 55,
-      "teamCount": 5,
-      "rawTotal": 93,
-      "teams": [
-        {
-          "team": "Colorado Rockies",
-          "score": 34,
-          "league": "MLB",
-          "discountRank": 1,
-          "multiplier": "1",
-          "contribution": 34
-        },
-        {
-          "team": "Colorado Rapids",
-          "score": 22,
-          "league": "MLS",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 11
-        },
-        {
-          "team": "Colorado Avalanche",
-          "score": 16,
-          "league": "NHL",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 5
-        },
-        {
-          "team": "Denver Broncos",
-          "score": 11,
-          "league": "NFL",
-          "discountRank": 4,
-          "multiplier": "1/4",
-          "contribution": 3
-        },
-        {
-          "team": "Denver Nuggets",
-          "score": 10,
-          "league": "NBA",
-          "discountRank": 5,
-          "multiplier": "1/5",
-          "contribution": 2
-        }
-      ]
-    },
-    {
-      "rank": 43,
+      "rank": 21,
       "city": "Jacksonville",
       "pain": 44,
       "teamCount": 1,
+      "liveCount": 1,
+      "resetYear": null,
       "rawTotal": 44,
       "teams": [
         {
@@ -1692,40 +749,60 @@
           "league": "NFL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 44
+          "contribution": 44,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 44,
-      "city": "New Orleans",
-      "pain": 42,
-      "teamCount": 2,
-      "rawTotal": 53,
+      "rank": 22,
+      "city": "Cleveland",
+      "pain": 43,
+      "teamCount": 3,
+      "liveCount": 1,
+      "resetYear": 2016,
+      "rawTotal": 280,
       "teams": [
         {
-          "team": "New Orleans Saints",
-          "score": 30,
-          "league": "NFL",
+          "team": "Cleveland Cavaliers",
+          "score": 43,
+          "league": "NBA",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 30
+          "contribution": 43,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
-          "team": "New Orleans Pelicans",
-          "score": 23,
-          "league": "NBA",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 12
+          "team": "Cleveland Guardians",
+          "score": 139,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Cleveland Cavaliers (2016)"
+        },
+        {
+          "team": "Cleveland Browns",
+          "score": 98,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Cleveland Cavaliers (2016)"
         }
       ]
     },
     {
-      "rank": 45,
+      "rank": 23,
       "city": "Memphis",
       "pain": 40,
       "teamCount": 1,
+      "liveCount": 1,
+      "resetYear": null,
       "rawTotal": 40,
       "teams": [
         {
@@ -1734,48 +811,111 @@
           "league": "NBA",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 40
+          "contribution": 40,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 46,
-      "city": "Kansas City",
-      "pain": 38,
-      "teamCount": 3,
-      "rawTotal": 49,
+      "rank": 24,
+      "city": "Detroit",
+      "pain": 39,
+      "teamCount": 4,
+      "liveCount": 1,
+      "resetYear": 2008,
+      "rawTotal": 225,
       "teams": [
         {
-          "team": "Sporting Kansas City",
-          "score": 28,
-          "league": "MLS",
+          "team": "Detroit Red Wings",
+          "score": 39,
+          "league": "NHL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 28
+          "contribution": 39,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
-          "team": "Kansas City Chiefs",
-          "score": 16,
-          "league": "NFL",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 8
-        },
-        {
-          "team": "Kansas City Royals",
-          "score": 5,
+          "team": "Detroit Tigers",
+          "score": 76,
           "league": "MLB",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 2
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Detroit Red Wings (2008)"
+        },
+        {
+          "team": "Detroit Lions",
+          "score": 58,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Detroit Red Wings (2008)"
+        },
+        {
+          "team": "Detroit Pistons",
+          "score": 52,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Detroit Red Wings (2008)"
         }
       ]
     },
     {
-      "rank": 47,
+      "rank": 25,
+      "city": "Cincinnati",
+      "pain": 37,
+      "teamCount": 3,
+      "liveCount": 2,
+      "resetYear": 1990,
+      "rawTotal": 140,
+      "teams": [
+        {
+          "team": "Cincinnati Reds",
+          "score": 28,
+          "league": "MLB",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 28,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "FC Cincinnati",
+          "score": 18,
+          "league": "MLS",
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 9,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Cincinnati Bengals",
+          "score": 94,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Cincinnati Reds (1990)"
+        }
+      ]
+    },
+    {
+      "rank": 26,
       "city": "San Antonio",
       "pain": 34,
       "teamCount": 1,
+      "liveCount": 1,
+      "resetYear": 2014,
       "rawTotal": 34,
       "teams": [
         {
@@ -1784,15 +924,203 @@
           "league": "NBA",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 34
+          "contribution": 34,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 48,
-      "city": "Las Vegas",
-      "pain": 23,
+      "rank": 27,
+      "city": "New Orleans",
+      "pain": 30,
+      "teamCount": 2,
+      "liveCount": 1,
+      "resetYear": 2009,
+      "rawTotal": 53,
+      "teams": [
+        {
+          "team": "New Orleans Saints",
+          "score": 30,
+          "league": "NFL",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 30,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "New Orleans Pelicans",
+          "score": 23,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "New Orleans Saints (2009)"
+        }
+      ]
+    },
+    {
+      "rank": 28,
+      "city": "Baltimore",
+      "pain": 29,
+      "teamCount": 2,
+      "liveCount": 1,
+      "resetYear": 2012,
+      "rawTotal": 73,
+      "teams": [
+        {
+          "team": "Baltimore Ravens",
+          "score": 29,
+          "league": "NFL",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 29,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Baltimore Orioles",
+          "score": 44,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Baltimore Ravens (2012)"
+        }
+      ]
+    },
+    {
+      "rank": 29,
+      "city": "Chicago",
+      "pain": 25,
+      "teamCount": 7,
+      "liveCount": 2,
+      "resetYear": 2016,
+      "rawTotal": 248,
+      "teams": [
+        {
+          "team": "Chicago Cubs",
+          "score": 19,
+          "league": "MLB",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 19,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Chicago Sky",
+          "score": 12,
+          "league": "WNBA",
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 6,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Chicago Fire FC",
+          "score": 91,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Chicago Cubs (2016)"
+        },
+        {
+          "team": "Chicago Bears",
+          "score": 69,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Chicago Cubs (2016)"
+        },
+        {
+          "team": "Chicago Bulls",
+          "score": 37,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Chicago Cubs (2016)"
+        },
+        {
+          "team": "Chicago White Sox",
+          "score": 13,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Chicago Cubs (2016)"
+        },
+        {
+          "team": "Chicago Blackhawks",
+          "score": 7,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Chicago Cubs (2016)"
+        }
+      ]
+    },
+    {
+      "rank": 30,
+      "city": "Tampa Bay",
+      "pain": 24,
       "teamCount": 3,
+      "liveCount": 1,
+      "resetYear": 2021,
+      "rawTotal": 95,
+      "teams": [
+        {
+          "team": "Tampa Bay Lightning",
+          "score": 24,
+          "league": "NHL",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 24,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "score": 59,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Tampa Bay Lightning (2021)"
+        },
+        {
+          "team": "Tampa Bay Buccaneers",
+          "score": 12,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Tampa Bay Lightning (2021)"
+        }
+      ]
+    },
+    {
+      "rank": 31,
+      "city": "Las Vegas",
+      "pain": 22,
+      "teamCount": 3,
+      "liveCount": 2,
+      "resetYear": 2023,
       "rawTotal": 24,
       "teams": [
         {
@@ -1801,31 +1129,39 @@
           "league": "NHL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 22
-        },
-        {
-          "team": "Las Vegas Raiders",
-          "score": 2,
-          "league": "NFL",
-          "discountRank": 2,
-          "multiplier": "1/2",
-          "contribution": 1
+          "contribution": 22,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Las Vegas Aces",
           "score": 0,
           "league": "WNBA",
-          "discountRank": 3,
-          "multiplier": "1/3",
-          "contribution": 0
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 0,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Las Vegas Raiders",
+          "score": 2,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Vegas Golden Knights (2023)"
         }
       ]
     },
     {
-      "rank": 49,
+      "rank": 32,
       "city": "Columbus",
       "pain": 20,
       "teamCount": 2,
+      "liveCount": 2,
+      "resetYear": null,
       "rawTotal": 22,
       "teams": [
         {
@@ -1834,7 +1170,9 @@
           "league": "NHL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 18
+          "contribution": 18,
+          "redeemed": false,
+          "redeemedBy": null
         },
         {
           "team": "Columbus Crew",
@@ -1842,15 +1180,417 @@
           "league": "MLS",
           "discountRank": 2,
           "multiplier": "1/2",
-          "contribution": 2
+          "contribution": 2,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 50,
+      "rank": 33,
+      "city": "Pittsburgh",
+      "pain": 16,
+      "teamCount": 3,
+      "liveCount": 1,
+      "resetYear": 2017,
+      "rawTotal": 102,
+      "teams": [
+        {
+          "team": "Pittsburgh Penguins",
+          "score": 16,
+          "league": "NHL",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 16,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Pittsburgh Steelers",
+          "score": 49,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Pittsburgh Penguins (2017)"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "score": 37,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Pittsburgh Penguins (2017)"
+        }
+      ]
+    },
+    {
+      "rank": 34,
+      "city": "Kansas City",
+      "pain": 16,
+      "teamCount": 3,
+      "liveCount": 1,
+      "resetYear": 2023,
+      "rawTotal": 49,
+      "teams": [
+        {
+          "team": "Kansas City Chiefs",
+          "score": 16,
+          "league": "NFL",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 16,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Sporting Kansas City",
+          "score": 28,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Kansas City Chiefs (2023)"
+        },
+        {
+          "team": "Kansas City Royals",
+          "score": 5,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Kansas City Chiefs (2023)"
+        }
+      ]
+    },
+    {
+      "rank": 35,
+      "city": "St. Louis",
+      "pain": 13,
+      "teamCount": 3,
+      "liveCount": 2,
+      "resetYear": 2019,
+      "rawTotal": 68,
+      "teams": [
+        {
+          "team": "St. Louis Blues",
+          "score": 12,
+          "league": "NHL",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 12,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "St. Louis City SC",
+          "score": 2,
+          "league": "MLS",
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 1,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "score": 54,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "St. Louis Blues (2019)"
+        }
+      ]
+    },
+    {
+      "rank": 36,
+      "city": "Washington",
+      "pain": 12,
+      "teamCount": 6,
+      "liveCount": 2,
+      "resetYear": 2019,
+      "rawTotal": 159,
+      "teams": [
+        {
+          "team": "Washington Mystics",
+          "score": 12,
+          "league": "WNBA",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 12,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Washington Nationals",
+          "score": 0,
+          "league": "MLB",
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 0,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Washington Wizards",
+          "score": 62,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Washington Nationals (2019)"
+        },
+        {
+          "team": "D.C. United",
+          "score": 39,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Washington Nationals (2019)"
+        },
+        {
+          "team": "Washington Commanders",
+          "score": 31,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Washington Nationals (2019)"
+        },
+        {
+          "team": "Washington Capitals",
+          "score": 15,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Washington Nationals (2019)"
+        }
+      ]
+    },
+    {
+      "rank": 37,
+      "city": "Houston",
+      "pain": 11,
+      "teamCount": 4,
+      "liveCount": 1,
+      "resetYear": 2022,
+      "rawTotal": 256,
+      "teams": [
+        {
+          "team": "Houston Astros",
+          "score": 11,
+          "league": "MLB",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 11,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Houston Texans",
+          "score": 104,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Houston Astros (2022)"
+        },
+        {
+          "team": "Houston Rockets",
+          "score": 71,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Houston Astros (2022)"
+        },
+        {
+          "team": "Houston Dynamo",
+          "score": 70,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Houston Astros (2022)"
+        }
+      ]
+    },
+    {
+      "rank": 38,
+      "city": "Milwaukee",
+      "pain": 10,
+      "teamCount": 2,
+      "liveCount": 1,
+      "resetYear": 2021,
+      "rawTotal": 83,
+      "teams": [
+        {
+          "team": "Milwaukee Bucks",
+          "score": 10,
+          "league": "NBA",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 10,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Milwaukee Brewers",
+          "score": 73,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Milwaukee Bucks (2021)"
+        }
+      ]
+    },
+    {
+      "rank": 39,
+      "city": "Denver",
+      "pain": 10,
+      "teamCount": 5,
+      "liveCount": 1,
+      "resetYear": 2023,
+      "rawTotal": 93,
+      "teams": [
+        {
+          "team": "Denver Nuggets",
+          "score": 10,
+          "league": "NBA",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 10,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Colorado Rockies",
+          "score": 34,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Denver Nuggets (2023)"
+        },
+        {
+          "team": "Colorado Rapids",
+          "score": 22,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Denver Nuggets (2023)"
+        },
+        {
+          "team": "Colorado Avalanche",
+          "score": 16,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Denver Nuggets (2023)"
+        },
+        {
+          "team": "Denver Broncos",
+          "score": 11,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Denver Nuggets (2023)"
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "city": "Atlanta",
+      "pain": 10,
+      "teamCount": 5,
+      "liveCount": 1,
+      "resetYear": 2021,
+      "rawTotal": 323,
+      "teams": [
+        {
+          "team": "Atlanta Braves",
+          "score": 10,
+          "league": "MLB",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 10,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Atlanta Hawks",
+          "score": 130,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Atlanta Braves (2021)"
+        },
+        {
+          "team": "Atlanta Dream",
+          "score": 84,
+          "league": "WNBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Atlanta Braves (2021)"
+        },
+        {
+          "team": "Atlanta Falcons",
+          "score": 83,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Atlanta Braves (2021)"
+        },
+        {
+          "team": "Atlanta United FC",
+          "score": 16,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Atlanta Braves (2021)"
+        }
+      ]
+    },
+    {
+      "rank": 41,
       "city": "Austin",
       "pain": 10,
       "teamCount": 1,
+      "liveCount": 1,
+      "resetYear": null,
       "rawTotal": 10,
       "teams": [
         {
@@ -1859,15 +1599,161 @@
           "league": "MLS",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 10
+          "contribution": 10,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
     {
-      "rank": 51,
+      "rank": 42,
+      "city": "Bay Area",
+      "pain": 9,
+      "teamCount": 6,
+      "liveCount": 2,
+      "resetYear": 2022,
+      "rawTotal": 247,
+      "teams": [
+        {
+          "team": "Golden State Warriors",
+          "score": 7,
+          "league": "NBA",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 7,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Golden State Valkyries",
+          "score": 4,
+          "league": "WNBA",
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 2,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "San Francisco 49ers",
+          "score": 110,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Golden State Warriors (2022)"
+        },
+        {
+          "team": "San Jose Sharks",
+          "score": 98,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Golden State Warriors (2022)"
+        },
+        {
+          "team": "San Jose Earthquakes",
+          "score": 19,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Golden State Warriors (2022)"
+        },
+        {
+          "team": "San Francisco Giants",
+          "score": 9,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Golden State Warriors (2022)"
+        }
+      ]
+    },
+    {
+      "rank": 43,
+      "city": "Toronto",
+      "pain": 8,
+      "teamCount": 6,
+      "liveCount": 3,
+      "resetYear": 2019,
+      "rawTotal": 206,
+      "teams": [
+        {
+          "team": "Toronto Raptors",
+          "score": 8,
+          "league": "NBA",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 8,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Toronto Argonauts",
+          "score": 0,
+          "league": "CFL",
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 0,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Toronto Tempo",
+          "score": 0,
+          "league": "WNBA",
+          "discountRank": 3,
+          "multiplier": "1/3",
+          "contribution": 0,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Toronto Maple Leafs",
+          "score": 132,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Toronto Raptors (2019)"
+        },
+        {
+          "team": "Toronto Blue Jays",
+          "score": 48,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Toronto Raptors (2019)"
+        },
+        {
+          "team": "Toronto FC",
+          "score": 18,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Toronto Raptors (2019)"
+        }
+      ]
+    },
+    {
+      "rank": 44,
       "city": "Oklahoma City",
       "pain": 8,
       "teamCount": 1,
+      "liveCount": 1,
+      "resetYear": 2025,
       "rawTotal": 8,
       "teams": [
         {
@@ -1876,7 +1762,576 @@
           "league": "NBA",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 8
+          "contribution": 8,
+          "redeemed": false,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 45,
+      "city": "Boston",
+      "pain": 6,
+      "teamCount": 5,
+      "liveCount": 1,
+      "resetYear": 2024,
+      "rawTotal": 237,
+      "teams": [
+        {
+          "team": "Boston Celtics",
+          "score": 6,
+          "league": "NBA",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 6,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "New England Revolution",
+          "score": 136,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Boston Celtics (2024)"
+        },
+        {
+          "team": "Boston Bruins",
+          "score": 64,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Boston Celtics (2024)"
+        },
+        {
+          "team": "New England Patriots",
+          "score": 20,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Boston Celtics (2024)"
+        },
+        {
+          "team": "Boston Red Sox",
+          "score": 11,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Boston Celtics (2024)"
+        }
+      ]
+    },
+    {
+      "rank": 46,
+      "city": "Philadelphia",
+      "pain": 2,
+      "teamCount": 5,
+      "liveCount": 1,
+      "resetYear": 2024,
+      "rawTotal": 417,
+      "teams": [
+        {
+          "team": "Philadelphia Eagles",
+          "score": 2,
+          "league": "NFL",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 2,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Philadelphia Flyers",
+          "score": 212,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Philadelphia Eagles (2024)"
+        },
+        {
+          "team": "Philadelphia 76ers",
+          "score": 96,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Philadelphia Eagles (2024)"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "score": 61,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Philadelphia Eagles (2024)"
+        },
+        {
+          "team": "Philadelphia Union",
+          "score": 46,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Philadelphia Eagles (2024)"
+        }
+      ]
+    },
+    {
+      "rank": 47,
+      "city": "Miami",
+      "pain": 1,
+      "teamCount": 5,
+      "liveCount": 2,
+      "resetYear": 2025,
+      "rawTotal": 189,
+      "teams": [
+        {
+          "team": "Florida Panthers",
+          "score": 1,
+          "league": "NHL",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 1,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Inter Miami CF",
+          "score": 0,
+          "league": "MLS",
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 0,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Miami Dolphins",
+          "score": 109,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Florida Panthers (2025)"
+        },
+        {
+          "team": "Miami Heat",
+          "score": 69,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Florida Panthers (2025)"
+        },
+        {
+          "team": "Miami Marlins",
+          "score": 10,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Florida Panthers (2025)"
+        }
+      ]
+    },
+    {
+      "rank": 48,
+      "city": "New York",
+      "pain": 0,
+      "teamCount": 12,
+      "liveCount": 1,
+      "resetYear": 2026,
+      "rawTotal": 624,
+      "teams": [
+        {
+          "team": "New York Knicks",
+          "score": 0,
+          "league": "NBA",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 0,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "New York Red Bulls",
+          "score": 130,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "New York Knicks (2026)"
+        },
+        {
+          "team": "New York Rangers",
+          "score": 95,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "New York Knicks (2026)"
+        },
+        {
+          "team": "New York Islanders",
+          "score": 83,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "New York Knicks (2026)"
+        },
+        {
+          "team": "New York Yankees",
+          "score": 80,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "New York Knicks (2026)"
+        },
+        {
+          "team": "New York Mets",
+          "score": 79,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "New York Knicks (2026)"
+        },
+        {
+          "team": "New York Jets",
+          "score": 63,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "New York Knicks (2026)"
+        },
+        {
+          "team": "New Jersey Devils",
+          "score": 43,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "New York Knicks (2026)"
+        },
+        {
+          "team": "Brooklyn Nets",
+          "score": 20,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "New York Knicks (2026)"
+        },
+        {
+          "team": "New York City FC",
+          "score": 20,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "New York Knicks (2026)"
+        },
+        {
+          "team": "New York Giants",
+          "score": 7,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "New York Knicks (2026)"
+        },
+        {
+          "team": "New York Liberty",
+          "score": 4,
+          "league": "WNBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "New York Knicks (2026)"
+        }
+      ]
+    },
+    {
+      "rank": 49,
+      "city": "Seattle",
+      "pain": 0,
+      "teamCount": 5,
+      "liveCount": 1,
+      "resetYear": 2025,
+      "rawTotal": 109,
+      "teams": [
+        {
+          "team": "Seattle Seahawks",
+          "score": 0,
+          "league": "NFL",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 0,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Seattle Mariners",
+          "score": 53,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Seattle Seahawks (2025)"
+        },
+        {
+          "team": "Seattle Sounders FC",
+          "score": 32,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Seattle Seahawks (2025)"
+        },
+        {
+          "team": "Seattle Storm",
+          "score": 20,
+          "league": "WNBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Seattle Seahawks (2025)"
+        },
+        {
+          "team": "Seattle Kraken",
+          "score": 4,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Seattle Seahawks (2025)"
+        }
+      ]
+    },
+    {
+      "rank": 50,
+      "city": "Los Angeles",
+      "pain": 0,
+      "teamCount": 11,
+      "liveCount": 2,
+      "resetYear": 2025,
+      "rawTotal": 241,
+      "teams": [
+        {
+          "team": "Los Angeles Dodgers",
+          "score": 0,
+          "league": "MLB",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 0,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "LA Galaxy",
+          "score": 0,
+          "league": "MLS",
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 0,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "LA Clippers",
+          "score": 51,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Los Angeles Dodgers (2025)"
+        },
+        {
+          "team": "Anaheim Ducks",
+          "score": 38,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Los Angeles Dodgers (2025)"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "score": 36,
+          "league": "MLB",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Los Angeles Dodgers (2025)"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "score": 32,
+          "league": "WNBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Los Angeles Dodgers (2025)"
+        },
+        {
+          "team": "Los Angeles FC",
+          "score": 24,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Los Angeles Dodgers (2025)"
+        },
+        {
+          "team": "Los Angeles Lakers",
+          "score": 18,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Los Angeles Dodgers (2025)"
+        },
+        {
+          "team": "Los Angeles Kings",
+          "score": 16,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Los Angeles Dodgers (2025)"
+        },
+        {
+          "team": "Los Angeles Rams",
+          "score": 14,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Los Angeles Dodgers (2025)"
+        },
+        {
+          "team": "Los Angeles Chargers",
+          "score": 12,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Los Angeles Dodgers (2025)"
+        }
+      ]
+    },
+    {
+      "rank": 51,
+      "city": "Dallas",
+      "pain": 0,
+      "teamCount": 6,
+      "liveCount": 1,
+      "resetYear": 2023,
+      "rawTotal": 302,
+      "teams": [
+        {
+          "team": "Texas Rangers",
+          "score": 0,
+          "league": "MLB",
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 0,
+          "redeemed": false,
+          "redeemedBy": null
+        },
+        {
+          "team": "Dallas Stars",
+          "score": 100,
+          "league": "NHL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Texas Rangers (2023)"
+        },
+        {
+          "team": "FC Dallas",
+          "score": 99,
+          "league": "MLS",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Texas Rangers (2023)"
+        },
+        {
+          "team": "Dallas Cowboys",
+          "score": 43,
+          "league": "NFL",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Texas Rangers (2023)"
+        },
+        {
+          "team": "Dallas Mavericks",
+          "score": 36,
+          "league": "NBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Texas Rangers (2023)"
+        },
+        {
+          "team": "Dallas Wings",
+          "score": 24,
+          "league": "WNBA",
+          "discountRank": null,
+          "multiplier": "0",
+          "contribution": 0,
+          "redeemed": true,
+          "redeemedBy": "Texas Rangers (2023)"
         }
       ]
     },
@@ -1885,6 +2340,8 @@
       "city": "Raleigh",
       "pain": 0,
       "teamCount": 1,
+      "liveCount": 1,
+      "resetYear": 2026,
       "rawTotal": 0,
       "teams": [
         {
@@ -1893,7 +2350,9 @@
           "league": "NHL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 0
+          "contribution": 0,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     },
@@ -1902,6 +2361,8 @@
       "city": "Regina",
       "pain": 0,
       "teamCount": 1,
+      "liveCount": 1,
+      "resetYear": null,
       "rawTotal": 0,
       "teams": [
         {
@@ -1910,7 +2371,9 @@
           "league": "CFL",
           "discountRank": 1,
           "multiplier": "1",
-          "contribution": 0
+          "contribution": 0,
+          "redeemed": false,
+          "redeemedBy": null
         }
       ]
     }
@@ -1919,387 +2382,771 @@
     "minTeams3": [
       {
         "rank": 1,
-        "city": "Las Vegas",
-        "pain": 23,
-        "teamCount": 3,
-        "rawTotal": 24,
+        "city": "New York",
+        "pain": 0,
+        "teamCount": 12,
+        "liveCount": 1,
+        "resetYear": 2026,
+        "rawTotal": 624,
         "teams": [
           {
-            "team": "Vegas Golden Knights",
-            "score": 22,
-            "league": "NHL",
+            "team": "New York Knicks",
+            "score": 0,
+            "league": "NBA",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 22
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Las Vegas Raiders",
-            "score": 2,
+            "team": "New York Red Bulls",
+            "score": 130,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Rangers",
+            "score": 95,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Islanders",
+            "score": 83,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Yankees",
+            "score": 80,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Mets",
+            "score": 79,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Jets",
+            "score": 63,
             "league": "NFL",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 1
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
           },
           {
-            "team": "Las Vegas Aces",
-            "score": 0,
+            "team": "New Jersey Devils",
+            "score": 43,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "Brooklyn Nets",
+            "score": 20,
+            "league": "NBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York City FC",
+            "score": 20,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Giants",
+            "score": 7,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Liberty",
+            "score": 4,
             "league": "WNBA",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 0
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
           }
         ]
       },
       {
         "rank": 2,
-        "city": "Kansas City",
-        "pain": 38,
-        "teamCount": 3,
-        "rawTotal": 49,
-        "teams": [
-          {
-            "team": "Sporting Kansas City",
-            "score": 28,
-            "league": "MLS",
-            "discountRank": 1,
-            "multiplier": "1",
-            "contribution": 28
-          },
-          {
-            "team": "Kansas City Chiefs",
-            "score": 16,
-            "league": "NFL",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 8
-          },
-          {
-            "team": "Kansas City Royals",
-            "score": 5,
-            "league": "MLB",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 2
-          }
-        ]
-      },
-      {
-        "rank": 3,
-        "city": "Denver",
-        "pain": 55,
-        "teamCount": 5,
-        "rawTotal": 93,
-        "teams": [
-          {
-            "team": "Colorado Rockies",
-            "score": 34,
-            "league": "MLB",
-            "discountRank": 1,
-            "multiplier": "1",
-            "contribution": 34
-          },
-          {
-            "team": "Colorado Rapids",
-            "score": 22,
-            "league": "MLS",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 11
-          },
-          {
-            "team": "Colorado Avalanche",
-            "score": 16,
-            "league": "NHL",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 5
-          },
-          {
-            "team": "Denver Broncos",
-            "score": 11,
-            "league": "NFL",
-            "discountRank": 4,
-            "multiplier": "1/4",
-            "contribution": 3
-          },
-          {
-            "team": "Denver Nuggets",
-            "score": 10,
-            "league": "NBA",
-            "discountRank": 5,
-            "multiplier": "1/5",
-            "contribution": 2
-          }
-        ]
-      },
-      {
-        "rank": 4,
-        "city": "St. Louis",
-        "pain": 61,
-        "teamCount": 3,
-        "rawTotal": 68,
-        "teams": [
-          {
-            "team": "St. Louis Cardinals",
-            "score": 54,
-            "league": "MLB",
-            "discountRank": 1,
-            "multiplier": "1",
-            "contribution": 54
-          },
-          {
-            "team": "St. Louis Blues",
-            "score": 12,
-            "league": "NHL",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 6
-          },
-          {
-            "team": "St. Louis City SC",
-            "score": 2,
-            "league": "MLS",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 1
-          }
-        ]
-      },
-      {
-        "rank": 5,
-        "city": "Pittsburgh",
-        "pain": 72,
-        "teamCount": 3,
-        "rawTotal": 102,
-        "teams": [
-          {
-            "team": "Pittsburgh Steelers",
-            "score": 49,
-            "league": "NFL",
-            "discountRank": 1,
-            "multiplier": "1",
-            "contribution": 49
-          },
-          {
-            "team": "Pittsburgh Pirates",
-            "score": 37,
-            "league": "MLB",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 18
-          },
-          {
-            "team": "Pittsburgh Penguins",
-            "score": 16,
-            "league": "NHL",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 5
-          }
-        ]
-      },
-      {
-        "rank": 6,
-        "city": "Tampa Bay",
-        "pain": 75,
-        "teamCount": 3,
-        "rawTotal": 95,
-        "teams": [
-          {
-            "team": "Tampa Bay Rays",
-            "score": 59,
-            "league": "MLB",
-            "discountRank": 1,
-            "multiplier": "1",
-            "contribution": 59
-          },
-          {
-            "team": "Tampa Bay Lightning",
-            "score": 24,
-            "league": "NHL",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 12
-          },
-          {
-            "team": "Tampa Bay Buccaneers",
-            "score": 12,
-            "league": "NFL",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 4
-          }
-        ]
-      },
-      {
-        "rank": 7,
         "city": "Seattle",
-        "pain": 77,
+        "pain": 0,
         "teamCount": 5,
+        "liveCount": 1,
+        "resetYear": 2025,
         "rawTotal": 109,
         "teams": [
+          {
+            "team": "Seattle Seahawks",
+            "score": 0,
+            "league": "NFL",
+            "discountRank": 1,
+            "multiplier": "1",
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
+          },
           {
             "team": "Seattle Mariners",
             "score": 53,
             "league": "MLB",
-            "discountRank": 1,
-            "multiplier": "1",
-            "contribution": 53
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Seattle Seahawks (2025)"
           },
           {
             "team": "Seattle Sounders FC",
             "score": 32,
             "league": "MLS",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 16
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Seattle Seahawks (2025)"
           },
           {
             "team": "Seattle Storm",
             "score": 20,
             "league": "WNBA",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 7
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Seattle Seahawks (2025)"
           },
           {
             "team": "Seattle Kraken",
             "score": 4,
             "league": "NHL",
-            "discountRank": 4,
-            "multiplier": "1/4",
-            "contribution": 1
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Seattle Seahawks (2025)"
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "city": "Los Angeles",
+        "pain": 0,
+        "teamCount": 11,
+        "liveCount": 2,
+        "resetYear": 2025,
+        "rawTotal": 241,
+        "teams": [
+          {
+            "team": "Los Angeles Dodgers",
+            "score": 0,
+            "league": "MLB",
+            "discountRank": 1,
+            "multiplier": "1",
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Seattle Seahawks",
+            "team": "LA Galaxy",
             "score": 0,
+            "league": "MLS",
+            "discountRank": 2,
+            "multiplier": "1/2",
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
+          },
+          {
+            "team": "LA Clippers",
+            "score": 51,
+            "league": "NBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Anaheim Ducks",
+            "score": 38,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles Angels",
+            "score": 36,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles Sparks",
+            "score": 32,
+            "league": "WNBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles FC",
+            "score": 24,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles Lakers",
+            "score": 18,
+            "league": "NBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles Kings",
+            "score": 16,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles Rams",
+            "score": 14,
             "league": "NFL",
-            "discountRank": 5,
-            "multiplier": "1/5",
-            "contribution": 0
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles Chargers",
+            "score": 12,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "city": "Dallas",
+        "pain": 0,
+        "teamCount": 6,
+        "liveCount": 1,
+        "resetYear": 2023,
+        "rawTotal": 302,
+        "teams": [
+          {
+            "team": "Texas Rangers",
+            "score": 0,
+            "league": "MLB",
+            "discountRank": 1,
+            "multiplier": "1",
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
+          },
+          {
+            "team": "Dallas Stars",
+            "score": 100,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Texas Rangers (2023)"
+          },
+          {
+            "team": "FC Dallas",
+            "score": 99,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Texas Rangers (2023)"
+          },
+          {
+            "team": "Dallas Cowboys",
+            "score": 43,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Texas Rangers (2023)"
+          },
+          {
+            "team": "Dallas Mavericks",
+            "score": 36,
+            "league": "NBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Texas Rangers (2023)"
+          },
+          {
+            "team": "Dallas Wings",
+            "score": 24,
+            "league": "WNBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Texas Rangers (2023)"
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "city": "Miami",
+        "pain": 1,
+        "teamCount": 5,
+        "liveCount": 2,
+        "resetYear": 2025,
+        "rawTotal": 189,
+        "teams": [
+          {
+            "team": "Florida Panthers",
+            "score": 1,
+            "league": "NHL",
+            "discountRank": 1,
+            "multiplier": "1",
+            "contribution": 1,
+            "redeemed": false,
+            "redeemedBy": null
+          },
+          {
+            "team": "Inter Miami CF",
+            "score": 0,
+            "league": "MLS",
+            "discountRank": 2,
+            "multiplier": "1/2",
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
+          },
+          {
+            "team": "Miami Dolphins",
+            "score": 109,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Florida Panthers (2025)"
+          },
+          {
+            "team": "Miami Heat",
+            "score": 69,
+            "league": "NBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Florida Panthers (2025)"
+          },
+          {
+            "team": "Miami Marlins",
+            "score": 10,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Florida Panthers (2025)"
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "city": "Philadelphia",
+        "pain": 2,
+        "teamCount": 5,
+        "liveCount": 1,
+        "resetYear": 2024,
+        "rawTotal": 417,
+        "teams": [
+          {
+            "team": "Philadelphia Eagles",
+            "score": 2,
+            "league": "NFL",
+            "discountRank": 1,
+            "multiplier": "1",
+            "contribution": 2,
+            "redeemed": false,
+            "redeemedBy": null
+          },
+          {
+            "team": "Philadelphia Flyers",
+            "score": 212,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Philadelphia Eagles (2024)"
+          },
+          {
+            "team": "Philadelphia 76ers",
+            "score": 96,
+            "league": "NBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Philadelphia Eagles (2024)"
+          },
+          {
+            "team": "Philadelphia Phillies",
+            "score": 61,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Philadelphia Eagles (2024)"
+          },
+          {
+            "team": "Philadelphia Union",
+            "score": 46,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Philadelphia Eagles (2024)"
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "city": "Boston",
+        "pain": 6,
+        "teamCount": 5,
+        "liveCount": 1,
+        "resetYear": 2024,
+        "rawTotal": 237,
+        "teams": [
+          {
+            "team": "Boston Celtics",
+            "score": 6,
+            "league": "NBA",
+            "discountRank": 1,
+            "multiplier": "1",
+            "contribution": 6,
+            "redeemed": false,
+            "redeemedBy": null
+          },
+          {
+            "team": "New England Revolution",
+            "score": 136,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Boston Celtics (2024)"
+          },
+          {
+            "team": "Boston Bruins",
+            "score": 64,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Boston Celtics (2024)"
+          },
+          {
+            "team": "New England Patriots",
+            "score": 20,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Boston Celtics (2024)"
+          },
+          {
+            "team": "Boston Red Sox",
+            "score": 11,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Boston Celtics (2024)"
           }
         ]
       },
       {
         "rank": 8,
-        "city": "Charlotte",
-        "pain": 82,
-        "teamCount": 3,
-        "rawTotal": 101,
+        "city": "Toronto",
+        "pain": 8,
+        "teamCount": 6,
+        "liveCount": 3,
+        "resetYear": 2019,
+        "rawTotal": 206,
         "teams": [
           {
-            "team": "Carolina Panthers",
-            "score": 64,
-            "league": "NFL",
+            "team": "Toronto Raptors",
+            "score": 8,
+            "league": "NBA",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 64
+            "contribution": 8,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Charlotte Hornets",
-            "score": 31,
-            "league": "NBA",
+            "team": "Toronto Argonauts",
+            "score": 0,
+            "league": "CFL",
             "discountRank": 2,
             "multiplier": "1/2",
-            "contribution": 16
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Charlotte FC",
-            "score": 6,
-            "league": "MLS",
+            "team": "Toronto Tempo",
+            "score": 0,
+            "league": "WNBA",
             "discountRank": 3,
             "multiplier": "1/3",
-            "contribution": 2
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
+          },
+          {
+            "team": "Toronto Maple Leafs",
+            "score": 132,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Toronto Raptors (2019)"
+          },
+          {
+            "team": "Toronto Blue Jays",
+            "score": 48,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Toronto Raptors (2019)"
+          },
+          {
+            "team": "Toronto FC",
+            "score": 18,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Toronto Raptors (2019)"
           }
         ]
       },
       {
         "rank": 9,
-        "city": "Nashville",
-        "pain": 92,
-        "teamCount": 3,
-        "rawTotal": 129,
+        "city": "Bay Area",
+        "pain": 9,
+        "teamCount": 6,
+        "liveCount": 2,
+        "resetYear": 2022,
+        "rawTotal": 247,
         "teams": [
           {
-            "team": "Tennessee Titans",
-            "score": 59,
-            "league": "NFL",
+            "team": "Golden State Warriors",
+            "score": 7,
+            "league": "NBA",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 59
+            "contribution": 7,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Nashville Predators",
-            "score": 58,
-            "league": "NHL",
+            "team": "Golden State Valkyries",
+            "score": 4,
+            "league": "WNBA",
             "discountRank": 2,
             "multiplier": "1/2",
-            "contribution": 29
+            "contribution": 2,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Nashville SC",
-            "score": 12,
+            "team": "San Francisco 49ers",
+            "score": 110,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Golden State Warriors (2022)"
+          },
+          {
+            "team": "San Jose Sharks",
+            "score": 98,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Golden State Warriors (2022)"
+          },
+          {
+            "team": "San Jose Earthquakes",
+            "score": 19,
             "league": "MLS",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 4
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Golden State Warriors (2022)"
+          },
+          {
+            "team": "San Francisco Giants",
+            "score": 9,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Golden State Warriors (2022)"
           }
         ]
       },
       {
         "rank": 10,
-        "city": "Washington",
-        "pain": 98,
-        "teamCount": 6,
-        "rawTotal": 159,
+        "city": "Denver",
+        "pain": 10,
+        "teamCount": 5,
+        "liveCount": 1,
+        "resetYear": 2023,
+        "rawTotal": 93,
         "teams": [
           {
-            "team": "Washington Wizards",
-            "score": 62,
+            "team": "Denver Nuggets",
+            "score": 10,
             "league": "NBA",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 62
+            "contribution": 10,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "D.C. United",
-            "score": 39,
-            "league": "MLS",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 20
-          },
-          {
-            "team": "Washington Commanders",
-            "score": 31,
-            "league": "NFL",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 10
-          },
-          {
-            "team": "Washington Capitals",
-            "score": 15,
-            "league": "NHL",
-            "discountRank": 4,
-            "multiplier": "1/4",
-            "contribution": 4
-          },
-          {
-            "team": "Washington Mystics",
-            "score": 12,
-            "league": "WNBA",
-            "discountRank": 5,
-            "multiplier": "1/5",
-            "contribution": 2
-          },
-          {
-            "team": "Washington Nationals",
-            "score": 0,
+            "team": "Colorado Rockies",
+            "score": 34,
             "league": "MLB",
-            "discountRank": 6,
-            "multiplier": "1/6",
-            "contribution": 0
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Denver Nuggets (2023)"
+          },
+          {
+            "team": "Colorado Rapids",
+            "score": 22,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Denver Nuggets (2023)"
+          },
+          {
+            "team": "Colorado Avalanche",
+            "score": 16,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Denver Nuggets (2023)"
+          },
+          {
+            "team": "Denver Broncos",
+            "score": 11,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Denver Nuggets (2023)"
           }
         ]
       }
@@ -2307,307 +3154,741 @@
     "minTeams2": [
       {
         "rank": 1,
-        "city": "Columbus",
-        "pain": 20,
-        "teamCount": 2,
-        "rawTotal": 22,
+        "city": "New York",
+        "pain": 0,
+        "teamCount": 12,
+        "liveCount": 1,
+        "resetYear": 2026,
+        "rawTotal": 624,
         "teams": [
           {
-            "team": "Columbus Blue Jackets",
-            "score": 18,
-            "league": "NHL",
+            "team": "New York Knicks",
+            "score": 0,
+            "league": "NBA",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 18
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Columbus Crew",
-            "score": 4,
+            "team": "New York Red Bulls",
+            "score": 130,
             "league": "MLS",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 2
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Rangers",
+            "score": 95,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Islanders",
+            "score": 83,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Yankees",
+            "score": 80,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Mets",
+            "score": 79,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Jets",
+            "score": 63,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New Jersey Devils",
+            "score": 43,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "Brooklyn Nets",
+            "score": 20,
+            "league": "NBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York City FC",
+            "score": 20,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Giants",
+            "score": 7,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
+          },
+          {
+            "team": "New York Liberty",
+            "score": 4,
+            "league": "WNBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "New York Knicks (2026)"
           }
         ]
       },
       {
         "rank": 2,
-        "city": "Las Vegas",
-        "pain": 23,
-        "teamCount": 3,
-        "rawTotal": 24,
+        "city": "Seattle",
+        "pain": 0,
+        "teamCount": 5,
+        "liveCount": 1,
+        "resetYear": 2025,
+        "rawTotal": 109,
         "teams": [
           {
-            "team": "Vegas Golden Knights",
-            "score": 22,
-            "league": "NHL",
+            "team": "Seattle Seahawks",
+            "score": 0,
+            "league": "NFL",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 22
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Las Vegas Raiders",
-            "score": 2,
-            "league": "NFL",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 1
+            "team": "Seattle Mariners",
+            "score": 53,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Seattle Seahawks (2025)"
           },
           {
-            "team": "Las Vegas Aces",
-            "score": 0,
+            "team": "Seattle Sounders FC",
+            "score": 32,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Seattle Seahawks (2025)"
+          },
+          {
+            "team": "Seattle Storm",
+            "score": 20,
             "league": "WNBA",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 0
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Seattle Seahawks (2025)"
+          },
+          {
+            "team": "Seattle Kraken",
+            "score": 4,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Seattle Seahawks (2025)"
           }
         ]
       },
       {
         "rank": 3,
-        "city": "Kansas City",
-        "pain": 38,
-        "teamCount": 3,
-        "rawTotal": 49,
+        "city": "Los Angeles",
+        "pain": 0,
+        "teamCount": 11,
+        "liveCount": 2,
+        "resetYear": 2025,
+        "rawTotal": 241,
         "teams": [
           {
-            "team": "Sporting Kansas City",
-            "score": 28,
-            "league": "MLS",
+            "team": "Los Angeles Dodgers",
+            "score": 0,
+            "league": "MLB",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 28
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Kansas City Chiefs",
-            "score": 16,
-            "league": "NFL",
+            "team": "LA Galaxy",
+            "score": 0,
+            "league": "MLS",
             "discountRank": 2,
             "multiplier": "1/2",
-            "contribution": 8
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Kansas City Royals",
-            "score": 5,
+            "team": "LA Clippers",
+            "score": 51,
+            "league": "NBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Anaheim Ducks",
+            "score": 38,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles Angels",
+            "score": 36,
             "league": "MLB",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 2
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles Sparks",
+            "score": 32,
+            "league": "WNBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles FC",
+            "score": 24,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles Lakers",
+            "score": 18,
+            "league": "NBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles Kings",
+            "score": 16,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles Rams",
+            "score": 14,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
+          },
+          {
+            "team": "Los Angeles Chargers",
+            "score": 12,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Los Angeles Dodgers (2025)"
           }
         ]
       },
       {
         "rank": 4,
-        "city": "New Orleans",
-        "pain": 42,
-        "teamCount": 2,
-        "rawTotal": 53,
+        "city": "Dallas",
+        "pain": 0,
+        "teamCount": 6,
+        "liveCount": 1,
+        "resetYear": 2023,
+        "rawTotal": 302,
         "teams": [
           {
-            "team": "New Orleans Saints",
-            "score": 30,
-            "league": "NFL",
+            "team": "Texas Rangers",
+            "score": 0,
+            "league": "MLB",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 30
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "New Orleans Pelicans",
-            "score": 23,
+            "team": "Dallas Stars",
+            "score": 100,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Texas Rangers (2023)"
+          },
+          {
+            "team": "FC Dallas",
+            "score": 99,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Texas Rangers (2023)"
+          },
+          {
+            "team": "Dallas Cowboys",
+            "score": 43,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Texas Rangers (2023)"
+          },
+          {
+            "team": "Dallas Mavericks",
+            "score": 36,
             "league": "NBA",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 12
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Texas Rangers (2023)"
+          },
+          {
+            "team": "Dallas Wings",
+            "score": 24,
+            "league": "WNBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Texas Rangers (2023)"
           }
         ]
       },
       {
         "rank": 5,
-        "city": "Denver",
-        "pain": 55,
+        "city": "Miami",
+        "pain": 1,
         "teamCount": 5,
-        "rawTotal": 93,
+        "liveCount": 2,
+        "resetYear": 2025,
+        "rawTotal": 189,
         "teams": [
           {
-            "team": "Colorado Rockies",
-            "score": 34,
-            "league": "MLB",
+            "team": "Florida Panthers",
+            "score": 1,
+            "league": "NHL",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 34
+            "contribution": 1,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Colorado Rapids",
-            "score": 22,
+            "team": "Inter Miami CF",
+            "score": 0,
             "league": "MLS",
             "discountRank": 2,
             "multiplier": "1/2",
-            "contribution": 11
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Colorado Avalanche",
-            "score": 16,
-            "league": "NHL",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 5
-          },
-          {
-            "team": "Denver Broncos",
-            "score": 11,
+            "team": "Miami Dolphins",
+            "score": 109,
             "league": "NFL",
-            "discountRank": 4,
-            "multiplier": "1/4",
-            "contribution": 3
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Florida Panthers (2025)"
           },
           {
-            "team": "Denver Nuggets",
-            "score": 10,
+            "team": "Miami Heat",
+            "score": 69,
             "league": "NBA",
-            "discountRank": 5,
-            "multiplier": "1/5",
-            "contribution": 2
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Florida Panthers (2025)"
+          },
+          {
+            "team": "Miami Marlins",
+            "score": 10,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Florida Panthers (2025)"
           }
         ]
       },
       {
         "rank": 6,
-        "city": "Baltimore",
-        "pain": 58,
-        "teamCount": 2,
-        "rawTotal": 73,
+        "city": "Philadelphia",
+        "pain": 2,
+        "teamCount": 5,
+        "liveCount": 1,
+        "resetYear": 2024,
+        "rawTotal": 417,
         "teams": [
           {
-            "team": "Baltimore Orioles",
-            "score": 44,
-            "league": "MLB",
+            "team": "Philadelphia Eagles",
+            "score": 2,
+            "league": "NFL",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 44
+            "contribution": 2,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Baltimore Ravens",
-            "score": 29,
-            "league": "NFL",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 14
+            "team": "Philadelphia Flyers",
+            "score": 212,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Philadelphia Eagles (2024)"
+          },
+          {
+            "team": "Philadelphia 76ers",
+            "score": 96,
+            "league": "NBA",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Philadelphia Eagles (2024)"
+          },
+          {
+            "team": "Philadelphia Phillies",
+            "score": 61,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Philadelphia Eagles (2024)"
+          },
+          {
+            "team": "Philadelphia Union",
+            "score": 46,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Philadelphia Eagles (2024)"
           }
         ]
       },
       {
         "rank": 7,
-        "city": "St. Louis",
-        "pain": 61,
-        "teamCount": 3,
-        "rawTotal": 68,
+        "city": "Boston",
+        "pain": 6,
+        "teamCount": 5,
+        "liveCount": 1,
+        "resetYear": 2024,
+        "rawTotal": 237,
         "teams": [
           {
-            "team": "St. Louis Cardinals",
-            "score": 54,
-            "league": "MLB",
+            "team": "Boston Celtics",
+            "score": 6,
+            "league": "NBA",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 54
+            "contribution": 6,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "St. Louis Blues",
-            "score": 12,
-            "league": "NHL",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 6
-          },
-          {
-            "team": "St. Louis City SC",
-            "score": 2,
+            "team": "New England Revolution",
+            "score": 136,
             "league": "MLS",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 1
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Boston Celtics (2024)"
+          },
+          {
+            "team": "Boston Bruins",
+            "score": 64,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Boston Celtics (2024)"
+          },
+          {
+            "team": "New England Patriots",
+            "score": 20,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Boston Celtics (2024)"
+          },
+          {
+            "team": "Boston Red Sox",
+            "score": 11,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Boston Celtics (2024)"
           }
         ]
       },
       {
         "rank": 8,
-        "city": "Calgary",
-        "pain": 66,
-        "teamCount": 2,
-        "rawTotal": 76,
+        "city": "Toronto",
+        "pain": 8,
+        "teamCount": 6,
+        "liveCount": 3,
+        "resetYear": 2019,
+        "rawTotal": 206,
         "teams": [
           {
-            "team": "Calgary Flames",
-            "score": 56,
-            "league": "NHL",
+            "team": "Toronto Raptors",
+            "score": 8,
+            "league": "NBA",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 56
+            "contribution": 8,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Calgary Stampeders",
-            "score": 20,
+            "team": "Toronto Argonauts",
+            "score": 0,
             "league": "CFL",
             "discountRank": 2,
             "multiplier": "1/2",
-            "contribution": 10
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
+          },
+          {
+            "team": "Toronto Tempo",
+            "score": 0,
+            "league": "WNBA",
+            "discountRank": 3,
+            "multiplier": "1/3",
+            "contribution": 0,
+            "redeemed": false,
+            "redeemedBy": null
+          },
+          {
+            "team": "Toronto Maple Leafs",
+            "score": 132,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Toronto Raptors (2019)"
+          },
+          {
+            "team": "Toronto Blue Jays",
+            "score": 48,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Toronto Raptors (2019)"
+          },
+          {
+            "team": "Toronto FC",
+            "score": 18,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Toronto Raptors (2019)"
           }
         ]
       },
       {
         "rank": 9,
-        "city": "Winnipeg",
-        "pain": 68,
-        "teamCount": 2,
-        "rawTotal": 83,
+        "city": "Bay Area",
+        "pain": 9,
+        "teamCount": 6,
+        "liveCount": 2,
+        "resetYear": 2022,
+        "rawTotal": 247,
         "teams": [
           {
-            "team": "Winnipeg Blue Bombers",
-            "score": 52,
-            "league": "CFL",
+            "team": "Golden State Warriors",
+            "score": 7,
+            "league": "NBA",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 52
+            "contribution": 7,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Winnipeg Jets",
-            "score": 31,
-            "league": "NHL",
+            "team": "Golden State Valkyries",
+            "score": 4,
+            "league": "WNBA",
             "discountRank": 2,
             "multiplier": "1/2",
-            "contribution": 16
+            "contribution": 2,
+            "redeemed": false,
+            "redeemedBy": null
+          },
+          {
+            "team": "San Francisco 49ers",
+            "score": 110,
+            "league": "NFL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Golden State Warriors (2022)"
+          },
+          {
+            "team": "San Jose Sharks",
+            "score": 98,
+            "league": "NHL",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Golden State Warriors (2022)"
+          },
+          {
+            "team": "San Jose Earthquakes",
+            "score": 19,
+            "league": "MLS",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Golden State Warriors (2022)"
+          },
+          {
+            "team": "San Francisco Giants",
+            "score": 9,
+            "league": "MLB",
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Golden State Warriors (2022)"
           }
         ]
       },
       {
         "rank": 10,
-        "city": "Pittsburgh",
-        "pain": 72,
-        "teamCount": 3,
-        "rawTotal": 102,
+        "city": "Milwaukee",
+        "pain": 10,
+        "teamCount": 2,
+        "liveCount": 1,
+        "resetYear": 2021,
+        "rawTotal": 83,
         "teams": [
           {
-            "team": "Pittsburgh Steelers",
-            "score": 49,
-            "league": "NFL",
+            "team": "Milwaukee Bucks",
+            "score": 10,
+            "league": "NBA",
             "discountRank": 1,
             "multiplier": "1",
-            "contribution": 49
+            "contribution": 10,
+            "redeemed": false,
+            "redeemedBy": null
           },
           {
-            "team": "Pittsburgh Pirates",
-            "score": 37,
+            "team": "Milwaukee Brewers",
+            "score": 73,
             "league": "MLB",
-            "discountRank": 2,
-            "multiplier": "1/2",
-            "contribution": 18
-          },
-          {
-            "team": "Pittsburgh Penguins",
-            "score": 16,
-            "league": "NHL",
-            "discountRank": 3,
-            "multiplier": "1/3",
-            "contribution": 5
+            "discountRank": null,
+            "multiplier": "0",
+            "contribution": 0,
+            "redeemed": true,
+            "redeemedBy": "Milwaukee Bucks (2021)"
           }
         ]
       }
