@@ -163,7 +163,10 @@ TITLE_WON_ELSEWHERE = {
     "Arizona Cardinals",    # 1947 NFL title as the Chicago Cardinals
     "Los Angeles Chargers", # 1963 AFL title as the San Diego Chargers
     "Las Vegas Raiders",    # 1983 NFL title as the Los Angeles Raiders
+    "Dallas Wings",         # 2008 WNBA title as the Detroit Shock (all-leagues mode)
 }
+
+ALL_LEAGUES = {"MLB", "NBA", "NHL", "NFL", "CFL", "WNBA", "MLS"}
 
 
 def _years(text):
@@ -202,10 +205,9 @@ def city_title_year(team, last_champ):
     return int(m.group(1)) if m else max(ys)
 
 
-def _load_postreset(path="ppi-cities-postreset.json"):
+def _load_postreset(path):
     """{metro: {team: postResetPPI}} — sourced season-by-season pain a team has
-    accrued since its city's last big-four title. Built by the research fan-out
-    documented in CLAUDE.md; see ppi-cities-postreset.json for the full ledgers."""
+    accrued since its city's reset title. See the JSON files for the full ledgers."""
     try:
         d = json.load(open(path))
     except FileNotFoundError:
@@ -214,11 +216,18 @@ def _load_postreset(path="ppi-cities-postreset.json"):
             for c, teams in d.get("cities", {}).items()}
 
 
-POSTRESET = _load_postreset()
+# Two specs: big-four-only resets (default), and all-leagues resets (any title,
+# incl. WNBA/MLS/CFL). Each has its own post-reset ledgers.
+POSTRESET = {
+    "big4": _load_postreset("ppi-cities-postreset.json"),
+    "all": _load_postreset("ppi-cities-postreset-all.json"),
+}
+RESET_LEAGUES = {"big4": BIG_FOUR, "all": ALL_LEAGUES}
 
 
-def collect():
-    """Build {metro: [team dicts]} with reset bookkeeping, then rank by city pain."""
+def collect(mode="big4"):
+    """Build {metro: [team dicts]} with reset bookkeeping, then rank by city pain.
+    mode='big4' (only MLB/NBA/NHL/NFL titles reset) or 'all' (any league's title)."""
     cities, unmapped = {}, []
     for lg in LEAGUES:
         for t in json.load(open(f"ppi-{lg}.json"))["teams"]:
@@ -231,24 +240,26 @@ def collect():
                 "titleYear": city_title_year(t["team"], t.get("lastChampionship", "")),
             })
     for metro, teams in cities.items():
-        _apply_reset(metro, teams)
+        _apply_reset(metro, teams, mode)
     ranked = sorted(cities.items(), key=lambda kv: -city_pain(kv[1]))
     return ranked, unmapped
 
 
-def _apply_reset(metro, teams):
+def _apply_reset(metro, teams, mode):
     """Score each team's CITY pain (post-reset) and rank-discount the city in place.
-    A city resets at the most recent big-four title won for it. Teams whose drought
-    predates that title ('redeemed') count only the pain they have piled up since,
-    taken from POSTRESET; every other team counts its full PPI (its drought already
-    lives entirely after the title)."""
-    big4_titles = [t["titleYear"] for t in teams
-                   if t["league"] in BIG_FOUR and t["titleYear"] is not None]
-    reset_year = max(big4_titles) if big4_titles else None
+    A city resets at the most recent title won for it by a reset-eligible league
+    (big-four only, or any league). Teams whose drought predates that title
+    ('redeemed') count only the pain they have piled up since, taken from the
+    mode's POSTRESET ledgers; every other team counts its full PPI."""
+    reset_lgs = RESET_LEAGUES[mode]
+    postmap = POSTRESET[mode]
+    titles = [t["titleYear"] for t in teams
+              if t["league"] in reset_lgs and t["titleYear"] is not None]
+    reset_year = max(titles) if titles else None
     champ = None
     if reset_year is not None:
         champ = next(t["team"] for t in teams
-                     if t["league"] in BIG_FOUR and t["titleYear"] == reset_year)
+                     if t["league"] in reset_lgs and t["titleYear"] == reset_year)
     for t in teams:
         t["resetYear"] = reset_year
         redeemed = (reset_year is not None
@@ -258,7 +269,7 @@ def _apply_reset(metro, teams):
         t["redeemed"] = bool(redeemed)
         t["redeemedBy"] = f"{champ} ({reset_year})" if redeemed else None
         if redeemed:
-            pr = POSTRESET.get(metro, {}).get(t["team"])
+            pr = postmap.get(metro, {}).get(t["team"])
             t["cityScore"] = pr if pr is not None else 0   # 0 = no completed season since reset
             t["postResetMissing"] = pr is None
         else:
@@ -298,23 +309,30 @@ def least_painful(ranked, min_teams, n=10):
     return [city_record(i, c, ts) for i, (c, ts) in enumerate(elig[:n], 1)]
 
 
-METHOD = ("Each city's teams are sorted by their post-reset pain (most painful first) and "
-          "summed at a diminishing rate: the worst counts in full, the second at 1/2, the "
-          "third at 1/3, and so on (contribution = round(pain / rank)). A city RESETS like a "
-          "team does: when any big-four team (MLB/NBA/NHL/NFL) wins a title for the city, the "
-          "city clock restarts at that title. Each team then counts only the PPI it has piled "
-          "up in seasons AFTER it: a team whose drought predates the reset is re-scored "
-          "season-by-season from the next season forward (sourced ledgers in "
-          "ppi-cities-postreset.json), while the reset champion and any team whose drought "
-          "began later already count their full PPI. WNBA/MLS/CFL titles do not reset a city.")
+def _method(mode):
+    base = ("Each city's teams are sorted by their post-reset pain (most painful first) and "
+            "summed at a diminishing rate: the worst counts in full, the second at 1/2, the "
+            "third at 1/3, and so on (contribution = round(pain / rank)). A city RESETS like a "
+            "team does: when a reset-eligible team wins a title for the city, the city clock "
+            "restarts at that title, and each team counts only the PPI it has piled up in "
+            "seasons AFTER it (a team whose drought predates the reset is re-scored "
+            "season-by-season from the next season forward; the reset champion and later "
+            "droughts count their full PPI). ")
+    scope = ("Reset-eligible = the big four only (MLB/NBA/NHL/NFL); a WNBA/MLS/CFL title does "
+             "not reset a city." if mode == "big4" else
+             "Reset-eligible = ANY league, so a WNBA, MLS, or CFL title resets the city too.")
+    return base + scope
 
 
-def write_json(path="ppi-cities.json"):
-    ranked, unmapped = collect()
+def write_json(mode="big4", path=None):
+    path = path or ("ppi-cities.json" if mode == "big4" else "ppi-cities-all.json")
+    ranked, unmapped = collect(mode)
     out = {
         "title": "Most Painful Cities",
-        "measure": "Rank-discounted post-reset PPI (big-four city championship reset)",
-        "method": METHOD,
+        "mode": mode,
+        "measure": ("Rank-discounted post-reset PPI (big-four reset)" if mode == "big4"
+                    else "Rank-discounted post-reset PPI (all-leagues reset)"),
+        "method": _method(mode),
         "updated": "2026-06-18",
         "judgmentCalls": JUDGMENT,
         "cities": [city_record(i, c, ts) for i, (c, ts) in enumerate(ranked, 1)],
@@ -357,30 +375,37 @@ def _html_rows(records):
     return "\n".join(rows)
 
 
+def _mode_arg(default="big4"):
+    return "all" if "--all" in sys.argv else default
+
+
 def main():
-    if len(sys.argv) > 1 and sys.argv[1] == "--json":
-        write_json(); return
-    if len(sys.argv) > 1 and sys.argv[1] == "--html":
-        ranked, _ = collect()
+    if "--json" in sys.argv:
+        write_json("big4"); write_json("all"); return
+    if "--html" in sys.argv:
+        mode = _mode_arg()
+        ranked, _ = collect(mode)
         most = [city_record(i, c, ts) for i, (c, ts) in enumerate(ranked, 1)][:20]
-        print("<!-- MOST PAINFUL -->")
+        print(f"<!-- MOST PAINFUL ({mode}) -->")
         print(_html_rows(most))
-        print("\n<!-- LEAST PAINFUL (min 2 teams) -->")
+        print(f"\n<!-- LEAST PAINFUL ({mode}, min 2 teams) -->")
         print(_html_rows(least_painful(ranked, 2)))
         return
-    if len(sys.argv) > 1 and sys.argv[1] == "--least":
-        min_teams = int(sys.argv[2]) if len(sys.argv) > 2 else 2
-        ranked, _ = collect()
-        print(f"\n  LEAST PAINFUL CITIES (rank-discounted post-reset PPI, min {min_teams} teams)\n")
-        for rec in least_painful(ranked, min_teams):
+    if "--least" in sys.argv:
+        mode = _mode_arg()
+        ranked, _ = collect(mode)
+        print(f"\n  LEAST PAINFUL CITIES ({mode}, min 2 teams)\n")
+        for rec in least_painful(ranked, 2):
             calc = ", ".join(_team_calc(t) for t in rec["teams"])
             print(f"  {rec['rank']:>2}. {rec['city']:<14}{rec['pain']:>5}  [{calc}]")
         return
-    n = int(sys.argv[1]) if len(sys.argv) > 1 else 20
-    ranked, unmapped = collect()
+    mode = _mode_arg()
+    nums = [a for a in sys.argv[1:] if a.isdigit()]
+    n = int(nums[0]) if nums else 20
+    ranked, unmapped = collect(mode)
     if unmapped:
         print("!! UNMAPPED TEAMS:", unmapped)
-    print(f"\n  MOST PAINFUL CITIES  (rank-discounted post-reset PPI, top {n})\n")
+    print(f"\n  MOST PAINFUL CITIES  ({mode} reset, top {n})\n")
     print(f"  {'#':>2}  {'CITY':<16}{'PAIN':>6}{'TEAMS':>7}")
     print("  " + "-"*42)
     for i, (city, teams) in enumerate(ranked[:n], 1):

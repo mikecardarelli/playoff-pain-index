@@ -1152,14 +1152,19 @@
 			            
         </div>
         <br>
-        <div class="rules-container">
+        <div class="rules-container" id="cities-section">
+        <div class="cities-toggle">
+            <span class="cities-toggle-label">City reset counts titles from:</span>
+            <button type="button" class="ctog active" data-mode="big4">Big 4</button>
+            <button type="button" class="ctog" data-mode="all">All Leagues <span class="ctog-sub">(+ MLS, WNBA, CFL)</span></button>
+        </div>
         <h4>Most Painful Cities</h4>
-        <p style="text-align:left; font-size:20px; color:black;">Each city adds up its teams' pain at a diminishing rate: the most painful team counts in full, the next at &times;1/2, the third at &times;1/3, and so on. And a city resets just like a team does: when any of its <strong>big-four</strong> teams (MLB/NBA/NHL/NFL) wins a title, the city clock restarts at that title, and every team is re-scored on just the pain it has piled up <em>since</em>. So the 1991 Twins wipe the Vikings' 1970s Super Bowl losses, but every playoff loss since still counts (shown as <em>since YEAR; was full-PPI</em>).</p>
+        <p style="text-align:left; font-size:20px; color:black;">Each city adds up its teams' pain at a diminishing rate: the most painful team counts in full, the next at &times;1/2, the third at &times;1/3, and so on. A city resets just like a team does: when a title is won, the city clock restarts and every team is re-scored on just the pain it has piled up <em>since</em> (shown as <em>since YEAR; was full-PPI</em>). Use the toggle to choose whether only the <strong>big four</strong> (MLB/NBA/NHL/NFL) reset a city, or <strong>any league</strong> does (a WNBA, MLS, or CFL title resets it too).</p>
         <table class="cities-table">
             <thead>
                 <tr><th class="rank">#</th><th>City</th><th class="pain">Pain</th></tr>
             </thead>
-            <tbody>
+            <tbody class="mode-big4">
                 <tr>
                     <td class="rank">#1</td>
                     <td><span class="city-name">Buffalo</span><br><span class="teams">Buffalo Bills 146&times;1=146, Buffalo Sabres 134&times;1/2=67</span></td>
@@ -1261,16 +1266,118 @@
                     <td class="pain">66</td>
                 </tr>
             </tbody>
+            <tbody class="mode-all" hidden>
+                <tr>
+                    <td class="rank">#1</td>
+                    <td><span class="city-name">Buffalo</span><br><span class="teams">Buffalo Bills 146&times;1=146, Buffalo Sabres 134&times;1/2=67</span></td>
+                    <td class="pain">213</td>
+                </tr>
+                <tr>
+                    <td class="rank">#2</td>
+                    <td><span class="city-name">Hamilton</span><br><span class="teams">Hamilton Tiger-Cats 148&times;1=148</span></td>
+                    <td class="pain">148</td>
+                </tr>
+                <tr>
+                    <td class="rank">#3</td>
+                    <td><span class="city-name">Connecticut</span><br><span class="teams">Connecticut Sun 140&times;1=140</span></td>
+                    <td class="pain">140</td>
+                </tr>
+                <tr>
+                    <td class="rank">#4</td>
+                    <td><span class="city-name">Phoenix</span><br><span class="teams">Phoenix Mercury 78&times;1=78, Phoenix Suns 28&times;1/2=14 <em>(since 2014; was 174)</em>, Arizona Diamondbacks 23&times;1/3=8 <em>(since 2014; was 41)</em>, Arizona Cardinals 10&times;1/4=2 <em>(since 2014; was 37)</em></span></td>
+                    <td class="pain">102</td>
+                </tr>
+                <tr>
+                    <td class="rank">#5</td>
+                    <td><span class="city-name">Nashville</span><br><span class="teams">Tennessee Titans 59&times;1=59, Nashville Predators 58&times;1/2=29, Nashville SC 12&times;1/3=4</span></td>
+                    <td class="pain">92</td>
+                </tr>
+                <tr>
+                    <td class="rank">#6</td>
+                    <td><span class="city-name">Orlando</span><br><span class="teams">Orlando Magic 80&times;1=80, Orlando City SC 22&times;1/2=11</span></td>
+                    <td class="pain">91</td>
+                </tr>
+                <tr>
+                    <td class="rank">#7</td>
+                    <td><span class="city-name">Sacramento</span><br><span class="teams">Athletics 71&times;1=71, Sacramento Kings 35&times;1/2=18</span></td>
+                    <td class="pain">89</td>
+                </tr>
+                <tr>
+                    <td class="rank">#8</td>
+                    <td><span class="city-name">Vancouver</span><br><span class="teams">BC Lions 60&times;1=60, Vancouver Whitecaps FC 35&times;1/2=18, Vancouver Canucks 14&times;1/3=5 <em>(since 2011; was 122)</em></span></td>
+                    <td class="pain">83</td>
+                </tr>
+                <tr>
+                    <td class="rank">#9</td>
+                    <td><span class="city-name">Charlotte</span><br><span class="teams">Carolina Panthers 64&times;1=64, Charlotte Hornets 31&times;1/2=16, Charlotte FC 6&times;1/3=2</span></td>
+                    <td class="pain">82</td>
+                </tr>
+                <tr>
+                    <td class="rank">#10</td>
+                    <td><span class="city-name">Indianapolis</span><br><span class="teams">Indiana Pacers 50&times;1=50 <em>(since 2012; was 156)</em>, Indiana Fever 48&times;1/2=24, Indianapolis Colts 20&times;1/3=7 <em>(since 2012; was 46)</em></span></td>
+                    <td class="pain">81</td>
+                </tr>
+                <tr>
+                    <td class="rank">#11</td>
+                    <td><span class="city-name">Detroit</span><br><span class="teams">Detroit Tigers 46&times;1=46 <em>(since 2008; was 76)</em>, Detroit Red Wings 39&times;1/2=20, Detroit Lions 21&times;1/3=7 <em>(since 2008; was 58)</em>, Detroit Pistons 12&times;1/4=3 <em>(since 2008; was 52)</em></span></td>
+                    <td class="pain">76</td>
+                </tr>
+                <tr>
+                    <td class="rank">#12</td>
+                    <td><span class="city-name">San Diego</span><br><span class="teams">San Diego Padres 72&times;1=72, San Diego FC 8&times;1/2=4</span></td>
+                    <td class="pain">76</td>
+                </tr>
+                <tr>
+                    <td class="rank">#13</td>
+                    <td><span class="city-name">Salt Lake City</span><br><span class="teams">Real Salt Lake 62&times;1=62, Utah Jazz 25&times;1/2=12 <em>(since 2009; was 138)</em>, Utah Mammoth 3&times;1/3=1</span></td>
+                    <td class="pain">75</td>
+                </tr>
+                <tr>
+                    <td class="rank">#14</td>
+                    <td><span class="city-name">Minneapolis</span><br><span class="teams">Minnesota Lynx 44&times;1=44, Minnesota Timberwolves 26&times;1/2=13 <em>(since 2017; was 49)</em>, Minnesota United FC 22&times;1/3=7, Minnesota Wild 18&times;1/4=4 <em>(since 2017; was 138)</em>, Minnesota Twins 11&times;1/5=2 <em>(since 2017; was 46)</em>, Minnesota Vikings 9&times;1/6=2 <em>(since 2017; was 187)</em></span></td>
+                    <td class="pain">72</td>
+                </tr>
+                <tr>
+                    <td class="rank">#15</td>
+                    <td><span class="city-name">Edmonton</span><br><span class="teams">Edmonton Oilers 54&times;1=54 <em>(since 2015; was 103)</em>, Edmonton Elks 24&times;1/2=12</span></td>
+                    <td class="pain">66</td>
+                </tr>
+                <tr>
+                    <td class="rank">#16</td>
+                    <td><span class="city-name">Cincinnati</span><br><span class="teams">Cincinnati Bengals 40&times;1=40 <em>(since 1990; was 94)</em>, Cincinnati Reds 28&times;1/2=14, FC Cincinnati 18&times;1/3=6</span></td>
+                    <td class="pain">60</td>
+                </tr>
+                <tr>
+                    <td class="rank">#17</td>
+                    <td><span class="city-name">Green Bay</span><br><span class="teams">Green Bay Packers 58&times;1=58</span></td>
+                    <td class="pain">58</td>
+                </tr>
+                <tr>
+                    <td class="rank">#18</td>
+                    <td><span class="city-name">Cleveland</span><br><span class="teams">Cleveland Cavaliers 43&times;1=43, Cleveland Guardians 25&times;1/2=12 <em>(since 2016; was 139)</em>, Cleveland Browns 6&times;1/3=2 <em>(since 2016; was 98)</em></span></td>
+                    <td class="pain">57</td>
+                </tr>
+                <tr>
+                    <td class="rank">#19</td>
+                    <td><span class="city-name">Winnipeg</span><br><span class="teams">Winnipeg Blue Bombers 52&times;1=52, Winnipeg Jets 8&times;1/2=4 <em>(since 2021; was 31)</em></span></td>
+                    <td class="pain">56</td>
+                </tr>
+                <tr>
+                    <td class="rank">#20</td>
+                    <td><span class="city-name">Portland</span><br><span class="teams">Portland Timbers 45&times;1=45, Portland Trail Blazers 20&times;1/2=10 <em>(since 2015; was 137)</em>, Portland Fire 0&times;1/3=0</span></td>
+                    <td class="pain">55</td>
+                </tr>
+            </tbody>
         </table>
         </div>
         <div class="rules-container">
         <h4>Least Painful Cities</h4>
-        <p style="text-align:left; font-size:20px; color:black;">The same post-reset measure, lowest first, among cities with at least two teams. These are the cities whose fans have suffered the least since their last big-four championship.</p>
+        <p style="text-align:left; font-size:20px; color:black;">The same post-reset measure, lowest first, among cities with at least two teams: the cities whose fans have suffered the least since their last reset-eligible championship.</p>
         <table class="cities-table">
             <thead>
                 <tr><th class="rank">#</th><th>City</th><th class="pain">Pain</th></tr>
             </thead>
-            <tbody>
+            <tbody class="mode-big4">
                 <tr>
                     <td class="rank">#1</td>
                     <td><span class="city-name">New York</span><br><span class="teams">New York Yankees 0&times;1=0 <em>(since 2026; was 80)</em>, New York Mets 0&times;1/2=0 <em>(since 2026; was 79)</em>, Brooklyn Nets 0&times;1/3=0 <em>(since 2026; was 20)</em>, New York Knicks 0&times;1/4=0, New York Rangers 0&times;1/5=0 <em>(since 2026; was 95)</em>, New York Islanders 0&times;1/6=0 <em>(since 2026; was 83)</em>, New Jersey Devils 0&times;1/7=0 <em>(since 2026; was 43)</em>, New York Jets 0&times;1/8=0 <em>(since 2026; was 63)</em>, New York Giants 0&times;1/9=0 <em>(since 2026; was 7)</em>, New York Liberty 0&times;1/10=0 <em>(since 2026; was 4)</em>, New York Red Bulls 0&times;1/11=0 <em>(since 2026; was 130)</em>, New York City FC 0&times;1/12=0 <em>(since 2026; was 20)</em></span></td>
@@ -1322,8 +1429,79 @@
                     <td class="pain">20</td>
                 </tr>
             </tbody>
+            <tbody class="mode-all" hidden>
+                <tr>
+                    <td class="rank">#1</td>
+                    <td><span class="city-name">New York</span><br><span class="teams">New York Yankees 0&times;1=0 <em>(since 2026; was 80)</em>, New York Mets 0&times;1/2=0 <em>(since 2026; was 79)</em>, Brooklyn Nets 0&times;1/3=0 <em>(since 2026; was 20)</em>, New York Knicks 0&times;1/4=0, New York Rangers 0&times;1/5=0 <em>(since 2026; was 95)</em>, New York Islanders 0&times;1/6=0 <em>(since 2026; was 83)</em>, New Jersey Devils 0&times;1/7=0 <em>(since 2026; was 43)</em>, New York Jets 0&times;1/8=0 <em>(since 2026; was 63)</em>, New York Giants 0&times;1/9=0 <em>(since 2026; was 7)</em>, New York Liberty 0&times;1/10=0 <em>(since 2026; was 4)</em>, New York Red Bulls 0&times;1/11=0 <em>(since 2026; was 130)</em>, New York City FC 0&times;1/12=0 <em>(since 2026; was 20)</em></span></td>
+                    <td class="pain">0</td>
+                </tr>
+                <tr>
+                    <td class="rank">#2</td>
+                    <td><span class="city-name">Seattle</span><br><span class="teams">Seattle Mariners 0&times;1=0 <em>(since 2025; was 53)</em>, Seattle Kraken 0&times;1/2=0 <em>(since 2025; was 4)</em>, Seattle Seahawks 0&times;1/3=0, Seattle Storm 0&times;1/4=0 <em>(since 2025; was 20)</em>, Seattle Sounders FC 0&times;1/5=0 <em>(since 2025; was 32)</em></span></td>
+                    <td class="pain">0</td>
+                </tr>
+                <tr>
+                    <td class="rank">#3</td>
+                    <td><span class="city-name">Miami</span><br><span class="teams">Miami Heat 1&times;1=1 <em>(since 2025; was 69)</em>, Florida Panthers 1&times;1/2=0, Miami Marlins 0&times;1/3=0 <em>(since 2025; was 10)</em>, Miami Dolphins 0&times;1/4=0 <em>(since 2025; was 109)</em>, Inter Miami CF 0&times;1/5=0</span></td>
+                    <td class="pain">1</td>
+                </tr>
+                <tr>
+                    <td class="rank">#4</td>
+                    <td><span class="city-name">Columbus</span><br><span class="teams">Columbus Crew 4&times;1=4, Columbus Blue Jackets 0&times;1/2=0 <em>(since 2023; was 18)</em></span></td>
+                    <td class="pain">4</td>
+                </tr>
+                <tr>
+                    <td class="rank">#5</td>
+                    <td><span class="city-name">Philadelphia</span><br><span class="teams">Philadelphia Phillies 4&times;1=4 <em>(since 2024; was 61)</em>, Philadelphia Union 4&times;1/2=2 <em>(since 2024; was 46)</em>, Philadelphia Eagles 2&times;1/3=1, Philadelphia 76ers 0&times;1/4=0 <em>(since 2024; was 96)</em>, Philadelphia Flyers 0&times;1/5=0 <em>(since 2024; was 212)</em></span></td>
+                    <td class="pain">7</td>
+                </tr>
+                <tr>
+                    <td class="rank">#6</td>
+                    <td><span class="city-name">Los Angeles</span><br><span class="teams">Los Angeles Lakers 4&times;1=4 <em>(since 2025; was 18)</em>, Anaheim Ducks 4&times;1/2=2 <em>(since 2025; was 38)</em>, Los Angeles Kings 2&times;1/3=1 <em>(since 2025; was 16)</em>, Los Angeles Angels 0&times;1/4=0 <em>(since 2025; was 36)</em>, Los Angeles Dodgers 0&times;1/5=0, LA Clippers 0&times;1/6=0 <em>(since 2025; was 51)</em>, Los Angeles Rams 0&times;1/7=0 <em>(since 2025; was 14)</em>, Los Angeles Chargers 0&times;1/8=0 <em>(since 2025; was 12)</em>, Los Angeles Sparks 0&times;1/9=0 <em>(since 2025; was 32)</em>, Los Angeles FC 0&times;1/10=0 <em>(since 2025; was 24)</em>, LA Galaxy 0&times;1/11=0</span></td>
+                    <td class="pain">7</td>
+                </tr>
+                <tr>
+                    <td class="rank">#7</td>
+                    <td><span class="city-name">Chicago</span><br><span class="teams">Chicago Sky 12&times;1=12, Chicago Cubs 6&times;1/2=3 <em>(since 2021; was 19)</em>, Chicago Bears 4&times;1/3=1 <em>(since 2021; was 69)</em>, Chicago Bulls 2&times;1/4=0 <em>(since 2021; was 37)</em>, Chicago Fire FC 2&times;1/5=0 <em>(since 2021; was 91)</em>, Chicago White Sox 0&times;1/6=0 <em>(since 2021; was 13)</em>, Chicago Blackhawks 0&times;1/7=0 <em>(since 2021; was 7)</em></span></td>
+                    <td class="pain">16</td>
+                </tr>
+                <tr>
+                    <td class="rank">#8</td>
+                    <td><span class="city-name">Las Vegas</span><br><span class="teams">Vegas Golden Knights 16&times;1=16 <em>(since 2025; was 22)</em>, Las Vegas Raiders 0&times;1/2=0 <em>(since 2025; was 2)</em>, Las Vegas Aces 0&times;1/3=0</span></td>
+                    <td class="pain">16</td>
+                </tr>
+                <tr>
+                    <td class="rank">#9</td>
+                    <td><span class="city-name">St. Louis</span><br><span class="teams">St. Louis Blues 12&times;1=12, St. Louis Cardinals 7&times;1/2=4 <em>(since 2019; was 54)</em>, St. Louis City SC 2&times;1/3=1</span></td>
+                    <td class="pain">17</td>
+                </tr>
+                <tr>
+                    <td class="rank">#10</td>
+                    <td><span class="city-name">Milwaukee</span><br><span class="teams">Milwaukee Brewers 13&times;1=13 <em>(since 2021; was 73)</em>, Milwaukee Bucks 10&times;1/2=5</span></td>
+                    <td class="pain">18</td>
+                </tr>
+            </tbody>
         </table>
         </div>
+        <style>
+        .cities-toggle{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:14px;}
+        .cities-toggle-label{font-size:16px;color:#555;font-weight:600;}
+        .ctog{font-family:inherit;font-size:16px;font-weight:700;cursor:pointer;border:2px solid #FF5F1F;background:#fff;color:#FF5F1F;border-radius:6px;padding:6px 12px;}
+        .ctog.active{background:#FF5F1F;color:#fff;}
+        .ctog-sub{font-weight:400;font-size:13px;opacity:.85;}
+        </style>
+        <script>
+        (function(){
+          var btns=document.querySelectorAll('.ctog');
+          function setMode(m){
+            document.querySelectorAll('.mode-big4').forEach(function(e){e.hidden=(m!=='big4');});
+            document.querySelectorAll('.mode-all').forEach(function(e){e.hidden=(m!=='all');});
+            btns.forEach(function(b){b.classList.toggle('active', b.dataset.mode===m);});
+          }
+          btns.forEach(function(b){b.addEventListener('click',function(){setMode(b.dataset.mode);});});
+        })();
+        </script>
+
         <div class="rules-container">
         <h4>PPI Scoring Rules</h4>
         <ul>
