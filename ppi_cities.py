@@ -376,10 +376,10 @@ def _calc_str(teams):
 
 
 def last_champ_note(rec, mode):
-    """Human label for the city's last (reset-eligible) championship."""
+    """The city's last (reset-eligible) championship: '<team> (<year>)' or 'none'."""
     if rec["resetYear"]:
-        return f'last title: {rec["resetChamp"]} ({rec["resetYear"]})'
-    return "no big-four title yet" if mode == "big4" else "no title yet"
+        return f'{rec["resetChamp"]} ({rec["resetYear"]})'
+    return "none (no big-four title)" if mode == "big4" else "none (never won)"
 
 
 def _html_rows(records, mode="big4"):
@@ -390,8 +390,8 @@ def _html_rows(records, mode="big4"):
         rows.append(
             '                <tr>\n'
             f'                    <td class="rank">#{rec["rank"]}</td>\n'
-            f'                    <td><span class="city-name">{rec["city"]}</span> '
-            f'<span class="last-champ">&middot; {note}</span><br>'
+            f'                    <td><span class="city-name">{rec["city"]}</span><br>'
+            f'<span class="last-champ">Last championship: {note}</span><br>'
             f'<span class="teams">{teamstr}</span></td>\n'
             f'                    <td class="pain">{rec["pain"]}</td>\n'
             '                </tr>')
