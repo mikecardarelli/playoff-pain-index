@@ -195,7 +195,60 @@
             margin-top: 80px;
             margin-bottom: 40px;
         }
-        
+
+        .cities-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+        }
+
+        .cities-table th {
+            color: #FF5F1F;
+            text-align: left;
+            font-size: 24px;
+            padding: 8px;
+            border-bottom: 3px solid #FF5F1F;
+        }
+
+        .cities-table th.rank, .cities-table th.pain {
+            text-align: center;
+        }
+
+        .cities-table td {
+            color: black;
+            font-size: 28px;
+            padding: 12px 8px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+
+        .cities-table td.rank {
+            color: black;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .cities-table td.pain {
+            color: #FF5F1F;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .cities-table .city-name {
+            color: black;
+        }
+
+        .cities-table .teams {
+            color: gray;
+            font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .cities-table td { font-size: 20px; }
+            .cities-table .teams { font-size: 13px; }
+            .rules-container { padding: 1px 20px; }
+        }
+
         /* Responsive adjustments for mobile */
         @media (max-width: 600px) {
             h1 {
