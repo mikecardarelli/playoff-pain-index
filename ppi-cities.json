@@ -4,6 +4,7 @@
   "measure": "Rank-discounted post-reset PPI (big-four reset)",
   "method": "Each city's teams are sorted by their post-reset pain (most painful first) and summed at a diminishing rate: the worst counts in full, the second at 1/2, the third at 1/3, and so on (contribution = round(pain / rank)). A city RESETS like a team does: when a reset-eligible team wins a title for the city, the city clock restarts at that title, and each team counts only the PPI it has piled up in seasons AFTER it (a team whose drought predates the reset is re-scored season-by-season from the next season forward; the reset champion and later droughts count their full PPI). Reset-eligible = the big four only (MLB/NBA/NHL/NFL); a WNBA/MLS/CFL title does not reset a city.",
   "updated": "2026-06-18",
+  "tableMinTeams": 2,
   "judgmentCalls": [
     "New Jersey + Long Island count as New York (Devils, Red Bulls, Giants, Jets, Islanders).",
     "Anaheim counts as Los Angeles (Angels, Ducks).",
@@ -21,6 +22,7 @@
       "pain": 213,
       "teamCount": 2,
       "resetYear": 1965,
+      "resetChamp": "Buffalo Bills",
       "rawTotal": 280,
       "teams": [
         {
@@ -55,6 +57,7 @@
       "pain": 170,
       "teamCount": 3,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 203,
       "teams": [
         {
@@ -101,6 +104,7 @@
       "pain": 164,
       "teamCount": 3,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 217,
       "teams": [
         {
@@ -147,6 +151,7 @@
       "pain": 159,
       "teamCount": 3,
       "resetYear": 1977,
+      "resetChamp": "Portland Trail Blazers",
       "rawTotal": 182,
       "teams": [
         {
@@ -193,6 +198,7 @@
       "pain": 148,
       "teamCount": 1,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 148,
       "teams": [
         {
@@ -215,6 +221,7 @@
       "pain": 140,
       "teamCount": 1,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 140,
       "teams": [
         {
@@ -237,6 +244,7 @@
       "pain": 135,
       "teamCount": 6,
       "resetYear": 1991,
+      "resetChamp": "Minnesota Twins",
       "rawTotal": 486,
       "teams": [
         {
@@ -319,6 +327,7 @@
       "pain": 132,
       "teamCount": 4,
       "resetYear": 2001,
+      "resetChamp": "Arizona Diamondbacks",
       "rawTotal": 330,
       "teams": [
         {
@@ -377,6 +386,7 @@
       "pain": 115,
       "teamCount": 2,
       "resetYear": 1990,
+      "resetChamp": "Edmonton Oilers",
       "rawTotal": 127,
       "teams": [
         {
@@ -411,6 +421,7 @@
       "pain": 102,
       "teamCount": 3,
       "resetYear": 1993,
+      "resetChamp": "Montreal Canadiens",
       "rawTotal": 129,
       "teams": [
         {
@@ -457,6 +468,7 @@
       "pain": 95,
       "teamCount": 3,
       "resetYear": 2006,
+      "resetChamp": "Indianapolis Colts",
       "rawTotal": 250,
       "teams": [
         {
@@ -503,6 +515,7 @@
       "pain": 92,
       "teamCount": 3,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 129,
       "teams": [
         {
@@ -549,6 +562,7 @@
       "pain": 91,
       "teamCount": 2,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 102,
       "teams": [
         {
@@ -583,6 +597,7 @@
       "pain": 89,
       "teamCount": 2,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 106,
       "teams": [
         {
@@ -617,6 +632,7 @@
       "pain": 86,
       "teamCount": 2,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 98,
       "teams": [
         {
@@ -651,6 +667,7 @@
       "pain": 82,
       "teamCount": 3,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 101,
       "teams": [
         {
@@ -697,6 +714,7 @@
       "pain": 76,
       "teamCount": 4,
       "resetYear": 2008,
+      "resetChamp": "Detroit Red Wings",
       "rawTotal": 225,
       "teams": [
         {
@@ -755,6 +773,7 @@
       "pain": 76,
       "teamCount": 2,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 80,
       "teams": [
         {
@@ -789,6 +808,7 @@
       "pain": 68,
       "teamCount": 2,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 83,
       "teams": [
         {
@@ -823,6 +843,7 @@
       "pain": 66,
       "teamCount": 2,
       "resetYear": 1989,
+      "resetChamp": "Calgary Flames",
       "rawTotal": 76,
       "teams": [
         {
@@ -857,6 +878,7 @@
       "pain": 60,
       "teamCount": 3,
       "resetYear": 1990,
+      "resetChamp": "Cincinnati Reds",
       "rawTotal": 140,
       "teams": [
         {
@@ -903,6 +925,7 @@
       "pain": 58,
       "teamCount": 1,
       "resetYear": 2010,
+      "resetChamp": "Green Bay Packers",
       "rawTotal": 58,
       "teams": [
         {
@@ -925,6 +948,7 @@
       "pain": 57,
       "teamCount": 3,
       "resetYear": 2016,
+      "resetChamp": "Cleveland Cavaliers",
       "rawTotal": 280,
       "teams": [
         {
@@ -971,6 +995,7 @@
       "pain": 44,
       "teamCount": 1,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 44,
       "teams": [
         {
@@ -993,6 +1018,7 @@
       "pain": 40,
       "teamCount": 1,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 40,
       "teams": [
         {
@@ -1015,6 +1041,7 @@
       "pain": 38,
       "teamCount": 2,
       "resetYear": 2012,
+      "resetChamp": "Baltimore Ravens",
       "rawTotal": 73,
       "teams": [
         {
@@ -1049,6 +1076,7 @@
       "pain": 36,
       "teamCount": 2,
       "resetYear": 2009,
+      "resetChamp": "New Orleans Saints",
       "rawTotal": 53,
       "teams": [
         {
@@ -1083,6 +1111,7 @@
       "pain": 34,
       "teamCount": 6,
       "resetYear": 2019,
+      "resetChamp": "Toronto Raptors",
       "rawTotal": 206,
       "teams": [
         {
@@ -1165,6 +1194,7 @@
       "pain": 34,
       "teamCount": 1,
       "resetYear": 2014,
+      "resetChamp": "San Antonio Spurs",
       "rawTotal": 34,
       "teams": [
         {
@@ -1187,6 +1217,7 @@
       "pain": 33,
       "teamCount": 7,
       "resetYear": 2016,
+      "resetChamp": "Chicago Cubs",
       "rawTotal": 248,
       "teams": [
         {
@@ -1281,6 +1312,7 @@
       "pain": 33,
       "teamCount": 6,
       "resetYear": 2022,
+      "resetChamp": "Golden State Warriors",
       "rawTotal": 247,
       "teams": [
         {
@@ -1363,6 +1395,7 @@
       "pain": 29,
       "teamCount": 3,
       "resetYear": 2021,
+      "resetChamp": "Tampa Bay Lightning",
       "rawTotal": 95,
       "teams": [
         {
@@ -1409,6 +1442,7 @@
       "pain": 27,
       "teamCount": 6,
       "resetYear": 2023,
+      "resetChamp": "Texas Rangers",
       "rawTotal": 302,
       "teams": [
         {
@@ -1491,6 +1525,7 @@
       "pain": 22,
       "teamCount": 3,
       "resetYear": 2017,
+      "resetChamp": "Pittsburgh Penguins",
       "rawTotal": 102,
       "teams": [
         {
@@ -1537,6 +1572,7 @@
       "pain": 22,
       "teamCount": 5,
       "resetYear": 2023,
+      "resetChamp": "Denver Nuggets",
       "rawTotal": 93,
       "teams": [
         {
@@ -1607,6 +1643,7 @@
       "pain": 22,
       "teamCount": 4,
       "resetYear": 2022,
+      "resetChamp": "Houston Astros",
       "rawTotal": 256,
       "teams": [
         {
@@ -1665,6 +1702,7 @@
       "pain": 22,
       "teamCount": 6,
       "resetYear": 2019,
+      "resetChamp": "Washington Nationals",
       "rawTotal": 159,
       "teams": [
         {
@@ -1747,6 +1785,7 @@
       "pain": 22,
       "teamCount": 3,
       "resetYear": 2023,
+      "resetChamp": "Vegas Golden Knights",
       "rawTotal": 24,
       "teams": [
         {
@@ -1793,6 +1832,7 @@
       "pain": 21,
       "teamCount": 5,
       "resetYear": 2021,
+      "resetChamp": "Atlanta Braves",
       "rawTotal": 323,
       "teams": [
         {
@@ -1863,6 +1903,7 @@
       "pain": 20,
       "teamCount": 5,
       "resetYear": 2024,
+      "resetChamp": "Boston Celtics",
       "rawTotal": 237,
       "teams": [
         {
@@ -1933,6 +1974,7 @@
       "pain": 20,
       "teamCount": 2,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 22,
       "teams": [
         {
@@ -1967,6 +2009,7 @@
       "pain": 18,
       "teamCount": 2,
       "resetYear": 2021,
+      "resetChamp": "Milwaukee Bucks",
       "rawTotal": 83,
       "teams": [
         {
@@ -2001,6 +2044,7 @@
       "pain": 18,
       "teamCount": 3,
       "resetYear": 2023,
+      "resetChamp": "Kansas City Chiefs",
       "rawTotal": 49,
       "teams": [
         {
@@ -2047,6 +2091,7 @@
       "pain": 17,
       "teamCount": 3,
       "resetYear": 2019,
+      "resetChamp": "St. Louis Blues",
       "rawTotal": 68,
       "teams": [
         {
@@ -2093,6 +2138,7 @@
       "pain": 10,
       "teamCount": 1,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 10,
       "teams": [
         {
@@ -2115,6 +2161,7 @@
       "pain": 8,
       "teamCount": 1,
       "resetYear": 2025,
+      "resetChamp": "Oklahoma City Thunder",
       "rawTotal": 8,
       "teams": [
         {
@@ -2137,6 +2184,7 @@
       "pain": 7,
       "teamCount": 5,
       "resetYear": 2024,
+      "resetChamp": "Philadelphia Eagles",
       "rawTotal": 417,
       "teams": [
         {
@@ -2207,6 +2255,7 @@
       "pain": 7,
       "teamCount": 11,
       "resetYear": 2025,
+      "resetChamp": "Los Angeles Dodgers",
       "rawTotal": 241,
       "teams": [
         {
@@ -2349,6 +2398,7 @@
       "pain": 1,
       "teamCount": 5,
       "resetYear": 2025,
+      "resetChamp": "Florida Panthers",
       "rawTotal": 189,
       "teams": [
         {
@@ -2419,6 +2469,7 @@
       "pain": 0,
       "teamCount": 12,
       "resetYear": 2026,
+      "resetChamp": "New York Knicks",
       "rawTotal": 624,
       "teams": [
         {
@@ -2573,6 +2624,7 @@
       "pain": 0,
       "teamCount": 5,
       "resetYear": 2025,
+      "resetChamp": "Seattle Seahawks",
       "rawTotal": 109,
       "teams": [
         {
@@ -2643,6 +2695,7 @@
       "pain": 0,
       "teamCount": 1,
       "resetYear": 2026,
+      "resetChamp": "Carolina Hurricanes",
       "rawTotal": 0,
       "teams": [
         {
@@ -2665,6 +2718,7 @@
       "pain": 0,
       "teamCount": 1,
       "resetYear": null,
+      "resetChamp": null,
       "rawTotal": 0,
       "teams": [
         {
@@ -2682,6 +2736,912 @@
       ]
     }
   ],
+  "mostPainful": [
+    {
+      "rank": 1,
+      "city": "Buffalo",
+      "pain": 213,
+      "teamCount": 2,
+      "resetYear": 1965,
+      "resetChamp": "Buffalo Bills",
+      "rawTotal": 280,
+      "teams": [
+        {
+          "team": "Buffalo Bills",
+          "league": "NFL",
+          "fullPPI": 146,
+          "cityScore": 146,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 146,
+          "redeemed": false,
+          "resetYear": 1965,
+          "redeemedBy": null
+        },
+        {
+          "team": "Buffalo Sabres",
+          "league": "NHL",
+          "fullPPI": 134,
+          "cityScore": 134,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 67,
+          "redeemed": false,
+          "resetYear": 1965,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "city": "Salt Lake City",
+      "pain": 170,
+      "teamCount": 3,
+      "resetYear": null,
+      "resetChamp": null,
+      "rawTotal": 203,
+      "teams": [
+        {
+          "team": "Utah Jazz",
+          "league": "NBA",
+          "fullPPI": 138,
+          "cityScore": 138,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 138,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        },
+        {
+          "team": "Real Salt Lake",
+          "league": "MLS",
+          "fullPPI": 62,
+          "cityScore": 62,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 31,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        },
+        {
+          "team": "Utah Mammoth",
+          "league": "NHL",
+          "fullPPI": 3,
+          "cityScore": 3,
+          "discountRank": 3,
+          "multiplier": "1/3",
+          "contribution": 1,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "city": "Vancouver",
+      "pain": 164,
+      "teamCount": 3,
+      "resetYear": null,
+      "resetChamp": null,
+      "rawTotal": 217,
+      "teams": [
+        {
+          "team": "Vancouver Canucks",
+          "league": "NHL",
+          "fullPPI": 122,
+          "cityScore": 122,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 122,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        },
+        {
+          "team": "BC Lions",
+          "league": "CFL",
+          "fullPPI": 60,
+          "cityScore": 60,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 30,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        },
+        {
+          "team": "Vancouver Whitecaps FC",
+          "league": "MLS",
+          "fullPPI": 35,
+          "cityScore": 35,
+          "discountRank": 3,
+          "multiplier": "1/3",
+          "contribution": 12,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "city": "Portland",
+      "pain": 159,
+      "teamCount": 3,
+      "resetYear": 1977,
+      "resetChamp": "Portland Trail Blazers",
+      "rawTotal": 182,
+      "teams": [
+        {
+          "team": "Portland Trail Blazers",
+          "league": "NBA",
+          "fullPPI": 137,
+          "cityScore": 137,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 137,
+          "redeemed": false,
+          "resetYear": 1977,
+          "redeemedBy": null
+        },
+        {
+          "team": "Portland Timbers",
+          "league": "MLS",
+          "fullPPI": 45,
+          "cityScore": 45,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 22,
+          "redeemed": false,
+          "resetYear": 1977,
+          "redeemedBy": null
+        },
+        {
+          "team": "Portland Fire",
+          "league": "WNBA",
+          "fullPPI": 0,
+          "cityScore": 0,
+          "discountRank": 3,
+          "multiplier": "1/3",
+          "contribution": 0,
+          "redeemed": false,
+          "resetYear": 1977,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "city": "Minneapolis",
+      "pain": 135,
+      "teamCount": 6,
+      "resetYear": 1991,
+      "resetChamp": "Minnesota Twins",
+      "rawTotal": 486,
+      "teams": [
+        {
+          "team": "Minnesota Vikings",
+          "league": "NFL",
+          "fullPPI": 187,
+          "cityScore": 69,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 69,
+          "redeemed": true,
+          "resetYear": 1991,
+          "redeemedBy": "Minnesota Twins (1991)"
+        },
+        {
+          "team": "Minnesota Wild",
+          "league": "NHL",
+          "fullPPI": 138,
+          "cityScore": 50,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 25,
+          "redeemed": true,
+          "resetYear": 1991,
+          "redeemedBy": "Minnesota Twins (1991)"
+        },
+        {
+          "team": "Minnesota Timberwolves",
+          "league": "NBA",
+          "fullPPI": 49,
+          "cityScore": 47,
+          "discountRank": 3,
+          "multiplier": "1/3",
+          "contribution": 16,
+          "redeemed": true,
+          "resetYear": 1991,
+          "redeemedBy": "Minnesota Twins (1991)"
+        },
+        {
+          "team": "Minnesota Twins",
+          "league": "MLB",
+          "fullPPI": 46,
+          "cityScore": 46,
+          "discountRank": 4,
+          "multiplier": "1/4",
+          "contribution": 12,
+          "redeemed": false,
+          "resetYear": 1991,
+          "redeemedBy": null
+        },
+        {
+          "team": "Minnesota Lynx",
+          "league": "WNBA",
+          "fullPPI": 44,
+          "cityScore": 44,
+          "discountRank": 5,
+          "multiplier": "1/5",
+          "contribution": 9,
+          "redeemed": false,
+          "resetYear": 1991,
+          "redeemedBy": null
+        },
+        {
+          "team": "Minnesota United FC",
+          "league": "MLS",
+          "fullPPI": 22,
+          "cityScore": 22,
+          "discountRank": 6,
+          "multiplier": "1/6",
+          "contribution": 4,
+          "redeemed": false,
+          "resetYear": 1991,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "city": "Phoenix",
+      "pain": 132,
+      "teamCount": 4,
+      "resetYear": 2001,
+      "resetChamp": "Arizona Diamondbacks",
+      "rawTotal": 330,
+      "teams": [
+        {
+          "team": "Phoenix Mercury",
+          "league": "WNBA",
+          "fullPPI": 78,
+          "cityScore": 78,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 78,
+          "redeemed": false,
+          "resetYear": 2001,
+          "redeemedBy": null
+        },
+        {
+          "team": "Phoenix Suns",
+          "league": "NBA",
+          "fullPPI": 174,
+          "cityScore": 64,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 32,
+          "redeemed": true,
+          "resetYear": 2001,
+          "redeemedBy": "Arizona Diamondbacks (2001)"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "league": "MLB",
+          "fullPPI": 41,
+          "cityScore": 41,
+          "discountRank": 3,
+          "multiplier": "1/3",
+          "contribution": 14,
+          "redeemed": false,
+          "resetYear": 2001,
+          "redeemedBy": null
+        },
+        {
+          "team": "Arizona Cardinals",
+          "league": "NFL",
+          "fullPPI": 37,
+          "cityScore": 33,
+          "discountRank": 4,
+          "multiplier": "1/4",
+          "contribution": 8,
+          "redeemed": true,
+          "resetYear": 2001,
+          "redeemedBy": "Arizona Diamondbacks (2001)"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "city": "Edmonton",
+      "pain": 115,
+      "teamCount": 2,
+      "resetYear": 1990,
+      "resetChamp": "Edmonton Oilers",
+      "rawTotal": 127,
+      "teams": [
+        {
+          "team": "Edmonton Oilers",
+          "league": "NHL",
+          "fullPPI": 103,
+          "cityScore": 103,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 103,
+          "redeemed": false,
+          "resetYear": 1990,
+          "redeemedBy": null
+        },
+        {
+          "team": "Edmonton Elks",
+          "league": "CFL",
+          "fullPPI": 24,
+          "cityScore": 24,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 12,
+          "redeemed": false,
+          "resetYear": 1990,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "city": "Montreal",
+      "pain": 102,
+      "teamCount": 3,
+      "resetYear": 1993,
+      "resetChamp": "Montreal Canadiens",
+      "rawTotal": 129,
+      "teams": [
+        {
+          "team": "Montreal Canadiens",
+          "league": "NHL",
+          "fullPPI": 83,
+          "cityScore": 83,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 83,
+          "redeemed": false,
+          "resetYear": 1993,
+          "redeemedBy": null
+        },
+        {
+          "team": "Montreal Alouettes",
+          "league": "CFL",
+          "fullPPI": 24,
+          "cityScore": 24,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 12,
+          "redeemed": false,
+          "resetYear": 1993,
+          "redeemedBy": null
+        },
+        {
+          "team": "CF Montreal",
+          "league": "MLS",
+          "fullPPI": 22,
+          "cityScore": 22,
+          "discountRank": 3,
+          "multiplier": "1/3",
+          "contribution": 7,
+          "redeemed": false,
+          "resetYear": 1993,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "city": "Indianapolis",
+      "pain": 95,
+      "teamCount": 3,
+      "resetYear": 2006,
+      "resetChamp": "Indianapolis Colts",
+      "rawTotal": 250,
+      "teams": [
+        {
+          "team": "Indiana Pacers",
+          "league": "NBA",
+          "fullPPI": 156,
+          "cityScore": 56,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 56,
+          "redeemed": true,
+          "resetYear": 2006,
+          "redeemedBy": "Indianapolis Colts (2006)"
+        },
+        {
+          "team": "Indiana Fever",
+          "league": "WNBA",
+          "fullPPI": 48,
+          "cityScore": 48,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 24,
+          "redeemed": false,
+          "resetYear": 2006,
+          "redeemedBy": null
+        },
+        {
+          "team": "Indianapolis Colts",
+          "league": "NFL",
+          "fullPPI": 46,
+          "cityScore": 46,
+          "discountRank": 3,
+          "multiplier": "1/3",
+          "contribution": 15,
+          "redeemed": false,
+          "resetYear": 2006,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "city": "Nashville",
+      "pain": 92,
+      "teamCount": 3,
+      "resetYear": null,
+      "resetChamp": null,
+      "rawTotal": 129,
+      "teams": [
+        {
+          "team": "Tennessee Titans",
+          "league": "NFL",
+          "fullPPI": 59,
+          "cityScore": 59,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 59,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        },
+        {
+          "team": "Nashville Predators",
+          "league": "NHL",
+          "fullPPI": 58,
+          "cityScore": 58,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 29,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        },
+        {
+          "team": "Nashville SC",
+          "league": "MLS",
+          "fullPPI": 12,
+          "cityScore": 12,
+          "discountRank": 3,
+          "multiplier": "1/3",
+          "contribution": 4,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "city": "Orlando",
+      "pain": 91,
+      "teamCount": 2,
+      "resetYear": null,
+      "resetChamp": null,
+      "rawTotal": 102,
+      "teams": [
+        {
+          "team": "Orlando Magic",
+          "league": "NBA",
+          "fullPPI": 80,
+          "cityScore": 80,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 80,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        },
+        {
+          "team": "Orlando City SC",
+          "league": "MLS",
+          "fullPPI": 22,
+          "cityScore": 22,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 11,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "city": "Sacramento",
+      "pain": 89,
+      "teamCount": 2,
+      "resetYear": null,
+      "resetChamp": null,
+      "rawTotal": 106,
+      "teams": [
+        {
+          "team": "Athletics",
+          "league": "MLB",
+          "fullPPI": 71,
+          "cityScore": 71,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 71,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        },
+        {
+          "team": "Sacramento Kings",
+          "league": "NBA",
+          "fullPPI": 35,
+          "cityScore": 35,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 18,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "city": "Ottawa",
+      "pain": 86,
+      "teamCount": 2,
+      "resetYear": null,
+      "resetChamp": null,
+      "rawTotal": 98,
+      "teams": [
+        {
+          "team": "Ottawa Senators",
+          "league": "NHL",
+          "fullPPI": 74,
+          "cityScore": 74,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 74,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        },
+        {
+          "team": "Ottawa Redblacks",
+          "league": "CFL",
+          "fullPPI": 24,
+          "cityScore": 24,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 12,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "city": "Charlotte",
+      "pain": 82,
+      "teamCount": 3,
+      "resetYear": null,
+      "resetChamp": null,
+      "rawTotal": 101,
+      "teams": [
+        {
+          "team": "Carolina Panthers",
+          "league": "NFL",
+          "fullPPI": 64,
+          "cityScore": 64,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 64,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        },
+        {
+          "team": "Charlotte Hornets",
+          "league": "NBA",
+          "fullPPI": 31,
+          "cityScore": 31,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 16,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        },
+        {
+          "team": "Charlotte FC",
+          "league": "MLS",
+          "fullPPI": 6,
+          "cityScore": 6,
+          "discountRank": 3,
+          "multiplier": "1/3",
+          "contribution": 2,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "city": "Detroit",
+      "pain": 76,
+      "teamCount": 4,
+      "resetYear": 2008,
+      "resetChamp": "Detroit Red Wings",
+      "rawTotal": 225,
+      "teams": [
+        {
+          "team": "Detroit Tigers",
+          "league": "MLB",
+          "fullPPI": 76,
+          "cityScore": 46,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 46,
+          "redeemed": true,
+          "resetYear": 2008,
+          "redeemedBy": "Detroit Red Wings (2008)"
+        },
+        {
+          "team": "Detroit Red Wings",
+          "league": "NHL",
+          "fullPPI": 39,
+          "cityScore": 39,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 20,
+          "redeemed": false,
+          "resetYear": 2008,
+          "redeemedBy": null
+        },
+        {
+          "team": "Detroit Lions",
+          "league": "NFL",
+          "fullPPI": 58,
+          "cityScore": 21,
+          "discountRank": 3,
+          "multiplier": "1/3",
+          "contribution": 7,
+          "redeemed": true,
+          "resetYear": 2008,
+          "redeemedBy": "Detroit Red Wings (2008)"
+        },
+        {
+          "team": "Detroit Pistons",
+          "league": "NBA",
+          "fullPPI": 52,
+          "cityScore": 12,
+          "discountRank": 4,
+          "multiplier": "1/4",
+          "contribution": 3,
+          "redeemed": true,
+          "resetYear": 2008,
+          "redeemedBy": "Detroit Red Wings (2008)"
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "city": "San Diego",
+      "pain": 76,
+      "teamCount": 2,
+      "resetYear": null,
+      "resetChamp": null,
+      "rawTotal": 80,
+      "teams": [
+        {
+          "team": "San Diego Padres",
+          "league": "MLB",
+          "fullPPI": 72,
+          "cityScore": 72,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 72,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        },
+        {
+          "team": "San Diego FC",
+          "league": "MLS",
+          "fullPPI": 8,
+          "cityScore": 8,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 4,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "city": "Winnipeg",
+      "pain": 68,
+      "teamCount": 2,
+      "resetYear": null,
+      "resetChamp": null,
+      "rawTotal": 83,
+      "teams": [
+        {
+          "team": "Winnipeg Blue Bombers",
+          "league": "CFL",
+          "fullPPI": 52,
+          "cityScore": 52,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 52,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        },
+        {
+          "team": "Winnipeg Jets",
+          "league": "NHL",
+          "fullPPI": 31,
+          "cityScore": 31,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 16,
+          "redeemed": false,
+          "resetYear": null,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "city": "Calgary",
+      "pain": 66,
+      "teamCount": 2,
+      "resetYear": 1989,
+      "resetChamp": "Calgary Flames",
+      "rawTotal": 76,
+      "teams": [
+        {
+          "team": "Calgary Flames",
+          "league": "NHL",
+          "fullPPI": 56,
+          "cityScore": 56,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 56,
+          "redeemed": false,
+          "resetYear": 1989,
+          "redeemedBy": null
+        },
+        {
+          "team": "Calgary Stampeders",
+          "league": "CFL",
+          "fullPPI": 20,
+          "cityScore": 20,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 10,
+          "redeemed": false,
+          "resetYear": 1989,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "city": "Cincinnati",
+      "pain": 60,
+      "teamCount": 3,
+      "resetYear": 1990,
+      "resetChamp": "Cincinnati Reds",
+      "rawTotal": 140,
+      "teams": [
+        {
+          "team": "Cincinnati Bengals",
+          "league": "NFL",
+          "fullPPI": 94,
+          "cityScore": 40,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 40,
+          "redeemed": true,
+          "resetYear": 1990,
+          "redeemedBy": "Cincinnati Reds (1990)"
+        },
+        {
+          "team": "Cincinnati Reds",
+          "league": "MLB",
+          "fullPPI": 28,
+          "cityScore": 28,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 14,
+          "redeemed": false,
+          "resetYear": 1990,
+          "redeemedBy": null
+        },
+        {
+          "team": "FC Cincinnati",
+          "league": "MLS",
+          "fullPPI": 18,
+          "cityScore": 18,
+          "discountRank": 3,
+          "multiplier": "1/3",
+          "contribution": 6,
+          "redeemed": false,
+          "resetYear": 1990,
+          "redeemedBy": null
+        }
+      ]
+    },
+    {
+      "rank": 20,
+      "city": "Cleveland",
+      "pain": 57,
+      "teamCount": 3,
+      "resetYear": 2016,
+      "resetChamp": "Cleveland Cavaliers",
+      "rawTotal": 280,
+      "teams": [
+        {
+          "team": "Cleveland Cavaliers",
+          "league": "NBA",
+          "fullPPI": 43,
+          "cityScore": 43,
+          "discountRank": 1,
+          "multiplier": "1",
+          "contribution": 43,
+          "redeemed": false,
+          "resetYear": 2016,
+          "redeemedBy": null
+        },
+        {
+          "team": "Cleveland Guardians",
+          "league": "MLB",
+          "fullPPI": 139,
+          "cityScore": 25,
+          "discountRank": 2,
+          "multiplier": "1/2",
+          "contribution": 12,
+          "redeemed": true,
+          "resetYear": 2016,
+          "redeemedBy": "Cleveland Cavaliers (2016)"
+        },
+        {
+          "team": "Cleveland Browns",
+          "league": "NFL",
+          "fullPPI": 98,
+          "cityScore": 6,
+          "discountRank": 3,
+          "multiplier": "1/3",
+          "contribution": 2,
+          "redeemed": true,
+          "resetYear": 2016,
+          "redeemedBy": "Cleveland Cavaliers (2016)"
+        }
+      ]
+    }
+  ],
   "leastPainful": {
     "minTeams3": [
       {
@@ -2690,6 +3650,7 @@
         "pain": 0,
         "teamCount": 12,
         "resetYear": 2026,
+        "resetChamp": "New York Knicks",
         "rawTotal": 624,
         "teams": [
           {
@@ -2844,6 +3805,7 @@
         "pain": 0,
         "teamCount": 5,
         "resetYear": 2025,
+        "resetChamp": "Seattle Seahawks",
         "rawTotal": 109,
         "teams": [
           {
@@ -2914,6 +3876,7 @@
         "pain": 1,
         "teamCount": 5,
         "resetYear": 2025,
+        "resetChamp": "Florida Panthers",
         "rawTotal": 189,
         "teams": [
           {
@@ -2984,6 +3947,7 @@
         "pain": 7,
         "teamCount": 5,
         "resetYear": 2024,
+        "resetChamp": "Philadelphia Eagles",
         "rawTotal": 417,
         "teams": [
           {
@@ -3054,6 +4018,7 @@
         "pain": 7,
         "teamCount": 11,
         "resetYear": 2025,
+        "resetChamp": "Los Angeles Dodgers",
         "rawTotal": 241,
         "teams": [
           {
@@ -3196,6 +4161,7 @@
         "pain": 17,
         "teamCount": 3,
         "resetYear": 2019,
+        "resetChamp": "St. Louis Blues",
         "rawTotal": 68,
         "teams": [
           {
@@ -3242,6 +4208,7 @@
         "pain": 18,
         "teamCount": 3,
         "resetYear": 2023,
+        "resetChamp": "Kansas City Chiefs",
         "rawTotal": 49,
         "teams": [
           {
@@ -3288,6 +4255,7 @@
         "pain": 20,
         "teamCount": 5,
         "resetYear": 2024,
+        "resetChamp": "Boston Celtics",
         "rawTotal": 237,
         "teams": [
           {
@@ -3358,6 +4326,7 @@
         "pain": 21,
         "teamCount": 5,
         "resetYear": 2021,
+        "resetChamp": "Atlanta Braves",
         "rawTotal": 323,
         "teams": [
           {
@@ -3428,6 +4397,7 @@
         "pain": 22,
         "teamCount": 3,
         "resetYear": 2017,
+        "resetChamp": "Pittsburgh Penguins",
         "rawTotal": 102,
         "teams": [
           {
@@ -3476,6 +4446,7 @@
         "pain": 0,
         "teamCount": 12,
         "resetYear": 2026,
+        "resetChamp": "New York Knicks",
         "rawTotal": 624,
         "teams": [
           {
@@ -3630,6 +4601,7 @@
         "pain": 0,
         "teamCount": 5,
         "resetYear": 2025,
+        "resetChamp": "Seattle Seahawks",
         "rawTotal": 109,
         "teams": [
           {
@@ -3700,6 +4672,7 @@
         "pain": 1,
         "teamCount": 5,
         "resetYear": 2025,
+        "resetChamp": "Florida Panthers",
         "rawTotal": 189,
         "teams": [
           {
@@ -3770,6 +4743,7 @@
         "pain": 7,
         "teamCount": 5,
         "resetYear": 2024,
+        "resetChamp": "Philadelphia Eagles",
         "rawTotal": 417,
         "teams": [
           {
@@ -3840,6 +4814,7 @@
         "pain": 7,
         "teamCount": 11,
         "resetYear": 2025,
+        "resetChamp": "Los Angeles Dodgers",
         "rawTotal": 241,
         "teams": [
           {
@@ -3982,6 +4957,7 @@
         "pain": 17,
         "teamCount": 3,
         "resetYear": 2019,
+        "resetChamp": "St. Louis Blues",
         "rawTotal": 68,
         "teams": [
           {
@@ -4028,6 +5004,7 @@
         "pain": 18,
         "teamCount": 2,
         "resetYear": 2021,
+        "resetChamp": "Milwaukee Bucks",
         "rawTotal": 83,
         "teams": [
           {
@@ -4062,6 +5039,7 @@
         "pain": 18,
         "teamCount": 3,
         "resetYear": 2023,
+        "resetChamp": "Kansas City Chiefs",
         "rawTotal": 49,
         "teams": [
           {
@@ -4108,6 +5086,7 @@
         "pain": 20,
         "teamCount": 5,
         "resetYear": 2024,
+        "resetChamp": "Boston Celtics",
         "rawTotal": 237,
         "teams": [
           {
@@ -4178,6 +5157,7 @@
         "pain": 20,
         "teamCount": 2,
         "resetYear": null,
+        "resetChamp": null,
         "rawTotal": 22,
         "teams": [
           {

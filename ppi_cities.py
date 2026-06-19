@@ -262,6 +262,7 @@ def _apply_reset(metro, teams, mode):
                      if t["league"] in reset_lgs and t["titleYear"] == reset_year)
     for t in teams:
         t["resetYear"] = reset_year
+        t["resetChamp"] = champ          # team whose title is the city's reset (or None)
         redeemed = (reset_year is not None
                     and t["titleYear"] != reset_year
                     and t["droughtStart"] is not None
@@ -299,11 +300,22 @@ def city_record(rank, city, teams):
                 "resetYear": t["resetYear"], "redeemedBy": t["redeemedBy"]}
     return {"rank": rank, "city": city, "pain": city_pain(teams),
             "teamCount": len(teams), "resetYear": teams[0]["resetYear"],
+            "resetChamp": teams[0]["resetChamp"],
             "rawTotal": sum(t["score"] for t in teams),
             "teams": [row(t) for t in _ordered(teams)]}
 
 
-def least_painful(ranked, min_teams, n=10):
+# Both tables require at least two teams in a metro (a one-team town can top either
+# end by default, e.g. Hamilton's lone Tiger-Cats or a single team fresh off a title).
+MIN_TEAMS = 2
+
+
+def most_painful(ranked, min_teams=MIN_TEAMS, n=20):
+    elig = [(c, ts) for c, ts in ranked if len(ts) >= min_teams]   # ranked is already desc
+    return [city_record(i, c, ts) for i, (c, ts) in enumerate(elig[:n], 1)]
+
+
+def least_painful(ranked, min_teams=MIN_TEAMS, n=10):
     elig = [(c, ts) for c, ts in ranked if len(ts) >= min_teams]
     elig.sort(key=lambda ct: city_pain(ct[1]))   # ascending = least painful first
     return [city_record(i, c, ts) for i, (c, ts) in enumerate(elig[:n], 1)]
@@ -334,8 +346,10 @@ def write_json(mode="big4", path=None):
                     else "Rank-discounted post-reset PPI (all-leagues reset)"),
         "method": _method(mode),
         "updated": "2026-06-18",
+        "tableMinTeams": MIN_TEAMS,   # both published tables require >= this many teams
         "judgmentCalls": JUDGMENT,
         "cities": [city_record(i, c, ts) for i, (c, ts) in enumerate(ranked, 1)],
+        "mostPainful": most_painful(ranked),
         "leastPainful": {
             "minTeams3": least_painful(ranked, 3),
             "minTeams2": least_painful(ranked, 2),
@@ -361,14 +375,23 @@ def _calc_str(teams):
     return ", ".join(_team_calc(t) for t in _ordered(teams))
 
 
-def _html_rows(records):
+def last_champ_note(rec, mode):
+    """Human label for the city's last (reset-eligible) championship."""
+    if rec["resetYear"]:
+        return f'last title: {rec["resetChamp"]} ({rec["resetYear"]})'
+    return "no big-four title yet" if mode == "big4" else "no title yet"
+
+
+def _html_rows(records, mode="big4"):
     rows = []
     for rec in records:
         teamstr = ", ".join(_team_calc(t, html=True) for t in rec["teams"])
+        note = last_champ_note(rec, mode)
         rows.append(
             '                <tr>\n'
             f'                    <td class="rank">#{rec["rank"]}</td>\n'
-            f'                    <td><span class="city-name">{rec["city"]}</span><br>'
+            f'                    <td><span class="city-name">{rec["city"]}</span> '
+            f'<span class="last-champ">&middot; {note}</span><br>'
             f'<span class="teams">{teamstr}</span></td>\n'
             f'                    <td class="pain">{rec["pain"]}</td>\n'
             '                </tr>')
@@ -385,11 +408,10 @@ def main():
     if "--html" in sys.argv:
         mode = _mode_arg()
         ranked, _ = collect(mode)
-        most = [city_record(i, c, ts) for i, (c, ts) in enumerate(ranked, 1)][:20]
-        print(f"<!-- MOST PAINFUL ({mode}) -->")
-        print(_html_rows(most))
+        print(f"<!-- MOST PAINFUL ({mode}, min 2 teams) -->")
+        print(_html_rows(most_painful(ranked), mode))
         print(f"\n<!-- LEAST PAINFUL ({mode}, min 2 teams) -->")
-        print(_html_rows(least_painful(ranked, 2)))
+        print(_html_rows(least_painful(ranked), mode))
         return
     if "--least" in sys.argv:
         mode = _mode_arg()
