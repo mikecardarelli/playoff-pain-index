@@ -1,0 +1,760 @@
+{
+  "league": "NBA",
+  "updated": "2026-06-16",
+  "scoring": "16*Finals + 8*Semis + 4*Quarters + 2*FirstRound + 1*WinningRecordNoPlayoff",
+  "teams": [
+    {
+      "team": "Phoenix Suns",
+      "score": 174,
+      "since": "Since team was founded in 1968",
+      "lastChampionship": "Never won (founded 1968)",
+      "breakdown": {
+        "finals": 3,
+        "semis": 7,
+        "quarters": 10,
+        "firstRound": 13,
+        "winningRecordNoPlayoff": 4
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://champsorchumps.us/team/nba/phoenix-suns",
+        "https://champsorchumps.us/team/nba/phoenix-suns/playoff-series",
+        "https://www.landofbasketball.com/teams/playoff_history/phoenix_suns.htm",
+        "https://www.basketball-reference.com/playoffs/1970-nba-western-division-semifinals-suns-vs-lakers.html",
+        "https://en.wikipedia.org/wiki/List_of_Phoenix_Suns_seasons"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Indiana Pacers",
+      "score": 156,
+      "since": "Since last title in 1973 (ABA)",
+      "lastChampionship": "Never won (ABA titles 1972-74 do not count as NBA titles)",
+      "breakdown": {
+        "finals": 3,
+        "semis": 8,
+        "quarters": 2,
+        "firstRound": 18,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Indiana_Pacers_seasons",
+        "https://en.wikipedia.org/wiki/Indiana_Pacers",
+        "https://www.basketball-reference.com/playoffs/1995-nba-eastern-conference-finals-pacers-vs-magic.html",
+        "https://en.wikipedia.org/wiki/2020%E2%80%9321_Indiana_Pacers_season"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical). Drought dates to the 1973 ABA title; includes ABA-era Finals/playoff losses."
+    },
+    {
+      "team": "Utah Jazz",
+      "score": 138,
+      "since": "Since team moved to Utah in 1979",
+      "lastChampionship": "Never won (relocated from New Orleans in 1979)",
+      "breakdown": {
+        "finals": 2,
+        "semis": 4,
+        "quarters": 11,
+        "firstRound": 14,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Utah_Jazz_seasons",
+        "https://www.ksl.com/article/46568543/utah-jazz-at-40-looking-back-at-how-utah-landed-an-nba-franchise-40-years-ago",
+        "https://en.wikipedia.org/wiki/2003%E2%80%9304_Utah_Jazz_season"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Portland Trail Blazers",
+      "score": 137,
+      "since": "Since last title in 1977",
+      "lastChampionship": "1977 NBA Finals",
+      "breakdown": {
+        "finals": 2,
+        "semis": 4,
+        "quarters": 5,
+        "firstRound": 26,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Portland_Trail_Blazers_seasons",
+        "https://www.basketball-reference.com/teams/POR/1986.html",
+        "https://en.wikipedia.org/wiki/1985%E2%80%9386_Portland_Trail_Blazers_season",
+        "https://en.wikipedia.org/wiki/1977_NBA_Finals",
+        "https://www.blazersedge.com/gameday-coverage/112041/portland-trail-blazers-2025-2026-season-record-playoffs-play-in-spurs-suns-success"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Atlanta Hawks",
+      "score": 130,
+      "since": "Since team moved to Atlanta in 1968-69",
+      "lastChampionship": "1958 NBA Championship (as St. Louis Hawks)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 4,
+        "quarters": 16,
+        "firstRound": 17,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Atlanta_Hawks_seasons",
+        "https://www.landofbasketball.com/teams/playoff_history/atlanta_hawks.htm",
+        "https://champsorchumps.us/team/nba/atlanta-hawks",
+        "https://en.wikipedia.org/wiki/1968-69_NBA_season",
+        "https://en.wikipedia.org/wiki/1970-71_NBA_season"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Philadelphia 76ers",
+      "score": 96,
+      "since": "Since last title in 1982-83",
+      "lastChampionship": "1983 NBA Championship",
+      "breakdown": {
+        "finals": 1,
+        "semis": 1,
+        "quarters": 13,
+        "firstRound": 10,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Philadelphia_76ers_seasons",
+        "https://www.basketball-reference.com/playoffs/1984-nba-eastern-conference-first-round-nets-vs-76ers.html",
+        "https://www.basketball-reference.com/playoffs/2020-nba-eastern-conference-first-round-76ers-vs-celtics.html",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Philadelphia_76ers_season",
+        "https://www.basketball-reference.com/playoffs/NBA_2026.html"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Orlando Magic",
+      "score": 80,
+      "since": "Since team was founded in 1989",
+      "lastChampionship": "Never won (founded 1989)",
+      "breakdown": {
+        "finals": 2,
+        "semis": 2,
+        "quarters": 1,
+        "firstRound": 14,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2006-07: Magic went 40-42 (losing record) but made the playoffs as 8th seed in the East; confirmed lost to Detroit Pistons 0-4 in First Round -- counts as firstRoundLoss not winningRecordNoPlayoff",
+        "2019-20: Bubble season; Magic finished 33-40 (losing record) but participated in playoffs as existing playoff seed; lost to Milwaukee Bucks 4-1 in First Round",
+        "2024-25 and 2025-26: Magic entered playoffs via play-in tournament; per rules only the 16-team bracket result is counted (both were First Round eliminations)",
+        "Three seasons (1992-93, 1997-98, 1999-00) finished exactly 41-41 (.500) and missed playoffs -- not counted as winningRecordNoPlayoff since rule requires strictly greater than .500"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Orlando_Magic_seasons",
+        "https://champsorchumps.us/team/nba/orlando-magic",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Orlando_Magic_season",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Orlando_Magic_season",
+        "https://en.wikipedia.org/wiki/2023%E2%80%9324_Orlando_Magic_season",
+        "https://en.wikipedia.org/wiki/2010%E2%80%9311_Orlando_Magic_season"
+      ],
+      "notes": "Franchise founded 1989, has never won an NBA title. Two Finals appearances (1995 swept by Rockets, 2009 lost to Lakers in 5). Two Conference Finals exits (1996 vs Bulls, 2010 vs Celtics). One Conference Semis exit (2008 vs Pistons). The remaining 14 playoff appearances all ended in the First Round. No seasons with a winning record and no playoff berth -- every missed-playoff year had a losing or exactly .500 record."
+    },
+    {
+      "team": "Houston Rockets",
+      "score": 71,
+      "since": "Since last title in 1995",
+      "lastChampionship": "1995 NBA Finals",
+      "breakdown": {
+        "finals": 0,
+        "semis": 3,
+        "quarters": 5,
+        "firstRound": 11,
+        "winningRecordNoPlayoff": 5
+      },
+      "confidence": "high",
+      "flags": [
+        "1997-98 and 2015-16 records were exactly 41-41 (.500), not counted as winning-record-no-playoff since rule requires strictly >.500",
+        "2023-24 was also exactly 41-41 and team missed both play-in and playoffs",
+        "2011-12 was the lockout-shortened 66-game season; 34-32 (.515) counts as winning record",
+        "Play-in tournament appearances (if any post-2021) not counted as playoff rounds per PPI rules",
+        "2025-26 season data sourced from Wikipedia; current date is June 2026 post-playoffs"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Houston_Rockets_seasons",
+        "https://en.wikipedia.org/wiki/Houston_Rockets",
+        "https://en.wikipedia.org/wiki/2000%E2%80%9301_Houston_Rockets_season",
+        "https://en.wikipedia.org/wiki/2002%E2%80%9303_Houston_Rockets_season",
+        "https://en.wikipedia.org/wiki/2009%E2%80%9310_Houston_Rockets_season",
+        "https://en.wikipedia.org/wiki/2010%E2%80%9311_Houston_Rockets_season"
+      ],
+      "notes": "Semis losses (Conf. Finals): 1996-97 (vs Jazz), 2014-15 (vs Warriors), 2017-18 (vs Warriors). Quarters losses (Conf. Semis): 1995-96 (vs SuperSonics), 2008-09 (vs Lakers), 2016-17 (vs Spurs), 2018-19 (vs Warriors), 2019-20 (vs Lakers, bubble). First Round losses: 1997-98, 1998-99, 2003-04, 2004-05, 2006-07, 2007-08, 2012-13, 2013-14, 2015-16, 2024-25, 2025-26. Winning-record no-playoff: 2000-01 (45-37), 2002-03 (43-39), 2009-10 (42-40), 2010-11 (43-39), 2011-12 (34-32)."
+    },
+    {
+      "team": "Miami Heat",
+      "score": 69,
+      "since": "Since last title in 2013",
+      "lastChampionship": "2013 NBA Finals",
+      "breakdown": {
+        "finals": 3,
+        "semis": 1,
+        "quarters": 1,
+        "firstRound": 4,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "2016-17 season was exactly 41-41 (.500), not counted as winning record (rule requires >.500)",
+        "2022-23 and 2024-25 Finals/first-round appearances were reached via play-in tournament; play-in losses are excluded per rules, only bracket-proper eliminations counted",
+        "2025-26: Heat lost in play-in to Charlotte Hornets (OT), so missed playoffs; 43-39 winning record counts as winningRecordNoPlayoff"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Miami_Heat_seasons",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Miami_Heat_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Miami_Heat_season",
+        "https://www.basketball-reference.com/playoffs/2025-nba-eastern-conference-first-round-heat-vs-cavaliers.html"
+      ],
+      "notes": "Heat last won in 2013 (LeBron era). Since then: 3 Finals losses (2014 to Spurs, 2020 to Lakers, 2023 to Nuggets), 1 Conference Finals loss (2022 to Celtics), 1 Conference Semifinals loss (2016 to Raptors), 4 first-round losses (2018 vs 76ers, 2021 vs Bucks, 2024 vs Celtics, 2025 vs Cavaliers sweep), and 1 winning-record playoff miss (2025-26 via play-in loss)."
+    },
+    {
+      "team": "Washington Wizards",
+      "score": 62,
+      "since": "Since last title in 1978",
+      "lastChampionship": "1978 NBA Finals",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 5,
+        "firstRound": 12,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [
+        "1983-84 team made playoffs with a 35-47 losing record (8th seed in expanded East bracket)",
+        "2020-21 first round loss was via play-in qualification; loss in 16-team bracket counted per rules",
+        "1982-83 (42-40) and 1997-98 (42-40) both had winning records and missed playoffs"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Washington_Wizards_seasons",
+        "https://www.landofbasketball.com/teams/playoff_history/washington_wizards.htm",
+        "https://champsorchumps.us/team/nba/washington-wizards",
+        "https://en.wikipedia.org/wiki/1978_NBA_Finals"
+      ],
+      "notes": "Drought runs from 1978-79 through 2025-26 (47 seasons). The Wizards never reached the Conference Finals during the drought; their deepest runs were 5 Conference Semifinals losses. They made the playoffs with losing records in multiple seasons in the 1980s (1983-84 at 35-47, 1984-85 at 40-42, 1985-86 at 39-43, 1987-88 at 38-44). The 2015-16 season at exactly 41-41 (.500) does not qualify as a winning record under the greater-than-.500 rule."
+    },
+    {
+      "team": "Detroit Pistons",
+      "score": 52,
+      "since": "Since last title in 2004",
+      "lastChampionship": "2004 NBA Finals",
+      "breakdown": {
+        "finals": 1,
+        "semis": 3,
+        "quarters": 1,
+        "firstRound": 4,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2018-19 season: Pistons had exactly .500 record (41-41); since they made playoffs it counts as a first-round loss, not winningRecordNoPlayoff",
+        "2025-26 season included: Pistons eliminated in Conference Semifinals by Cavaliers on May 19 2026 (current date June 16 2026, season complete for Detroit)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Detroit_Pistons_seasons",
+        "https://en.wikipedia.org/wiki/Detroit_Pistons",
+        "https://en.wikipedia.org/wiki/2004%E2%80%9305_Detroit_Pistons_season",
+        "https://en.wikipedia.org/wiki/2008%E2%80%9309_Detroit_Pistons_season",
+        "https://en.wikipedia.org/wiki/2018%E2%80%9319_Detroit_Pistons_season",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Detroit_Pistons_season"
+      ],
+      "notes": "finalsLoss: 2004-05 (vs Spurs). semisLosses: 2005-06 (vs Heat), 2006-07 (vs Cavaliers), 2007-08 (vs Celtics). quartersLoss: 2025-26 (vs Cavaliers, Game 7 May 19 2026). firstRoundLosses: 2008-09 (vs Cavaliers), 2015-16 (vs Cavaliers), 2018-19 (vs Bucks; 41-41 record, exactly .500 not >.500), 2024-25 (vs Knicks). Seasons 2009-10 through 2014-15 and 2016-17 through 2023-24 were all losing-record missed-playoff seasons. Play-in tournament (2021+) not counted; Pistons never reached the 16-team bracket in those years."
+    },
+    {
+      "team": "LA Clippers",
+      "score": 51,
+      "since": "Since team relocated to Los Angeles in 1984",
+      "lastChampionship": "Never won",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 5,
+        "firstRound": 10,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "2025-26 season: Clippers finished 9th in West with 42-40 record, lost in NBA play-in tournament -- counted as winningRecordNoPlayoff",
+        "1996-97: Clippers made playoffs with a 36-46 losing record (8th seed) -- still a first-round loss, not winningRecordNoPlayoff",
+        "San Diego Clippers playoff history (1978-84) excluded because relocation to LA is more recent than any title",
+        "2021-22 play-in loss confirmed via Wikipedia"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/nba/los-angeles-clippers",
+        "https://www.landofbasketball.com/teams/playoff_history/los_angeles_clippers.htm",
+        "https://en.wikipedia.org/wiki/Los_Angeles_Clippers",
+        "https://en.wikipedia.org/wiki/2021%E2%80%9322_Los_Angeles_Clippers_season",
+        "https://en.wikipedia.org/wiki/2023%E2%80%9324_Los_Angeles_Clippers_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Los_Angeles_Clippers_season"
+      ],
+      "notes": "Drought starts 1984-85, the Clippers' first season in LA (relocated from San Diego). Team has never won an NBA championship. Semis: 2020-21 Conference Finals loss. Quarters (Conference Semifinals losses): 2005-06, 2011-12, 2013-14, 2014-15, 2019-20. First Round losses: 1991-92, 1992-93, 1996-97, 2012-13, 2015-16, 2016-17, 2018-19, 2022-23, 2023-24, 2024-25. Winning record no playoff: 2017-18 (42-40, missed playoffs outright), 2021-22 (42-40, lost play-in), 2025-26 (42-40, finished 9th West, lost play-in). Play-in losses (2021-22, 2025-26) classified as missed playoffs per PPI rules. The 1996-97 team had a losing 36-46 record but qualified as 8th seed and is counted as a first-round loss. Pre-LA seasons (Buffalo Braves 1970-78, San Diego Clippers 1978-84) excluded per relocation rule."
+    },
+    {
+      "team": "Minnesota Timberwolves",
+      "score": 49,
+      "since": "Since team was founded in 1989",
+      "lastChampionship": "Never won (founded 1989)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 3,
+        "quarters": 1,
+        "firstRound": 10,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "2021-22 and 2022-23: Timberwolves entered playoffs via play-in tournament; play-in games not counted per rules, only the first-round bracket loss counted",
+        "1998-99 was a lockout-shortened 50-game season; 25-25 record is exactly .500 (not a winning record), but they made the playoffs and lost in the first round"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Minnesota_Timberwolves_seasons",
+        "https://en.wikipedia.org/wiki/Minnesota_Timberwolves"
+      ],
+      "notes": "Timberwolves have never won an NBA title. Drought covers all 36 seasons from 1989-90 through 2025-26. Three Conference Finals appearances (2003-04 lost to Lakers, 2023-24 lost to Mavericks, 2024-25 lost to Thunder). 2025-26 ended with a Conference Semifinals loss to the Spurs. 2021-22 and 2022-23 playoff entries came via play-in tournament but losses occurred in the 16-team bracket first round so they count as first round losses. The only winning-record-no-playoff season was 2004-05 (44-38)."
+    },
+    {
+      "team": "Cleveland Cavaliers",
+      "score": 43,
+      "since": "Since last title in 2016",
+      "lastChampionship": "2016 NBA Finals",
+      "breakdown": {
+        "finals": 1,
+        "semis": 2,
+        "quarters": 2,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Cleveland_Cavaliers_seasons",
+        "https://en.wikipedia.org/wiki/2021%E2%80%9322_Cleveland_Cavaliers_season",
+        "https://www.basketball-reference.com/playoffs/2025-nba-eastern-conference-semifinals-pacers-vs-cavaliers.html",
+        "https://en.wikipedia.org/wiki/2026_NBA_playoffs",
+        "https://www.basketball-reference.com/playoffs/2026-nba-eastern-conference-finals-cavaliers-vs-knicks.html"
+      ],
+      "notes": "10-season drought (2016-17 through 2025-26). 2021-22: Cavaliers went 44-38 but lost in the NBA play-in tournament to both the Nets and Hawks; since the play-in is not counted as a playoff round, this registers as winning-record-no-playoff. 2016-17 Conference Finals loss was to the Celtics. 2017-18 Finals loss was to the Warriors. 2022-23 first-round loss was to the Knicks. 2023-24 Conference Semifinals loss was to the Celtics. 2024-25 Conference Semifinals loss (4-1) was to the Pacers. 2025-26 Conference Finals loss was a sweep (0-4) to the Knicks."
+    },
+    {
+      "team": "Memphis Grizzlies",
+      "score": 40,
+      "since": "Since team relocated to Memphis in 2001",
+      "lastChampionship": "Never won (relocated to Memphis in 2001)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 3,
+        "firstRound": 10,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Play-in 2021: Grizzlies beat Warriors in play-in to become 8-seed, then lost to Jazz 4-1 in proper first round -- counted as firstRoundLoss per rules",
+        "2019-20 bubble season: 34-39 record, below .500, no playoffs -- nothing",
+        "Vancouver Grizzlies history (1995-2001) excluded per relocation rule"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Memphis_Grizzlies_seasons",
+        "https://www.nba.com/playoffs/2021/west-first-round-1",
+        "https://www.si.com/nba/thunder/onsi/news/recapping-okc-thunder-s-2025-first-round-against-memphis-grizzlies",
+        "https://sports.yahoo.com/article/memphis-grizzlies-lose-game-4-221805693.html"
+      ],
+      "notes": "Semis loss: 2012-13 Conference Finals (Spurs). Quarters losses: 2010-11 (Thunder), 2014-15 (Warriors), 2021-22 (Warriors). First round losses: 2003-04 (Spurs), 2004-05 (Suns), 2005-06 (Mavericks), 2011-12 (Clippers), 2013-14 (Thunder), 2015-16 (Spurs), 2016-17 (Spurs), 2020-21 (Jazz), 2022-23 (Lakers), 2024-25 (Thunder). No winning-record-no-playoff seasons in Memphis era."
+    },
+    {
+      "team": "Chicago Bulls",
+      "score": 37,
+      "since": "Since last title in 1998",
+      "lastChampionship": "1998 NBA Finals",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 3,
+        "firstRound": 8,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "2022-23 and 2024-25: Bulls entered play-in tournament but were eliminated before the 16-team bracket; per rules these seasons are NOT counted as playoff appearances",
+        "2015-16: 42-40 winning record but missed playoffs (8th seed cutoff was 45 wins); counted as winningRecordNoPlayoff",
+        "2019-20 was a COVID-shortened season (22-43 in 65 games played); losing record, no playoff bubble appearance"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Chicago_Bulls_seasons",
+        "https://champsorchumps.us/team/nba/chicago-bulls",
+        "https://www.landofbasketball.com/teams/playoff_history/chicago_bulls.htm",
+        "https://en.wikipedia.org/wiki/2015%E2%80%9316_Chicago_Bulls_season",
+        "https://en.wikipedia.org/wiki/2022%E2%80%9323_Chicago_Bulls_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Chicago_Bulls_season"
+      ],
+      "notes": "Drought covers 1998-99 through 2025-26 (27 seasons). The one Conference Finals appearance (2010-11, 62-win team) and eight first-round exits define the drought. No Finals appearances since the dynasty ended."
+    },
+    {
+      "team": "Dallas Mavericks",
+      "score": 36,
+      "since": "Since last title in 2011",
+      "lastChampionship": "2011 NBA Finals",
+      "breakdown": {
+        "finals": 1,
+        "semis": 1,
+        "quarters": 0,
+        "firstRound": 6,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2024-25: Dallas (39-43) lost in the NBA Play-In Tournament and did NOT enter the 16-team bracket proper -- counted as missed playoffs per PPI rules",
+        "2012-13: 41-41 record is exactly .500, not >.500, so not counted as winning-record-missed-playoffs"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Dallas_Mavericks_seasons",
+        "https://en.wikipedia.org/wiki/2011_NBA_Finals",
+        "https://www.basketball-reference.com/playoffs/2014-nba-western-conference-first-round-mavericks-vs-spurs.html",
+        "https://www.basketball-reference.com/playoffs/2022-nba-western-conference-finals-mavericks-vs-warriors.html",
+        "https://bleacherreport.com/articles/25188118-whos-really-blame-dallas-mavericks-missing-2025-nba-playoffs"
+      ],
+      "notes": "6 first-round exits dominated the drought until 2021-22 (Conference Finals loss to Warriors) and 2023-24 (Finals loss to Celtics). 2024-25 Mavericks (post-Luka trade) went 39-43 and lost in the play-in to Memphis, never reaching the bracket. 2025-26 was a 26-56 rebuild season."
+    },
+    {
+      "team": "Sacramento Kings",
+      "score": 35,
+      "since": "Since franchise relocated to Sacramento in 1985",
+      "lastChampionship": "1951 NBA Championship (Rochester Royals)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 3,
+        "firstRound": 7,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "Play-in losses (2023-24 vs. New Orleans Pelicans; 2024-25 vs. Dallas Mavericks) excluded per rules -- Kings never entered 16-team bracket those years",
+        "2023-24: 46-36 winning record counted as winningRecordNoPlayoff since loss occurred in play-in only",
+        "Drought start anchored to 1985 relocation to Sacramento (more recent than 1951 title)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Sacramento_Kings_seasons",
+        "https://en.wikipedia.org/wiki/Sacramento_Kings",
+        "https://www.landofbasketball.com/teams/playoff_history/sacramento_kings.htm",
+        "https://en.wikipedia.org/wiki/2023%E2%80%9324_Sacramento_Kings_season",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Sacramento_Kings_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Sacramento_Kings_season"
+      ],
+      "notes": "First-round losses: 1985-86 (HOU), 1995-96 (SEA), 1998-99 (UTA), 1999-00 (LAL), 2004-05 (SEA), 2005-06 (SAS), 2022-23 (GSW). Conference Semis losses: 2000-01 (LAL), 2002-03 (DAL), 2003-04 (MIN). Conference Finals loss: 2001-02 (LAL, famous Game 7). 2025-26 season confirmed 22-60, missed playoffs entirely."
+    },
+    {
+      "team": "San Antonio Spurs",
+      "score": 34,
+      "since": "Since last title in 2014",
+      "lastChampionship": "2014 NBA Finals",
+      "breakdown": {
+        "finals": 1,
+        "semis": 1,
+        "quarters": 1,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_San_Antonio_Spurs_seasons",
+        "https://www.basketball-reference.com/playoffs/2015-nba-western-conference-first-round-spurs-vs-clippers.html",
+        "https://en.wikipedia.org/wiki/2026_NBA_Finals",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_San_Antonio_Spurs_season"
+      ],
+      "notes": "12-season drought (2014-15 through 2025-26). The six missed-playoff seasons (2019-20 through 2024-25) all had losing records so none count toward winningRecordNoPlayoff. The 2025-26 Finals loss to the Knicks (1-4) is the most painful result of the drought. The 2014-15 first-round exit to the Clippers (Game 7) is confirmed by Basketball-Reference. The 2015-16 Conference Semifinals loss to OKC (67-win Spurs knocked out in Round 2) is verified by Wikipedia."
+    },
+    {
+      "team": "Charlotte Hornets",
+      "score": 31,
+      "since": "Since team was founded in 1988",
+      "lastChampionship": "Never won (founded 1988)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 4,
+        "firstRound": 6,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "Franchise identity is complex: the original Charlotte Hornets (1988-2002) relocated to New Orleans (now the Pelicans); the current franchise began as the Charlotte Bobcats in 2004-05 and was renamed Hornets in 2014, officially adopting the 1988 history. PPI is computed from 1988 per official NBA franchise history. An alternative start of 2004-05 (Bobcats founding) would yield quartersLosses=0, firstRoundLosses=3, winningRecordNoPlayoff=2.",
+        "Charlotte had no NBA team for two seasons (2002-03 and 2003-04) after the original Hornets relocated to New Orleans; those seasons are excluded from PPI counting.",
+        "1998-99 season shortened to 50 games (NBA lockout); Hornets went 26-24 (.520) and finished 9th in the East, missing playoffs \u2014 counted as winningRecordNoPlayoff.",
+        "2021-22 (43-39) and 2025-26 (44-38) both had winning records and play-in appearances but did not reach the 16-team bracket proper; counted as winningRecordNoPlayoff per rules.",
+        "quartersLosses are all Conference Semifinal exits (1993, 1998, 2001, 2002); the team never advanced past the second round in any season."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Charlotte_Hornets_seasons",
+        "https://www.landofbasketball.com/teams/playoff_history/charlotte_hornets.htm",
+        "https://en.wikipedia.org/wiki/1998%E2%80%9399_Charlotte_Hornets_season",
+        "https://en.wikipedia.org/wiki/2020%E2%80%9321_Charlotte_Hornets_season",
+        "https://en.wikipedia.org/wiki/2021%E2%80%9322_Charlotte_Hornets_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Charlotte_Hornets_season"
+      ],
+      "notes": "The four Conference Semifinal losses (1993, 1998, 2001, 2002) all came from the original Charlotte Hornets era. The franchise has never advanced past the second round. Six first-round exits span three eras: original Hornets (1995, 1997, 2000), Bobcats (2010, 2014), and modern Hornets (2016). The three winning-record no-playoff seasons are 1998-99 (lockout year), 2021-22, and 2025-26 (both play-in exits)."
+    },
+    {
+      "team": "New Orleans Pelicans",
+      "score": 23,
+      "since": "Since team relocated to New Orleans in 2002",
+      "lastChampionship": "Never won (relocated to New Orleans in 2002)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 2,
+        "firstRound": 7,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "2003-04 (41-41 exactly .500) made the playoffs as Eastern Conference 5th seed; treated as firstRoundLoss not winningRecordNoPlayoff since they made the bracket",
+        "2021-22 team had losing record (36-46) but made the 16-team bracket via play-in; counts as firstRoundLoss per rules",
+        "2019-20 shortened COVID season; Pelicans finished 30-42 and missed the bubble/playoffs"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_New_Orleans_Pelicans_seasons",
+        "https://en.wikipedia.org/wiki/2002%E2%80%9303_New_Orleans_Hornets_season",
+        "https://en.wikipedia.org/wiki/2003%E2%80%9304_New_Orleans_Hornets_season",
+        "https://champsorchumps.us/team/nba/new-orleans-pelicans",
+        "https://www.landofbasketball.com/teams/records_new_orleans_pelicans.htm",
+        "https://en.wikipedia.org/wiki/2022%E2%80%9323_New_Orleans_Pelicans_season"
+      ],
+      "notes": "Franchise relocated from Charlotte to New Orleans in 2002-03; drought starts from first New Orleans season. The team was in the Eastern Conference for 2002-03 and 2003-04 before moving to the Western Conference. The two quarter-final losses are both Conference Semifinals exits (2007-08 vs Spurs, 2017-18 vs Warriors). The 2022-23 season (42-40 winning record) counts as winningRecordNoPlayoff because the team was eliminated in the Play-In tournament and never entered the 16-team bracket. The 2021-22 season (36-46 losing record) entered via play-in and lost in the First Round proper, so it counts as a firstRoundLoss. The team has never reached the Conference Finals."
+    },
+    {
+      "team": "Brooklyn Nets",
+      "score": 20,
+      "since": "Since relocation to Brooklyn in 2012",
+      "lastChampionship": "1976 ABA Championship (as New York Nets; predates Brooklyn relocation)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 2,
+        "firstRound": 6,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2019-20 season shortened by COVID; Nets finished 35-37 (losing record) but qualified for bubble playoffs as 7th seed and were swept by Raptors in first round",
+        "2021-22: Nets entered playoffs via play-in win over Cavaliers; play-in itself not counted per rules, only the first-round loss to Celtics (swept 0-4)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Brooklyn_Nets_seasons",
+        "https://www.basketball-reference.com/playoffs/2013-nba-eastern-conference-first-round-bulls-vs-nets.html",
+        "https://www.basketball-reference.com/playoffs/2020-nba-eastern-conference-first-round-nets-vs-raptors.html",
+        "https://www.basketball-reference.com/playoffs/2023-nba-eastern-conference-first-round-nets-vs-76ers.html",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Brooklyn_Nets_season",
+        "https://www.basketball-reference.com/teams/BRK/2026.html"
+      ],
+      "notes": "Drought window begins 2012-13 (first Brooklyn season). The 1976 ABA title was won as the New York Nets, which predates the 2012 relocation; per rules the drought start is the relocation year. The franchise has never won an NBA championship. All 6 playoff appearances in the window ended in first-round (4) or second-round/Conference Semifinals (2) exits. No seasons with a winning record that missed the playoffs."
+    },
+    {
+      "team": "Los Angeles Lakers",
+      "score": 18,
+      "since": "Since last title in 2020",
+      "lastChampionship": "2020 NBA Finals",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 1,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Lakers_seasons",
+        "https://en.wikipedia.org/wiki/2026_NBA_playoffs",
+        "https://www.nba.com/news/nuggets-earn-1st-finals-appearance-with-sweep-of-lakers",
+        "https://www.basketball-reference.com/playoffs/2024-nba-western-conference-first-round-lakers-vs-nuggets.html",
+        "https://www.cbssports.com/nba/news/lakers-vs-timberwolves-scores-results-minnesota-sends-lebron-james-luka-doncic-home-in-first-round/live/",
+        "https://www.landofbasketball.com/results_by_team/2025_2026_lakers.htm"
+      ],
+      "notes": "2021-22 was the only non-playoff season (33-49, losing record). 2022-23 Conference Finals loss to Denver (swept 0-4). 2023-24 and 2024-25 were first-round exits. 2025-26 lost to OKC Thunder in Conference Semifinals (swept 0-4). Play-in appearances in 2023-24 and 2025-26 were not counted as playoff rounds per rules."
+    },
+    {
+      "team": "Denver Nuggets",
+      "score": 10,
+      "since": "Since last title in 2023",
+      "lastChampionship": "2022-23 NBA Finals",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 2,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Denver_Nuggets_seasons",
+        "https://champsorchumps.us/team/nba/denver-nuggets",
+        "https://en.wikipedia.org/wiki/2023_NBA_playoffs",
+        "https://en.wikipedia.org/wiki/2023-24_Denver_Nuggets_season",
+        "https://en.wikipedia.org/wiki/2024-25_Denver_Nuggets_season",
+        "https://en.wikipedia.org/wiki/2025-26_Denver_Nuggets_season"
+      ],
+      "notes": "Nuggets won their first-ever NBA championship in 2022-23 (defeated Miami Heat 4-1). Drought covers 3 seasons: 2023-24 (lost Conference Semifinals to Timberwolves 3-4), 2024-25 (lost Conference Semifinals to Thunder 3-4), 2025-26 (lost First Round to Timberwolves 2-4). All three seasons were playoff appearances with winning records, so winningRecordNoPlayoff = 0."
+    },
+    {
+      "team": "Milwaukee Bucks",
+      "score": 10,
+      "since": "Since last title in 2021",
+      "lastChampionship": "2021 NBA Finals",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2021%E2%80%9322_Milwaukee_Bucks_season",
+        "https://en.wikipedia.org/wiki/2022%E2%80%9323_Milwaukee_Bucks_season",
+        "https://en.wikipedia.org/wiki/2023%E2%80%9324_Milwaukee_Bucks_season",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Milwaukee_Bucks_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Milwaukee_Bucks_season",
+        "https://champsorchumps.us/team/nba/milwaukee-bucks"
+      ],
+      "notes": "2021-22: Lost Conference Semifinals to Celtics (3-4). 2022-23: Lost First Round to Miami Heat (1-4) as the #1 seed. 2023-24: Lost First Round to Indiana Pacers (2-4). 2024-25: Lost First Round to Indiana Pacers (1-4) as the #5 seed, direct playoff entry (no play-in). 2025-26: 32-50 losing record, missed playoffs entirely -- first losing season since 2015-16."
+    },
+    {
+      "team": "Oklahoma City Thunder",
+      "score": 8,
+      "since": "Since last title in 2025",
+      "lastChampionship": "2024-25 NBA Finals (defeated Indiana Pacers 4-3)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Oklahoma_City_Thunder_seasons"
+      ],
+      "notes": "Thunder won their first OKC-era championship in 2024-25 (defeated Pacers 4-3). The active drought covers only 2025-26, in which they went 64-18 and lost the Western Conference Finals to the Spurs 4-3."
+    },
+    {
+      "team": "Toronto Raptors",
+      "score": 8,
+      "since": "Since last title in 2019",
+      "lastChampionship": "2019 NBA Finals",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Toronto_Raptors_seasons"
+      ],
+      "notes": "2022-23 record was exactly 41-41 (.500), which does not qualify as a winning record (rule requires >.500). The 2020-21 season (27-45) and 2023-24 (25-57) and 2024-25 (30-52) were all losing-record missed-playoff seasons that contribute nothing to PPI."
+    },
+    {
+      "team": "Golden State Warriors",
+      "score": 7,
+      "since": "Since last title in 2022",
+      "lastChampionship": "2022 NBA Finals",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "2023-24 play-in loss confirmed (10th seed West, lost to Sacramento Kings or similar); play-in correctly excluded from playoff round counting per rules",
+        "2025-26 play-in loss to Phoenix Suns confirmed via Yahoo Sports; 37-45 is a losing record so no winningRecordNoPlayoff credit"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2022%E2%80%9323_Golden_State_Warriors_season",
+        "https://en.wikipedia.org/wiki/2023%E2%80%9324_Golden_State_Warriors_season",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Golden_State_Warriors_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Golden_State_Warriors_season",
+        "https://www.basketball-reference.com/playoffs/2023-nba-western-conference-first-round-warriors-vs-kings.html",
+        "https://sports.yahoo.com/articles/warriors-2025-26-season-comes-215134893.html"
+      ],
+      "notes": "4 drought seasons (2022-23 through 2025-26). 2022-23: lost Conference Semifinals to LA Lakers (beat Kings 4-3 in first round). 2023-24: 46-36 winning record but lost in play-in tournament, missed 16-team bracket. 2024-25: lost First Round to Houston Rockets (blew 3-1 lead, series lost 3-4). 2025-26: 37-45 losing record, lost in play-in to Phoenix Suns, no points counted."
+    },
+    {
+      "team": "Boston Celtics",
+      "score": 6,
+      "since": "Since last title in 2024",
+      "lastChampionship": "2024 NBA Finals",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2025-26 First Round exit is notable: Celtics blew a 3-1 series lead to the 76ers, first time Philly overcame that deficit in franchise history"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Boston_Celtics_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Boston_Celtics_season",
+        "https://en.wikipedia.org/wiki/2026_NBA_playoffs",
+        "https://www.landofbasketball.com/teams_by_year/2024_2025_celtics.htm",
+        "https://champsorchumps.us/team/nba/boston-celtics/2026"
+      ],
+      "notes": "Celtics won the 2024 NBA Finals (beat Dallas Mavericks). In 2024-25, they finished 61-21 and lost to the New York Knicks 2-4 in the Conference Semifinals (maps to Quarter-finals). In 2025-26, they finished 56-26 but lost to the Philadelphia 76ers 3-4 in the First Round after blowing a 3-1 series lead; Jayson Tatum missed the first 62 games with a torn Achilles."
+    },
+    {
+      "team": "New York Knicks",
+      "score": 0,
+      "since": "Since last title in 2026",
+      "lastChampionship": "2026 NBA Finals (defeated San Antonio Spurs 4-1)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://www.nba.com/news/2026-nba-finals-prove-historically-clutch",
+        "https://www.espn.com/nba/story/_/id/49053284/new-york-knicks-win-2026-nba-finals-path-championship-outlast-east-brunson-towns-hart",
+        "https://en.wikipedia.org/wiki/2026_NBA_Finals",
+        "https://en.wikipedia.org/wiki/List_of_New_York_Knicks_seasons"
+      ],
+      "notes": "The Knicks won the 2026 NBA Finals, defeating the San Antonio Spurs 4-1 and ending a 53-year championship drought (their previous title was 1973). Jalen Brunson was named Finals MVP. The active drought is 0 \u2014 no seasons have elapsed since the title. The drought window starts with the 2026-27 season."
+    }
+  ]
+}

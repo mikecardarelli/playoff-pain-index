@@ -1,0 +1,813 @@
+{
+  "league": "MLS",
+  "updated": "2026-06-16",
+  "scoring": "16*Finals + 8*Semis + 4*Quarters + 2*FirstRound + 1*WinningRecordNoPlayoff",
+  "teams": [
+    {
+      "team": "New England Revolution",
+      "score": 136,
+      "since": "Since team was founded in 1996",
+      "lastChampionship": "Never won (founded 1996)",
+      "breakdown": {
+        "finals": 5,
+        "semis": 3,
+        "quarters": 7,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "playoff-pain-index site (index.html)",
+        "https://champsorchumps.us/team/mls/new-england-revolution",
+        "https://en.wikipedia.org/wiki/List_of_New_England_Revolution_seasons",
+        "https://www.revolutionsoccer.net/news/recap-revs-suffer-1-0-loss-to-union-in-game-2-season-ends",
+        "https://www.bostonglobe.com/2023/11/08/sports/revolution-eliminated-by-philadelphia-union-mls-cup-playoffs/",
+        "https://www.revolutionsoccer.net/news/recap-revs-eliminated-from-playoffs-in-penalty-shootout-by-nycfc"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "New York Red Bulls",
+      "score": 130,
+      "since": "Since team was founded in 1996",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 2,
+        "semis": 4,
+        "quarters": 14,
+        "firstRound": 5,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "playoff-pain-index site (index.html)",
+        "https://en.wikipedia.org/wiki/New_York_Red_Bulls_seasons",
+        "https://en.wikipedia.org/wiki/2025_New_York_Red_Bulls_season",
+        "https://en.wikipedia.org/wiki/2025_MLS_Cup_playoffs"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "FC Dallas",
+      "score": 99,
+      "since": "Since team was founded in 1996",
+      "lastChampionship": "Never (2010 MLS Cup runners-up, lost to Colorado Rapids)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 3,
+        "quarters": 12,
+        "firstRound": 5,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "playoff-pain-index site (index.html)",
+        "https://en.wikipedia.org/wiki/List_of_FC_Dallas_seasons",
+        "https://champsorchumps.us/team/mls/fc-dallas",
+        "https://en.wikipedia.org/wiki/2025_MLS_Cup_playoffs",
+        "https://www.fcdallas.com/news/fc-dallas-clinches-audi-2025-mls-cup-playoffs-spot-with-2-1-win-over-whitecaps-fc"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Chicago Fire FC",
+      "score": 91,
+      "since": "Since 1999 (season after 1998 MLS Cup title)",
+      "lastChampionship": "1998 MLS Cup",
+      "breakdown": {
+        "finals": 2,
+        "semis": 5,
+        "quarters": 3,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "2002 playoff appearance: champsorchumps.us AI summary incorrectly listed 2002 as missed; confirmed by Wikipedia List of Seasons (3rd East, Quarterfinals) and the official chicagofirefc.com playoff history page",
+        "champsorchumps.us data was not updated to include 2025 playoff appearance; confirmed from official Chicago Fire site match recap and Wikipedia 2025 season page",
+        "2013 winningRecordNoPlayoff: 14W-13L-7D, finished 6th in Eastern Conference (top 5 qualify), missed on tiebreaker vs Montreal Impact"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Chicago_Fire_FC_seasons",
+        "https://champsorchumps.us/team/mls/chicago-fire",
+        "https://www.chicagofirefc.com/news/match-recap-chicago-fire-fc-eliminated-from-2025-audi-mls-cup-playoffs-with-3-0-loss-against-philadelphia-union",
+        "https://www.chicagofirefc.com/news/playoff-history-2002",
+        "https://en.wikipedia.org/wiki/2007_MLS_Cup_Playoffs",
+        "https://en.wikipedia.org/wiki/2013_Chicago_Fire_season"
+      ],
+      "notes": "Finals losses: 2000 (lost to Kansas City), 2003 (lost to San Jose). Semis losses: 2001, 2005, 2007, 2008, 2009 (all lost in Conference Finals). QF losses: 1999, 2002, 2006 (all lost in Conference Semifinals). First round losses: 2012 (Knockout Round vs Houston), 2017 (vs NY Red Bulls), 2025 (vs Philadelphia Union 3-0). WinningRecord/NoPlayoff: 2013 (14W-13L-7D, finished 6th East, narrowly missed on tiebreaker). PPI = 32+40+12+6+1 = 91."
+    },
+    {
+      "team": "Houston Dynamo",
+      "score": 70,
+      "since": "Since 2008",
+      "lastChampionship": "2007",
+      "breakdown": {
+        "finals": 2,
+        "semis": 4,
+        "quarters": 1,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2008 Conference Semifinals = first knockout round in that year's format (2 rounds before MLS Cup) = mapped to Quarters",
+        "2020 season was COVID-shortened (23 matches played), missed playoffs with losing record",
+        "No seasons had winning records while missing playoffs"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/mls/houston-dynamo",
+        "https://en.wikipedia.org/wiki/Houston_Dynamo_FC",
+        "https://en.wikipedia.org/wiki/2008_Houston_Dynamo_season",
+        "https://en.wikipedia.org/wiki/2023_Houston_Dynamo_FC_season",
+        "https://en.wikipedia.org/wiki/MLS_Cup_2011",
+        "https://en.wikipedia.org/wiki/MLS_Cup_2007"
+      ],
+      "notes": "Finals losses: 2011 (lost MLS Cup to LA Galaxy 1-0), 2012 (lost MLS Cup to LA Galaxy 3-1). Semis losses: 2009 (Western Conference Finals vs LA Galaxy), 2013 (Eastern Conference Finals vs Sporting KC), 2017 (Western Conference Finals vs Seattle), 2023 (Conference Finals vs LAFC). Quarters loss: 2008 (Western Conference Semifinals vs NY Red Bulls). First round loss: 2024 (lost to Seattle Sounders on penalties). All missed-playoff seasons had losing records so none qualify as winningRecordNoPlayoff."
+    },
+    {
+      "team": "Real Salt Lake",
+      "score": 62,
+      "since": "since 2009",
+      "lastChampionship": "2009 MLS Cup",
+      "breakdown": {
+        "finals": 1,
+        "semis": 2,
+        "quarters": 5,
+        "firstRound": 5,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2025 Wild Card round loss (Portland Timbers 3-1) counted as First Round elimination since it is the first knockout round of the MLS Cup Playoffs",
+        "2018 Knockout Round opponent listed as LAFC by Wikipedia source - RSL won that match then lost Conference Semifinals to Sporting KC",
+        "Three missed playoff years (2015, 2017, 2020) all had losing records so winningRecordNoPlayoff=0"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Real_Salt_Lake_seasons",
+        "https://en.wikipedia.org/wiki/MLS_Cup_2009",
+        "https://en.wikipedia.org/wiki/2010_MLS_Cup_playoffs",
+        "https://en.wikipedia.org/wiki/2014_MLS_Cup_playoffs",
+        "https://en.wikipedia.org/wiki/2018_MLS_Cup_playoffs",
+        "https://en.wikipedia.org/wiki/2019_MLS_Cup_playoffs"
+      ],
+      "notes": "Finals: 2013 MLS Cup loss to Sporting KC. Semis: 2011 (lost Conference Finals to LA Galaxy), 2021 (lost Conference Finals to Portland Timbers). Quarters: 2010 (Conference Semis, FC Dallas), 2012 (Conference Semis), 2014 (Conference Semis, LA Galaxy 5-0 agg), 2018 (Conference Semis, Sporting KC after beating Knockout Round), 2019 (Conference Semis, Seattle Sounders). First Round: 2016 (Knockout Round, 5v6 format), 2022, 2023, 2024 (Round One losses), 2025 (Wild Card loss to Portland). Missed playoffs with losing record: 2015, 2017, 2020."
+    },
+    {
+      "team": "Philadelphia Union",
+      "score": 46,
+      "since": "Founded 2010",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 1,
+        "semis": 1,
+        "quarters": 4,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2020: Philadelphia was the #1 East seed (Supporters Shield winners) but lost in the Conference Quarterfinals (functionally the first knockout round, no byes given in that format) to New England Revolution 0-2; mapped as First Round (2)",
+        "2023: Wikipedia uses 'Quarterfinals' and champsorchumps uses 'Conference Semifinals' for the same round (4 teams per conference remaining after Best-of-3 Round One); per MLS official naming this is the Conference Semifinals = PPI Quarter-finals (4)",
+        "2013 record was 12W-12L-10D (wins equal losses), not counted as winning-record-no-playoff since W must strictly exceed L"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/mls/philadelphia-union",
+        "https://en.wikipedia.org/wiki/Philadelphia_Union",
+        "https://en.wikipedia.org/wiki/2011_Philadelphia_Union_season",
+        "https://en.wikipedia.org/wiki/2019_Philadelphia_Union_season",
+        "https://en.wikipedia.org/wiki/2020_MLS_Cup_Playoffs",
+        "https://en.wikipedia.org/wiki/2021_Philadelphia_Union_season"
+      ],
+      "notes": ""
+    },
+    {
+      "team": "Portland Timbers",
+      "score": 45,
+      "since": "Since 2015",
+      "lastChampionship": "2015 MLS Cup",
+      "breakdown": {
+        "finals": 2,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 4,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "2016: 12W-14L-8D, missed playoffs, losing record \u2014 no entry",
+        "2017: Lost Conference Semifinals (maps to Quarter-finals)",
+        "2018: Lost MLS Cup Final to Atlanta United 0-2",
+        "2019: Lost Round One (first knockout round)",
+        "2020: Lost first round vs FC Dallas on penalty kicks (11-6-6 regular season record, won MLS is Back Tournament but that is not MLS Cup)",
+        "2021: Lost MLS Cup Final to NYCFC on penalty kicks",
+        "2022: 11W-10L-13D (winning record), missed playoffs by 1 point (46 pts vs RSL 47 pts for 7th seed cutoff) \u2014 winningRecordNoPlayoff",
+        "2023: 11W-13L-10D, missed playoffs, losing record \u2014 no entry",
+        "2024: Lost Wild Card round 0-5 vs Vancouver \u2014 mapped as First Round (lowest knockout round)",
+        "2025: Won Wild Card vs RSL 3-1, then lost Round One best-of-3 to San Diego FC (lost Game 3 4-0)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Portland_Timbers_seasons",
+        "https://champsorchumps.us/team/mls/portland-timbers",
+        "https://en.wikipedia.org/wiki/2017_Portland_Timbers_season",
+        "https://en.wikipedia.org/wiki/2020_MLS_Cup_Playoffs",
+        "https://en.wikipedia.org/wiki/2022_Portland_Timbers_season",
+        "https://en.wikipedia.org/wiki/2022_MLS_Cup_Playoffs"
+      ],
+      "notes": "Drought window is 2016-2025 (10 completed seasons). Portland won MLS Cup in 2015; no championship since. The 2020 MLS is Back Tournament win is excluded as it is not MLS Cup. The 2024 Wild Card loss and 2025 Round One loss (after winning Wild Card) are both mapped to First Round (2) as the lowest/first knockout round in their respective formats. The 2022 season qualifies for winningRecordNoPlayoff: 11W-10L-13D (positive win-loss differential) but missed Western Conference playoffs by 1 point (46 pts vs RSL's 47-pt cutoff for 7th seed)."
+    },
+    {
+      "team": "D.C. United",
+      "score": 39,
+      "since": "Since 2004",
+      "lastChampionship": "2004 MLS Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 2,
+        "quarters": 4,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "2009 winningRecordNoPlayoff is borderline: record was 9W-8L-13D (wins technically exceed losses but very marginally; team finished 10th overall with 40 points in 30 games and missed playoffs on points, not a dominant record). Included per strict W>L rule but flagged as a judgment call.",
+        "AI-generated Wikipedia table summary initially fabricated 2009 as 'runners-up (MLS Cup final)' and 2010 as 'Conference Semifinals' \u2014 both were refuted by the specific Wikipedia season articles confirming DNQ both years.",
+        "2025 completed season confirmed: 5W-11D-18L, missed playoffs (sixth straight missed postseason)."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_D.C._United_seasons",
+        "https://champsorchumps.us/team/mls/dc-united",
+        "https://en.wikipedia.org/wiki/2006_D.C._United_season",
+        "https://en.wikipedia.org/wiki/2009_D.C._United_season",
+        "https://en.wikipedia.org/wiki/2012_D.C._United_season",
+        "https://en.wikipedia.org/wiki/2025_D.C._United_season"
+      ],
+      "notes": "Semis losses: 2006 (lost Eastern Conference Final to New England Revolution), 2012 (lost Eastern Conference Finals to Houston Dynamo). Quarters losses: 2005, 2007 (Conference Semifinals, first round of playoffs that year), 2014, 2015 (Conference Semifinals after winning first-round play-in). First round losses: 2016, 2018, 2019 (all single-elimination first-round exits). Missed playoffs with W>L: 2009 only (9-8-13). All other missed-playoff seasons had L>=W."
+    },
+    {
+      "team": "Vancouver Whitecaps FC",
+      "score": 35,
+      "since": "2011",
+      "lastChampionship": "Never (no MLS Cup title)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 2,
+        "firstRound": 5,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "2013: 13-12-9 record (winning record) missed playoffs -- counted as winningRecordNoPlayoff",
+        "2014: Vancouver finished 5th in West, played and lost Knockout/Wild Card round -- counted as First Round",
+        "2017: Vancouver won the Knockout Round then lost in Conference Semifinals -- counted as Quarter-finals (Conference Semifinal)",
+        "2018: 13-13-8 record (equal W-L) missed playoffs -- NOT counted as winning record since wins do not exceed losses",
+        "2025: Lost MLS Cup Final 1-3 to Inter Miami on Dec 6 2025 -- counted as Finals loss",
+        "2020: COVID-shortened season, 9-14, missed playoffs, losing record -- nothing counted",
+        "2024: Won Wild Card vs Portland 5-0, then lost Round One to LAFC -- counted as First Round loss"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vancouver_Whitecaps_FC_seasons",
+        "https://en.wikipedia.org/wiki/2025_MLS_Cup_playoffs",
+        "https://en.wikipedia.org/wiki/2015_Vancouver_Whitecaps_FC_season",
+        "https://en.wikipedia.org/wiki/2017_Vancouver_Whitecaps_FC_season",
+        "https://en.wikipedia.org/wiki/2014_Vancouver_Whitecaps_FC_season",
+        "https://en.wikipedia.org/wiki/2013_Vancouver_Whitecaps_FC_season"
+      ],
+      "notes": "Vancouver Whitecaps FC joined MLS as an expansion team in 2011 and have never won MLS Cup. Drought window covers all 15 completed MLS seasons (2011-2025). Finals appearance: 2025 (lost to Inter Miami 1-3). Quarter-finals exits: 2015 and 2017 (both Conference Semifinal losses). First Round exits: 2012, 2014, 2021, 2023, 2024. Winning record no playoff: 2013 (13W-12L-9D). The 2026 season is in progress and not counted."
+    },
+    {
+      "team": "Seattle Sounders FC",
+      "score": 32,
+      "since": "since 2019",
+      "lastChampionship": "2019 MLS Cup",
+      "breakdown": {
+        "finals": 1,
+        "semis": 1,
+        "quarters": 1,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2022 missed playoffs with 12-17 record (losing record, no winningRecordNoPlayoff credit)",
+        "2022 Sounders won CONCACAF Champions League but NOT MLS Cup",
+        "2025 Round One loss confirmed as best-of-3 series vs Minnesota United (Game 3 penalty shootout)"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/mls/seattle-sounders-fc",
+        "https://en.wikipedia.org/wiki/Seattle_Sounders_FC",
+        "https://en.wikipedia.org/wiki/2024_Seattle_Sounders_FC_season",
+        "https://www.soundersfc.com/news/match-recap-sounders-fc-s-2025-season-comes-to-an-end-following-penalty-shootout-loss-to-minnesota",
+        "https://www.soundersfc.com/news/match-recap-sounders-fc-falls-1-0-to-lafc-in-western-conference-semifinals-to-en"
+      ],
+      "notes": "Drought window is 2020-2025 (6 completed seasons). 2022 was the only missed-playoff season and had a losing record (12-17), so no winningRecordNoPlayoff. Round mapping: 2020 MLS Cup Final loss = Finals; 2021 Round One loss = First Round; 2023 Western Conference Semifinal loss = Quarters; 2024 Western Conference Final loss = Semis; 2025 Round One (best-of-3) loss = First Round."
+    },
+    {
+      "team": "Sporting Kansas City",
+      "score": 28,
+      "since": "Since 2013 MLS Cup",
+      "lastChampionship": "2013 MLS Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 3,
+        "firstRound": 4,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2014-2017 playoff format: Knockout Round (wild card / first elimination round) confirmed as First Round; SKC lost this round all four years",
+        "2018: lost Western Conference Final to Portland Timbers confirmed via multiple sources",
+        "2020: lost Conference Semifinal 0-3 to Minnesota United, confirmed via Wikipedia",
+        "2021: lost Conference Semifinal to Real Salt Lake, confirmed via Wikipedia",
+        "2023: lost Conference Semifinal 0-1 to Houston Dynamo after winning Round One best-of-3, confirmed via Wikipedia",
+        "No seasons with winning record that missed playoffs: 2019 (10-16-8), 2022 (11-16), 2024 (8-19), 2025 (7-20) all had losing records"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/mls/sporting-kc",
+        "https://en.wikipedia.org/wiki/2018_MLS_Cup_playoffs",
+        "https://en.wikipedia.org/wiki/2020_MLS_Cup_playoffs",
+        "https://en.wikipedia.org/wiki/2021_MLS_Cup_playoffs",
+        "https://en.wikipedia.org/wiki/2023_MLS_Cup_playoffs",
+        "https://en.wikipedia.org/wiki/MLS_Cup_2013"
+      ],
+      "notes": "Sporting Kansas City (founded 1996 as Kansas City Wiz; rebranded 2011) won MLS Cup in 2000 and 2013. The drought window opens in 2014. Four consecutive first-round exits (2014-2017), a conference final loss in 2018, three conference semifinal losses (2020, 2021, 2023), and four missed playoff seasons with losing records (2019, 2022, 2024, 2025). PPI score = 0*16 + 1*8 + 3*4 + 4*2 + 0*1 = 28."
+    },
+    {
+      "team": "Los Angeles FC",
+      "score": 24,
+      "since": "Since 2022 MLS Cup",
+      "lastChampionship": "2022 MLS Cup",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 2,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://www.mlssoccer.com/news/columbus-crew-win-2023-mls-cup-presented-by-audi-defeating-lafc-2-1",
+        "https://www.lafc.com/news/recap-lafc-vs-seattle-sounders-2024-mls-cup-playoffs-western-conference-semifinals",
+        "https://www.lafc.com/news/recap-vancouver-2-4-lafc-2-3-audi-2025-mls-cup-playoffs-western-conference-semifinal-november-22",
+        "https://champsorchumps.us/team/mls/los-angeles-fc"
+      ],
+      "notes": "LAFC founded 2018, won MLS Cup in 2022. Drought window: 2023-2025 (3 completed seasons). 2023: lost MLS Cup Final to Columbus Crew 2-1 (Finals). 2024: beat Vancouver in Round One, lost to Seattle Sounders in Western Conference Semifinal 2-1 AET (Quarters). 2025: beat Austin FC in Round One, lost to Vancouver Whitecaps in Western Conference Semifinal on penalties 2(4)-2(3) (Quarters). Score = 16*1 + 4*2 = 24."
+    },
+    {
+      "team": "Colorado Rapids",
+      "score": 22,
+      "since": "Since 2010",
+      "lastChampionship": "2010 MLS Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 2,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2011 format had a Wild Card round before Conference Semifinals; Rapids won Wild Card then lost Conference Semifinals, correctly mapped to Quarter-finals (4)",
+        "2020 was a shortened COVID season; Rapids made playoffs and lost in the first round",
+        "All missed-playoff seasons (2012, 2014, 2015, 2017, 2018, 2019, 2022, 2023, 2025) had losing or sub-.500 records, so no winningRecordNoPlayoff"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Colorado_Rapids_seasons",
+        "https://champsorchumps.us/team/mls/colorado-rapids",
+        "https://en.wikipedia.org/wiki/2011_Colorado_Rapids_season",
+        "https://en.wikipedia.org/wiki/2016_Colorado_Rapids_season",
+        "https://en.wikipedia.org/wiki/2021_Colorado_Rapids_season"
+      ],
+      "notes": "Drought window: 2011-2025 (15 completed seasons). Semis: 2016 (lost Western Conference Final). Quarters: 2011 (lost Western Conference Semifinals after winning Wild Card), 2021 (lost Western Conference Semifinals). First round: 2013, 2020, 2024. No seasons with winning record and missed playoffs."
+    },
+    {
+      "team": "Minnesota United FC",
+      "score": 22,
+      "since": "2017 (founding)",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 2,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2020 was a COVID-shortened season with modified playoff format; Minnesota United lost in the Conference Finals (maps to semis/8 in PPI)",
+        "2022 MLS Playoffs added a Wild Card round; Minnesota United entered at the First Round level and lost there",
+        "2023 and 2024+ use new best-of-3 Round One format; 2024 and 2025 Conference Semifinal losses map to Quarter-finals (4) in PPI"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/mls/minnesota-united",
+        "https://en.wikipedia.org/wiki/List_of_Minnesota_United_FC_seasons",
+        "https://en.wikipedia.org/wiki/2018_Minnesota_United_FC_season",
+        "https://en.wikipedia.org/wiki/2022_Minnesota_United_FC_season",
+        "https://en.wikipedia.org/wiki/2025_Minnesota_United_FC_season"
+      ],
+      "notes": ""
+    },
+    {
+      "team": "CF Montreal",
+      "score": 22,
+      "since": "Since 2012 MLS expansion",
+      "lastChampionship": "Never (no MLS Cup)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 2,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "champsorchumps lists only 4 playoff appearances (2013, 2015, 2016, 2022); 2020 play-in loss (vs New England 2-1) and 2024 Wild Card loss (vs Atlanta United on penalties) confirmed from MLS/club sources",
+        "2021 was 12W-12L-10D \u2014 equal wins and losses, not a winning-record miss",
+        "2025 was a very poor season (1W from 16 games by late May) with no playoff berth \u2014 confirmed losing record, not a winning-record miss"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/mls/cf-montreal",
+        "https://en.wikipedia.org/wiki/List_of_CF_Montr%C3%A9al_seasons",
+        "https://en.wikipedia.org/wiki/2020_MLS_Cup_Playoffs",
+        "https://www.mlssoccer.com/news/new-england-revolution-2-montreal-impact-1-2020-mls-cup-playoffs-match-recap",
+        "https://www.atlutd.com/news/atlanta-united-wins-mls-cup-playoffs-eastern-conference-wild-card-game-penalty-kick-shootout-cf-montreal-advances-round-one"
+      ],
+      "notes": "semisLosses: 2016 Eastern Conference Final loss to Toronto FC. quartersLosses: 2015 Conference Semifinal loss, 2022 Conference Semifinal loss. firstRoundLosses: 2013 First Round loss, 2020 Play-In Round loss to New England Revolution, 2024 Wild Card loss to Atlanta United (penalties). CF Montreal has never appeared in MLS Cup. Joining MLS in 2012 as an expansion club, their drought covers all 14 completed seasons through 2025."
+    },
+    {
+      "team": "Orlando City SC",
+      "score": 22,
+      "since": "2015 (MLS founding)",
+      "lastChampionship": "never",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 2,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2025: Orlando played in Wild Card round (lost to Chicago Fire 3-1); counted as First Round loss since it is the earliest knockout stage.",
+        "2023: Confirmed Conference Semifinals elimination (as 2nd overall seed); maps to Quarter-finals.",
+        "2020: Beat NYCFC in Round One, lost to New England in Conference Semifinals; maps to Quarter-finals.",
+        "Orlando has never won MLS Cup; U.S. Open Cup win in 2022 is not an MLS championship and does not affect drought window."
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/mls/orlando-city",
+        "https://en.wikipedia.org/wiki/Orlando_City_SC",
+        "https://en.wikipedia.org/wiki/2023_Orlando_City_SC_season",
+        "https://en.wikipedia.org/wiki/2025_Orlando_City_SC_season"
+      ],
+      "notes": "Orlando City SC joined MLS in 2015 as an expansion team and has never won MLS Cup. They missed the playoffs entirely in their first five seasons (2015-2019), none with a winning record. Since 2020 they have made the playoffs in every season except 2025 regular season qualification (they entered via Wild Card). Deepest run was 2024 Eastern Conference Finals loss."
+    },
+    {
+      "team": "New York City FC",
+      "score": 20,
+      "since": "2022\u2013present",
+      "lastChampionship": "2021 MLS Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 2,
+        "quarters": 1,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2022: Lost Eastern Conference Final to Philadelphia Union (3-1) \u2192 Semis",
+        "2023: Missed playoffs with 9W-11L-14D record (losing record, no winningRecordNoPlayoff)",
+        "2024: Lost Eastern Conference Semifinal to New York Red Bulls (0-2) \u2192 Quarters",
+        "2025: Lost Eastern Conference Final to Inter Miami (1-5) \u2192 Semis",
+        "2026 season in progress, not counted"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_New_York_City_FC_seasons",
+        "https://en.wikipedia.org/wiki/2025_MLS_Cup_playoffs",
+        "https://en.wikipedia.org/wiki/2022_MLS_Cup_playoffs",
+        "https://en.wikipedia.org/wiki/MLS_Cup_2021",
+        "https://en.wikipedia.org/wiki/2023_New_York_City_FC_season",
+        "https://en.wikipedia.org/wiki/2024_New_York_City_FC_season"
+      ],
+      "notes": "NYCFC won their only MLS Cup in 2021. In the four completed post-championship seasons: they reached the Conference Final twice (2022, 2025), the Conference Semifinal once (2024), and missed the playoffs once (2023) with a losing record. PPI score: 8*2 + 4*1 = 20."
+    },
+    {
+      "team": "San Jose Earthquakes",
+      "score": 19,
+      "since": "Since 2008 (re-founding as expansion franchise)",
+      "lastChampionship": "Never (current franchise founded 2008; 2001 and 2003 MLS Cups belong to original franchise that relocated to become Houston Dynamo)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 1,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "semisLosses: 2010 lost Conference Finals to Colorado Rapids",
+        "quartersLosses: 2012 lost Conference Semifinals to LA Galaxy (had bye as Supporters Shield winners)",
+        "firstRoundLosses: 2017 Knockout Round, 2020 First Round (lost to SKC on penalties), 2023 Wild Card round (lost to SKC on penalties as 9th seed)",
+        "winningRecordNoPlayoff: 2013 (14W-11L-9D, 51pts, finished 6th West, did not qualify)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_San_Jose_Earthquakes_seasons",
+        "https://champsorchumps.us/team/mls/san-jose-earthquakes",
+        "https://en.wikipedia.org/wiki/2010_San_Jose_Earthquakes_season",
+        "https://en.wikipedia.org/wiki/2012_San_Jose_Earthquakes_season",
+        "https://en.wikipedia.org/wiki/2013_San_Jose_Earthquakes_season",
+        "https://en.wikipedia.org/wiki/2020_San_Jose_Earthquakes_season"
+      ],
+      "notes": ""
+    },
+    {
+      "team": "FC Cincinnati",
+      "score": 18,
+      "since": "2019",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 2,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2020 had an MLS is Back COVID bubble tournament mid-season; FC Cincinnati (4W-15L-4D) did not qualify for the regular 2020 MLS Cup playoffs \u2014 treated as missed playoffs with losing record, no winningRecordNoPlayoff credit.",
+        "2025: FC Cincinnati finished 2nd in East, received a bye past Round One, then lost to Inter Miami in the Conference Semifinals. champsorchumps shows 'Won 0 Rounds' because they did not win a playoff series, just received a bye \u2014 correctly mapped to Quarter-finals(4)."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_FC_Cincinnati_seasons",
+        "https://champsorchumps.us/team/mls/fc-cincinnati",
+        "https://en.wikipedia.org/wiki/FC_Cincinnati"
+      ],
+      "notes": "FC Cincinnati joined MLS as an expansion team in 2019 and has never won an MLS Cup. Seasons 2019, 2020, 2021 all had losing records and missed the MLS Cup playoffs \u2014 none qualify for winningRecordNoPlayoff. Playoff eliminations: 2022 lost Conference Semifinals (quarters), 2023 lost Conference Finals (semis), 2024 lost Round One (first round), 2025 lost Conference Semifinals to eventual champion Inter Miami (quarters)."
+    },
+    {
+      "team": "Toronto FC",
+      "score": 18,
+      "since": "Since 2017",
+      "lastChampionship": "2017 MLS Cup",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2020 was a COVID-affected season; Toronto (13W-5L-5D) played in the MLS is Back Tournament bubble format; their playoff loss was to Nashville SC in the Round One (first knockout round)",
+        "2019 MLS Cup Final loss to Seattle Sounders 3-1",
+        "No seasons in the drought window had a winning record while missing playoffs"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Toronto_FC_seasons",
+        "https://champsorchumps.us/team/mls/toronto-fc",
+        "https://en.wikipedia.org/wiki/MLS_Cup_2017",
+        "https://en.wikipedia.org/wiki/MLS_Cup_2019"
+      ],
+      "notes": "Toronto FC won the 2017 MLS Cup (and the historic domestic treble). Drought runs 2018-2025. In that window they reached the MLS Cup Final in 2019 (lost to Seattle 3-1) and lost in the First Round in 2020 (lost to Nashville SC). All other drought seasons they missed the playoffs with losing records."
+    },
+    {
+      "team": "Atlanta United FC",
+      "score": 16,
+      "since": "since 2018",
+      "lastChampionship": "2018 MLS Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 1,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2024: Atlanta won Wild Card (beat CF Montreal on PKs) then won Round One best-of-3 (beat Inter Miami), then lost Conference Semifinals to Orlando City \u2014 mapped as Quarter-finals (4).",
+        "2020 and 2022 and 2025 all had losing records so do not count as winningRecordNoPlayoff.",
+        "2019 format was single-elimination; Conference Finals loss confirmed against Toronto FC."
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/mls/atlanta-united",
+        "https://en.wikipedia.org/wiki/Atlanta_United_FC",
+        "https://www.atlutd.com/news/atlanta-united-wins-mls-cup-playoffs-eastern-conference-wild-card-game-penalty-kick-shootout-cf-montreal-advances-round-one",
+        "https://www.mlssoccer.com/news/orlando-city-reach-conference-final-end-atlanta-united-s-cinderella-run",
+        "https://www.torontofc.ca/news/atlanta-united-fc-1-toronto-fc-2-2019-mls-cup-playoffs-recap"
+      ],
+      "notes": "Atlanta won the 2018 MLS Cup in just their second season. The 2021 record of 13W-9L-12D is a winning record but they made the playoffs (lost First Round to NYCFC), so it does not count as winningRecordNoPlayoff. No season in the drought window had a winning record and missed the playoffs."
+    },
+    {
+      "team": "Nashville SC",
+      "score": 12,
+      "since": "Since founding (2020)",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 4,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2020 MLS playoffs had an Eastern-only play-in round; Nashville won play-in vs Inter Miami then lost the First Round to Toronto FC \u2014 mapped as First Round (3 rounds from MLS Cup)",
+        "2024 record was 9W-16L-9D (losses exceed wins), so no winningRecordNoPlayoff credit",
+        "2026 season in progress, not counted"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Nashville_SC_seasons",
+        "https://en.wikipedia.org/wiki/2020_MLS_Cup_Playoffs",
+        "https://en.wikipedia.org/wiki/2021_MLS_Cup_Playoffs",
+        "https://en.wikipedia.org/wiki/2022_Nashville_SC_season",
+        "https://en.wikipedia.org/wiki/2024_Nashville_SC_season",
+        "https://en.wikipedia.org/wiki/2025_Nashville_SC_season"
+      ],
+      "notes": "Nashville SC has made the playoffs in 5 of 6 MLS seasons (missing only 2024). Their deepest run was 2021 (Conference Semifinals, lost to Philadelphia Union on penalties). They have never advanced past the Conference Semifinals."
+    },
+    {
+      "team": "Austin FC",
+      "score": 10,
+      "since": "Since founding (2021)",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 0,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2022_Austin_FC_season",
+        "https://en.wikipedia.org/wiki/2023_Austin_FC_season",
+        "https://en.wikipedia.org/wiki/2024_Austin_FC_season",
+        "https://en.wikipedia.org/wiki/2025_Austin_FC_season",
+        "https://champsorchumps.us/team/mls/austin-fc",
+        "https://www.mlssoccer.com/news/western-conference-champs-lafc-beat-austin-fc-to-host-mls-cup-2022"
+      ],
+      "notes": "Austin FC is a 2021 expansion team that has never won MLS Cup. Drought window covers all 5 completed seasons (2021-2025). 2021: missed playoffs with 9-21-4 losing record. 2022: made playoffs, beat RSL in Round One (quarterfinals), beat FC Dallas in Conference Semifinals, then lost 3-0 to LAFC in the Western Conference Final = maps to semisLosses. 2023: missed playoffs with 10-15-8 losing record. 2024: missed playoffs with 6-13-8 losing record. 2025: made playoffs (6th in West, 47 pts), lost to LAFC 2-0 in Round One Best-of-3 series = maps to firstRoundLosses. No seasons with winning record that missed playoffs."
+    },
+    {
+      "team": "San Diego FC",
+      "score": 8,
+      "since": "Since founding (2025)",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Only one completed season in franchise history (2025); drought window is short by design"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/San_Diego_FC",
+        "https://en.wikipedia.org/wiki/2025_San_Diego_FC_season",
+        "https://en.wikipedia.org/wiki/2025_MLS_Cup_playoffs",
+        "https://www.sandiegofc.com/news/match-recap-san-diego-fc-concludes-inaugural-season-with-3-1-loss-to-vancouver-whitecaps-fc-in-western-conference-final",
+        "https://www.mlssoccer.com/playoffs/2025/news/next-stop-mls-cup-vancouver-whitecaps-cruise-past-san-diego-fc"
+      ],
+      "notes": "San Diego FC is an MLS expansion team that began play in 2025 as the league's 30th franchise. They have never won an MLS Cup. In their inaugural 2025 season they finished 1st in the Western Conference (19-10-6, 60 points, an expansion record) and advanced to the Western Conference Final where they lost to Vancouver Whitecaps FC 3-1 on November 29, 2025. Vancouver then advanced to the MLS Cup final, losing to Inter Miami. The Conference Final loss maps to Semi-finals (8). The 2026 season is in progress and not counted."
+    },
+    {
+      "team": "Charlotte FC",
+      "score": 6,
+      "since": "2022 (founding)",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2023 Wild Card round (vs NY Red Bulls, lost 5-2) mapped as First Round: Charlotte entered as 9th seed in 2023 expanded playoff format; Wild Card was their first and only knockout round that season",
+        "2024 Round One loss to Orlando City confirmed via best-of-3 series, eliminated in Game 3 on penalty kicks",
+        "2025 Round One loss to NYCFC confirmed via best-of-3 series, eliminated in Game 3"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Charlotte_FC_seasons",
+        "https://en.wikipedia.org/wiki/2022_Charlotte_FC_season",
+        "https://en.wikipedia.org/wiki/2023_Charlotte_FC_season",
+        "https://en.wikipedia.org/wiki/2024_Charlotte_FC_season",
+        "https://en.wikipedia.org/wiki/2025_Charlotte_FC_season",
+        "https://www.espn.com/soccer/match/_/gameId/689566/charlotte-fc-red-bull-new-york"
+      ],
+      "notes": "Charlotte FC is a 2022 expansion team that has never won MLS Cup. In four completed seasons they missed the playoffs once (2022, with a losing record) and lost in the first knockout round three consecutive times (2023 Wild Card, 2024 Round One, 2025 Round One). PPI score = 2*3 = 6."
+    },
+    {
+      "team": "Columbus Crew",
+      "score": 4,
+      "since": "Since 2023",
+      "lastChampionship": "2023 MLS Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2024: Lost Round One (best-of-3) to New York Red Bulls; record 19W-6L-9D",
+        "2025: Lost Round One (best-of-3) to FC Cincinnati 2-1 in Game 3; record 14W-8L-12D",
+        "champsorchumps listed 2025 as Missed Playoffs but multiple sources confirm Round One playoff loss to FC Cincinnati \u2014 used the more detailed sources"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Columbus_Crew_seasons",
+        "https://champsorchumps.us/team/mls/columbus-crew",
+        "https://www.goal.com/en-ca/news/new-york-red-bulls-eliminate-reigning-mls-cup-champions-columbus-crew-round-one-of-playoffs-carlos-coronel-three-shootout-saves/blt241f9f0ac9ddff3b",
+        "https://www.oursportscentral.com/services/releases/game-3-loss-eliminates-crew/n-6298781",
+        "https://www.fccincinnati.com/news/recap-fc-cincinnati-2-columbus-crew-1"
+      ],
+      "notes": "Columbus Crew won MLS Cup in 2023. Drought window covers only 2024 and 2025. Both seasons ended in Round One exits: 2024 vs NY Red Bulls, 2025 vs FC Cincinnati (Game 3 loss). 2026 season in progress, not counted."
+    },
+    {
+      "team": "St. Louis City SC",
+      "score": 2,
+      "since": "Since founding (2023)",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "St. Louis City SC is an expansion team that joined MLS in 2023 \u2014 only 3 completed seasons in history",
+        "2023: 17W-5D-12L, lost First Round (best-of-3) to Sporting KC 0-2",
+        "2024: 8W-13L-13D, missed playoffs with losing record",
+        "2025: 8W-18L-8D, missed playoffs with losing record"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2023_St._Louis_City_SC_season",
+        "https://en.wikipedia.org/wiki/2024_St._Louis_City_SC_season",
+        "https://en.wikipedia.org/wiki/2025_St._Louis_City_SC_season",
+        "https://en.wikipedia.org/wiki/St._Louis_City_SC",
+        "https://champsorchumps.us/team/mls/st-louis-city"
+      ],
+      "notes": ""
+    },
+    {
+      "team": "LA Galaxy",
+      "score": 0,
+      "since": "Since 2025",
+      "lastChampionship": "2024 MLS Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Drought window contains only one completed season (2025). LA Galaxy won MLS Cup in November 2024, defeating NY Red Bulls 2-1 for their sixth title.",
+        "2025: Finished 7W-18L-9D, 26th overall, did not qualify for MLS Cup playoffs and had a clearly losing record \u2014 no winningRecordNoPlayoff credit.",
+        "2026 season is in progress and not counted per rules."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2025_LA_Galaxy_season",
+        "https://champsorchumps.us/team/mls/la-galaxy",
+        "https://www.lagalaxy.com/news/match-report-la-galaxy-claim-sixth-mls-cup-with-2-1-win-over-new-york-red-bulls-at-dignity-health-sports-park-on-saturday-night"
+      ],
+      "notes": "LA Galaxy are the all-time MLS Cup leaders with six titles (2002, 2005, 2011, 2012, 2014, 2024). Their current drought is extremely short \u2014 just the 2025 season, in which they collapsed to a 7-18-9 record and missed the playoffs entirely with no winning record. PPI score is 0."
+    },
+    {
+      "team": "Inter Miami CF",
+      "score": 0,
+      "since": "2026",
+      "lastChampionship": "2025 MLS Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Inter_Miami_CF_seasons",
+        "https://en.wikipedia.org/wiki/MLS_Cup_2025",
+        "https://en.wikipedia.org/wiki/2025_MLS_Cup_playoffs"
+      ],
+      "notes": "Inter Miami CF won the 2025 MLS Cup, defeating Vancouver Whitecaps FC 3-1 on December 6, 2025 -- the franchise's first-ever MLS title. The drought window per PPI rules starts the season after the most recent championship, which is 2026. The 2026 MLS season is currently in progress and not yet complete, so there are zero completed seasons in the drought window. Historical pre-title playoff results (2020 Preliminary Round loss, 2022 First Round loss, 2024 First Round loss) are irrelevant because they all predate the 2025 championship."
+    }
+  ]
+}

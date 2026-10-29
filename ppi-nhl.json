@@ -1,0 +1,809 @@
+{
+  "league": "NHL",
+  "updated": "2026-06-16",
+  "scoring": "16*Finals + 8*Semis + 4*Quarters + 2*FirstRound + 1*WinningRecordNoPlayoff",
+  "teams": [
+    {
+      "team": "Philadelphia Flyers",
+      "score": 212,
+      "since": "Since last title in 1974-75",
+      "lastChampionship": "1975 Stanley Cup",
+      "breakdown": {
+        "finals": 6,
+        "semis": 7,
+        "quarters": 8,
+        "firstRound": 14,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Philadelphia_Flyers_seasons",
+        "https://en.wikipedia.org/wiki/2012%E2%80%9313_Philadelphia_Flyers_season",
+        "https://en.wikipedia.org/wiki/2020%E2%80%9321_Philadelphia_Flyers_season",
+        "https://en.wikipedia.org/wiki/2014%E2%80%9315_Philadelphia_Flyers_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Philadelphia_Flyers_season"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Minnesota Wild",
+      "score": 138,
+      "since": "Combining all Wild and North Stars seasons since 1967",
+      "lastChampionship": "Never won (founded 2000)",
+      "breakdown": {
+        "finals": 2,
+        "semis": 5,
+        "quarters": 8,
+        "firstRound": 16,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Minnesota_Wild_seasons",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Minnesota_Wild_season",
+        "https://www.nhl.com/news/why-minnesota-wild-are-eliminated-from-2025-2026-postseason",
+        "https://en.wikipedia.org/wiki/2008%E2%80%9309_Minnesota_Wild_season",
+        "https://en.wikipedia.org/wiki/2009%E2%80%9310_Minnesota_Wild_season"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical). Combines Minnesota Wild + North Stars (the city keeps the pain after the North Stars left for Dallas)."
+    },
+    {
+      "team": "Buffalo Sabres",
+      "score": 134,
+      "since": "Since team was founded in 1970",
+      "lastChampionship": "Never won (founded 1970)",
+      "breakdown": {
+        "finals": 2,
+        "semis": 4,
+        "quarters": 10,
+        "firstRound": 14,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Buffalo_Sabres_seasons",
+        "https://en.wikipedia.org/wiki/2003%E2%80%9304_Buffalo_Sabres_season",
+        "https://en.wikipedia.org/wiki/2007%E2%80%9308_Buffalo_Sabres_season",
+        "https://en.wikipedia.org/wiki/2008%E2%80%9309_Buffalo_Sabres_season",
+        "https://en.wikipedia.org/wiki/2011%E2%80%9312_Buffalo_Sabres_season"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Toronto Maple Leafs",
+      "score": 132,
+      "since": "Since last title in 1966-67",
+      "lastChampionship": "1967 Stanley Cup Final",
+      "breakdown": {
+        "finals": 0,
+        "semis": 5,
+        "quarters": 15,
+        "firstRound": 15,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Toronto_Maple_Leafs_seasons",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Toronto_Maple_Leafs_season",
+        "https://www.nhl.com/news/why-toronto-maple-leafs-are-eliminated-from-2025-2026-postseason-race"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Vancouver Canucks",
+      "score": 122,
+      "since": "Since team was founded in 1970-71",
+      "lastChampionship": "Never won (founded 1970)",
+      "breakdown": {
+        "finals": 3,
+        "semis": 0,
+        "quarters": 10,
+        "firstRound": 16,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Vancouver_Canucks_seasons",
+        "https://en.wikipedia.org/wiki/Vancouver_Canucks",
+        "https://champsorchumps.us/team/nhl/vancouver-canucks",
+        "https://www.retroseasons.com/teams/vancouver-canucks/history/seasons/",
+        "https://www.nhl.com/schedule/playoff-series/1995/series-l/canucks-vs-blackhawks"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Edmonton Oilers",
+      "score": 103,
+      "since": "Since last title in 1989-90",
+      "lastChampionship": "1990 Stanley Cup",
+      "breakdown": {
+        "finals": 3,
+        "semis": 3,
+        "quarters": 4,
+        "firstRound": 6,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Edmonton_Oilers_seasons",
+        "https://en.wikipedia.org/wiki/2001%E2%80%9302_Edmonton_Oilers_season",
+        "https://en.wikipedia.org/wiki/2003%E2%80%9304_Edmonton_Oilers_season",
+        "https://en.wikipedia.org/wiki/2019%E2%80%9320_Edmonton_Oilers_season",
+        "https://en.wikipedia.org/wiki/2006_Stanley_Cup_Final"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Dallas Stars",
+      "score": 100,
+      "since": "Since last title in 1999",
+      "lastChampionship": "1999 Stanley Cup",
+      "breakdown": {
+        "finals": 2,
+        "semis": 4,
+        "quarters": 4,
+        "firstRound": 6,
+        "winningRecordNoPlayoff": 8
+      },
+      "confidence": "medium",
+      "flags": [
+        "2004-05 season skipped (NHL lockout, no games played)",
+        "2001-02 winning-record determination uses W=36 vs L=28 in tie era (13 ties, 5 OTL); 36>28 counts as winning record",
+        "2012-13 lockout-shortened season: 22W=22L exactly .500, not counted as winning record",
+        "2016-17: 34W<37L is a losing record, not counted",
+        "2025-26 data sourced from Wikipedia/ESPN; Stars lost first round to Minnesota Wild in 6 games (2-4) -- most recent season, verified"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Dallas_Stars_seasons",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Dallas_Stars_season",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Dallas_Stars_season",
+        "https://records.nhl.com/playoff-summary/stanley-cup-winner?season=19981999",
+        "https://www.hockey-reference.com/boxscores/202009280DAL.html",
+        "https://en.wikipedia.org/wiki/2020_Stanley_Cup_playoffs"
+      ],
+      "notes": "Dallas relocated from Minnesota (as Minnesota North Stars) to Dallas for the 1993-94 season, becoming the Dallas Stars. Their 1999 championship post-dates the relocation, so the drought window correctly starts after the 1999 title. Finals losses: 1999-2000 (vs New Jersey Devils) and 2019-20 (vs Tampa Bay Lightning in COVID bubble). Semis losses (Conference Finals): 2007-08 (vs Detroit Red Wings), 2022-23 (vs Vegas Golden Knights), 2023-24 (vs Edmonton Oilers, lost 2-4), 2024-25 (vs Edmonton Oilers, lost 1-4 in 5 games). Quarters losses (Conference Semifinals / 2nd round): 2000-01 (vs Blues, swept 0-4), 2002-03 (vs Anaheim Ducks), 2015-16 (vs Blues), 2018-19 (vs Blues). First round losses: 2003-04, 2005-06 (both vs Colorado Avalanche), 2006-07 (vs Vancouver Canucks), 2013-14 (vs Anaheim Ducks), 2021-22 (vs Calgary Flames), 2025-26 (vs Minnesota Wild). Winning-record/no-playoff: 2001-02, 2008-09, 2009-10, 2010-11, 2011-12, 2014-15, 2017-18, 2020-21."
+    },
+    {
+      "team": "San Jose Sharks",
+      "score": 98,
+      "since": "Since team was founded in 1991-92",
+      "lastChampionship": "Never won (founded 1991)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 4,
+        "quarters": 9,
+        "firstRound": 7,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://github.com/ (playoff-pain-index site, index.html)",
+        "https://en.wikipedia.org/wiki/List_of_San_Jose_Sharks_seasons",
+        "https://en.wikipedia.org/wiki/San_Jose_Sharks",
+        "https://en.wikipedia.org/wiki/1993%E2%80%9394_San_Jose_Sharks_season",
+        "https://en.wikipedia.org/wiki/1994%E2%80%9395_San_Jose_Sharks_season",
+        "https://en.wikipedia.org/wiki/2014%E2%80%9315_San_Jose_Sharks_season"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "New York Rangers",
+      "score": 95,
+      "since": "Since last title in 1994",
+      "lastChampionship": "1994 Stanley Cup",
+      "breakdown": {
+        "finals": 1,
+        "semis": 5,
+        "quarters": 6,
+        "firstRound": 6,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "2019-20 qualifying round (COVID 24-team format, lost to Carolina 0-3 in best-of-5) counted as first-round loss; some may argue it does not constitute a full playoff appearance",
+        "2004-05 season excluded entirely due to full lockout (no games played)",
+        "W > L used to determine winning record throughout; OTL not treated as regulation losses for this determination",
+        "Finals loss is 2013-14, lost to Los Angeles Kings 1-4",
+        "Semis losses: 1996-97 (PHI), 2011-12 (NJD), 2014-15 (TBL), 2021-22 (TBL), 2023-24 (FLA)",
+        "Quarters losses: 1994-95 (PHI), 1995-96 (PIT), 2006-07 (BUF), 2007-08 (PIT), 2012-13 (BOS), 2016-17 (OTT)",
+        "First round losses: 2005-06 (NJD), 2008-09 (WSH), 2010-11 (WSH), 2015-16 (PIT), 2019-20 (CAR), 2022-23 (NJD)",
+        "Winning record no playoff: 2009-10 (38-33-11), 2020-21 (27-23-6), 2024-25 (39-36-7)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_New_York_Rangers_seasons",
+        "https://www.hockey-reference.com/teams/NYR/2026.html",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_New_York_Rangers_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_New_York_Rangers_season",
+        "https://en.wikipedia.org/wiki/2020%E2%80%9321_New_York_Rangers_season",
+        "https://thehockeynews.com/news/2020-nhl-qualifying-round-playoff-preview-carolina-hurricanes-vs-new-york-rangers"
+      ],
+      "notes": "Drought covers 31 countable seasons (1994-95 through 2025-26, excluding 2004-05 lockout). PPI score = 16*1 + 8*5 + 4*6 + 2*6 + 1*3 = 95. The Rangers have been consistently competitive since 2005-06 but have struggled to close out deep playoff runs, with 5 Conference Finals exits and 1 Cup Final loss since the drought began."
+    },
+    {
+      "team": "Montreal Canadiens",
+      "score": 83,
+      "since": "Since last title in 1993",
+      "lastChampionship": "1993 Stanley Cup",
+      "breakdown": {
+        "finals": 1,
+        "semis": 3,
+        "quarters": 5,
+        "firstRound": 10,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "2004-05 season cancelled (lockout) - not counted",
+        "2019-20 COVID bubble: MTL won qualifying round vs Pittsburgh, then lost Round 1 proper vs Philadelphia - counted as firstRound loss",
+        "1999-2000: 35-34-9-4 record (87pts/82gp, above .500) missed playoffs - counted as winningRecordNoPlayoff",
+        "2006-07: 42-34-6 record (90pts/82gp) missed playoffs by 2 pts on final game of season - counted as winningRecordNoPlayoff",
+        "2018-19: 44-30-8 record (96pts/82gp) missed playoffs - tied record for most pts by non-qualifying team - counted as winningRecordNoPlayoff",
+        "2015-16: 38-38-6 record (82pts/82gp) is exactly .500, not >.500 - not counted as winningRecordNoPlayoff"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Montreal_Canadiens_seasons",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Montreal_Canadiens_season",
+        "https://en.wikipedia.org/wiki/2018%E2%80%9319_Montreal_Canadiens_season",
+        "https://en.wikipedia.org/wiki/2006%E2%80%9307_Montreal_Canadiens_season",
+        "https://en.wikipedia.org/wiki/1999%E2%80%932000_Montreal_Canadiens_season",
+        "https://www.nhl.com/news/washington-capitals-montreal-canadiens-playoff-lookahead"
+      ],
+      "notes": "Drought covers 1993-94 through 2025-26 (32 seasons, minus 1 cancelled). Finals: 2020-21 loss to Tampa Bay. Semis: 2009-10 loss to Philadelphia, 2013-14 loss to NY Rangers, 2025-26 loss to Carolina. Quarters: 1997-98 vs Buffalo, 2001-02 vs Carolina, 2003-04 vs Tampa Bay, 2007-08 vs Philadelphia, 2014-15 vs Tampa Bay. First Round: 1993-94, 1995-96, 1996-97, 2005-06, 2008-09, 2010-11, 2012-13, 2016-17, 2019-20, 2024-25. PPI score = 16*1 + 8*3 + 4*5 + 2*10 + 1*3 = 83."
+    },
+    {
+      "team": "New York Islanders",
+      "score": 83,
+      "since": "Since last title in 1983",
+      "lastChampionship": "1983 Stanley Cup",
+      "breakdown": {
+        "finals": 1,
+        "semis": 3,
+        "quarters": 4,
+        "firstRound": 12,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "1985-86 season (Division Semifinals loss vs Washington, counted as first-round loss) confirmed via Wikipedia seasons table but absent from champsorchumps.us data \u2014 minor source discrepancy, Wikipedia trusted"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_New_York_Islanders_seasons",
+        "https://champsorchumps.us/team/nhl/new-york-islanders",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_New_York_Islanders_season",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_New_York_Islanders_season",
+        "https://en.wikipedia.org/wiki/2016%E2%80%9317_New_York_Islanders_season",
+        "https://en.wikipedia.org/wiki/2021%E2%80%9322_New_York_Islanders_season"
+      ],
+      "notes": "Four consecutive Cups 1980-1983; drought begins 1983-84. Round mapping applied to NHL's shifting bracket formats: Division Semifinals (1984-1993) = first round; Division Finals = quarters; Conference Finals = semis. Three winning-record playoff misses: 2016-17 (94 pts, lost tiebreaker to Toronto), 2021-22 (84 pts, 51.2%), 2025-26 (91 pts, missed on standings). 2004-05 lockout season excluded. 2019-20 bubble playoffs: Islanders advanced through qualifying round then won three series before losing Conference Finals to Tampa = semis. 2020-21 temporary divisional format: four-round structure, Stanley Cup Semifinals = third round = semis."
+    },
+    {
+      "team": "Ottawa Senators",
+      "score": 74,
+      "since": "Since team was founded in 1992",
+      "lastChampionship": "Never won (founded 1992)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 2,
+        "quarters": 4,
+        "firstRound": 11,
+        "winningRecordNoPlayoff": 4
+      },
+      "confidence": "high",
+      "flags": [
+        "2004-05 season excluded (NHL lockout, no games played)",
+        "Current Senators are a 1992 expansion team; the original Ottawa Senators (1917-1934) are a separate franchise and their Cup wins are not inherited"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Ottawa_Senators_seasons",
+        "https://champsorchumps.us/team/nhl/ottawa-senators",
+        "https://www.hockey-reference.com/teams/OTT/2009.html",
+        "https://en.wikipedia.org/wiki/1996%E2%80%9397_Ottawa_Senators_season",
+        "https://en.wikipedia.org/wiki/2013%E2%80%9314_Ottawa_Senators_season",
+        "https://en.wikipedia.org/wiki/2022%E2%80%9323_Ottawa_Senators_season"
+      ],
+      "notes": "Finals: 2006-07 (lost to Anaheim Ducks). Conference Finals (semis): 2002-03, 2016-17. Second Round/Conf. Semifinals (quarters): 1997-98, 2001-02, 2005-06, 2012-13. First Round: 1996-97, 1998-99, 1999-00, 2000-01, 2003-04, 2007-08, 2009-10, 2011-12, 2014-15, 2024-25, 2025-26. Winning record missed playoffs: 2008-09 (36-35-11), 2013-14 (37-31-14), 2015-16 (38-35-9), 2022-23 (39-35-8)."
+    },
+    {
+      "team": "Boston Bruins",
+      "score": 64,
+      "since": "Since last title in 2011",
+      "lastChampionship": "2011 Stanley Cup",
+      "breakdown": {
+        "finals": 2,
+        "semis": 0,
+        "quarters": 5,
+        "firstRound": 5,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [
+        "2014-15 winning-record classification is borderline: 41W-27L-14OTL is exactly .500 if OTL counted as losses; classified as winning record using W>L (regulation losses only) convention",
+        "2015-16: 42W-31L-9OTL clearly W>L so unambiguous winning record that missed playoffs"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Boston_Bruins_seasons",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Boston_Bruins_season",
+        "https://en.wikipedia.org/wiki/2014%E2%80%9315_Boston_Bruins_season",
+        "https://en.wikipedia.org/wiki/2015%E2%80%9316_Boston_Bruins_season",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Boston_Bruins_season",
+        "https://www.hockey-reference.com/playoffs/2020-boston-bruins-vs-tampa-bay-lightning-eastern-second-round.html"
+      ],
+      "notes": "15 seasons counted (2011-12 through 2025-26). Breakdown: 2011-12 First Round loss (vs Washington); 2012-13 Cup Finals loss (vs Chicago); 2013-14 Second Round loss (vs Montreal); 2014-15 missed playoffs 41-27-14; 2015-16 missed playoffs 42-31-9; 2016-17 First Round loss (vs Ottawa); 2017-18 Second Round loss (vs Tampa Bay); 2018-19 Cup Finals loss (vs St. Louis); 2019-20 Second Round loss (vs Tampa Bay, bubble); 2020-21 Second Round loss (vs NY Islanders); 2021-22 First Round loss (vs Carolina); 2022-23 First Round loss (vs Florida); 2023-24 Second Round loss (vs Florida); 2024-25 missed playoffs 33-39-10 losing record no count; 2025-26 First Round loss (vs Buffalo). No Conference Finals (semi-finals tier) losses -- Bruins either reached the Cup Finals or were eliminated in rounds 1-2."
+    },
+    {
+      "team": "Nashville Predators",
+      "score": 58,
+      "since": "Since team was founded in 1998",
+      "lastChampionship": "Never won (founded 1998)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 4,
+        "firstRound": 11,
+        "winningRecordNoPlayoff": 4
+      },
+      "confidence": "high",
+      "flags": [
+        "2020 qualifying round loss vs. Arizona classified as first-round loss; NHL used non-standard COVID bubble play-in format -- could alternatively be treated as winningRecordNoPlayoff (35-26-8 regular season record)"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/nhl/nashville-predators",
+        "https://champsorchumps.us/team/nhl/nashville-predators/playoff-series",
+        "https://en.wikipedia.org/wiki/Nashville_Predators"
+      ],
+      "notes": "2020 qualifying round loss to Arizona (COVID bubble, best-of-5 play-in) classified as a first-round loss since Nashville played and lost a series. Their regular-season record that year was 35-26-8 (winning). The four quarters losses are: 2010-11 (Vancouver), 2011-12 (Phoenix), 2015-16 (San Jose), 2017-18 (Winnipeg). Nashville never lost a Conference Finals -- in 2017 they won it and then lost the Stanley Cup Final. Winning-record missed-playoff seasons: 2008-09 (40-34-8), 2013-14 (38-32-12), 2022-23 (42-32-8), 2025-26 (38-32-10)."
+    },
+    {
+      "team": "Calgary Flames",
+      "score": 56,
+      "since": "Since last title in 1989",
+      "lastChampionship": "1989 Stanley Cup",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 2,
+        "firstRound": 13,
+        "winningRecordNoPlayoff": 6
+      },
+      "confidence": "high",
+      "flags": [
+        "2004-05 season cancelled (lockout) - no season to classify",
+        "2019-20 was COVID bubble format; Flames were seeded 6th and lost First Round to Dallas Stars 2-4 - counted as firstRoundLoss",
+        "Early seasons (1989-96) used Division Semifinals / Conference Quarterfinals terminology for what was the first round - all mapped to firstRoundLosses"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Calgary_Flames_seasons",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Calgary_Flames_season",
+        "https://www.nhl.com/news/why-calgary-flames-are-eliminated-from-2025-2026-postseason-race"
+      ],
+      "notes": "Drought spans 1989-90 through 2025-26 (36 seasons, excluding 2004-05 lockout = 35 classifiable seasons). The Flames had only one Finals appearance (2003-04, lost to Tampa Bay) and two second-round exits (2014-15 to Anaheim, 2021-22 to Edmonton) during the drought. They never reached the Conference Finals. The team had a historically painful stretch of 8 consecutive first-round exits from 1989-96 and 2005-09."
+    },
+    {
+      "team": "New Jersey Devils",
+      "score": 43,
+      "since": "Since last title in 2003",
+      "lastChampionship": "2003 Stanley Cup",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 3,
+        "firstRound": 6,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "2025-26 season data sourced from Wikipedia; season recently concluded as of June 2026",
+        "2019-20 season truncated by COVID-19 (69 games played); classified as below-.500 and missed playoffs -- no playoff bubble qualification",
+        "2012-13 lockout-shortened season (48 games): exactly 50.0% points pct, not strictly >.500, classified as nothing"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_New_Jersey_Devils_seasons",
+        "https://champsorchumps.us/team/nhl/new-jersey-devils",
+        "https://en.wikipedia.org/wiki/New_Jersey_Devils"
+      ],
+      "notes": "Drought covers 2003-04 through 2025-26 (22 active drought seasons; the cancelled 2004-05 lockout year is excluded as no games were played). Finals loss in 2011-12 to LA Kings (2-4). Quarters losses: 2005-06 (vs Carolina), 2006-07 (vs Ottawa), 2022-23 (vs Carolina after beating Rangers). First-round losses: 2003-04 (vs Philadelphia), 2007-08 (vs NY Rangers), 2008-09 (vs Carolina), 2009-10 (vs Philadelphia), 2017-18 (vs Tampa Bay), 2024-25 (vs Carolina). Winning-record misses (points pct > 50%): 2013-14 (88 pts, 53.7%), 2015-16 (84 pts, 51.2%), 2025-26 (87 pts, 53.0%). PPI score = 16*1 + 8*0 + 4*3 + 2*6 + 1*3 = 43."
+    },
+    {
+      "team": "Detroit Red Wings",
+      "score": 39,
+      "since": "Since last title in 2008",
+      "lastChampionship": "2008 Stanley Cup",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 3,
+        "firstRound": 4,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "2025-26 season confirmed via Wikipedia: 41-31-10, eliminated from playoffs on April 11 2026 (10th consecutive missed playoffs)",
+        "2020-21 was a 56-game pandemic-shortened season; 19-27-10 is a losing record by W vs L"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Detroit_Red_Wings_seasons",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Detroit_Red_Wings_season",
+        "https://www.nhl.com/news/why-2023-24-detroit-red-wings-are-eliminated",
+        "https://www.hockey-reference.com/teams/DET/2025.html"
+      ],
+      "notes": "Seasons classified: 2008-09 Lost SCF (finalsLoss); 2009-10 Lost Conf Semis/Rd2 (quartersLoss); 2010-11 Lost Conf Semis/Rd2 (quartersLoss); 2011-12 Lost Rd1/Conf Qtrs (firstRoundLoss); 2012-13 Lost Conf Semis/Rd2 (quartersLoss); 2013-14 Lost Rd1 (firstRoundLoss); 2014-15 Lost Rd1 (firstRoundLoss); 2015-16 Lost Rd1 (firstRoundLoss); 2016-17 through 2022-23 all missed playoffs with losing W-L records (nothing); 2023-24 41-32-9 winning record missed playoffs; 2024-25 39-35-8 winning record missed playoffs; 2025-26 41-31-10 winning record missed playoffs. PPI = 16*1 + 8*0 + 4*3 + 2*4 + 1*3 = 39."
+    },
+    {
+      "team": "Anaheim Ducks",
+      "score": 38,
+      "since": "Since last title in 2007",
+      "lastChampionship": "2007 Stanley Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 2,
+        "quarters": 3,
+        "firstRound": 5,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Anaheim_Ducks_seasons",
+        "https://en.wikipedia.org/wiki/2007_Stanley_Cup_Finals",
+        "https://en.wikipedia.org/wiki/2015_Stanley_Cup_Finals",
+        "https://en.wikipedia.org/wiki/2017_Stanley_Cup_Finals"
+      ],
+      "notes": "Drought window: 2007-08 through 2025-26 (19 seasons). Semis losses: 2014-15 (WCF vs Chicago, 3-4) and 2016-17 (WCF vs Nashville, 2-4). Quarters losses: 2008-09 (R2 vs Detroit, 3-4), 2013-14 (R2 vs LA Kings, 3-4), 2025-26 (R2 vs Vegas Golden Knights, 2-4). First round losses: 2007-08 (vs Dallas), 2010-11 (vs Nashville), 2012-13 (vs Detroit), 2015-16 (vs Nashville), 2017-18 (vs San Jose, swept 0-4). Seven non-playoff seasons (2009-10, 2011-12, 2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25) all had losing records (wins < reg+OT losses)."
+    },
+    {
+      "team": "Winnipeg Jets",
+      "score": 31,
+      "since": "Since team relocated to Winnipeg in 2011",
+      "lastChampionship": "Never won (franchise founded 1999 as Atlanta Thrashers, relocated to Winnipeg 2011)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 2,
+        "firstRound": 5,
+        "winningRecordNoPlayoff": 5
+      },
+      "confidence": "high",
+      "flags": [
+        "2019-20 qualifying round loss to Calgary Flames (1-3) counted as first-round loss; this was the COVID bubble play-in format preceding the traditional first round",
+        "2025-26 record of 35-35-12 is exactly .500 (82 pts / 164 max) -- does not qualify as a winning-record-missed-playoffs season",
+        "The current Jets franchise is the relocated Atlanta Thrashers; Winnipeg fans do not inherit Atlanta playoff pain per PPI rules, so drought starts at 2011 relocation"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Winnipeg_Jets_seasons",
+        "https://en.wikipedia.org/wiki/Winnipeg_Jets",
+        "https://en.wikipedia.org/wiki/2019-20_Winnipeg_Jets_season",
+        "https://en.wikipedia.org/wiki/2025-26_Winnipeg_Jets_season"
+      ],
+      "notes": "Drought window: 2011-12 through 2025-26 (15 seasons). Best run was 2017-18 Conference Finals loss to Vegas. Won Presidents Trophy in 2024-25 but lost in second round to Dallas. Missed playoffs in back-to-back seasons 2025-26 after dominant 2024-25."
+    },
+    {
+      "team": "Tampa Bay Lightning",
+      "score": 24,
+      "since": "Since last title in 2021",
+      "lastChampionship": "2021 Stanley Cup",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 4,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tampa_Bay_Lightning",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Tampa_Bay_Lightning_season",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Tampa_Bay_Lightning_season"
+      ],
+      "notes": "Seasons covered: 2021-22 (Finals loss to Colorado), 2022-23 (R1 loss to Toronto), 2023-24 (R1 loss to Florida), 2024-25 (R1 loss to Florida), 2025-26 (R1 loss to Montreal). All five drought seasons resulted in playoff appearances. No missed playoffs and no Conference Final or Stanley Cup Final appearances beyond 2021-22."
+    },
+    {
+      "team": "Vegas Golden Knights",
+      "score": 22,
+      "since": "Since last title in 2023",
+      "lastChampionship": "2023 Stanley Cup",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2025-26 Stanley Cup Final loss to Carolina Hurricanes confirmed (series ended June 15 2026, Game 6 shutout 3-0)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Vegas_Golden_Knights_seasons",
+        "https://en.wikipedia.org/wiki/2023%E2%80%9324_Vegas_Golden_Knights_season",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Vegas_Golden_Knights_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Vegas_Golden_Knights_season",
+        "https://en.wikipedia.org/wiki/2026_Stanley_Cup_Final",
+        "https://www.nhl.com/news/why-2023-24-vegas-golden-knights-are-eliminated-from-postseason"
+      ],
+      "notes": "Three drought seasons: 2023-24 lost First Round to Dallas Stars (4-3); 2024-25 lost Second Round (Conf. Semifinals) to Edmonton Oilers (4-1); 2025-26 lost Stanley Cup Final to Carolina Hurricanes (4-2). No winning-record-without-playoff seasons; VGK made playoffs all three years."
+    },
+    {
+      "team": "Columbus Blue Jackets",
+      "score": 18,
+      "since": "Since team was founded in 2000",
+      "lastChampionship": "Never won (founded 2000)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 5,
+        "winningRecordNoPlayoff": 4
+      },
+      "confidence": "high",
+      "flags": [
+        "2004-05 season excluded (lockout, no games played)",
+        "2019-20 season: COVID-shortened to 70 GP; Columbus won the qualifying round (best-of-5 play-in vs Toronto) then lost Round 1 to Tampa Bay -- mapped as First Round loss",
+        "2012-13 season: lockout-shortened to 48 games; Columbus had winning record (24-17) but missed playoffs -- mapped as winningRecordNoPlayoff"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Columbus_Blue_Jackets_seasons",
+        "https://en.wikipedia.org/wiki/Columbus_Blue_Jackets",
+        "https://champsorchumps.us/team/nhl/columbus-blue-jackets"
+      ],
+      "notes": "Columbus Blue Jackets have never won the Stanley Cup and have never appeared in a Conference Final in their 25-season history. The quartersLosses entry is the 2018-19 season when they swept President's Trophy winner Tampa Bay in Round 1 then lost to Boston in Round 2 (Conference Semifinals). The five firstRoundLosses are: 2008-09 (swept by Detroit 0-4), 2013-14 (lost to Pittsburgh 2-4), 2016-17 (lost to Pittsburgh 1-4), 2017-18 (lost to Washington 2-4), 2019-20 (lost to Tampa Bay 1-4 after winning qualifying round). The four winningRecordNoPlayoff seasons are: 2012-13 (24-17 shortened season), 2014-15 (42-35), 2024-25 (40-33), 2025-26 (40-30). PPI = 4*1 + 2*5 + 1*4 = 18."
+    },
+    {
+      "team": "Colorado Avalanche",
+      "score": 16,
+      "since": "Since last title in 2022",
+      "lastChampionship": "2022 Stanley Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 1,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://champsorchumps.us/team/nhl/colorado-avalanche",
+        "https://en.wikipedia.org/wiki/2022%E2%80%9323_Colorado_Avalanche_season",
+        "https://en.wikipedia.org/wiki/2023%E2%80%9324_Colorado_Avalanche_season",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Colorado_Avalanche_season",
+        "https://www.nhl.com/news/why-colorado-avalanche-are-eliminated-from-2025-2026-postseason"
+      ],
+      "notes": "Drought window covers 4 seasons (2022-23 through 2025-26). Colorado made the playoffs all four seasons. 2022-23: lost First Round to Seattle Kraken in 7 games. 2023-24: won First Round, lost Conference Semifinals (Second Round) to Dallas Stars. 2024-25: lost First Round to Dallas Stars in 7 games. 2025-26: Presidents' Trophy winners (55-16-11), won First Round and Conference Semifinals vs Minnesota Wild, swept out of Conference Finals by Vegas Golden Knights 0-4."
+    },
+    {
+      "team": "Los Angeles Kings",
+      "score": 16,
+      "since": "Since last title in 2014",
+      "lastChampionship": "2014 Stanley Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 7,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [
+        "2014-15: 40-27-15 (95 pts), winning record but missed playoffs \u2014 first time missing playoffs since 2008-09",
+        "2016-17: 39-35-8 (86 pts), winning record but missed playoffs",
+        "2021-22 through 2024-25: four consecutive first-round losses to the Edmonton Oilers",
+        "2025-26: swept by Colorado Avalanche in first round (0-4)",
+        "Kings have not advanced past the first round in any playoff appearance during the drought (0-for-7 in series)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Kings_seasons",
+        "https://champsorchumps.us/team/nhl/los-angeles-kings/playoff-series",
+        "https://en.wikipedia.org/wiki/2014-15_Los_Angeles_Kings_season",
+        "https://en.wikipedia.org/wiki/2015-16_Los_Angeles_Kings_season",
+        "https://en.wikipedia.org/wiki/2016-17_Los_Angeles_Kings_season"
+      ],
+      "notes": "Seven seasons in the drought window (2014-15 through 2025-26 = 12 seasons). Kings have been a consistent contender but are stuck in first-round exits. All 7 playoff appearances ended in round 1. The 2021-22 through 2024-25 stretch featured four straight first-round series losses to Edmonton."
+    },
+    {
+      "team": "Pittsburgh Penguins",
+      "score": 16,
+      "since": "Since last title in 2017",
+      "lastChampionship": "2017 Stanley Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 5,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [
+        "2019-20 qualifying round (COVID bubble format) treated as first-round loss; Penguins lost to Montreal Canadiens 3-1 in best-of-5 before reaching the official First Round",
+        "2022-23 (40-31-11) and 2023-24 (38-32-12) both count as winning-record-no-playoff; 2024-25 (34-36-12) is a losing record and scores nothing"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/nhl/pittsburgh-penguins",
+        "https://en.wikipedia.org/wiki/Pittsburgh_Penguins",
+        "https://en.wikipedia.org/wiki/2022%E2%80%9323_Pittsburgh_Penguins_season",
+        "https://en.wikipedia.org/wiki/2019%E2%80%9320_Pittsburgh_Penguins_season",
+        "https://www.nhl.com/news/topic/playoffs/why-pittsburgh-penguins-are-eliminated-from-2025-2026-postseason",
+        "https://www.pensburgh.com/analysis/76311/closing-thoughts-on-the-2025-26-penguins-playoff-experience"
+      ],
+      "notes": "Seasons in drought: 2017-18 (lost Round 2 / Conference Semifinals to Capitals = quartersLoss), 2018-19 (swept in R1 by Islanders = firstRoundLoss), 2019-20 (lost qualifying round to Canadiens = firstRoundLoss), 2020-21 (lost R1 to Islanders = firstRoundLoss), 2021-22 (lost R1 to Rangers in 7 = firstRoundLoss), 2022-23 (missed playoffs, winning record 40-31-11 = winningRecordNoPlayoff), 2023-24 (missed playoffs, winning record 38-32-12 = winningRecordNoPlayoff), 2024-25 (missed playoffs, losing record 34-36-12 = nothing), 2025-26 (lost R1 to Flyers 4-2 = firstRoundLoss). PPI score = 16*0 + 8*0 + 4*1 + 2*5 + 1*2 = 16."
+    },
+    {
+      "team": "Washington Capitals",
+      "score": 15,
+      "since": "Since last title in 2018",
+      "lastChampionship": "2018 Stanley Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 5,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Washington_Capitals_seasons",
+        "https://en.wikipedia.org/wiki/2021%E2%80%9322_Washington_Capitals_season",
+        "https://en.wikipedia.org/wiki/2022%E2%80%9323_Washington_Capitals_season",
+        "https://en.wikipedia.org/wiki/2023%E2%80%9324_Washington_Capitals_season",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Washington_Capitals_season",
+        "https://www.nhl.com/news/why-washington-capitals-are-eliminated-from-2025-2026-postseason-race"
+      ],
+      "notes": "8 seasons in drought (2018-19 through 2025-26). Four straight first-round exits 2018-19 to 2021-22, then a losing-record miss in 2022-23, swept in the first round in 2023-24, reached the Conference Semifinals (second round) in 2024-25 before losing to Carolina 1-4, and missed playoffs in 2025-26 with a winning record (43-30-9, 95 pts)."
+    },
+    {
+      "team": "St. Louis Blues",
+      "score": 12,
+      "since": "Since last title in 2019",
+      "lastChampionship": "2019 Stanley Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_St._Louis_Blues_seasons",
+        "https://www.nhl.com/news/why-st-louis-blues-are-eliminated-from-2024-2025-postseason",
+        "https://www.nhl.com/news/why-st-louis-blues-are-eliminated-2025-2026-postseason-race",
+        "https://www.nhl.com/news/why-2023-24-st-louis-blues-are-eliminated",
+        "https://champsorchumps.us/team/nhl/st-louis-blues"
+      ],
+      "notes": "Drought covers 7 seasons (2019-20 through 2025-26). The 2021-22 quarters loss was in the Conference Semifinals (Second Round) vs Colorado Avalanche. The 2022-23 losing record (37-38-7) generates no PPI. Both 2023-24 (43-33-6) and 2025-26 (37-33-12) were winning-record misses above .500 points percentage. The 2024-25 first-round exit was a Game 7 double-overtime loss to the Jets."
+    },
+    {
+      "team": "Chicago Blackhawks",
+      "score": 7,
+      "since": "Since last title in 2015",
+      "lastChampionship": "2015 Stanley Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "2019-20 first-round loss was actually the COVID Qualifying Round (24-team bubble format); counted as first-round loss since team was eliminated from Cup contention"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Chicago_Blackhawks_seasons"
+      ],
+      "notes": "Drought covers 2015-16 through 2025-26 (11 seasons). Three first-round exits (2015-16 vs Blues, 2016-17 vs Predators, 2019-20 vs Golden Knights). One winning-record miss in 2018-19 (36-34-12). Remaining seasons all losing records with no playoff berth."
+    },
+    {
+      "team": "Seattle Kraken",
+      "score": 4,
+      "since": "Since team was founded in 2021",
+      "lastChampionship": "Never won (founded 2021)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2021%E2%80%9322_Seattle_Kraken_season",
+        "https://en.wikipedia.org/wiki/2022%E2%80%9323_Seattle_Kraken_season",
+        "https://en.wikipedia.org/wiki/2023%E2%80%9324_Seattle_Kraken_season",
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Seattle_Kraken_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Seattle_Kraken_season",
+        "https://www.hockey-reference.com/teams/SEA/history.html"
+      ],
+      "notes": "Expansion team, first season 2021-22. Five seasons played: only one playoff appearance (2022-23), where they beat the defending champion Colorado Avalanche in the First Round then lost to Dallas Stars in the Second Round (Conference Semifinals). The other four seasons were all non-playoff with losing records. The 2025-26 season (34-35-11) was their third consecutive miss."
+    },
+    {
+      "team": "Utah Mammoth",
+      "score": 3,
+      "since": "Since team relocated to Utah in 2024",
+      "lastChampionship": "Never won (franchise relocated to Utah in 2024; no title as Arizona Coyotes or Winnipeg Jets)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "Drought window starts from 2024-25 (relocation year) per PPI rules -- Utah fans do not inherit Arizona Coyotes or Winnipeg Jets playoff pain",
+        "2024-25 (Utah Hockey Club): 38-31-13 record, 89 pts, missed playoffs -- counts as winningRecordNoPlayoff",
+        "2025-26 (Utah Mammoth): 43-33-6 record, 92 pts, made playoffs, lost in first round to Vegas Golden Knights 4-2"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2024%E2%80%9325_Utah_Hockey_Club_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Utah_Mammoth_season",
+        "https://en.wikipedia.org/wiki/Utah_Hockey_Club"
+      ],
+      "notes": "The franchise relocated from Arizona (as Arizona Coyotes) to Salt Lake City for the 2024-25 inaugural season as Utah Hockey Club, then was renamed Utah Mammoth in May 2025 for the 2025-26 season. The franchise has never won a Stanley Cup in any incarnation (original Winnipeg Jets 1979-96, Arizona Coyotes 1996-2024, Utah HC 2024-25, Utah Mammoth 2025-present). Only 2 seasons of Utah-era history exist through June 2026."
+    },
+    {
+      "team": "Florida Panthers",
+      "score": 1,
+      "since": "Since last title in 2025",
+      "lastChampionship": "2025 Stanley Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "Drought window is only one season deep (2025-26); Panthers won back-to-back Cups in 2024 and 2025",
+        "2025-26: 40-38-4 record, missed playoffs (eliminated April 4, 2026) \u2014 first playoff miss since 2018-19 and first two-time defending champion to miss playoffs since 1969-70 Canadiens"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Florida_Panthers_seasons",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_Florida_Panthers_season",
+        "https://en.wikipedia.org/wiki/2025_Stanley_Cup_playoffs",
+        "https://en.wikipedia.org/wiki/2026_Stanley_Cup_playoffs"
+      ],
+      "notes": "Florida Panthers won the Stanley Cup in both 2023-24 and 2024-25 (back-to-back). The active drought covers only the 2025-26 season, in which they posted a 40-38-4 record (wins exceed losses, so winning record) but missed the playoffs entirely, finishing 7th in the Atlantic Division with 84 points."
+    },
+    {
+      "team": "Carolina Hurricanes",
+      "score": 0,
+      "since": "Since last title in 2026",
+      "lastChampionship": "2026 Stanley Cup Final",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Team won the 2026 Stanley Cup Final (defeated Vegas Golden Knights 4-2); active drought window is 2026-27, which has not yet been played -- all PPI counts are 0"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Carolina_Hurricanes_seasons",
+        "https://champsorchumps.us/team/nhl/carolina-hurricanes"
+      ],
+      "notes": "The Hurricanes won the 2026 Stanley Cup, ending a 19-season drought since their 2006 title. The prior drought (2006-07 through 2024-25) included 4 Conference Finals losses (2009, 2019, 2023, 2025), 3 Second Round losses (2021, 2022, 2024), 1 First Round loss (2020), and 7 winning-record-no-playoff seasons -- but that drought is now closed. The current active drought has 0 seasons."
+    }
+  ],
+  "methodologyNote": "The 'winning record, no playoff' figure for non-pinned NHL teams uses each season's regulation/overall winning record; the original site applied a slightly stricter convention, so this metric (worth 1 pt/season) may run a touch high for researched teams."
+}

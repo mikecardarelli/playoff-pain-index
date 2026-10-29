@@ -1,0 +1,383 @@
+{
+  "league": "WNBA",
+  "updated": "2026-06-16",
+  "scoring": "16*Finals + 8*Semis + 4*Quarters + 2*FirstRound + 1*WinningRecordNoPlayoff",
+  "teams": [
+    {
+      "team": "Connecticut Sun",
+      "score": 140,
+      "since": "Since team was founded in 2003",
+      "lastChampionship": "Never (franchise founded 1999 as Orlando Miracle, relocated to Connecticut in 2003; no WNBA title ever)",
+      "breakdown": {
+        "finals": 4,
+        "semis": 7,
+        "quarters": 5,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "playoff-pain-index site (index.html)",
+        "https://champsorchumps.us/team/wnba/connecticut-sun",
+        "https://en.wikipedia.org/wiki/Connecticut_Sun",
+        "https://en.wikipedia.org/wiki/2017_WNBA_playoffs",
+        "https://en.wikipedia.org/wiki/2018_WNBA_playoffs"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Atlanta Dream",
+      "score": 84,
+      "since": "Founded 2008",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 3,
+        "semis": 1,
+        "quarters": 7,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2016: Atlanta lost in Round 2 of a 4-round bracket (won Round 1, lost to #4 Chicago Sky in Round 2); mapped to quartersLosses as it is 2 rounds from the Finals",
+        "2018: Atlanta was #2 seed with a double bye, lost in Semifinals (round before Finals in 4-round bracket); mapped to semisLosses",
+        "2009/2012/2014: Conference Semifinals was the first round in the then-3-round bracket; all mapped to quartersLosses",
+        "2023/2024/2025: Lost First Round under current expanded playoff format; mapped to quartersLosses per WNBA shallow-bracket convention"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Atlanta_Dream",
+        "https://champsorchumps.us/team/wnba/atlanta-dream",
+        "https://en.wikipedia.org/wiki/2009_WNBA_playoffs",
+        "https://en.wikipedia.org/wiki/2012_WNBA_playoffs",
+        "https://en.wikipedia.org/wiki/2016_WNBA_playoffs",
+        "https://en.wikipedia.org/wiki/2018_WNBA_playoffs"
+      ],
+      "notes": ""
+    },
+    {
+      "team": "Phoenix Mercury",
+      "score": 78,
+      "since": "Since 2015",
+      "lastChampionship": "2014",
+      "breakdown": {
+        "finals": 2,
+        "semis": 4,
+        "quarters": 3,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2019: Mercury lost as #8 seed in Round 1 of a 4-round bracket (5v8/6v7 with top-2 double byes and top 3-4 single byes). Depth-from-Finals = 3, scored as firstRoundLoss not Quarters.",
+        "2020 was a shortened COVID bubble season (22 games vs typical 36). Format had 4 rounds with double byes for #1-2 seeds and single byes for #3-4 seeds. Mercury lost Second Round (depth 2 = Quarters).",
+        "2016, 2017, 2018 used the same 4-round bracket as 2019-2020 (top 2 double byes). Mercury were low seeds in all three years and won both early rounds before losing in Semifinals (depth 1 = Semis).",
+        "2025 data confirmed by problem statement: Las Vegas Aces swept Phoenix Mercury in WNBA Finals."
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/wnba/phoenix-mercury",
+        "https://en.wikipedia.org/wiki/Phoenix_Mercury",
+        "https://en.wikipedia.org/wiki/2015_WNBA_playoffs",
+        "https://en.wikipedia.org/wiki/2016_WNBA_playoffs",
+        "https://en.wikipedia.org/wiki/2018_WNBA_playoffs",
+        "https://en.wikipedia.org/wiki/2019_WNBA_playoffs"
+      ],
+      "notes": "Season-by-season: 2015 lost Conference Finals (3-round format, depth 1 = Semis); 2016-2018 each lost Semifinals in a 4-round bracket (top 2 seeds had double byes, top 3-4 had single byes; Mercury were lower seeds who won Rds 1+2 before losing Semis at depth 1 = Semis); 2019 lost First Round as #8 seed in 4-round format (depth 3 = firstRoundLoss \u2014 only instance); 2020 COVID bubble used 4-round format with double byes for #1-2 and single byes for #3-4; Mercury (#5) won Rd 1 then lost Second Round at depth 2 = Quarters; 2021 Mercury went all the way to the Finals in a 4-round bracket (won First, Second, Semifinals) then lost to Chicago Sky = Finals; 2022 onward switched to 3-round format (First Round best-of-3, Semis best-of-5, Finals best-of-5) where a First Round loss = depth 2 = Quarters; 2023 went 9-31 and missed playoffs (no contribution); 2025 lost WNBA Finals (swept by Las Vegas Aces) = Finals."
+    },
+    {
+      "team": "Indiana Fever",
+      "score": 48,
+      "since": "Since 2013",
+      "lastChampionship": "2012",
+      "breakdown": {
+        "finals": 1,
+        "semis": 3,
+        "quarters": 2,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2013 loss: Conference Finals to Atlanta Dream (0-2); Conference Semifinals win counted as advancement",
+        "2014 loss: Conference Finals to Chicago Sky (2-1 Chicago); Conference Semifinals win counted as advancement",
+        "2015 loss: WNBA Finals to Minnesota Lynx (3-2 Minnesota)",
+        "2016 loss: First Round to Phoenix Mercury (single-elimination format introduced that year)",
+        "2024 loss: First Round to Connecticut Sun (0-2 in best-of-3)",
+        "2025 loss: Semifinals to Las Vegas Aces (2-3); Indiana won First Round over Atlanta Dream 2-1"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Indiana_Fever",
+        "https://champsorchumps.us/team/wnba/indiana-fever",
+        "https://en.wikipedia.org/wiki/2013_Indiana_Fever_season",
+        "https://en.wikipedia.org/wiki/2014_Indiana_Fever_season",
+        "https://en.wikipedia.org/wiki/2015_Indiana_Fever_season",
+        "https://en.wikipedia.org/wiki/2016_Indiana_Fever_season"
+      ],
+      "notes": "Drought window: 2013-2025 (13 completed seasons). Championship won in 2012. No winning-record missed-playoff seasons in the window (all non-playoff years had losing records). The 2016 WNBA playoffs introduced a new format with a single-game/best-of-3 first round; Indiana's first-round exit maps to Quarters(4). In 2013 and 2014, the WNBA used a 3-round conference format (Conference Semifinals \u2192 Conference Finals \u2192 WNBA Finals); Indiana lost in the Conference Finals both years = Semis(8) each."
+    },
+    {
+      "team": "Minnesota Lynx",
+      "score": 44,
+      "since": "since 2018",
+      "lastChampionship": "2017",
+      "breakdown": {
+        "finals": 1,
+        "semis": 2,
+        "quarters": 2,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2018 and 2019 WNBA brackets had 4 rounds (First Round, Second Round, Semifinals, Finals); Lynx lost in round 1 both years -> firstRoundLosses",
+        "2020 and 2021 also had 4-round brackets; 2020 Lynx lost in Semis (round 3) -> semisLosses; 2021 Lynx had first-round bye, lost in Second Round (round 2) -> quartersLosses",
+        "2023-2025 WNBA brackets had 3 rounds (First Round, Semifinals, Finals); First Round loss maps to quartersLosses",
+        "2022 Lynx missed playoffs with 14-22 record (sub-.500), so winningRecordNoPlayoff does not apply",
+        "2025 season is completed per prompt guidance (Las Vegas Aces won title sweeping Phoenix Mercury); Lynx lost in 2025 Semifinals to Phoenix Mercury"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/wnba/minnesota-lynx",
+        "https://en.wikipedia.org/wiki/Minnesota_Lynx",
+        "https://en.wikipedia.org/wiki/2018_Minnesota_Lynx_season",
+        "https://en.wikipedia.org/wiki/2019_WNBA_playoffs",
+        "https://en.wikipedia.org/wiki/2020_Minnesota_Lynx_season",
+        "https://en.wikipedia.org/wiki/2021_Minnesota_Lynx_season"
+      ],
+      "notes": "PPI score = 16*1 + 8*2 + 4*2 + 2*2 + 1*0 = 16 + 16 + 8 + 4 = 44. The Lynx are a dynasty-era team now in sustained drought after their 2011/2013/2015/2017 runs. They made the Finals in 2024 (lost to New York Liberty in 5) and lost in Semis in 2025 to Phoenix Mercury, keeping the drought alive through 2025."
+    },
+    {
+      "team": "Los Angeles Sparks",
+      "score": 32,
+      "since": "2017",
+      "lastChampionship": "2016",
+      "breakdown": {
+        "finals": 1,
+        "semis": 1,
+        "quarters": 2,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2018 and 2020 WNBA playoffs used a 4-round structure (First Round, Second Round, Semifinals, Finals) with byes for top seeds. Sparks lost in Second Round both years (2 rounds before Finals), mapped to quartersLosses. 2019 playoffs same 4-round structure; Sparks had first-round bye, lost in Semifinals (round before Finals), mapped to semisLosses."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Los_Angeles_Sparks",
+        "https://champsorchumps.us/team/wnba/los-angeles-sparks",
+        "https://en.wikipedia.org/wiki/2019_WNBA_Playoffs",
+        "https://en.wikipedia.org/wiki/2018_WNBA_playoffs"
+      ],
+      "notes": "Drought window 2017-2025. 2026 season in progress, not counted. All missed-playoff seasons (2021-2025) had losing records, so no winningRecordNoPlayoff credit. Implied PPI score: 16*1 + 8*1 + 4*2 + 0 + 0 = 32."
+    },
+    {
+      "team": "Dallas Wings",
+      "score": 24,
+      "since": "Since 2016 (Dallas Wings identity)",
+      "lastChampionship": "2008 (as Detroit Shock)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 4,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Franchise last won in 2008 as Detroit Shock; relocated to Tulsa in 2010, rebranded as Dallas Wings in 2016. Drought window starts 2016 per relocation rule (current identity more recent than last title). semisLosses: 2023 (lost to Las Vegas Aces in WNBA Semifinals). quartersLosses: 2017 (lost to Washington Mystics), 2018 (lost to Phoenix Mercury), 2021 (lost to Chicago Sky), 2022 (lost to Connecticut Sun)."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dallas_Wings",
+        "https://champsorchumps.us/team/wnba/dallas-wings",
+        "https://en.wikipedia.org/wiki/2023_WNBA_playoffs",
+        "https://www.espn.com/wnba/story/_/id/38356794/wnba-playoffs-2023-schedule-results-news-highlights"
+      ],
+      "notes": "The 2023 Semifinals loss was a sweep (3-0) by the Las Vegas Aces, who went on to win the WNBA championship that year. All four first-round (quarterfinal) losses were single-elimination or best-of-3 first-round exits. None of the playoff-miss seasons had a winning record, so winningRecordNoPlayoff = 0."
+    },
+    {
+      "team": "Seattle Storm",
+      "score": 20,
+      "since": "Since 2020",
+      "lastChampionship": "2020 WNBA Championship",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 3,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2021 WNBA used a 4-round format (First Round, Second Round, Semifinals, Finals); Seattle (4th seed) had a bye past Round 1 and lost in Round 2 to Phoenix Mercury \u2014 mapped to Quarter-finals (4) as it is 2 rounds before the Finals",
+        "2023 season record 11-29 (.275) is a clear losing record \u2014 no winningRecordNoPlayoff credit",
+        "2024 and 2025 both used a 3-round bracket; Seattle lost in the First Round both years \u2014 mapped to Quarter-finals (4) in each case"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2021_Seattle_Storm_season",
+        "https://en.wikipedia.org/wiki/2022_Seattle_Storm_season",
+        "https://en.wikipedia.org/wiki/2023_Seattle_Storm_season",
+        "https://en.wikipedia.org/wiki/2024_Seattle_Storm_season",
+        "https://en.wikipedia.org/wiki/2025_Seattle_Storm_season",
+        "https://www.basketball-reference.com/wnba/teams/SEA/"
+      ],
+      "notes": "PPI score = 16*0 + 8*1 + 4*3 + 2*0 + 1*0 = 20. Semis loss in 2022; Quarters losses in 2021, 2024, and 2025. No Finals appearances since winning in 2020. Las Vegas Aces eliminated Seattle in 2022, 2024, and 2025."
+    },
+    {
+      "team": "Chicago Sky",
+      "score": 12,
+      "since": "Since 2022",
+      "lastChampionship": "2021",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 1,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2022: 26-10, won first round, lost WNBA Semifinals (vs Connecticut Sun, 2-3) = semis loss",
+        "2023: 18-22, lost WNBA First Round (vs Las Vegas Aces, 0-2) = quarters loss",
+        "2024: 13-27, missed playoffs, losing record = no credit",
+        "2025: 10-34, missed playoffs, losing record = no credit"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chicago_Sky",
+        "https://champsorchumps.us/team/wnba/chicago-sky"
+      ],
+      "notes": "Chicago Sky won their only WNBA championship in 2021. The drought window covers 2022-2025 (4 completed seasons). The team has been in sharp decline since 2022, missing the playoffs entirely in both 2024 and 2025 with losing records. PPI score = 8*1 + 4*1 = 12."
+    },
+    {
+      "team": "Washington Mystics",
+      "score": 12,
+      "since": "Since 2019",
+      "lastChampionship": "2019",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 3,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2020 WNBA playoffs used a unique bubble format (IMG Academy) with a 4-round structure; Washington lost in round 1 (single elimination game vs Phoenix Mercury, 85-84 on buzzer-beater) \u2014 still maps to quartersLosses per rules",
+        "2022 first-round loss was a best-of-3 series sweep 0-2 by Seattle Storm",
+        "2023 first-round loss was a best-of-3 series sweep 0-2 by New York Liberty",
+        "2021/2024/2025 missed playoffs all had losing records so winningRecordNoPlayoff remains 0"
+      ],
+      "sources": [
+        "https://champsorchumps.us/team/wnba/washington-mystics",
+        "https://en.wikipedia.org/wiki/Washington_Mystics",
+        "https://en.wikipedia.org/wiki/2025_Washington_Mystics_season",
+        "https://en.wikipedia.org/wiki/2020_WNBA_playoffs",
+        "https://www.sportskeeda.com/us/wnba/washington-mystics-playoff-history"
+      ],
+      "notes": "Washington Mystics won their only championship in 2019 (defeated Connecticut Sun 3-2 in the Finals). Drought window covers 2020-2025 (6 seasons). Three first-round/quarterfinal exits (2020, 2022, 2023); three missed-playoffs seasons all with losing records (2021, 2024, 2025)."
+    },
+    {
+      "team": "Golden State Valkyries",
+      "score": 4,
+      "since": "Founded 2025",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Golden_State_Valkyries",
+        "https://valkyries.wnba.com/news/history-in-real-time-valkyries-inaugural-season-milestones-20250722"
+      ],
+      "notes": "Expansion team that began play in 2025. Never won a championship. In 2025 (their inaugural season) they went 23-17, made the playoffs as the 4th seed in the Western Conference, and lost in the first playoff round to the Minnesota Lynx 0-2. The 2026 season is in progress and not counted."
+    },
+    {
+      "team": "New York Liberty",
+      "score": 4,
+      "since": "Since 2024",
+      "lastChampionship": "2024",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://liberty.wnba.com/news/new-york-liberty-win-first-wnba-championship-in-franchise-history",
+        "https://sports.yahoo.com/wnba/breaking-news/article/wnba-playoffs-mercury-eliminate-reigning-champion-liberty-at-home-to-advance-to-semifinals-vs-lynx-032248317.html",
+        "https://www.wnba.com/news/2025-playoffs-liberty-mercury-game-3-recap"
+      ],
+      "notes": "New York Liberty won their first-ever WNBA Championship in 2024, defeating the Minnesota Lynx. Drought window begins 2025. In 2025, the Liberty (5th seed) were eliminated in the first round of the playoffs by the Phoenix Mercury (79-73, Game 3 on Sep 19, 2025). The 2026 season is in progress and not counted."
+    },
+    {
+      "team": "Las Vegas Aces",
+      "score": 0,
+      "since": "2025",
+      "lastChampionship": "2025",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Most recent championship was 2025 (swept Phoenix Mercury in the WNBA Finals). Drought window begins in 2026. No completed seasons exist in the drought window as of June 2026, so all counts are zero."
+      ],
+      "sources": [
+        "https://www.wnba.com/news/las-vegas-aces-finals-accolades-2025",
+        "https://en.wikipedia.org/wiki/2023_Las_Vegas_Aces_season"
+      ],
+      "notes": "The Aces won championships in 2022, 2023, and 2025. The 2024 season they lost to the New York Liberty in the Finals, but that loss falls before the most recent title (2025) so it is outside the active drought window. No PPI-eligible seasons exist yet."
+    },
+    {
+      "team": "Portland Fire",
+      "score": 0,
+      "since": "2026 (expansion)",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Portland Fire is a 2026 WNBA expansion team that has played no completed seasons as of June 15, 2026. All drought counters are zero by definition."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Portland_Fire_(WNBA)"
+      ],
+      "notes": "2026 expansion team. No completed seasons exist to count. Drought window begins at founding (2026) but no seasons have concluded, so PPI score is 0."
+    },
+    {
+      "team": "Toronto Tempo",
+      "score": 0,
+      "since": "2026",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2026 expansion team \u2014 no completed seasons exist to evaluate"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Toronto_Tempo"
+      ],
+      "notes": "Toronto Tempo is a 2026 WNBA expansion team with no completed seasons. Their inaugural 2026 season is in progress and does not count toward the PPI calculation."
+    }
+  ]
+}
