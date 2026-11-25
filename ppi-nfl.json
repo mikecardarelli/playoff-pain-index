@@ -1,0 +1,800 @@
+{
+  "league": "NFL",
+  "updated": "2026-06-16",
+  "scoring": "16*Finals + 8*Semis + 4*Quarters + 2*FirstRound + 1*WinningRecordNoPlayoff",
+  "methodologyNote": "The 'winning record, no playoff' figure (1 pt/season) is the softest metric; for non-pinned teams it follows each season's W>L record and may differ slightly from the original site's convention.",
+  "teams": [
+    {
+      "team": "Minnesota Vikings",
+      "score": 187,
+      "since": "Since team was founded in 1961",
+      "lastChampionship": "Never (franchise has never won a Super Bowl or pre-merger NFL Championship)",
+      "breakdown": {
+        "finals": 4,
+        "semis": 6,
+        "quarters": 13,
+        "firstRound": 9,
+        "winningRecordNoPlayoff": 5
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "playoff-pain-index site (index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Minnesota_Vikings_seasons",
+        "https://en.wikipedia.org/wiki/2025_Minnesota_Vikings_season",
+        "https://champsorchumps.us/team/nfl/minnesota-vikings",
+        "https://en.wikipedia.org/wiki/1968_Minnesota_Vikings_season",
+        "https://en.wikipedia.org/wiki/1969_Minnesota_Vikings_season"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Buffalo Bills",
+      "score": 146,
+      "since": "Since last title in 1965 (AFL)",
+      "lastChampionship": "1965 AFL Championship",
+      "breakdown": {
+        "finals": 4,
+        "semis": 4,
+        "quarters": 9,
+        "firstRound": 5,
+        "winningRecordNoPlayoff": 4
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "playoff-pain-index site (index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Buffalo_Bills_seasons",
+        "https://en.wikipedia.org/wiki/Buffalo_Bills",
+        "https://en.wikipedia.org/wiki/1973_Buffalo_Bills_season",
+        "https://en.wikipedia.org/wiki/1975_Buffalo_Bills_season",
+        "https://en.wikipedia.org/wiki/2004_Buffalo_Bills_season"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "San Francisco 49ers",
+      "score": 110,
+      "since": "Since last title in 1994",
+      "lastChampionship": "Super Bowl XXIX (January 29, 1995; 1994 season)",
+      "breakdown": {
+        "finals": 3,
+        "semis": 5,
+        "quarters": 5,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "playoff-pain-index site (index.html)",
+        "https://en.wikipedia.org/wiki/List_of_San_Francisco_49ers_seasons",
+        "https://www.espn.com/nfl/story/_/id/47822193/2026-super-bowl-lx-patriots-seahawks-live-highlights-results",
+        "https://sports.yahoo.com/articles/won-super-bowl-lx-2026-032345734.html"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Miami Dolphins",
+      "score": 109,
+      "since": "Since last title in 1973",
+      "lastChampionship": "Super Bowl VIII (1973 season, January 1974)",
+      "breakdown": {
+        "finals": 2,
+        "semis": 2,
+        "quarters": 9,
+        "firstRound": 8,
+        "winningRecordNoPlayoff": 9
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "playoff-pain-index site (index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Miami_Dolphins_seasons",
+        "https://en.wikipedia.org/wiki/Miami_Dolphins",
+        "https://en.wikipedia.org/wiki/2002_Miami_Dolphins_season",
+        "https://en.wikipedia.org/wiki/2003_Miami_Dolphins_season",
+        "https://en.wikipedia.org/wiki/2020_Miami_Dolphins_season"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Houston Texans",
+      "score": 104,
+      "since": "Combining all Texans and Oilers seasons since 1962",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 1,
+        "semis": 3,
+        "quarters": 12,
+        "firstRound": 6,
+        "winningRecordNoPlayoff": 4
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "playoff-pain-index site (index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Houston_Texans_seasons",
+        "https://en.wikipedia.org/wiki/2014_Houston_Texans_season",
+        "https://en.wikipedia.org/wiki/2018_Houston_Texans_season",
+        "https://en.wikipedia.org/wiki/2025_Houston_Texans_season"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical). Combines Houston Texans (2002+) and Houston Oilers (1962-1996); the city keeps the pain after the Oilers left for Tennessee. The Tennessee Titans count separately from 1997."
+    },
+    {
+      "team": "Cleveland Browns",
+      "score": 98,
+      "since": "Since last title in 1964",
+      "lastChampionship": "1964 NFL Championship",
+      "breakdown": {
+        "finals": 1,
+        "semis": 5,
+        "quarters": 7,
+        "firstRound": 4,
+        "winningRecordNoPlayoff": 6
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "playoff-pain-index site (index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Cleveland_Browns_seasons",
+        "https://en.wikipedia.org/wiki/1967_NFL_season",
+        "https://en.wikipedia.org/wiki/1968_NFL_season"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical)."
+    },
+    {
+      "team": "Cincinnati Bengals",
+      "score": 94,
+      "since": "since founding (1968)",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 3,
+        "semis": 1,
+        "quarters": 4,
+        "firstRound": 8,
+        "winningRecordNoPlayoff": 6
+      },
+      "confidence": "high",
+      "flags": [
+        "1982 season used a special 16-team tournament format; Bengals lost in Round 1, mapped to firstRoundLosses",
+        "1990 Bengals were division champions but played in Wild Card round due to seeding; eliminated in Divisional round (quartersLosses)",
+        "2025 season record (6-11) sourced from Wikipedia \u2014 outside model knowledge cutoff but corroborated by fetched data",
+        "1974 season was 7-7 (even record), correctly excluded from winningRecordNoPlayoff"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Cincinnati_Bengals_seasons",
+        "https://en.wikipedia.org/wiki/Cincinnati_Bengals"
+      ],
+      "notes": "The Bengals have never won a Super Bowl. All 58 seasons (1968-2025) fall within the drought window. Finals losses: Super Bowl XVI (1981, lost to 49ers), Super Bowl XXIII (1988, lost to 49ers), Super Bowl LVI (2021, lost to Rams 20-23). Semis loss: 2022 AFC Championship (lost to Chiefs). Quarters losses: 1970, 1973, 1975 Divisional exits; 1990 Divisional exit (won Wild Card first). First round losses: 1982 tournament Round 1, plus 7 Wild Card losses (2005, 2009, 2011-2015). Winning records without playoffs: 1972 (8-6), 1976 (10-4), 1977 (8-6), 1986 (10-6), 2023 (9-8), 2024 (9-8). PPI score = 16*3 + 8*1 + 4*4 + 2*8 + 1*6 = 48+8+16+16+6 = 94."
+    },
+    {
+      "team": "Atlanta Falcons",
+      "score": 83,
+      "since": "1966 (founding)",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 2,
+        "semis": 2,
+        "quarters": 6,
+        "firstRound": 4,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "1982 season used special 16-team Super Bowl tournament format due to strike; Falcons lost in the first round, mapped to firstRoundLoss (equivalent to Wild Card elimination, 3 rounds from title)",
+        "1971 (7-6-1) counted as winning record since 7 wins > 6 losses; ties do not count as losses per NFL convention",
+        "2005, 2015 went 8-8 (even records), not counted as winning records",
+        "1972, 1977 went 7-7 (even records), not counted as winning records"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Atlanta_Falcons_seasons",
+        "https://en.wikipedia.org/wiki/2025_Atlanta_Falcons_season",
+        "https://en.wikipedia.org/wiki/2024_Atlanta_Falcons_season",
+        "https://en.wikipedia.org/wiki/2009_Atlanta_Falcons_season",
+        "https://en.wikipedia.org/wiki/1973_Atlanta_Falcons_season",
+        "https://en.wikipedia.org/wiki/1971_Atlanta_Falcons_season"
+      ],
+      "notes": "Falcons have never won a Super Bowl or pre-merger NFL championship. Drought starts at 1966 founding. Finals losses: 1998 (SB XXXIII) and 2016 (SB LI). Semis losses: 2004 and 2012 NFC Championship games. Quarters losses: 1978, 1980, 1991, 2002, 2010, 2017 Divisional rounds. First round losses: 1982 (special 16-team format first round), 1995, 2008, 2011 Wild Card rounds. Winning-record misses: 1971 (7-6-1), 1973 (9-5), 2009 (9-7). Seasons with even records (7-7, 8-8) excluded from winningRecordNoPlayoff. 2024 and 2025 both went 8-9, losing records, no playoffs."
+    },
+    {
+      "team": "Chicago Bears",
+      "score": 69,
+      "since": "Since 1986",
+      "lastChampionship": "Super Bowl XX (1985 season, played January 1986)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 2,
+        "quarters": 7,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "2025 season verified: Bears 11-6, beat Packers in Wild Card 31-27, lost to Rams 17-20 OT in Divisional round",
+        "1991: Bears 11-5 as Wild Card (Detroit Lions won division at 12-4), lost to Cowboys 17-13",
+        "2012: Bears 10-6 missed playoffs; Vikings also 10-6 but won Wild Card on division tiebreaker"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Chicago_Bears_seasons",
+        "https://en.wikipedia.org/wiki/2025_Chicago_Bears_season",
+        "https://en.wikipedia.org/wiki/Super_Bowl_XX",
+        "https://en.wikipedia.org/wiki/2012_Chicago_Bears_season",
+        "https://en.wikipedia.org/wiki/1991_Chicago_Bears_season"
+      ],
+      "notes": "Finals loss: 2006 (Super Bowl XLI vs Colts). Semi losses: 1988 NFC Championship, 2010 NFC Championship. Divisional losses: 1986, 1987, 1990, 1994, 2001, 2005, 2025. Wild Card losses: 1991 (vs Dallas), 2018, 2020. Winning-record misses: 1995 (9-7), 2008 (9-7), 2012 (10-6). The 2025 season: Bears went 11-6, won Wild Card vs Packers, lost Divisional to Rams 17-20 OT."
+    },
+    {
+      "team": "Carolina Panthers",
+      "score": 64,
+      "since": "Since founding (1995)",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 2,
+        "semis": 2,
+        "quarters": 3,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2014 season: Panthers went 7-8-1 (sub-.500), won NFC South, lost Divisional Round to Seattle -- counted as Quarters loss, not a winning-record miss",
+        "2025 season: Panthers went 8-9 (losing record), won NFC South on tiebreakers, lost Wild Card to LA Rams 31-34 -- counted as First Round loss",
+        "No non-playoff seasons had a winning record (more wins than losses); all missed-playoff years were .500 or below"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Carolina_Panthers_seasons",
+        "https://en.wikipedia.org/wiki/2014_Carolina_Panthers_season",
+        "https://sports.yahoo.com/articles/why-panthers-playoffs-explaining-2025-083001801.html",
+        "https://www.ninertimes.com/sports/carolina-panthers-2025-26-season-ends-settle-for-8-9-record/article_bec1ac7b-5c37-4d1a-9e78-eeb443ddb41a.html"
+      ],
+      "notes": "Season-by-season breakdown (1995-2025): Finals losses -- 2003 (Super Bowl XXXVIII vs NE), 2015 (Super Bowl 50 vs DEN). Semis losses -- 1996 (NFC Championship), 2005 (NFC Championship). Quarters losses -- 2008 (Divisional), 2013 (Divisional), 2014 (Divisional, as 7-8-1 NFC South champs). First Round losses -- 2017 (Wild Card vs NO), 2025 (Wild Card vs LAR). All other seasons were either losing-record or .500 misses, yielding zero winning-record-no-playoff seasons."
+    },
+    {
+      "team": "New York Jets",
+      "score": 63,
+      "since": "Since last title in 1968",
+      "lastChampionship": "Super Bowl III (1968 season)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 4,
+        "quarters": 4,
+        "firstRound": 5,
+        "winningRecordNoPlayoff": 5
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_New_York_Jets_seasons",
+        "https://en.wikipedia.org/wiki/2025_New_York_Jets_season"
+      ],
+      "notes": "Drought 1969-2025. Semis(4): 1982,1998,2009,2010 AFC title games. Quarters(4): 1969,1986,2002,2004 Divisional. FirstRound(5): 1981,1985,1991,2001,2006 Wild Card. WinningRecordNoPlayoff(5): 1988,1997,2000,2008,2015. Missed playoffs every year 2011-2025 (longest active playoff drought in the four major leagues)."
+    },
+    {
+      "team": "Tennessee Titans",
+      "score": 59,
+      "since": "Since 1997 (relocation to Tennessee)",
+      "lastChampionship": "1961 AFL Championship (Houston Oilers, pre-relocation)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 2,
+        "quarters": 5,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "Drought starts 1997 due to relocation from Houston (more recent than last title in 1961)",
+        "Finals loss: 1999 Super Bowl XXXIV (lost to Rams)",
+        "Semis losses: 2002 AFC Championship (lost to Raiders), 2019 AFC Championship (lost to Chiefs)",
+        "Quarters losses: 2000 Divisional (Ravens), 2003 Divisional (Patriots), 2008 Divisional (Ravens), 2017 Divisional (Patriots), 2021 Divisional (Bengals)",
+        "First round losses: 2007 Wild Card (Chargers), 2020 Wild Card (Ravens 20-13)",
+        "Winning record/no playoff: 2011 (9-7), 2016 (9-7), 2018 (9-7)",
+        "8-8 seasons (1997, 1998, 2006, 2009) are .500 and do NOT count as winning records"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Tennessee_Titans_seasons",
+        "https://www.tennesseetitans.com/news/titans-fall-20-13-to-ravens-in-wild-card-round",
+        "https://www.statmuse.com/nfl/team/tennessee-titans-72/2025"
+      ],
+      "notes": "The Houston Oilers relocated to Tennessee in 1997 (playing as Tennessee Oilers through 1998, renamed Titans in 1999). Per PPI rules, the drought starts at the relocation year 1997 since that is more recent than the franchise's last championship (1961 AFL). The Titans have never won a Super Bowl. The 2019 postseason run was notable: they upset the Patriots (Wild Card) and Ravens (Divisional) before falling to the Chiefs in the AFC Championship."
+    },
+    {
+      "team": "Detroit Lions",
+      "score": 58,
+      "since": "Since 1957",
+      "lastChampionship": "1957 NFL Championship",
+      "breakdown": {
+        "finals": 0,
+        "semis": 2,
+        "quarters": 3,
+        "firstRound": 9,
+        "winningRecordNoPlayoff": 12
+      },
+      "confidence": "high",
+      "flags": [
+        "NFL Playoff Bowl (1960, 1961, 1962) is NOT counted as an official playoff -- those are treated as winning-record/no-playoff seasons per NFL historical records",
+        "1982 season was strike-shortened (4-5 record), Lions still made playoffs under the special 16-team tournament format and lost in first round",
+        "1999 Lions went 8-8 and made playoffs -- not a winning record so counts only as first-round loss, not winningRecordNoPlayoff"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Detroit_Lions_seasons",
+        "https://en.wikipedia.org/wiki/Detroit_Lions",
+        "https://en.wikipedia.org/wiki/2025_Detroit_Lions_season",
+        "https://en.wikipedia.org/wiki/2022_Detroit_Lions_season"
+      ],
+      "notes": "Semis: 1991 NFC Championship (lost 10-41 to Washington), 2023 NFC Championship (lost 31-34 to SF). Quarters: 1970 Divisional (lost to Dallas), 1983 Divisional (lost 23-24 to SF), 2024 Divisional (lost 31-45 to Washington). First round losses: 1982, 1993, 1994, 1995, 1997, 1999, 2011, 2014, 2016. Winning record/no playoff: 1960, 1961, 1962, 1964, 1969, 1971, 1972, 1980, 2000, 2017, 2022, 2025."
+    },
+    {
+      "team": "Green Bay Packers",
+      "score": 58,
+      "since": "2011",
+      "lastChampionship": "Super Bowl XLV (2010 season)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 4,
+        "quarters": 5,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Semis: 2014 (NFC Champ loss to Seahawks), 2016 (NFC Champ loss to Falcons), 2019 (NFC Champ loss to 49ers), 2020 (NFC Champ loss to Buccaneers)",
+        "Quarters: 2011 (Div loss to Giants), 2012 (Div loss to 49ers), 2015 (Div loss to Cardinals), 2021 (Div loss to 49ers), 2023 (Div loss to 49ers)",
+        "First Round: 2013 (WC loss to 49ers as 4-seed division winner), 2024 (WC loss to Eagles), 2025 (WC loss to Bears 31-27)",
+        "Non-playoff miss seasons 2017 (7-9), 2018 (6-9-1), 2022 (8-9) all had losing records so no winningRecordNoPlayoff credit",
+        "2025 Wild Card Bears win confirmed: Bears mounted comeback from 21-3 halftime deficit to win 31-27"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Green_Bay_Packers_seasons",
+        "https://champsorchumps.us/team/nfl/green-bay-packers",
+        "https://www.nfl.com/news/packers-bears-on-wild-card-weekend-saturday-what-we-learned-chicago-win",
+        "https://www.packers.com/news/in-game-updates-nfc-wild-card-playoff-bears-2025-season"
+      ],
+      "notes": "PPI score = 16*0 + 8*4 + 4*5 + 2*3 + 1*0 = 0 + 32 + 20 + 6 + 0 = 58. The Packers have been consistently competitive during the drought (only 3 non-playoff seasons, all with losing records) but have repeatedly fallen at the Conference Championship and Divisional stages, especially to the San Francisco 49ers (beat them in the Divisional/Wild Card round in 2012, 2013, 2019, 2021, and 2023)."
+    },
+    {
+      "team": "Pittsburgh Steelers",
+      "score": 49,
+      "since": "Since 2009 (season after Super Bowl XLIII)",
+      "lastChampionship": "Super Bowl XLIII (2008 season, February 2009)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 1,
+        "quarters": 2,
+        "firstRound": 7,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "2011: Steelers were 12-4 but lost Wild Card as AFC #3 seed (Baltimore won AFC North tiebreaker); Tim Tebow's Broncos beat them 29-23 OT",
+        "2018: 9-6-1 record counts as winning (9 > 6) per NFL tie rules; missed playoffs",
+        "2022: 9-8 in 17-game season, missed playoffs on tiebreaker vs Miami Dolphins",
+        "2025 Wild Card: Lost to Houston Texans 6-30; extends postseason losing streak to 7 straight games dating to 2016-17 playoffs"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Pittsburgh_Steelers_seasons",
+        "https://en.wikipedia.org/wiki/2024_Pittsburgh_Steelers_season",
+        "https://en.wikipedia.org/wiki/2025_Pittsburgh_Steelers_season",
+        "https://en.wikipedia.org/wiki/2022_Pittsburgh_Steelers_season",
+        "https://champsorchumps.us/team/nfl/pittsburgh-steelers"
+      ],
+      "notes": "17 seasons in drought window (2009-2025). Score = 16*1 + 8*1 + 4*2 + 2*7 + 1*3 = 49. Seasons with no count (8-8 records, not winning): 2012, 2013, 2019."
+    },
+    {
+      "team": "Indianapolis Colts",
+      "score": 46,
+      "since": "2006",
+      "lastChampionship": "Super Bowl XLI (2006 season)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 1,
+        "quarters": 3,
+        "firstRound": 4,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Indianapolis_Colts_seasons",
+        "https://champsorchumps.us/team/nfl/indianapolis-colts",
+        "https://en.wikipedia.org/wiki/2025_Indianapolis_Colts_season"
+      ],
+      "notes": "Colts won Super Bowl XLI after the 2006 season. Drought covers 2007-2025 (19 seasons). Finals loss: 2009 Super Bowl XLIV. Semis loss: 2014 AFC Championship. Quarters losses: 2007 Divisional (bye team), 2013 Divisional, 2018 Divisional. First round losses: 2008 Wild Card, 2010 Wild Card, 2012 Wild Card, 2020 Wild Card. Winning record / no playoff: 2021 (9-8) and 2023 (9-8). 2025 was notable for historically collapsing from 8-2 to finish 8-9, missing playoffs for a 5th consecutive season."
+    },
+    {
+      "team": "Jacksonville Jaguars",
+      "score": 44,
+      "since": "Since 1995 (founding)",
+      "lastChampionship": "Never",
+      "breakdown": {
+        "finals": 0,
+        "semis": 3,
+        "quarters": 3,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [
+        "Jaguars are an expansion team founded in 1995 and have never won a Super Bowl or NFL championship; drought covers all 31 seasons 1995-2025",
+        "2006 and 2010 were 8-8 seasons (tied record, not winning) so not counted as winningRecordNoPlayoff",
+        "2025 season: 13-4 record but lost Wild Card to Bills 24-27 (as a non-bye seed in the 7-team playoff format)",
+        "1997: 11-5 record but entered as Wild Card and lost in Wild Card round to the eventual Super Bowl champion Denver Broncos"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Jacksonville_Jaguars_seasons",
+        "https://champsorchumps.us/team/nfl/jacksonville-jaguars",
+        "https://en.wikipedia.org/wiki/2025_Jacksonville_Jaguars_season"
+      ],
+      "notes": "Semis: 1996 AFC Champ loss, 1999 AFC Champ loss, 2017 AFC Champ loss. Quarters: 1998 Divisional loss, 2007 Divisional loss, 2022 Divisional loss. First Round: 1997 Wild Card loss, 2005 Wild Card loss, 2025 Wild Card loss. WinningRecordNoPlayoff: 2004 (9-7), 2023 (9-8)."
+    },
+    {
+      "team": "Dallas Cowboys",
+      "score": 43,
+      "since": "Since last title in 1995",
+      "lastChampionship": "Super Bowl XXX (January 28, 1996, 1995 season)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 7,
+        "firstRound": 6,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "Never reached the Conference Championship Game during the entire 1996-2025 drought window -- deepest run was Divisional Round (7 times)",
+        "Four seasons with 8-8 records (2011, 2012, 2013, 2019) missed playoffs but do not qualify as winning-record seasons (not more wins than losses)",
+        "2025 season record was 7-9-1; 7 wins vs 9 losses = losing record, no credit"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Dallas_Cowboys_seasons",
+        "https://www.axios.com/local/dallas/2026/01/28/dallas-cowboys-reach-three-decades-since-last-super-bowl",
+        "https://champsorchumps.us/team/nfl/dallas-cowboys/championships"
+      ],
+      "notes": "Drought covers 30 seasons (1996-2025). Divisional Round losses: 1996 (vs Panthers), 2007 (vs Giants), 2009 (vs Vikings), 2014 (vs Packers), 2016 (vs Packers), 2018 (vs Rams), 2022 (vs 49ers). Wild Card losses: 1998 (vs Cardinals), 1999 (vs Vikings), 2003 (vs Panthers), 2006 (vs Seahawks), 2021 (vs 49ers), 2023 (vs Packers). Winning-record misses: 2005, 2008, 2017 (all 9-7)."
+    },
+    {
+      "team": "Arizona Cardinals",
+      "score": 37,
+      "since": "Since 1988 (relocation to Arizona)",
+      "lastChampionship": "1947 NFL Championship (Chicago Cardinals)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 1,
+        "quarters": 2,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "Drought starts at 1988 relocation to Arizona/Phoenix, not 1947 last title; Arizona fans do not inherit Chicago or St. Louis Cardinals pain per relocation rule",
+        "2013 season (10-6) confirmed as winning record missed playoffs -- NFC West had SEA 13-3 and SF 12-4, Cardinals finished 3rd",
+        "1998 playoffs: won Wild Card vs Dallas 20-7, then lost Divisional to Minnesota 21-41",
+        "2009 playoffs: won Wild Card vs Green Bay 51-45 OT, then lost Divisional to New Orleans 14-45"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Arizona_Cardinals_seasons",
+        "https://en.wikipedia.org/wiki/2013_Arizona_Cardinals_season",
+        "https://pro-football-history.com/game/315/1998-arizona-cardinals-at-minnesota-vikings-divisional-round-score-21-to-41"
+      ],
+      "notes": "Score = 16*1 + 8*1 + 4*2 + 2*2 + 1*1 = 37. The Cardinals hold the NFL's longest championship drought (last title 1947), but the PPI drought window begins at their 1988 Arizona relocation. The lone Super Bowl appearance (2008) ended in a 27-23 loss to Pittsburgh on a last-minute TD."
+    },
+    {
+      "team": "Washington Commanders",
+      "score": 31,
+      "since": "since 1992",
+      "lastChampionship": "Super Bowl XXVI (January 1992, 1991 season)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 3,
+        "firstRound": 4,
+        "winningRecordNoPlayoff": 3
+      },
+      "confidence": "high",
+      "flags": [
+        "8-8 seasons (2000, 2001, 2008) and 8-8-1 in 2022 excluded from winningRecordNoPlayoff \u2014 wins not strictly greater than losses",
+        "1992, 1999, and 2005 teams all won their Wild Card game before losing in the Divisional Round \u2014 correctly mapped to quarters not first round",
+        "2024 was a Conference Championship loss (semis) \u2014 Commanders beat Tampa Bay in Wild Card and Detroit in Divisional before falling 23-55 to Philadelphia",
+        "2025 season was 5-12, no playoffs, no winning record \u2014 no PPI contribution"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Washington_Commanders_seasons",
+        "https://en.wikipedia.org/wiki/1992_Washington_Redskins_season",
+        "https://en.wikipedia.org/wiki/1999_Washington_Redskins_season",
+        "https://en.wikipedia.org/wiki/2005_Washington_Redskins_season",
+        "https://en.wikipedia.org/wiki/2024_Washington_Commanders_season",
+        "https://champsorchumps.us/team/nfl/washington-commanders/championships"
+      ],
+      "notes": "34-season drought (1992-2025). All 3 divisional-round exits came via the Wild Card route (won WC, lost Div). 8-8 seasons in 2000/2001/2008 and 8-8-1 in 2022 do not qualify as winning records under the more-wins-than-losses rule."
+    },
+    {
+      "team": "New Orleans Saints",
+      "score": 30,
+      "since": "Since 2009",
+      "lastChampionship": "Super Bowl XLIV (2009 season)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 4,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [
+        "2019: Saints went 13-3 but were NFC #3 seed (behind 49ers and Packers, also 13-3), so they played in the Wild Card round and lost to Vikings 26-20 OT -- confirmed via 2019 Saints season Wikipedia article",
+        "2021: 9-8 record (winning) but missed playoffs on tiebreaker vs Eagles -- confirmed",
+        "2023: 9-8 record (winning) but missed playoffs -- confirmed",
+        "Seasons 2012/2014/2015/2016/2022/2024/2025 all had losing records and missed playoffs -- no PPI contribution"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_New_Orleans_Saints_seasons",
+        "https://en.wikipedia.org/wiki/2019_New_Orleans_Saints_season",
+        "https://en.wikipedia.org/wiki/2021_New_Orleans_Saints_season"
+      ],
+      "notes": "Drought covers 2010-2025 (16 seasons). Semis loss: 2018 NFC Championship (lost to Rams 23-26 OT). Quarters losses: 2011 Divisional (49ers), 2013 Divisional (Seahawks), 2017 Divisional (Vikings), 2020 Divisional (Buccaneers). First round losses: 2010 Wild Card (Seahawks), 2019 Wild Card (Vikings). Winning-record misses: 2021 (9-8) and 2023 (9-8). PPI score = 0 + 8 + 16 + 4 + 2 = 30."
+    },
+    {
+      "team": "Baltimore Ravens",
+      "score": 29,
+      "since": "2013",
+      "lastChampionship": "Super Bowl XLVII (2012 season)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 4,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [
+        "2025 season was John Harbaugh's final year as head coach per search results",
+        "8-8 records (2013, 2016) treated as non-winning per rules (not more wins than losses)",
+        "Data corroborated via Wikipedia List of Baltimore Ravens seasons"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Baltimore_Ravens_seasons",
+        "https://en.wikipedia.org/wiki/Baltimore_Ravens",
+        "https://www.statmuse.com/nfl/ask/baltimore-ravens-record-2025-regular-season"
+      ],
+      "notes": "Drought runs 2013-2025 (13 seasons). Semi-final loss: 2023 AFC Championship (lost to Chiefs). Divisional round losses: 2014 (at Patriots), 2019 (vs Titans), 2020 (at Bills), 2024 (at Bills). Wild Card losses: 2018 (vs Chargers), 2022 (at Bengals). Winning record no playoff: 2017 (9-7). Seasons with non-winning records and no playoffs (8-8 or below): 2013 (8-8), 2015 (5-11), 2016 (8-8), 2021 (8-9), 2025 (8-9)."
+    },
+    {
+      "team": "New England Patriots",
+      "score": 20,
+      "since": "2019",
+      "lastChampionship": "Super Bowl LIII (2018 season)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2019: Wild Card loss to Tennessee Titans 13-20 (Patriots were 3-seed, no bye)",
+        "2021: Wild Card loss to Buffalo Bills 17-47",
+        "2025: Lost Super Bowl LX to Seattle Seahawks 13-29; Seahawks won their second Lombardi",
+        "2020 (7-9), 2022 (8-9), 2023 (4-13), 2024 (4-13) all losing records \u2014 no winningRecordNoPlayoff credit"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_New_England_Patriots_seasons",
+        "https://www.espn.com/nfl/story/_/id/47822193/2026-super-bowl-lx-patriots-seahawks-live-highlights-results",
+        "https://www.cbsnews.com/live-updates/super-bowl-2026-seattle-seahawks-new-england-patriots/"
+      ],
+      "notes": "Patriots won Super Bowl LIII in February 2019 (2018 season). Drought runs 2019-2025 (7 seasons). In 2025 they had a strong 14-3 regular season record but fell in the Super Bowl. No seasons had a winning record while missing the playoffs."
+    },
+    {
+      "team": "Kansas City Chiefs",
+      "score": 16,
+      "since": "Since Super Bowl LVIII (2023 season)",
+      "lastChampionship": "Super Bowl LVIII (2023 season, February 2024)",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Drought window is very short (2 seasons). 2024: Lost Super Bowl LIX to Eagles 40-22. 2025: Finished 6-11, no playoffs, losing record \u2014 no points."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Kansas_City_Chiefs_seasons",
+        "https://www.pro-football-reference.com/boxscores/202502090phi.htm",
+        "https://sports.yahoo.com/articles/won-super-bowl-lx-2026-032345734.html",
+        "https://www.espn.com/nfl/story/_/id/47822193/2026-super-bowl-lx-patriots-seahawks-live-highlights-results"
+      ],
+      "notes": "Chiefs won three straight Super Bowls (LVII, LVIII, and nearly a three-peat in LIX). Their current drought is only 2 seasons old. 2024 was a Finals loss (SB LIX). 2025 was a down season at 6-11 with no playoff appearance and a net losing record. Super Bowl LX (Feb 2026) was won by the Seattle Seahawks over the New England Patriots, so the Chiefs remain in a drought entering 2026."
+    },
+    {
+      "team": "Los Angeles Rams",
+      "score": 14,
+      "since": "Since Super Bowl LVI (2021)",
+      "lastChampionship": "Super Bowl LVI (2021 season)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 1,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Rams_seasons",
+        "https://www.therams.com/news/game-recap-rams-fall-to-seahawks-31-27-in-nfc-championship",
+        "https://en.wikipedia.org/wiki/2025_Los_Angeles_Rams%E2%80%93Seattle_Seahawks_game"
+      ],
+      "notes": "Drought window is only 4 seasons (2022-2025). 2022: 5-12, missed playoffs with a losing record (no points). 2023: 10-7, lost Wild Card to Detroit Lions 23-24 (first round). 2024: 10-7, beat Vikings in Wild Card, lost Divisional to Philadelphia Eagles 22-28 (quarters). 2025: 12-5, beat Panthers in Wild Card, beat Bears in Divisional OT, lost NFC Championship to Seattle Seahawks 27-31 (semis)."
+    },
+    {
+      "team": "Los Angeles Chargers",
+      "score": 12,
+      "since": "Since 2017 (relocation to Los Angeles)",
+      "lastChampionship": "1963 AFL Championship (as San Diego Chargers)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 3,
+        "winningRecordNoPlayoff": 2
+      },
+      "confidence": "high",
+      "flags": [
+        "Drought window starts at 2017 relocation (LA), not 1963 last title; San Diego era excluded per relocation rule",
+        "2021 season: 9-8 record, missed playoffs on final day (OT loss to Raiders); counted as winning record no playoff",
+        "2018: Won Wild Card vs Ravens, lost Divisional Round vs Patriots -- counted as quarters loss"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Los_Angeles_Chargers_seasons",
+        "https://en.wikipedia.org/wiki/2024_Los_Angeles_Chargers_season",
+        "https://en.wikipedia.org/wiki/2025_Los_Angeles_Chargers_season",
+        "https://en.wikipedia.org/wiki/2025%E2%80%9326_NFL_playoffs"
+      ],
+      "notes": "Score = 4*1 + 2*3 + 1*2 = 12. The Chargers have been stuck in Wild Card Round exits in recent years (2022, 2024, 2025) under both Anthony Lynn/Brandon Staley and Jim Harbaugh eras, never advancing past the Divisional Round since relocating to LA."
+    },
+    {
+      "team": "Tampa Bay Buccaneers",
+      "score": 12,
+      "since": "Since Super Bowl LV (2020)",
+      "lastChampionship": "Super Bowl LV (2020 season)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 2,
+        "firstRound": 2,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://champsorchumps.us/team/nfl/tampa-bay-buccaneers",
+        "https://en.wikipedia.org/wiki/List_of_Tampa_Bay_Buccaneers_seasons",
+        "https://www.buccaneers.com/news/bucs-win-super-bowl-55-chiefs-31-9-final-score-champions",
+        "https://en.wikipedia.org/wiki/2025_Tampa_Bay_Buccaneers_season",
+        "https://en.wikipedia.org/wiki/2024_Tampa_Bay_Buccaneers_season"
+      ],
+      "notes": "Drought window: 2021-2025 (5 seasons). Quarters losses: 2021 Divisional Round, 2023 Divisional Round. First Round losses: 2022 Wild Card, 2024 Wild Card. 2025 season: 8-9, missed playoffs (not a winning record). PPI score = 4*2 + 2*2 = 12."
+    },
+    {
+      "team": "Denver Broncos",
+      "score": 11,
+      "since": "2016",
+      "lastChampionship": "Super Bowl 50 (2015 season)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 1,
+        "quarters": 0,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Denver_Broncos_seasons",
+        "https://en.wikipedia.org/wiki/2025_Denver_Broncos_season",
+        "https://en.wikipedia.org/wiki/2024_Denver_Broncos_season",
+        "https://champsorchumps.us/team/nfl/denver-broncos",
+        "https://www.pro-football-reference.com/teams/den/2025.htm",
+        "https://www.nfl.com/news/broncos-bills-on-wild-card-weekend-sunday-what-we-learned-from-buffalo-s-31-7-win"
+      ],
+      "notes": "Drought window: 2016-2025 (10 seasons). 2016: 9-7, missed playoffs (winning record, no playoffs). 2017: 5-11, missed playoffs. 2018: 6-10, missed playoffs. 2019: 7-9, missed playoffs. 2020: 5-11, missed playoffs. 2021: 7-10, missed playoffs. 2022: 5-12, missed playoffs. 2023: 8-9, missed playoffs. 2024: 10-7, lost Wild Card to Bills 7-31 (first round). 2025: 14-3, lost AFC Championship to Patriots 7-10 (semi-final). Bo Nix suffered ankle injury in AFC Championship; Jarrett Stidham started and lost at home."
+    },
+    {
+      "team": "New York Giants",
+      "score": 7,
+      "since": "Since 2012",
+      "lastChampionship": "Super Bowl XLVI (2011 season, won February 5, 2012)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 1
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_New_York_Giants_seasons",
+        "https://en.wikipedia.org/wiki/2025_New_York_Giants_season",
+        "https://en.wikipedia.org/wiki/2024_New_York_Giants_season"
+      ],
+      "notes": "14-season drought (2012-2025). Only 2 playoff appearances: 2016 Wild Card loss to Packers; 2022 Divisional loss to Eagles. Only 1 winning-record miss: 2012 at 9-7. The remaining 11 non-playoff seasons were all losing records. PPI score = 4*1 + 2*1 + 1*1 = 7."
+    },
+    {
+      "team": "Las Vegas Raiders",
+      "score": 2,
+      "since": "since 2020 (Las Vegas era)",
+      "lastChampionship": "Super Bowl XVIII (1983 season, January 1984) as the Los Angeles Raiders",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Drought window starts 2020 (Las Vegas relocation), not 1984 (year after last title) \u2014 relocation is more recent per Rule 1",
+        "2020 season: 8-8 record, missed playoffs; 8-8 is not a winning record (need more wins than losses), so no winningRecordNoPlayoff credit",
+        "2021: sole playoff appearance in window \u2014 Wild Card loss at Cincinnati Bengals 19-26",
+        "2022-2025: four consecutive losing seasons with no playoff appearances; 2025 was 3-14, worst record in franchise history by some measures (secured 1st overall pick in 2026 draft)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Las_Vegas_Raiders_seasons",
+        "https://en.wikipedia.org/wiki/2020_Las_Vegas_Raiders_season",
+        "https://en.wikipedia.org/wiki/2025_Las_Vegas_Raiders_season"
+      ],
+      "notes": "The Raiders have won three Super Bowls (XV, XVIII) but the most recent was in January 1984. The team relocated from Oakland to Las Vegas in 2020, so per PPI rules the drought window begins with the 2020 season (relocation more recent than last title). Only one playoff appearance in the Las Vegas era \u2014 a first-round Wild Card loss in 2021. The 2020 season 8-8 record does not qualify as a winning record (ties are not wins)."
+    },
+    {
+      "team": "Philadelphia Eagles",
+      "score": 2,
+      "since": "2024",
+      "lastChampionship": "Super Bowl LIX (2024 season, February 2025)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 1,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Drought window is only one season (2025). Eagles are the reigning Super Bowl champions as of Feb 2025."
+      ],
+      "sources": [
+        "https://www.espn.com/nfl/game/_/gameId/401772980/49ers-eagles",
+        "https://en.wikipedia.org/wiki/2025_Philadelphia_Eagles_season",
+        "https://www.pro-football-reference.com/boxscores/202601110phi.htm",
+        "https://www.cbsnews.com/news/philadelphia-eagles-super-bowl-wins/"
+      ],
+      "notes": "Eagles won Super Bowl LIX (2024 season) defeating KC 40-22. Drought starts 2025. In 2025 they finished 11-6 (NFC East champions) but lost the Wild Card game at home to the 49ers 19-23 on Jan 11 2026. Only one completed season in the drought window, resulting in a single first-round playoff loss. PPI score = 2."
+    },
+    {
+      "team": "Seattle Seahawks",
+      "score": 0,
+      "since": "Since last title in 2025",
+      "lastChampionship": "Super Bowl LX (Feb 2026, 2025 season) \u2014 def. New England 29-13",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Won Super Bowl LX (verified by web search); active drought is 0 seasons \u2014 the 2026 season has not been played"
+      ],
+      "sources": [
+        "https://www.espn.com/nfl/story/_/id/47822193/2026-super-bowl-lx-patriots-seahawks-live-highlights-results",
+        "https://www.nfl.com/news/seahawks-adorned-with-super-bowl-lx-championship-rings"
+      ],
+      "notes": "Seattle won Super Bowl LX over New England 29-13 (Feb 8, 2026), their 2nd title. PPI resets to 0."
+    }
+  ]
+}

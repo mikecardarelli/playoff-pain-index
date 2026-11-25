@@ -1,0 +1,254 @@
+{
+  "league": "CFL",
+  "updated": "2026-11-25",
+  "scoring": "16*Finals + 8*Semis + 4*Quarters + 2*FirstRound + 1*WinningRecordNoPlayoff",
+  "teams": [
+    {
+      "team": "Hamilton Tiger-Cats",
+      "score": 132,
+      "since": "Since last title in 1999",
+      "lastChampionship": "1999 Grey Cup",
+      "breakdown": {
+        "finals": 4,
+        "semis": 5,
+        "quarters": 7,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "playoff-pain-index site (index.html)",
+        "https://en.wikipedia.org/wiki/List_of_Hamilton_Tiger-Cats_seasons",
+        "https://en.wikipedia.org/wiki/2009_Hamilton_Tiger-Cats_season",
+        "https://en.wikipedia.org/wiki/2010_Hamilton_Tiger-Cats_season",
+        "https://en.wikipedia.org/wiki/2011_Hamilton_Tiger-Cats_season",
+        "https://en.wikipedia.org/wiki/2016_Hamilton_Tiger-Cats_season",
+        "https://en.wikipedia.org/wiki/2026_CFL_season"
+      ],
+      "notes": "Pinned to the published playoff-pain-index site numbers (canonical). The site moved from 148 to 132 (semis 7 to 5) on Oct 31, 2026, which matches independent research: the 2009 and 2010 exits were East Semi-Finals (quarters), not East Finals. 2026: finished 6-12 and missed the playoffs with a losing record, so the card does not move."
+    },
+    {
+      "team": "BC Lions",
+      "score": 68,
+      "since": "2011",
+      "lastChampionship": "2011 Grey Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 6,
+        "quarters": 5,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2020 season cancelled due to COVID-19; excluded from drought window counts",
+        "2014 and 2018 Division Semifinal losses were crossover playoff appearances (played in Eastern bracket); counted as Division Semifinal losses",
+        "semisLosses: 2012, 2016, 2022, 2023, 2025, 2026",
+        "quartersLosses: 2013, 2014, 2015, 2018, 2024",
+        "2017, 2019, 2021 missed playoffs with losing records; no winningRecordNoPlayoff credited",
+        "2026: finished 10-8, won the West Semi-Final over Saskatchewan 33-26, lost the West Final at Edmonton 28-16 (Division Final = semis)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_BC_Lions_seasons",
+        "https://en.wikipedia.org/wiki/BC_Lions",
+        "https://en.wikipedia.org/wiki/2026_CFL_season",
+        "https://www.castanet.net/news/CFL/637140/Elks-beat-Lions-28-16-in-comeback-season-advance-to-Grey-Cup"
+      ],
+      "notes": "BC Lions won the 2011 Grey Cup over Winnipeg 34-23. Drought window is 2012-2026. All missed-playoff seasons had losing records so no winningRecordNoPlayoff applies. PPI score = 8*6 + 4*5 = 48 + 20 = 68."
+    },
+    {
+      "team": "Winnipeg Blue Bombers",
+      "score": 60,
+      "since": "since 2021",
+      "lastChampionship": "2021 Grey Cup (108th, def. Hamilton Tiger-Cats 33-25 OT)",
+      "breakdown": {
+        "finals": 3,
+        "semis": 1,
+        "quarters": 1,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2025: Winnipeg crossed over from West to East playoffs under CFL crossover rule (4th West, better record than 3rd East); lost East Division Semi-Final to Montreal 42-33 -- counted as Quarters (Division Semi-Final) loss",
+        "2022 Grey Cup loss: Toronto Argonauts 24-23",
+        "2023 Grey Cup loss: Montreal Alouettes 28-24",
+        "2024 Grey Cup loss: Toronto Argonauts 41-24",
+        "2026: finished 9-9, 4th in the West, crossed over into the East bracket again; won the East Semi-Final at Toronto 25-22, then lost the East Final at Montreal 33-23 -- counted as Semis (Division Final) loss"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2022_Winnipeg_Blue_Bombers_season",
+        "https://en.wikipedia.org/wiki/2023_Winnipeg_Blue_Bombers_season",
+        "https://en.wikipedia.org/wiki/2024_Winnipeg_Blue_Bombers_season",
+        "https://en.wikipedia.org/wiki/2025_Winnipeg_Blue_Bombers_season",
+        "https://www.bluebombers.com/grey-cups/",
+        "https://en.wikipedia.org/wiki/2026_CFL_season",
+        "https://www.cp24.com/news/sports/2026/10/31/browns-late-td-pass-to-demski-earns-bombers-25-22-east-semifinal-win-over-argos/"
+      ],
+      "notes": "Winnipeg won back-to-back Grey Cups in 2019 and 2021 (no 2020 season due to COVID). Since the 2021 title they have reached three straight Grey Cup Finals (2022, 2023, 2024), losing all three. In 2025 they slipped to 4th in the West (10-8), crossed over into the East bracket under the CFL crossover rule, and lost the East Division Semi-Final to Montreal. In 2026 they crossed over again at 9-9, won the East Semi-Final in Toronto and lost the East Final in Montreal. Score = 16*3 + 8*1 + 4*1 = 60."
+    },
+    {
+      "team": "Montreal Alouettes",
+      "score": 40,
+      "since": "Since 2023",
+      "lastChampionship": "2023 Grey Cup",
+      "breakdown": {
+        "finals": 2,
+        "semis": 1,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Montreal_Alouettes",
+        "https://en.wikipedia.org/wiki/2024_Montreal_Alouettes_season",
+        "https://en.wikipedia.org/wiki/2025_Montreal_Alouettes_season",
+        "https://en.wikipedia.org/wiki/112th_Grey_Cup",
+        "https://www.cfl.ca/2023/11/19/au-septieme-ciel-alouettes-win-the-110th-grey-cup/",
+        "https://en.wikipedia.org/wiki/2026_CFL_season",
+        "https://en.wikipedia.org/wiki/113th_Grey_Cup",
+        "https://globalnews.ca/news/12152412/montreal-sputters-late-loses-grey-cup-again/"
+      ],
+      "notes": "Drought window is 3 completed seasons (2024-2026). 2024: lost to Toronto Argonauts in East Final (Division Final, one round before the Grey Cup = semis). 2025: lost to Saskatchewan Roughriders 25-17 in the 112th Grey Cup = finals loss. 2026: finished 14-4, beat Winnipeg 33-23 in the East Final, then lost the 113th Grey Cup 37-30 to Edmonton = a second straight finals loss."
+    },
+    {
+      "team": "Ottawa Redblacks",
+      "score": 24,
+      "since": "since 2016",
+      "lastChampionship": "2016 Grey Cup",
+      "breakdown": {
+        "finals": 1,
+        "semis": 0,
+        "quarters": 2,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2020 CFL season was cancelled due to COVID-19 and is not counted",
+        "2017 East Semi-Final loss confirmed via ottawaredblacks.com article headline",
+        "2018 Grey Cup loss to Calgary confirmed (27-16)",
+        "2024 East Semi-Final loss to Toronto confirmed (58-38)",
+        "2026: finished 1-17 and missed the playoffs; losing record, nothing counted"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2017_Ottawa_Redblacks_season",
+        "https://en.wikipedia.org/wiki/2018_Ottawa_Redblacks_season",
+        "https://en.wikipedia.org/wiki/2024_Ottawa_Redblacks_season",
+        "https://en.wikipedia.org/wiki/2025_Ottawa_Redblacks_season",
+        "https://www.cfl.ca/2016/11/27/red-black-grey-ottawa-captures-first-championship-40-years/",
+        "https://www.ottawaredblacks.com/2017/11/12/redblacks-season-ends-eastern-semi-final/",
+        "https://en.wikipedia.org/wiki/2026_CFL_season"
+      ],
+      "notes": "2026 added nothing: Ottawa went 1-17 and missed the playoffs."
+    },
+    {
+      "team": "Calgary Stampeders",
+      "score": 20,
+      "since": "Since 2018 Grey Cup",
+      "lastChampionship": "2018 Grey Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 5,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2020 season cancelled due to COVID-19 pandemic \u2014 not counted",
+        "2023 was first losing-record season (6-12) since 2007 but Stampeders still qualified for playoffs via streak",
+        "2024 (5-12-1) was first missed playoffs since 2004 \u2014 losing record so no winningRecordNoPlayoff credit",
+        "All 5 playoff exits were in the West Semi-Final (Division Semifinal), mapping to Quarters (4pts each)",
+        "2026: finished 9-9 and missed the playoffs (Winnipeg, also 9-9, took the crossover spot); a .500 record is not a winning record, so no winningRecordNoPlayoff credit"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_Calgary_Stampeders_seasons",
+        "https://en.wikipedia.org/wiki/2019_Calgary_Stampeders_season",
+        "https://en.wikipedia.org/wiki/2023_Calgary_Stampeders_season",
+        "https://en.wikipedia.org/wiki/2024_Calgary_Stampeders_season",
+        "https://en.wikipedia.org/wiki/2025_Calgary_Stampeders_season",
+        "https://en.wikipedia.org/wiki/Calgary_Stampeders",
+        "https://en.wikipedia.org/wiki/2026_CFL_season"
+      ],
+      "notes": "Calgary won 8 Grey Cups total (1948, 1971, 1992, 1998, 2001, 2008, 2014, 2018). Since the 2018 title, they have exited in the West Semi-Final (first playoff round) five times in six playoff appearances. In 2024 they missed the playoffs entirely with a losing record, and in 2026 they missed again at 9-9. The PPI score is 4*5 = 20."
+    },
+    {
+      "team": "Saskatchewan Roughriders",
+      "score": 4,
+      "since": "2025",
+      "lastChampionship": "2025 Grey Cup (defeated Montreal Alouettes 25-17)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2026 is the first completed season of the drought window: finished 10-8 and lost the West Semi-Final at BC 33-26 (Division Semifinal = quarters)."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2025_Saskatchewan_Roughriders_season",
+        "https://www.cbc.ca/sports/football/cfl/112th-grey-cup-montreal-alouettes-saskatchewan-roughriders-9.6981004",
+        "https://en.wikipedia.org/wiki/2026_CFL_season",
+        "https://www.ctvnews.ca/regina/article/lions-grind-out-33-26-win-over-roughriders-in-cfls-west-division-semifinal/"
+      ],
+      "notes": "Saskatchewan's previous championships were in 1966, 1989, 2007, and 2013. Their 2025 title is their fifth Grey Cup. As defending champions in 2026 they went 10-8 and lost the West Semi-Final to BC. PPI score = 4*1 = 4."
+    },
+    {
+      "team": "Toronto Argonauts",
+      "score": 4,
+      "since": "since 2024",
+      "lastChampionship": "2024 Grey Cup",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 1,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "2025 was the only completed season in the drought window; Argonauts went 5-13 and missed playoffs \u2014 no PPI events to count",
+        "2026: finished 9-9, hosted the East Semi-Final and lost it to crossover Winnipeg 25-22 (Division Semifinal = quarters)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2025_Toronto_Argonauts_season",
+        "https://3downnation.com/2025/10/04/toronto-argonauts-officially-eliminated-from-cfl-playoff-contention/",
+        "https://en.wikipedia.org/wiki/Toronto_Argonauts",
+        "https://en.wikipedia.org/wiki/2026_CFL_season",
+        "https://www.cp24.com/news/sports/2026/10/31/browns-late-td-pass-to-demski-earns-bombers-25-22-east-semifinal-win-over-argos/"
+      ],
+      "notes": "Toronto won the 2024 Grey Cup (their 19th title). 2025: finished 5-13 and missed the playoffs, a losing record, so nothing counts. 2026: finished 9-9 and lost the East Semi-Final to Winnipeg 25-22. PPI score = 4*1 = 4."
+    },
+    {
+      "team": "Edmonton Elks",
+      "score": 0,
+      "since": "Since last title in 2026",
+      "lastChampionship": "2026 Grey Cup (113th, defeated Montreal Alouettes 37-30)",
+      "breakdown": {
+        "finals": 0,
+        "semis": 0,
+        "quarters": 0,
+        "firstRound": 0,
+        "winningRecordNoPlayoff": 0
+      },
+      "confidence": "high",
+      "flags": [
+        "Edmonton won the 113th Grey Cup on November 15, 2026 (37-30 over Montreal), so the score resets to 0. The drought window opens with the 2027 season, which has not been played."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2026_CFL_season",
+        "https://en.wikipedia.org/wiki/113th_Grey_Cup",
+        "https://www.tsn.ca/cfl/article/fajardo-elks-take-down-alouettes-claim-113th-grey-cup/",
+        "https://www.cp24.com/news/sports/2026/11/16/edmonton-elks-win-grey-cup-against-montreal-alouettes/"
+      ],
+      "notes": "Edmonton finished 13-5, beat BC 28-16 in the West Final and beat Montreal 37-30 in the 113th Grey Cup at McMahon Stadium, its first title since 2015. The drought that just closed (2016-2025) had three Division Final losses (2016, 2017, 2019) for a PPI of 24."
+    }
+  ]
+}
